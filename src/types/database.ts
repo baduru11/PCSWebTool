@@ -5,6 +5,8 @@ export interface Profile {
   avatar_url: string | null;
   total_xp: number;
   current_level: number;
+  last_login_date: string | null;
+  login_streak: number;
   created_at: string;
 }
 
