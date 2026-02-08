@@ -1,10 +1,15 @@
 import { createClient } from "@/lib/supabase/server";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { AFFECTION_LEVELS } from "@/types/gamification";
 import { getAffectionLevel } from "@/lib/gamification/xp";
 import { CharacterActions } from "./character-actions";
+
+const CHARACTER_IMAGES: Record<string, string> = {
+  Kaede: "/img/character/Kaede/pcs1.png",
+};
 
 export default async function CharactersPage() {
   const supabase = await createClient();
@@ -116,9 +121,20 @@ export default async function CharactersPage() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-3">
-                {/* Character image placeholder */}
-                <div className="h-40 w-full rounded-md bg-muted flex items-center justify-center text-sm text-muted-foreground">
-                  {character.name}
+                {/* Character image */}
+                <div className="relative h-48 w-full rounded-md bg-muted overflow-hidden">
+                  {(character.image_url || CHARACTER_IMAGES[character.name]) ? (
+                    <Image
+                      src={character.image_url || CHARACTER_IMAGES[character.name]}
+                      alt={character.name}
+                      fill
+                      className="object-contain"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                      {character.name}
+                    </div>
+                  )}
                 </div>
 
                 {/* Affection level display (unlocked only) */}

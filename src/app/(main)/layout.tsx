@@ -21,10 +21,12 @@ export default async function MainLayout({
     .single();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar totalXP={profile?.total_xp ?? 0} />
       <main className="mx-auto max-w-7xl p-4">
-        {children}
+        <div className="rounded-xl bg-background/80 backdrop-blur-sm p-6">
+          {children}
+        </div>
       </main>
     </div>
   );

@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
+import { getCharacterImageFallback } from "@/lib/character-images";
 
 const QuizSession = dynamic(() => import("./quiz-session").then(m => m.QuizSession), {
   loading: () => (
@@ -71,10 +72,11 @@ export default async function Component3Page() {
     }
   }
 
+  const characterName = characterData?.name ?? "Study Buddy";
   const character = {
-    name: characterData?.name ?? "Study Buddy",
+    name: characterName,
     personalityPrompt: characterData?.personality_prompt ?? "You are a friendly and encouraging study companion.",
-    expressions,
+    expressions: getCharacterImageFallback(characterName, expressions),
   };
 
   // Use fallback questions (DB may not have quiz-formatted data yet)

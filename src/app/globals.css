@@ -122,5 +122,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: url("/img/background/wmremove-transformed.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 }

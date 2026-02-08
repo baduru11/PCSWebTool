@@ -1,8 +1,13 @@
 import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+
+const CHARACTER_IMAGES: Record<string, string> = {
+  Kaede: "/img/character/Kaede/pcs1.png",
+};
 
 const COMPONENTS = [
   { number: 1, name: "Monosyllabic Characters", chinese: "\u8BFB\u5355\u97F3\u8282\u5B57\u8BCD", path: "/component-1" },
@@ -38,8 +43,23 @@ export default async function DashboardPage() {
     <div className="space-y-6">
       {/* Greeting Section */}
       <div className="flex items-center gap-6">
-        <div className="h-32 w-32 rounded-lg bg-muted flex items-center justify-center text-sm text-muted-foreground">
-          {selectedCharacter?.characters?.name || "No character"}
+        <div className="relative h-32 w-32 rounded-lg bg-muted overflow-hidden">
+          {(() => {
+            const charName = selectedCharacter?.characters?.name;
+            const charImage = selectedCharacter?.characters?.image_url || (charName ? CHARACTER_IMAGES[charName] : null);
+            return charImage ? (
+              <Image
+                src={charImage}
+                alt={charName || "Character"}
+                fill
+                className="object-contain"
+              />
+            ) : (
+              <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                {charName || "No character"}
+              </div>
+            );
+          })()}
         </div>
         <div>
           <h1 className="text-2xl font-bold">

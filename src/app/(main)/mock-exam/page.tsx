@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
+import { getCharacterImageFallback } from "@/lib/character-images";
 
 const ExamRunner = dynamic(() => import("./exam-runner").then(m => m.ExamRunner), {
   loading: () => (
@@ -43,12 +44,13 @@ export default async function MockExamPage() {
     }
   }
 
+  const characterName = characterData?.name ?? "Study Buddy";
   const character = {
     id: characterData?.id ?? "",
-    name: characterData?.name ?? "Study Buddy",
+    name: characterName,
     personalityPrompt: characterData?.personality_prompt ?? "You are a friendly and encouraging study companion.",
     voiceId: characterData?.voice_id ?? "",
-    expressions,
+    expressions: getCharacterImageFallback(characterName, expressions),
   };
 
   return (

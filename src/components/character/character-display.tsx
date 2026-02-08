@@ -28,7 +28,7 @@ export function CharacterDisplay({
             src={imageUrl}
             alt={`${characterName} - ${currentExpression}`}
             fill
-            className={`object-cover transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
+            className={`object-contain transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
             onLoad={() => setLoaded(true)}
           />
         ) : (

@@ -12,8 +12,8 @@ export default async function HomePage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
-      <div className="text-center space-y-6 max-w-lg">
+    <div className="flex min-h-screen flex-col items-center justify-center p-4">
+      <div className="text-center space-y-6 max-w-lg rounded-2xl bg-background/80 backdrop-blur-sm p-8">
         <h1 className="text-4xl font-bold">PSC Study Companion</h1>
         <p className="text-lg text-muted-foreground">
           Master the Putonghua Proficiency Test with AI-powered practice and your personal anime study companion.

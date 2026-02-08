@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
+import { getCharacterImageFallback } from "@/lib/character-images";
 
 const ReadingSession = dynamic(() => import("./reading-session").then(m => m.ReadingSession), {
   loading: () => (
@@ -63,11 +64,12 @@ export default async function Component4Page() {
     }
   }
 
+  const characterName = characterData?.name ?? "Study Buddy";
   const character = {
-    name: characterData?.name ?? "Study Buddy",
+    name: characterName,
     personalityPrompt: characterData?.personality_prompt ?? "You are a friendly and encouraging study companion.",
     voiceId: characterData?.voice_id ?? "",
-    expressions,
+    expressions: getCharacterImageFallback(characterName, expressions),
   };
 
   // Use fallback passages (DB likely won't have component 4 data yet)
