@@ -1,7 +1,16 @@
 import { createClient } from "@/lib/supabase/server";
-import { redirect } from "next/navigation";
-import { PracticeSession } from "./practice-session";
+import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
+
+const PracticeSession = dynamic(() => import("./practice-session").then(m => m.PracticeSession), {
+  loading: () => (
+    <div className="rounded-lg border p-6 space-y-4 animate-pulse">
+      <div className="h-24 w-24 mx-auto rounded-full bg-muted" />
+      <div className="h-16 w-full rounded bg-muted" />
+      <div className="h-10 w-32 mx-auto rounded bg-muted" />
+    </div>
+  ),
+});
 
 // Default monosyllabic characters for Component 1 if no DB questions available
 const DEFAULT_CHARACTERS = [
@@ -15,21 +24,29 @@ const DEFAULT_CHARACTERS = [
 export default async function Component1Page() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
 
-  // Fetch selected character with expressions
-  const { data: userCharacter } = await supabase
-    .from("user_characters")
-    .select(`
-      *,
-      characters (
+  const userId = user!.id;
+
+  // Fetch character and questions in parallel
+  const [{ data: userCharacter }, { data: dbQuestions }] = await Promise.all([
+    supabase
+      .from("user_characters")
+      .select(`
         *,
-        character_expressions (*)
-      )
-    `)
-    .eq("user_id", user.id)
-    .eq("is_selected", true)
-    .single();
+        characters (
+          *,
+          character_expressions (*)
+        )
+      `)
+      .eq("user_id", userId)
+      .eq("is_selected", true)
+      .single(),
+    supabase
+      .from("question_banks")
+      .select("content")
+      .eq("component", 1)
+      .limit(100),
+  ]);
 
   // Build character data for the practice session
   const characterData = userCharacter?.characters;
@@ -50,13 +67,6 @@ export default async function Component1Page() {
     voiceId: characterData?.voice_id ?? "",
     expressions,
   };
-
-  // Fetch questions from question_banks table
-  const { data: dbQuestions } = await supabase
-    .from("question_banks")
-    .select("content")
-    .eq("component", 1)
-    .limit(100);
 
   const questions: string[] =
     dbQuestions && dbQuestions.length > 0

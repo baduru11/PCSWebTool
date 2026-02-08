@@ -1,12 +1,20 @@
 import { createClient } from "@/lib/supabase/server";
-import { redirect } from "next/navigation";
-import { ExamRunner } from "./exam-runner";
+import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
+
+const ExamRunner = dynamic(() => import("./exam-runner").then(m => m.ExamRunner), {
+  loading: () => (
+    <div className="rounded-lg border p-6 space-y-4 animate-pulse">
+      <div className="h-24 w-24 mx-auto rounded-full bg-muted" />
+      <div className="h-6 w-64 mx-auto rounded bg-muted" />
+      <div className="h-10 w-40 mx-auto rounded bg-muted" />
+    </div>
+  ),
+});
 
 export default async function MockExamPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
 
   // Fetch selected character with expressions
   const { data: userCharacter } = await supabase
@@ -18,7 +26,7 @@ export default async function MockExamPage() {
         character_expressions (*)
       )
     `)
-    .eq("user_id", user.id)
+    .eq("user_id", user!.id)
     .eq("is_selected", true)
     .single();
 

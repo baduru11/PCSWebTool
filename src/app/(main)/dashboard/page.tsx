@@ -1,5 +1,4 @@
 import { createClient } from "@/lib/supabase/server";
-import { redirect } from "next/navigation";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -16,25 +15,20 @@ const COMPONENTS = [
 export default async function DashboardPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("*")
-    .eq("id", user.id)
-    .single();
+  const userId = user!.id;
 
-  const { data: progress } = await supabase
-    .from("user_progress")
-    .select("*")
-    .eq("user_id", user.id);
-
-  const { data: selectedCharacter } = await supabase
-    .from("user_characters")
-    .select("*, characters(*)")
-    .eq("user_id", user.id)
-    .eq("is_selected", true)
-    .single();
+  const [{ data: profile }, { data: progress }, { data: selectedCharacter }] =
+    await Promise.all([
+      supabase.from("profiles").select("*").eq("id", userId).single(),
+      supabase.from("user_progress").select("*").eq("user_id", userId),
+      supabase
+        .from("user_characters")
+        .select("*, characters(*)")
+        .eq("user_id", userId)
+        .eq("is_selected", true)
+        .single(),
+    ]);
 
   const progressMap = new Map(
     (progress || []).map((p: { component: number }) => [p.component, p])

@@ -1,5 +1,4 @@
 import { createClient } from "@/lib/supabase/server";
-import { redirect } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -10,30 +9,23 @@ import { CharacterActions } from "./character-actions";
 export default async function CharactersPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
 
-  // Fetch all characters with their expressions and skins
-  const { data: characters } = await supabase
-    .from("characters")
-    .select(`
-      *,
-      character_expressions (*),
-      character_skins (*)
-    `)
-    .order("is_default", { ascending: false });
+  const userId = user!.id;
 
-  // Fetch the user's unlocked characters
-  const { data: userCharacters } = await supabase
-    .from("user_characters")
-    .select("*")
-    .eq("user_id", user.id);
-
-  // Fetch user profile for XP
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("total_xp")
-    .eq("id", user.id)
-    .single();
+  // Fetch all data in parallel
+  const [{ data: characters }, { data: userCharacters }, { data: profile }] =
+    await Promise.all([
+      supabase
+        .from("characters")
+        .select(`
+          *,
+          character_expressions (*),
+          character_skins (*)
+        `)
+        .order("is_default", { ascending: false }),
+      supabase.from("user_characters").select("*").eq("user_id", userId),
+      supabase.from("profiles").select("total_xp").eq("id", userId).single(),
+    ]);
 
   const totalXP = profile?.total_xp ?? 0;
 

@@ -1,7 +1,16 @@
 import { createClient } from "@/lib/supabase/server";
-import { redirect } from "next/navigation";
-import { ReadingSession } from "./reading-session";
+import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
+
+const ReadingSession = dynamic(() => import("./reading-session").then(m => m.ReadingSession), {
+  loading: () => (
+    <div className="rounded-lg border p-6 space-y-4 animate-pulse">
+      <div className="h-24 w-24 mx-auto rounded-full bg-muted" />
+      <div className="h-16 w-full rounded bg-muted" />
+      <div className="h-10 w-32 mx-auto rounded bg-muted" />
+    </div>
+  ),
+});
 
 interface Passage {
   id: string;
@@ -26,7 +35,6 @@ const FALLBACK_PASSAGES: Passage[] = [
 export default async function Component4Page() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
 
   // Fetch selected character with expressions
   const { data: userCharacter } = await supabase
@@ -38,7 +46,7 @@ export default async function Component4Page() {
         character_expressions (*)
       )
     `)
-    .eq("user_id", user.id)
+    .eq("user_id", user!.id)
     .eq("is_selected", true)
     .single();
 
