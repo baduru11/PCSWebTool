@@ -16,6 +16,7 @@ const EXPRESSION_INSTRUCTIONS: Partial<Record<ExpressionName, string>> = {
   disappointed: "Speak gently with slight concern, still supportive.",
 };
 
+
 /**
  * Academic TTS — clear, consistent Putonghua for reading vocab, passages, sentences.
  * Uses qwen3-tts-flash HTTP API.
@@ -76,27 +77,19 @@ export async function synthesizeAcademic(params: {
   return Buffer.from(arrayBuffer);
 }
 
+const COMPANION_MAX_RETRIES = 3;
+const COMPANION_BASE_DELAY_MS = 1500;
+
 /**
- * Companion TTS — expressive, personality-driven voice for character dialogue.
- * Uses qwen3-tts-instruct-flash-realtime WebSocket API.
+ * Single WebSocket attempt for companion TTS.
  */
-export async function synthesizeCompanion(params: {
+function synthesizeCompanionOnce(params: {
   voiceId: string;
   text: string;
-  expression?: ExpressionName;
+  instructions: string;
 }): Promise<Buffer> {
-  if (!DASHSCOPE_API_KEY) {
-    throw new Error("DASHSCOPE_API_KEY is not configured");
-  }
-
-  const instructions =
-    EXPRESSION_INSTRUCTIONS[params.expression ?? "neutral"] ??
-    EXPRESSION_INSTRUCTIONS.neutral!;
-
   return new Promise<Buffer>((resolve, reject) => {
-    // Try multiple auth methods for DashScope WebSocket
     const url = `wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime?model=qwen3-tts-instruct-flash-realtime`;
-    console.log("[Companion TTS] Connecting to WebSocket with API key...");
     const ws = new WebSocket(url, {
       headers: {
         "Authorization": `Bearer ${DASHSCOPE_API_KEY}`,
@@ -127,7 +120,6 @@ export async function synthesizeCompanion(params: {
       clearTimeout(timeout);
       if (!resolved) {
         resolved = true;
-        // Build WAV from collected PCM chunks
         const pcmBuffer = Buffer.concat(pcmChunks);
         const wavBuffer = addWavHeader(pcmBuffer, 24000, 1, 16);
         resolve(wavBuffer);
@@ -139,13 +131,12 @@ export async function synthesizeCompanion(params: {
         const msg = JSON.parse(data.toString());
 
         if (msg.type === "session.created") {
-          // Send session.update with voice config
           ws.send(
             JSON.stringify({
               type: "session.update",
               session: {
                 voice: params.voiceId,
-                instructions,
+                instructions: params.instructions,
                 optimize_instructions: true,
                 response_format: "pcm",
                 sample_rate: 24000,
@@ -153,7 +144,6 @@ export async function synthesizeCompanion(params: {
             })
           );
 
-          // Send text
           ws.send(
             JSON.stringify({
               type: "input_text_buffer.append",
@@ -161,10 +151,8 @@ export async function synthesizeCompanion(params: {
             })
           );
 
-          // Signal we're done sending input
           ws.send(JSON.stringify({ type: "session.finish" }));
         } else if (msg.type === "response.audio.delta") {
-          // Collect base64-encoded PCM chunks
           if (msg.delta) {
             pcmChunks.push(Buffer.from(msg.delta, "base64"));
           }
@@ -172,7 +160,6 @@ export async function synthesizeCompanion(params: {
           msg.type === "session.finished" ||
           msg.type === "response.done"
         ) {
-          // All audio received — close the socket
           clearTimeout(timeout);
           if (!resolved) {
             resolved = true;
@@ -201,13 +188,174 @@ export async function synthesizeCompanion(params: {
 }
 
 /**
- * Formats multiple words with pauses for TTS reading.
- * Uses Chinese period (。) for consistent ~0.75s pauses between words.
- * Periods create a sentence boundary which produces more uniform timing
- * compared to commas which vary depending on context.
+ * Companion TTS — expressive, personality-driven voice for character dialogue.
+ * Uses qwen3-tts-instruct-flash-realtime WebSocket API with retry + backoff.
+ * Returns null if all retries are exhausted.
  */
-export function formatWordsWithPauses(words: string[]): string {
-  return words.join("。");
+export async function synthesizeCompanion(params: {
+  voiceId: string;
+  text: string;
+  expression?: ExpressionName;
+}): Promise<Buffer | null> {
+  if (!DASHSCOPE_API_KEY) {
+    throw new Error("DASHSCOPE_API_KEY is not configured");
+  }
+
+  const instructions =
+    EXPRESSION_INSTRUCTIONS[params.expression ?? "neutral"] ??
+    EXPRESSION_INSTRUCTIONS.neutral!;
+
+  for (let attempt = 0; attempt <= COMPANION_MAX_RETRIES; attempt++) {
+    try {
+      return await synthesizeCompanionOnce({
+        voiceId: params.voiceId,
+        text: params.text,
+        instructions,
+      });
+    } catch (error) {
+      if (attempt === COMPANION_MAX_RETRIES) {
+        console.error("[Companion TTS] All retries exhausted:", error);
+        return null;
+      }
+      const delay = COMPANION_BASE_DELAY_MS * Math.pow(2, attempt) + Math.random() * 500;
+      console.warn(`[Companion TTS] Retrying in ${Math.round(delay)}ms (attempt ${attempt + 1}/${COMPANION_MAX_RETRIES})...`);
+      await new Promise((r) => setTimeout(r, delay));
+    }
+  }
+  return null;
+}
+
+/**
+ * Parse a WAV buffer to extract raw PCM data and audio format info.
+ */
+function parseWavPcm(wav: Buffer): {
+  pcm: Buffer;
+  sampleRate: number;
+  numChannels: number;
+  bitsPerSample: number;
+} {
+  // Read fmt sub-chunk fields
+  const numChannels = wav.readUInt16LE(22);
+  const sampleRate = wav.readUInt32LE(24);
+  const bitsPerSample = wav.readUInt16LE(34);
+
+  // Find "data" sub-chunk — scan for the ASCII "data" marker
+  let dataOffset = 36;
+  while (dataOffset < wav.length - 8) {
+    if (wav.toString("ascii", dataOffset, dataOffset + 4) === "data") {
+      break;
+    }
+    dataOffset += 2;
+  }
+
+  const dataSize = wav.readUInt32LE(dataOffset + 4);
+  const pcm = wav.subarray(dataOffset + 8, dataOffset + 8 + dataSize);
+
+  return { pcm, sampleRate, numChannels, bitsPerSample };
+}
+
+/**
+ * Generate a silence PCM buffer of exact duration.
+ */
+function generateSilence(
+  durationMs: number,
+  sampleRate: number,
+  numChannels: number,
+  bitsPerSample: number
+): Buffer {
+  const numSamples = Math.round((durationMs / 1000) * sampleRate);
+  const bytesPerSample = (numChannels * bitsPerSample) / 8;
+  return Buffer.alloc(numSamples * bytesPerSample); // zeros = silence
+}
+
+/**
+ * Trim trailing silence from PCM, preserving a small fade-out margin.
+ */
+function trimTrailingSilence(
+  pcm: Buffer,
+  sampleRate: number,
+  opts: { amplitudeThreshold?: number; marginMs?: number } = {}
+): Buffer {
+  const threshold = opts.amplitudeThreshold ?? 500;
+  const marginSamples = Math.round(((opts.marginMs ?? 50) / 1000) * sampleRate);
+  const totalSamples = Math.floor(pcm.length / 2);
+
+  // Scan backwards to find last audible sample
+  let lastAudible = totalSamples - 1;
+  while (lastAudible > 0) {
+    const amp = Math.abs(pcm.readInt16LE(lastAudible * 2));
+    if (amp > threshold) break;
+    lastAudible--;
+  }
+
+  const endSample = Math.min(lastAudible + marginSamples, totalSamples);
+  return pcm.subarray(0, endSample * 2);
+}
+
+/**
+ * Synthesize a single word via TTS.
+ * Sends the actual Chinese characters directly — Qwen3-TTS handles
+ * polyphonic characters and tone from context natively.
+ */
+async function synthesizeWord(params: {
+  voiceId: string;
+  word: string;
+}): Promise<{ pcm: Buffer; sampleRate: number; numChannels: number; bitsPerSample: number }> {
+  const wav = await synthesizeAcademic({ voiceId: params.voiceId, text: params.word });
+  const { pcm, sampleRate, numChannels, bitsPerSample } = parseWavPcm(wav);
+  return { pcm: trimTrailingSilence(pcm, sampleRate), sampleRate, numChannels, bitsPerSample };
+}
+
+// Per-word audio cache — reuses audio for the same (voiceId, word) across groups
+const wordAudioCache = new Map<string, Buffer>();
+const WORD_CACHE_MAX = 500;
+
+/**
+ * Synthesize a group of words with precise, consistent silence between them.
+ * Each word gets its own TTS call (sequential to avoid rate limits), then PCM
+ * buffers are concatenated with exact-duration silence gaps.
+ */
+export async function synthesizeWordGroup(params: {
+  voiceId: string;
+  words: string[];
+  pauseMs?: number;
+}): Promise<Buffer> {
+  const pauseMs = params.pauseMs ?? 750;
+
+  // Generate TTS for each word sequentially to avoid API rate limits.
+  // Per-word cache means repeated characters (e.g. 八) are only generated once.
+  const wordBuffers: Buffer[] = [];
+  for (const word of params.words) {
+    const cacheKey = `${params.voiceId}:${word}`;
+    let buf = wordAudioCache.get(cacheKey);
+    if (!buf) {
+      const result = await synthesizeWord({ voiceId: params.voiceId, word });
+      buf = addWavHeader(result.pcm, result.sampleRate, result.numChannels, result.bitsPerSample);
+      wordAudioCache.set(cacheKey, buf);
+      if (wordAudioCache.size > WORD_CACHE_MAX) {
+        const firstKey = wordAudioCache.keys().next().value;
+        if (firstKey !== undefined) wordAudioCache.delete(firstKey);
+      }
+    }
+    wordBuffers.push(buf);
+  }
+
+  // Parse each WAV to get raw PCM + audio format
+  const parsed = wordBuffers.map(parseWavPcm);
+  const { sampleRate, numChannels, bitsPerSample } = parsed[0];
+
+  // Generate silence buffer
+  const silence = generateSilence(pauseMs, sampleRate, numChannels, bitsPerSample);
+
+  // Concatenate: word1 + silence + word2 + silence + ... + wordN
+  const parts: Buffer[] = [];
+  parsed.forEach((p, i) => {
+    parts.push(p.pcm);
+    if (i < parsed.length - 1) parts.push(silence);
+  });
+
+  // Wrap in WAV header
+  return addWavHeader(Buffer.concat(parts), sampleRate, numChannels, bitsPerSample);
 }
 
 /**

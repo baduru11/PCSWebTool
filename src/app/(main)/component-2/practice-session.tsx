@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
-import { formatWordsWithPauses } from "@/lib/voice/client";
+import { lookupPinyinDisplay } from "@/lib/pinyin";
 import type { ExpressionName } from "@/types/character";
 import type { QuestionResult } from "@/types/practice";
 
@@ -181,13 +181,13 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
     };
 
     try {
-      const formattedText = formatWordsWithPauses(currentWords);
       const response = await fetch("/api/tts/speak", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           voiceId: character.voiceId,
-          text: formattedText,
+          words: currentWords,
+          pauseMs: 750,
         }),
       });
 
@@ -560,7 +560,7 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
                     </div>
                     {showPinyin && (
                       <p className="text-center text-sm text-muted-foreground italic">
-                        (pinyin)
+                        {lookupPinyinDisplay(word) ?? "—"}
                       </p>
                     )}
                     {/* Tricky element badges per word */}

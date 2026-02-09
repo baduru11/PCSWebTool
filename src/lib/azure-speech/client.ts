@@ -70,10 +70,14 @@ export async function assessPronunciation(
     fluencyScore: assessment.FluencyScore,
     completenessScore: assessment.CompletenessScore,
     pronunciationScore: assessment.PronScore,
-    words: (nbest.Words || []).map((w: Record<string, unknown>) => ({
-      word: w.Word as string,
-      accuracyScore: (w.AccuracyScore as number) ?? 0,
-      errorType: (w.ErrorType as string) ?? "None",
-    })),
+    words: (nbest.Words || []).map((w: Record<string, unknown>) => {
+      // Handle both flat and nested PronunciationAssessment structures
+      const wa = (w as Record<string, unknown>).PronunciationAssessment as Record<string, unknown> | undefined;
+      return {
+        word: w.Word as string,
+        accuracyScore: ((wa?.AccuracyScore ?? w.AccuracyScore) as number) ?? 0,
+        errorType: ((wa?.ErrorType ?? w.ErrorType) as string) ?? "None",
+      };
+    }),
   };
 }

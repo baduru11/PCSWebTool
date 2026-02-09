@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
-import { formatWordsWithPauses } from "@/lib/voice/client";
+import { lookupPinyinDisplay } from "@/lib/pinyin";
 import type { ExpressionName } from "@/types/character";
 import type { QuestionResult } from "@/types/practice";
 
@@ -49,14 +49,15 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [isPlayingCompanion, setIsPlayingCompanion] = useState(false);
   const [, setFeedbackText] = useState("");
+  const [showPinyin, setShowPinyin] = useState(false);
   const hasPlayedGreeting = useRef(false);
 
-  // Initialize word groups (shuffle questions into groups of 10)
+  // Initialize word groups (shuffle questions into groups of 5)
   useEffect(() => {
     const shuffled = [...questions].sort(() => Math.random() - 0.5);
     const groups: string[][] = [];
-    for (let i = 0; i < shuffled.length; i += 10) {
-      groups.push(shuffled.slice(i, i + 10));
+    for (let i = 0; i < shuffled.length; i += 5) {
+      groups.push(shuffled.slice(i, i + 5));
     }
     setWordGroups(groups);
   }, [questions]);
@@ -139,13 +140,13 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
     };
 
     try {
-      const formattedText = formatWordsWithPauses(currentWords);
       const response = await fetch("/api/tts/speak", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           voiceId: character.voiceId,
-          text: formattedText,
+          words: currentWords,
+          pauseMs: 750,
         }),
       });
 
@@ -318,6 +319,7 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
       setPhase("ready");
       setWordScores([]);
       setFeedbackText("");
+      setShowPinyin(false);
       setExpression("neutral");
       setDialogue("Skipped! Ready for the next group?");
     }
@@ -335,6 +337,7 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
       setPhase("ready");
       setWordScores([]);
       setFeedbackText("");
+      setShowPinyin(false);
       setExpression("neutral");
       setDialogue("Ready for the next group? Listen first!");
     }
@@ -496,14 +499,29 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
         <div className="flex-1 lg:w-[70%]">
           <Card className="h-full">
             <CardContent className="flex flex-col items-center justify-center gap-6 py-8">
-              {/* 10-word grid display */}
+              {/* Show Pinyin toggle */}
+              <div className="flex items-center gap-2">
+                <Button
+                  variant={showPinyin ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setShowPinyin(!showPinyin)}
+                >
+                  {showPinyin ? "Hide Pinyin" : "Show Pinyin"}
+                </Button>
+              </div>
+
+              {/* 5-word grid display */}
               <div className="grid grid-cols-5 gap-3 w-full max-w-4xl">
                 {currentWords.map((word, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center justify-center rounded-lg border-2 border-muted p-4"
-                  >
-                    <p className="text-4xl font-bold">{word}</p>
+                  <div key={idx} className="space-y-1">
+                    <div className="flex items-center justify-center rounded-lg border-2 border-muted p-4">
+                      <p className="text-4xl font-bold">{word}</p>
+                    </div>
+                    {showPinyin && (
+                      <p className="text-center text-sm text-muted-foreground italic">
+                        {lookupPinyinDisplay(word) ?? "—"}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>

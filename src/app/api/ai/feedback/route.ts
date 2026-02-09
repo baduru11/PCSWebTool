@@ -9,13 +9,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  let body: Record<string, unknown> | undefined;
   try {
-    const body = await request.json();
-    const feedback = await generateFeedback(body);
+    body = await request.json();
+    const feedback = await generateFeedback(body as Parameters<typeof generateFeedback>[0]);
 
     return NextResponse.json({ feedback });
   } catch (error) {
     console.error("AI feedback error:", error);
-    return NextResponse.json({ error: "Feedback generation failed" }, { status: 500 });
+    const fallback = body?.isCorrect
+      ? "做得好！继续加油！ Nice work, keep it up!"
+      : "再试一次吧！Practice makes perfect!";
+    return NextResponse.json({ feedback: fallback, fallback: true });
   }
 }

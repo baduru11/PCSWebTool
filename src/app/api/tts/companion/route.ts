@@ -23,6 +23,13 @@ export async function POST(request: NextRequest) {
 
     const audioBuffer = await synthesizeCompanion({ voiceId, text, expression });
 
+    if (!audioBuffer) {
+      return NextResponse.json(
+        { error: "Companion TTS temporarily unavailable", unavailable: true },
+        { status: 503 }
+      );
+    }
+
     return new NextResponse(new Uint8Array(audioBuffer), {
       headers: {
         "Content-Type": "audio/wav",
@@ -31,6 +38,9 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Companion TTS error:", error);
-    return NextResponse.json({ error: "Companion TTS failed" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Companion TTS temporarily unavailable", unavailable: true },
+      { status: 503 }
+    );
   }
 }

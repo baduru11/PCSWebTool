@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { synthesizeAcademic } from "@/lib/voice/client";
+import { synthesizeAcademic, synthesizeWordGroup } from "@/lib/voice/client";
 
 // In-memory cache for consistent pronunciation
 // Key: `${voiceId}:${text}`, Value: Buffer
@@ -14,28 +14,46 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const { voiceId, text } = await request.json();
+    const { voiceId, text, words, pauseMs } = await request.json();
 
-    if (!voiceId || !text) {
-      return NextResponse.json({ error: "Missing voiceId or text" }, { status: 400 });
+    if (!voiceId || (!text && !words)) {
+      return NextResponse.json({ error: "Missing voiceId or text/words" }, { status: 400 });
     }
 
-    // Create cache key from voiceId and text
-    const cacheKey = `${voiceId}:${text}`;
+    let cacheKey: string;
+    let audioBuffer: Buffer | undefined;
 
-    // Check cache first
-    let audioBuffer = audioCache.get(cacheKey);
+    if (words && Array.isArray(words)) {
+      // Multi-word group mode — concatenate individual TTS with silence
+      const pause = pauseMs ?? 750;
+      cacheKey = `group:${voiceId}:${words.join(",")}:${pause}`;
+      audioBuffer = audioCache.get(cacheKey);
 
-    if (!audioBuffer) {
-      // Generate and cache if not found
-      audioBuffer = await synthesizeAcademic({ voiceId, text });
-      audioCache.set(cacheKey, audioBuffer);
+      if (!audioBuffer) {
+        audioBuffer = await synthesizeWordGroup({ voiceId, words, pauseMs: pause });
+        audioCache.set(cacheKey, audioBuffer);
 
-      // Limit cache size to 500 entries (prevent memory issues)
-      if (audioCache.size > 500) {
-        const firstKey = audioCache.keys().next().value;
-        if (firstKey !== undefined) {
-          audioCache.delete(firstKey);
+        if (audioCache.size > 500) {
+          const firstKey = audioCache.keys().next().value;
+          if (firstKey !== undefined) {
+            audioCache.delete(firstKey);
+          }
+        }
+      }
+    } else {
+      // Single text mode (existing behavior)
+      cacheKey = `${voiceId}:${text}`;
+      audioBuffer = audioCache.get(cacheKey);
+
+      if (!audioBuffer) {
+        audioBuffer = await synthesizeAcademic({ voiceId, text });
+        audioCache.set(cacheKey, audioBuffer);
+
+        if (audioCache.size > 500) {
+          const firstKey = audioCache.keys().next().value;
+          if (firstKey !== undefined) {
+            audioCache.delete(firstKey);
+          }
         }
       }
     }
