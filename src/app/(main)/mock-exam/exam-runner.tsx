@@ -488,7 +488,7 @@ function PronunciationComponent({ items, timeLimitSeconds, componentLabel, onCom
     setPhase("assessing");
     try {
       const formData = new FormData();
-      formData.append("audio", blob, "recording.webm");
+      formData.append("audio", blob, "recording.wav");
       formData.append("referenceText", items[currentIndex]);
 
       const response = await fetch("/api/speech/assess", {
@@ -831,7 +831,7 @@ function PassageComponent({ passage, timeLimitSeconds, onComplete }: PassageComp
     setPhase("assessing");
     try {
       const formData = new FormData();
-      formData.append("audio", blob, "recording.webm");
+      formData.append("audio", blob, "recording.wav");
       formData.append("referenceText", passage.content);
 
       const response = await fetch("/api/speech/assess", {
@@ -986,7 +986,7 @@ function SpeakingComponent({ topics, timeLimitSeconds, onComplete }: SpeakingCom
     setPhase("assessing");
     try {
       const formData = new FormData();
-      formData.append("audio", blob, "recording.webm");
+      formData.append("audio", blob, "recording.wav");
       formData.append("referenceText", selectedTopic);
 
       const response = await fetch("/api/speech/assess", {

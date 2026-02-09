@@ -64,16 +64,67 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
   const [analysis, setAnalysis] = useState<SpeakingAnalysis | null>(null);
   const [totalXPEarned, setTotalXPEarned] = useState(0);
 
+  const [isPlayingCompanion, setIsPlayingCompanion] = useState(false);
+
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  const hasPlayedGreeting = useRef(false);
 
   // Pick 6 random topics on mount
   useEffect(() => {
     const shuffled = [...topics].sort(() => Math.random() - 0.5);
     setDisplayTopics(shuffled.slice(0, 6));
   }, [topics]);
+
+  const playCompanionVoice = useCallback(async (text: string, companionExpression: ExpressionName) => {
+    if (isPlayingCompanion) return;
+    setIsPlayingCompanion(true);
+    try {
+      const response = await fetch("/api/tts/companion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          voiceId: character.voiceId,
+          text,
+          expression: companionExpression,
+        }),
+      });
+      if (response.ok) {
+        const audioBlob = await response.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        audio.onended = () => {
+          URL.revokeObjectURL(audioUrl);
+          setIsPlayingCompanion(false);
+        };
+        audio.onerror = () => {
+          URL.revokeObjectURL(audioUrl);
+          setIsPlayingCompanion(false);
+        };
+        await audio.play();
+      } else {
+        setIsPlayingCompanion(false);
+      }
+    } catch {
+      setIsPlayingCompanion(false);
+    }
+  }, [character.voiceId, isPlayingCompanion]);
+
+  // Greeting on mount
+  useEffect(() => {
+    if (!hasPlayedGreeting.current) {
+      hasPlayedGreeting.current = true;
+      const id = setTimeout(() => {
+        playCompanionVoice(
+          "Choose a topic to speak about! You'll have 3 minutes.",
+          "neutral"
+        );
+      }, 300);
+      return () => clearTimeout(id);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Timer logic
   useEffect(() => {
@@ -184,7 +235,7 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
     try {
       // Send audio to speech assessment API
       const formData = new FormData();
-      formData.append("audio", audioBlob, "recording.webm");
+      formData.append("audio", audioBlob, "recording.wav");
       formData.append("referenceText", selectedTopic ?? "");
 
       const assessResponse = await fetch("/api/speech/assess", {
@@ -210,6 +261,7 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
       // Get detailed AI analysis
       setPhase("feedback");
 
+      let spokenFeedback = "";
       try {
         const feedbackResponse = await fetch("/api/ai/feedback", {
           method: "POST",
@@ -226,7 +278,8 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
 
         if (feedbackResponse.ok) {
           const feedbackData = await feedbackResponse.json();
-          setDialogue(feedbackData.feedback);
+          spokenFeedback = feedbackData.feedback;
+          setDialogue(spokenFeedback);
 
           setAnalysis({
             pronunciationScore,
@@ -245,7 +298,7 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
             structureCoherence: spokenTime >= 120
               ? "Good structure and adequate speaking time."
               : "Try to speak for the full 3 minutes using the template.",
-            overallFeedback: feedbackData.feedback,
+            overallFeedback: spokenFeedback,
           });
         } else {
           setDefaultAnalysis(pronunciationScore, spokenTime);
@@ -254,13 +307,12 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
         setDefaultAnalysis(pronunciationScore, spokenTime);
       }
 
-      // Set expression based on score
-      if (pronunciationScore >= 90) {
-        setExpression("excited");
-      } else if (pronunciationScore >= 60) {
-        setExpression("happy");
-      } else {
-        setExpression("encouraging");
+      // Set expression based on score and voice the feedback
+      const feedbackExpression: ExpressionName = pronunciationScore >= 90 ? "excited" : pronunciationScore >= 60 ? "happy" : "encouraging";
+      setExpression(feedbackExpression);
+
+      if (spokenFeedback) {
+        playCompanionVoice(spokenFeedback, feedbackExpression);
       }
     } catch {
       setPhase("feedback");
@@ -268,7 +320,7 @@ export function SpeakingSession({ topics, character }: SpeakingSessionProps) {
       setDialogue("Something went wrong with the assessment. Let's try again!");
       setAnalysis(null);
     }
-  }, [selectedTopic, character.personalityPrompt, timeRemaining]);
+  }, [selectedTopic, character.personalityPrompt, timeRemaining, playCompanionVoice]);
 
   // Set default analysis when AI feedback fails
   function setDefaultAnalysis(score: number, spokenTime: number) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { CharacterDisplay } from "@/components/character/character-display";
 import { DialogueBox } from "@/components/character/dialogue-box";
 import { AudioRecorder } from "@/components/practice/audio-recorder";
@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
+import { formatWordsWithPauses } from "@/lib/voice/client";
 import type { ExpressionName } from "@/types/character";
 import type { QuestionResult } from "@/types/practice";
 
@@ -23,6 +24,17 @@ interface PracticeSessionProps {
 }
 
 type SessionPhase = "ready" | "listening" | "recording" | "assessing" | "feedback" | "complete";
+
+interface WordScore {
+  word: string;
+  score: number | null;
+}
+
+interface GroupResult {
+  words: string[];
+  wordScores: WordScore[];
+  groupXP: number;
+}
 
 // Detect tricky phonetic elements in multisyllabic words
 function detectTrickyElements(word: string): string[] {
@@ -55,38 +67,127 @@ function detectTrickyElements(word: string): string[] {
 }
 
 export function PracticeSession({ questions, character }: PracticeSessionProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [wordGroups, setWordGroups] = useState<string[][]>([]);
+  const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
   const [phase, setPhase] = useState<SessionPhase>("ready");
   const [expression, setExpression] = useState<ExpressionName>("neutral");
   const [dialogue, setDialogue] = useState(`Let's practice multisyllabic words! Pay attention to tone changes and natural flow.`);
-  const [score, setScore] = useState<number | null>(null);
+  const [wordScores, setWordScores] = useState<WordScore[]>([]);
   const [streak, setStreak] = useState(0);
   const [totalXPEarned, setTotalXPEarned] = useState(0);
-  const [results, setResults] = useState<QuestionResult[]>([]);
+  const [groupResults, setGroupResults] = useState<GroupResult[]>([]);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
-  const [feedbackText, setFeedbackText] = useState("");
+  const [isPlayingCompanion, setIsPlayingCompanion] = useState(false);
+  const [, setFeedbackText] = useState("");
   const [showPinyin, setShowPinyin] = useState(false);
+  const hasPlayedGreeting = useRef(false);
 
-  const currentQuestion = questions[currentIndex];
-  const progressPercent = questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0;
+  // Initialize word groups (shuffle questions into groups of 5)
+  useEffect(() => {
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    const groups: string[][] = [];
+    for (let i = 0; i < shuffled.length; i += 5) {
+      groups.push(shuffled.slice(i, i + 5));
+    }
+    setWordGroups(groups);
+  }, [questions]);
 
-  // Detect tricky elements for the current word
-  const trickyElements = useMemo(() => detectTrickyElements(currentQuestion), [currentQuestion]);
+  const currentWords = wordGroups[currentGroupIndex] || [];
+  const progressPercent = wordGroups.length > 0 ? Math.round((currentGroupIndex / wordGroups.length) * 100) : 0;
+
+  // Detect tricky elements for all current words
+  const allTrickyElements = useMemo(() => {
+    const elementMap = new Map<string, string[]>();
+    currentWords.forEach(word => {
+      const elements = detectTrickyElements(word);
+      if (elements.length > 0) {
+        elementMap.set(word, elements);
+      }
+    });
+    return elementMap;
+  }, [currentWords]);
+
+  const speakWithBrowserTTS = useCallback((text: string): Promise<void> => {
+    return new Promise((resolve) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "zh-CN";
+      utterance.rate = 0.9;
+      utterance.onend = () => resolve();
+      utterance.onerror = () => resolve();
+      window.speechSynthesis.speak(utterance);
+    });
+  }, []);
+
+  const playCompanionVoice = useCallback(async (text: string, companionExpression: ExpressionName) => {
+    if (isPlayingCompanion || isPlayingAudio) return;
+    setIsPlayingCompanion(true);
+    try {
+      const response = await fetch("/api/tts/companion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          voiceId: character.voiceId,
+          text,
+          expression: companionExpression,
+        }),
+      });
+      if (response.ok) {
+        const audioBlob = await response.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        audio.onended = () => {
+          URL.revokeObjectURL(audioUrl);
+          setIsPlayingCompanion(false);
+        };
+        audio.onerror = () => {
+          URL.revokeObjectURL(audioUrl);
+          setIsPlayingCompanion(false);
+        };
+        await audio.play();
+      } else {
+        setIsPlayingCompanion(false);
+      }
+    } catch {
+      setIsPlayingCompanion(false);
+    }
+  }, [character.voiceId, isPlayingCompanion, isPlayingAudio]);
+
+  // Greeting on mount
+  useEffect(() => {
+    if (!hasPlayedGreeting.current) {
+      hasPlayedGreeting.current = true;
+      const id = setTimeout(() => {
+        playCompanionVoice(
+          "Let's practice multisyllabic words! Pay attention to tone changes and natural flow.",
+          "neutral"
+        );
+      }, 300);
+      return () => clearTimeout(id);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const playCharacterVoice = useCallback(async () => {
-    if (isPlayingAudio) return;
+    if (isPlayingAudio || currentWords.length === 0) return;
     setIsPlayingAudio(true);
     setPhase("listening");
     setExpression("happy");
-    setDialogue(`Listen carefully: "${currentQuestion}"`);
+    setDialogue(`Listen carefully to all 5 words...`);
+
+    const onFinished = () => {
+      setIsPlayingAudio(false);
+      setPhase("ready");
+      setExpression("encouraging");
+      setDialogue("Now it's your turn! Try to say all 5 words naturally.");
+    };
 
     try {
+      const formattedText = formatWordsWithPauses(currentWords);
       const response = await fetch("/api/tts/speak", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           voiceId: character.voiceId,
-          text: currentQuestion,
+          text: formattedText,
         }),
       });
 
@@ -96,75 +197,80 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
         const audio = new Audio(audioUrl);
         audio.onended = () => {
           URL.revokeObjectURL(audioUrl);
-          setIsPlayingAudio(false);
-          setPhase("ready");
-          setExpression("encouraging");
-          setDialogue("Now it's your turn! Try to say the word naturally.");
+          onFinished();
         };
-        audio.onerror = () => {
+        audio.onerror = async () => {
           URL.revokeObjectURL(audioUrl);
-          setIsPlayingAudio(false);
-          setPhase("ready");
-          setExpression("encouraging");
-          setDialogue("Audio unavailable, but give it a try anyway!");
+          await speakWithBrowserTTS(currentWords.join("，"));
+          onFinished();
         };
         await audio.play();
       } else {
-        setIsPlayingAudio(false);
-        setPhase("ready");
-        setExpression("neutral");
-        setDialogue("Could not load audio. Try pronouncing it on your own!");
+        await speakWithBrowserTTS(currentWords.join("，"));
+        onFinished();
       }
     } catch {
-      setIsPlayingAudio(false);
-      setPhase("ready");
-      setExpression("neutral");
-      setDialogue("Audio service unavailable. Try pronouncing it!");
+      try {
+        await speakWithBrowserTTS(currentWords.join("，"));
+      } catch { /* ignore */ }
+      onFinished();
     }
-  }, [currentQuestion, character.voiceId, isPlayingAudio]);
+  }, [currentWords, character.voiceId, isPlayingAudio, speakWithBrowserTTS]);
 
   const handleRecordingComplete = useCallback(async (audioBlob: Blob) => {
     setPhase("assessing");
     setExpression("thinking");
-    setDialogue("Let me listen to your pronunciation...");
+    setDialogue("Let me check all 5 words...");
 
     try {
-      // Send audio to speech assessment API
+      // Send all 5 words as reference text (space-separated for Azure)
+      const referenceText = currentWords.join(" ");
+
       const formData = new FormData();
-      formData.append("audio", audioBlob, "recording.webm");
-      formData.append("referenceText", currentQuestion);
+      formData.append("audio", audioBlob, "recording.wav");
+      formData.append("referenceText", referenceText);
 
       const assessResponse = await fetch("/api/speech/assess", {
         method: "POST",
         body: formData,
       });
 
-      let pronunciationScore = 0;
-      if (assessResponse.ok) {
-        const assessResult = await assessResponse.json();
-        pronunciationScore = assessResult.pronunciationScore ?? 0;
-      }
+      const assessResult = await assessResponse.json();
 
-      setScore(pronunciationScore);
+      // Extract per-word scores from Azure's word-level breakdown
+      const scores = currentWords.map((word, idx) => {
+        const wordData = assessResult.words?.[idx];
+        return {
+          word,
+          score: wordData?.accuracyScore ?? null,
+        };
+      });
+      setWordScores(scores);
 
-      // Determine result quality
-      const isGood = pronunciationScore >= 60;
-      const isPerfect = pronunciationScore >= 90;
+      // Calculate group average for XP
+      const validScores = scores
+        .map(w => w.score)
+        .filter((s): s is number => s !== null);
+      const avgScore = validScores.length > 0
+        ? Math.round(validScores.reduce((a, b) => a + b, 0) / validScores.length)
+        : 0;
 
-      // Calculate XP
+      // Calculate XP based on average
+      const isGood = avgScore >= 60;
       const newStreak = isGood ? streak + 1 : 0;
       setStreak(newStreak);
 
       const xpResult = calculateXP({
-        pronunciationScore,
+        pronunciationScore: avgScore,
         isCorrect: isGood,
         currentStreak: newStreak,
       });
       setTotalXPEarned((prev) => prev + xpResult.totalXP);
 
-      // Get AI character feedback
+      // Get AI feedback for the group
       setPhase("feedback");
 
+      let spokenFeedback = "";
       try {
         const feedbackResponse = await fetch("/api/ai/feedback", {
           method: "POST",
@@ -172,104 +278,130 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
           body: JSON.stringify({
             characterPrompt: character.personalityPrompt,
             component: 2,
-            questionText: currentQuestion,
-            userAnswer: currentQuestion,
-            pronunciationScore,
+            questionText: currentWords.join(", "),
+            userAnswer: currentWords.join(" "),
+            pronunciationScore: avgScore,
             isCorrect: isGood,
           }),
         });
 
         if (feedbackResponse.ok) {
           const feedbackData = await feedbackResponse.json();
-          setFeedbackText(feedbackData.feedback);
-          setDialogue(feedbackData.feedback);
+          spokenFeedback = feedbackData.feedback;
         } else {
-          const fallback = isPerfect
-            ? `Excellent! Your pronunciation of "${currentQuestion}" was perfect! Great tones and flow!`
-            : isGood
-            ? `Good job on "${currentQuestion}"! Keep practicing the tone transitions.`
-            : `"${currentQuestion}" needs more practice. Pay attention to the tone changes between syllables.`;
-          setFeedbackText(fallback);
-          setDialogue(fallback);
+          spokenFeedback = avgScore >= 90
+            ? "Excellent! All words were perfect! Great tone transitions!"
+            : avgScore >= 60
+            ? "Good work! Most words were clear. Keep practicing the tone flow."
+            : "Keep practicing. Pay attention to the tone changes between syllables.";
         }
       } catch {
-        const fallback = isPerfect
-          ? `Excellent! Score: ${pronunciationScore}/100!`
-          : isGood
-          ? `Not bad! Score: ${pronunciationScore}/100. Keep it up!`
-          : `Score: ${pronunciationScore}/100. Let's try to improve!`;
-        setFeedbackText(fallback);
-        setDialogue(fallback);
+        spokenFeedback = avgScore >= 90
+          ? "Excellent! All words were perfect!"
+          : avgScore >= 60
+          ? "Good work! Most words were clear."
+          : "Keep practicing the tone transitions.";
       }
 
-      // Set expression based on score
-      if (isPerfect) {
-        setExpression("excited");
-      } else if (isGood) {
-        setExpression("happy");
-      } else {
-        setExpression("encouraging");
+      setFeedbackText(spokenFeedback);
+      setDialogue(spokenFeedback);
+
+      // Determine expression based on avg score
+      const feedbackExpression: ExpressionName =
+        avgScore >= 90 ? "excited" : avgScore >= 60 ? "happy" : "encouraging";
+      setExpression(feedbackExpression);
+
+      if (spokenFeedback) {
+        playCompanionVoice(spokenFeedback, feedbackExpression);
       }
 
-      // Store result
-      setResults((prev) => [
+      // Store group result
+      setGroupResults(prev => [
         ...prev,
         {
-          questionText: currentQuestion,
-          userAnswer: currentQuestion,
-          isCorrect: isGood,
-          pronunciationScore,
-          feedback: feedbackText || "",
-          xpEarned: xpResult.totalXP,
+          words: currentWords,
+          wordScores: scores,
+          groupXP: xpResult.totalXP,
         },
       ]);
     } catch {
       setPhase("feedback");
       setExpression("surprised");
       setDialogue("Hmm, something went wrong with the assessment. Let's try the next one!");
-      setScore(null);
 
-      setResults((prev) => [
+      setGroupResults(prev => [
         ...prev,
         {
-          questionText: currentQuestion,
-          userAnswer: null,
-          isCorrect: false,
-          pronunciationScore: null,
-          feedback: "Assessment failed",
-          xpEarned: 0,
+          words: currentWords,
+          wordScores: currentWords.map(w => ({ word: w, score: null })),
+          groupXP: 0,
         },
       ]);
     }
-  }, [currentQuestion, character.personalityPrompt, streak, feedbackText]);
+  }, [currentWords, character.personalityPrompt, streak, playCompanionVoice]);
 
-  const handleNext = useCallback(() => {
-    if (currentIndex + 1 >= questions.length) {
+  const handleSkip = useCallback(() => {
+    // Store empty result for skipped group
+    setGroupResults(prev => [
+      ...prev,
+      {
+        words: currentWords,
+        wordScores: currentWords.map(w => ({ word: w, score: null })),
+        groupXP: 0,
+      },
+    ]);
+
+    if (currentGroupIndex + 1 >= wordGroups.length) {
       setPhase("complete");
       setExpression("proud");
-      setDialogue("Amazing work! You've completed all the words. Let's see your results!");
+      setDialogue("Practice complete! Let's see your results!");
     } else {
-      setCurrentIndex((prev) => prev + 1);
+      setCurrentGroupIndex(prev => prev + 1);
       setPhase("ready");
-      setScore(null);
+      setWordScores([]);
       setFeedbackText("");
       setShowPinyin(false);
       setExpression("neutral");
-      setDialogue("Ready for the next word? Listen first, then try it yourself!");
+      setDialogue("Skipped! Ready for the next group?");
     }
-  }, [currentIndex, questions.length]);
+  }, [currentWords, currentGroupIndex, wordGroups.length]);
+
+  const handleNext = useCallback(() => {
+    if (currentGroupIndex + 1 >= wordGroups.length) {
+      setPhase("complete");
+      setExpression("proud");
+      const completionMsg = "Amazing! You completed all the groups!";
+      setDialogue(completionMsg);
+      playCompanionVoice(completionMsg, "proud");
+    } else {
+      setCurrentGroupIndex(prev => prev + 1);
+      setPhase("ready");
+      setWordScores([]);
+      setFeedbackText("");
+      setShowPinyin(false);
+      setExpression("neutral");
+      setDialogue("Ready for the next group? Listen first!");
+    }
+  }, [currentGroupIndex, wordGroups.length, playCompanionVoice]);
 
   // Completion screen
   if (phase === "complete") {
-    const totalQuestions = results.length;
-    const correctCount = results.filter((r) => r.isCorrect).length;
-    const averageScore =
-      totalQuestions > 0
-        ? Math.round(
-            results.reduce((sum, r) => sum + (r.pronunciationScore ?? 0), 0) / totalQuestions
-          )
-        : 0;
-    const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
+    const totalGroups = groupResults.length;
+    const totalWords = groupResults.reduce((sum, g) => sum + g.words.length, 0);
+
+    // Calculate average across all individual word scores
+    let allScores: number[] = [];
+    groupResults.forEach(g => {
+      g.wordScores.forEach(ws => {
+        if (ws.score !== null) allScores.push(ws.score);
+      });
+    });
+
+    const averageScore = allScores.length > 0
+      ? Math.round(allScores.reduce((a, b) => a + b, 0) / allScores.length)
+      : 0;
+    const correctCount = allScores.filter(s => s >= 60).length;
+    const accuracy = totalWords > 0 ? Math.round((correctCount / totalWords) * 100) : 0;
 
     return (
       <div className="space-y-6">
@@ -291,7 +423,7 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
               <div className="text-center">
-                <p className="text-2xl font-bold">{totalQuestions}</p>
+                <p className="text-2xl font-bold">{totalWords}</p>
                 <p className="text-xs text-muted-foreground">Words</p>
               </div>
               <div className="text-center">
@@ -313,33 +445,42 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
               {accuracy}% accuracy
             </p>
 
-            {/* Individual results */}
+            {/* Results by group */}
             <div className="space-y-2 max-h-64 overflow-y-auto">
-              {results.map((result, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between rounded-md border p-2"
-                >
-                  <span className="text-lg font-medium">{result.questionText}</span>
-                  <div className="flex items-center gap-2">
-                    {result.pronunciationScore !== null ? (
-                      <Badge
-                        variant={
-                          result.pronunciationScore >= 90
-                            ? "default"
-                            : result.pronunciationScore >= 60
-                            ? "secondary"
-                            : "destructive"
-                        }
-                      >
-                        {result.pronunciationScore}
+              {groupResults.map((result, groupIdx) => (
+                <div key={groupIdx} className="rounded-md border p-3 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-medium">Group {groupIdx + 1}</span>
+                    <div className="flex items-center gap-2">
+                      <Badge variant="outline">
+                        Avg: {Math.round(
+                          result.wordScores
+                            .map(w => w.score ?? 0)
+                            .reduce((a, b) => a + b, 0) / result.wordScores.length
+                        )}
                       </Badge>
-                    ) : (
-                      <Badge variant="outline">N/A</Badge>
-                    )}
-                    <span className="text-xs text-muted-foreground">
-                      +{result.xpEarned} XP
-                    </span>
+                      <span className="text-xs text-muted-foreground">
+                        +{result.groupXP} XP
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Per-word scores */}
+                  <div className="flex gap-2 text-sm flex-wrap">
+                    {result.wordScores.map((ws, idx) => (
+                      <div key={idx} className="flex items-center gap-1">
+                        <span>{ws.word}</span>
+                        <Badge
+                          variant={
+                            ws.score === null ? "outline" :
+                            ws.score >= 90 ? "default" :
+                            ws.score >= 60 ? "secondary" : "destructive"
+                          }
+                        >
+                          {ws.score ?? "N/A"}
+                        </Badge>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -366,7 +507,7 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
       <div className="space-y-1">
         <div className="flex justify-between text-sm text-muted-foreground">
           <span>
-            Word {currentIndex + 1} of {questions.length}
+            Group {currentGroupIndex + 1} of {wordGroups.length}
           </span>
           <span className="flex items-center gap-2">
             {streak > 0 && (
@@ -410,50 +551,71 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
                 </Button>
               </div>
 
-              {/* Large word display */}
-              <div className="text-center">
-                <p className="text-6xl font-bold leading-tight sm:text-7xl">
-                  {currentQuestion}
-                </p>
-                {showPinyin && (
-                  <p className="mt-2 text-lg text-muted-foreground italic">
-                    (Pinyin will appear when available)
-                  </p>
-                )}
+              {/* 5-word grid display */}
+              <div className="grid grid-cols-5 gap-4 w-full max-w-4xl">
+                {currentWords.map((word, idx) => (
+                  <div key={idx} className="space-y-2">
+                    <div className="flex items-center justify-center rounded-lg border-2 border-muted p-6">
+                      <p className="text-4xl font-bold">{word}</p>
+                    </div>
+                    {showPinyin && (
+                      <p className="text-center text-sm text-muted-foreground italic">
+                        (pinyin)
+                      </p>
+                    )}
+                    {/* Tricky element badges per word */}
+                    {allTrickyElements.has(word) && (
+                      <div className="flex flex-wrap gap-1 justify-center">
+                        {allTrickyElements.get(word)!.map((element, elemIdx) => (
+                          <Badge key={elemIdx} variant="secondary" className="text-xs">
+                            {element.split(" ")[0]}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
 
-              {/* Tricky element highlights */}
-              {trickyElements.length > 0 && (
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {trickyElements.map((element, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-xs">
-                      {element}
-                    </Badge>
-                  ))}
-                </div>
-              )}
-
               {/* Score display (after assessment) */}
-              {score !== null && phase === "feedback" && (
-                <div className="text-center space-y-1">
-                  <p
-                    className={`text-4xl font-bold ${
-                      score >= 90
-                        ? "text-green-600"
-                        : score >= 60
-                        ? "text-yellow-600"
-                        : "text-red-600"
-                    }`}
-                  >
-                    {score}/100
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {score >= 90
-                      ? "Excellent!"
-                      : score >= 60
-                      ? "Good effort!"
-                      : "Needs improvement"}
-                  </p>
+              {wordScores.length > 0 && phase === "feedback" && (
+                <div className="space-y-4 w-full max-w-4xl">
+                  {/* Individual word scores */}
+                  <div className="grid grid-cols-5 gap-3">
+                    {wordScores.map((item, idx) => (
+                      <div key={idx} className="text-center space-y-2">
+                        <p className="text-3xl font-bold">{item.word}</p>
+                        {item.score !== null ? (
+                          <>
+                            <p className={`text-2xl font-bold ${
+                              item.score >= 90 ? "text-green-600" :
+                              item.score >= 60 ? "text-yellow-600" : "text-red-600"
+                            }`}>
+                              {item.score}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {item.score >= 90 ? "Perfect!" :
+                               item.score >= 60 ? "Good" : "Practice"}
+                            </p>
+                          </>
+                        ) : (
+                          <p className="text-sm text-muted-foreground">No score</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Average score */}
+                  <div className="text-center">
+                    <p className="text-lg text-muted-foreground">Group Average</p>
+                    <p className="text-4xl font-bold text-primary">
+                      {Math.round(
+                        wordScores
+                          .map(w => w.score ?? 0)
+                          .reduce((a, b) => a + b, 0) / wordScores.length
+                      )}/100
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -469,14 +631,24 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
               <div className="flex flex-col items-center gap-3">
                 {(phase === "ready" || phase === "listening") && (
                   <>
-                    <Button
-                      onClick={playCharacterVoice}
-                      disabled={isPlayingAudio}
-                      variant="outline"
-                      size="lg"
-                    >
-                      {isPlayingAudio ? "Playing..." : "Listen"}
-                    </Button>
+                    <div className="flex items-center gap-3">
+                      <Button
+                        onClick={playCharacterVoice}
+                        disabled={isPlayingAudio}
+                        variant="outline"
+                        size="lg"
+                      >
+                        {isPlayingAudio ? "Playing..." : "Listen"}
+                      </Button>
+                      <Button
+                        onClick={handleSkip}
+                        disabled={isPlayingAudio}
+                        variant="ghost"
+                        size="lg"
+                      >
+                        Skip
+                      </Button>
+                    </div>
                     <AudioRecorder
                       onRecordingComplete={handleRecordingComplete}
                       disabled={isPlayingAudio}
@@ -486,7 +658,7 @@ export function PracticeSession({ questions, character }: PracticeSessionProps) 
 
                 {phase === "feedback" && (
                   <Button onClick={handleNext} size="lg">
-                    {currentIndex + 1 >= questions.length ? "See Results" : "Next Word"}
+                    {currentGroupIndex + 1 >= wordGroups.length ? "See Results" : "Next Group"}
                   </Button>
                 )}
               </div>

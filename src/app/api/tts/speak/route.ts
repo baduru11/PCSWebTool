@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { synthesizeSpeech } from "@/lib/voice/client";
+import { synthesizeAcademic } from "@/lib/voice/client";
+
+// In-memory cache for consistent pronunciation
+// Key: `${voiceId}:${text}`, Value: Buffer
+const audioCache = new Map<string, Buffer>();
 
 export async function POST(request: NextRequest) {
   const supabase = await createClient();
@@ -16,11 +20,29 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing voiceId or text" }, { status: 400 });
     }
 
-    const audioBuffer = await synthesizeSpeech({ voiceId, text });
+    // Create cache key from voiceId and text
+    const cacheKey = `${voiceId}:${text}`;
+
+    // Check cache first
+    let audioBuffer = audioCache.get(cacheKey);
+
+    if (!audioBuffer) {
+      // Generate and cache if not found
+      audioBuffer = await synthesizeAcademic({ voiceId, text });
+      audioCache.set(cacheKey, audioBuffer);
+
+      // Limit cache size to 500 entries (prevent memory issues)
+      if (audioCache.size > 500) {
+        const firstKey = audioCache.keys().next().value;
+        if (firstKey !== undefined) {
+          audioCache.delete(firstKey);
+        }
+      }
+    }
 
     return new NextResponse(new Uint8Array(audioBuffer), {
       headers: {
-        "Content-Type": "audio/mpeg",
+        "Content-Type": "audio/wav",
         "Cache-Control": "public, max-age=3600",
       },
     });

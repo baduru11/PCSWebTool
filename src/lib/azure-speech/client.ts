@@ -19,10 +19,10 @@ export async function assessPronunciation(
   language: string = "zh-CN"
 ): Promise<PronunciationAssessmentResult> {
   const pronunciationAssessmentConfig = {
-    referenceText,
-    gradingSystem: "HundredMark",
-    granularity: "Word",
-    dimension: "Comprehensive",
+    ReferenceText: referenceText,
+    GradingSystem: "HundredMark",
+    Granularity: "Word",
+    Dimension: "Comprehensive",
   };
 
   const encodedConfig = Buffer.from(
@@ -30,13 +30,13 @@ export async function assessPronunciation(
   ).toString("base64");
 
   const response = await fetch(
-    `https://${AZURE_SPEECH_REGION}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=${language}`,
+    `https://${AZURE_SPEECH_REGION}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=${language}&format=detailed`,
     {
       method: "POST",
       headers: {
         "Ocp-Apim-Subscription-Key": AZURE_SPEECH_KEY,
         "Pronunciation-Assessment": encodedConfig,
-        "Content-Type": "audio/wav",
+        "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000",
         Accept: "application/json",
       },
       body: new Uint8Array(audioBuffer),
@@ -44,25 +44,36 @@ export async function assessPronunciation(
   );
 
   if (!response.ok) {
-    throw new Error(`Azure Speech API error: ${response.status}`);
+    const errorBody = await response.text();
+    console.error("Azure Speech API error body:", errorBody);
+    throw new Error(`Azure Speech API error: ${response.status} - ${errorBody}`);
   }
 
   const data = await response.json();
   const nbest = data.NBest?.[0];
 
-  if (!nbest?.PronunciationAssessment) {
+  if (!nbest) {
+    console.error("Azure response missing NBest array:", JSON.stringify(data));
+    throw new Error("No pronunciation assessment in response");
+  }
+
+  // Check if scores are in PronunciationAssessment object or directly on NBest
+  const assessment = nbest.PronunciationAssessment || nbest;
+
+  if (!assessment.AccuracyScore && assessment.AccuracyScore !== 0) {
+    console.error("Azure response missing pronunciation scores:", JSON.stringify(data));
     throw new Error("No pronunciation assessment in response");
   }
 
   return {
-    accuracyScore: nbest.PronunciationAssessment.AccuracyScore,
-    fluencyScore: nbest.PronunciationAssessment.FluencyScore,
-    completenessScore: nbest.PronunciationAssessment.CompletenessScore,
-    pronunciationScore: nbest.PronunciationAssessment.PronScore,
+    accuracyScore: assessment.AccuracyScore,
+    fluencyScore: assessment.FluencyScore,
+    completenessScore: assessment.CompletenessScore,
+    pronunciationScore: assessment.PronScore,
     words: (nbest.Words || []).map((w: Record<string, unknown>) => ({
-      word: w.Word,
-      accuracyScore: (w.PronunciationAssessment as Record<string, number>)?.AccuracyScore ?? 0,
-      errorType: (w.PronunciationAssessment as Record<string, string>)?.ErrorType ?? "None",
+      word: w.Word as string,
+      accuracyScore: (w.AccuracyScore as number) ?? 0,
+      errorType: (w.ErrorType as string) ?? "None",
     })),
   };
 }

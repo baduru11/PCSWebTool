@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { CharacterDisplay } from "@/components/character/character-display";
 import { DialogueBox } from "@/components/character/dialogue-box";
 import { AudioRecorder } from "@/components/practice/audio-recorder";
@@ -54,16 +54,93 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
   const [dialogue, setDialogue] = useState("Pick a passage to read! I'll help you practice.");
   const [showPinyin, setShowPinyin] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [isPlayingCompanion, setIsPlayingCompanion] = useState(false);
   const [playingSentenceIndex, setPlayingSentenceIndex] = useState<number | null>(null);
   const [overallScore, setOverallScore] = useState<number | null>(null);
   const [sentenceScores, setSentenceScores] = useState<SentenceScore[]>([]);
   const [totalXPEarned, setTotalXPEarned] = useState(0);
   const [feedbackText, setFeedbackText] = useState("");
+  const hasPlayedGreeting = useRef(false);
+
+  // Client-side audio cache: Map<text, audioUrl>
+  const audioCache = useRef(new Map<string, string>());
+  // Reference to current playing audio for stop functionality
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
 
   const sentences = useMemo(
     () => (selectedPassage ? splitIntoSentences(selectedPassage.content) : []),
     [selectedPassage]
   );
+
+  const speakWithBrowserTTS = useCallback((text: string): Promise<void> => {
+    return new Promise((resolve) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "zh-CN";
+      utterance.rate = 0.9;
+      utterance.onend = () => resolve();
+      utterance.onerror = () => resolve();
+      window.speechSynthesis.speak(utterance);
+    });
+  }, []);
+
+  const playCompanionVoice = useCallback(async (text: string, companionExpression: ExpressionName) => {
+    if (isPlayingCompanion || isPlayingAudio) return;
+    setIsPlayingCompanion(true);
+    try {
+      const response = await fetch("/api/tts/companion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          voiceId: character.voiceId,
+          text,
+          expression: companionExpression,
+        }),
+      });
+      if (response.ok) {
+        const audioBlob = await response.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        audio.onended = () => {
+          URL.revokeObjectURL(audioUrl);
+          setIsPlayingCompanion(false);
+        };
+        audio.onerror = () => {
+          URL.revokeObjectURL(audioUrl);
+          setIsPlayingCompanion(false);
+        };
+        await audio.play();
+      } else {
+        setIsPlayingCompanion(false);
+      }
+    } catch {
+      setIsPlayingCompanion(false);
+    }
+  }, [character.voiceId, isPlayingCompanion, isPlayingAudio]);
+
+  // Stop currently playing audio
+  const stopAudio = useCallback(() => {
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current.currentTime = 0;
+      currentAudioRef.current = null;
+    }
+    setIsPlayingAudio(false);
+    setPlayingSentenceIndex(null);
+  }, []);
+
+  // Greeting on mount
+  useEffect(() => {
+    if (!hasPlayedGreeting.current) {
+      hasPlayedGreeting.current = true;
+      const id = setTimeout(() => {
+        playCompanionVoice(
+          "Pick a passage to read! I'll help you practice.",
+          "neutral"
+        );
+      }, 300);
+      return () => clearTimeout(id);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Play the entire passage as a model reading
   const playModelReading = useCallback(async () => {
@@ -72,6 +149,13 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
     setPhase("listening-model");
     setExpression("happy");
     setDialogue("Listen carefully to how I read the passage...");
+
+    const onFinished = () => {
+      setIsPlayingAudio(false);
+      setPhase("ready");
+      setExpression("encouraging");
+      setDialogue("Now it's your turn! Read the passage aloud. Take your time and keep a natural pace.");
+    };
 
     try {
       const response = await fetch("/api/tts/speak", {
@@ -87,75 +171,111 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
         const audioBlob = await response.blob();
         const audioUrl = URL.createObjectURL(audioBlob);
         const audio = new Audio(audioUrl);
+        currentAudioRef.current = audio; // Store reference for stop button
         audio.onended = () => {
           URL.revokeObjectURL(audioUrl);
-          setIsPlayingAudio(false);
-          setPhase("ready");
-          setExpression("encouraging");
-          setDialogue("Now it's your turn! Read the passage aloud. Take your time and keep a natural pace.");
+          currentAudioRef.current = null;
+          onFinished();
         };
-        audio.onerror = () => {
+        audio.onerror = async () => {
           URL.revokeObjectURL(audioUrl);
-          setIsPlayingAudio(false);
-          setPhase("ready");
-          setExpression("encouraging");
-          setDialogue("Audio couldn't play, but go ahead and try reading it yourself!");
+          currentAudioRef.current = null;
+          await speakWithBrowserTTS(selectedPassage.content);
+          onFinished();
         };
         await audio.play();
       } else {
-        setIsPlayingAudio(false);
-        setPhase("ready");
-        setExpression("neutral");
-        setDialogue("Could not load the model reading. Try reading it on your own!");
+        await speakWithBrowserTTS(selectedPassage.content);
+        onFinished();
       }
     } catch {
-      setIsPlayingAudio(false);
-      setPhase("ready");
-      setExpression("neutral");
-      setDialogue("Audio service unavailable. Go ahead and read the passage!");
+      try {
+        await speakWithBrowserTTS(selectedPassage.content);
+      } catch { /* ignore */ }
+      onFinished();
     }
-  }, [selectedPassage, character.voiceId, isPlayingAudio]);
+  }, [selectedPassage, character.voiceId, isPlayingAudio, speakWithBrowserTTS]);
 
-  // Play a single sentence
+  // Play a single sentence (with client-side caching)
   const playSentence = useCallback(async (sentence: string, index: number) => {
     if (isPlayingAudio) return;
     setIsPlayingAudio(true);
     setPlayingSentenceIndex(index);
 
+    const onFinished = () => {
+      setIsPlayingAudio(false);
+      setPlayingSentenceIndex(null);
+    };
+
+    const sentenceText = sentence.trim();
+    const cacheKey = `${character.voiceId}:${sentenceText}`;
+
+    // Check client-side cache first
+    const cachedAudioUrl = audioCache.current.get(cacheKey);
+    if (cachedAudioUrl) {
+      // Play from cache - no network request!
+      const audio = new Audio(cachedAudioUrl);
+      currentAudioRef.current = audio; // Store reference for stop button
+      audio.onended = () => {
+        currentAudioRef.current = null;
+        onFinished();
+      };
+      audio.onerror = async () => {
+        currentAudioRef.current = null;
+        await speakWithBrowserTTS(sentenceText);
+        onFinished();
+      };
+      try {
+        await audio.play();
+      } catch {
+        currentAudioRef.current = null;
+        await speakWithBrowserTTS(sentenceText);
+        onFinished();
+      }
+      return;
+    }
+
+    // Not in cache - fetch from server
     try {
       const response = await fetch("/api/tts/speak", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           voiceId: character.voiceId,
-          text: sentence.trim(),
+          text: sentenceText,
         }),
       });
 
       if (response.ok) {
         const audioBlob = await response.blob();
         const audioUrl = URL.createObjectURL(audioBlob);
+
+        // Cache the audio URL for next time
+        audioCache.current.set(cacheKey, audioUrl);
+
         const audio = new Audio(audioUrl);
+        currentAudioRef.current = audio; // Store reference for stop button
         audio.onended = () => {
-          URL.revokeObjectURL(audioUrl);
-          setIsPlayingAudio(false);
-          setPlayingSentenceIndex(null);
+          currentAudioRef.current = null;
+          onFinished();
         };
-        audio.onerror = () => {
-          URL.revokeObjectURL(audioUrl);
-          setIsPlayingAudio(false);
-          setPlayingSentenceIndex(null);
+        audio.onerror = async () => {
+          currentAudioRef.current = null;
+          await speakWithBrowserTTS(sentenceText);
+          onFinished();
         };
         await audio.play();
       } else {
-        setIsPlayingAudio(false);
-        setPlayingSentenceIndex(null);
+        await speakWithBrowserTTS(sentenceText);
+        onFinished();
       }
     } catch {
-      setIsPlayingAudio(false);
-      setPlayingSentenceIndex(null);
+      try {
+        await speakWithBrowserTTS(sentenceText);
+      } catch { /* ignore */ }
+      onFinished();
     }
-  }, [character.voiceId, isPlayingAudio]);
+  }, [character.voiceId, isPlayingAudio, speakWithBrowserTTS]);
 
   // Handle recording completion
   const handleRecordingComplete = useCallback(async (audioBlob: Blob) => {
@@ -168,7 +288,7 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
     try {
       // Send audio to speech assessment API
       const formData = new FormData();
-      formData.append("audio", audioBlob, "recording.webm");
+      formData.append("audio", audioBlob, "recording.wav");
       formData.append("referenceText", selectedPassage.content);
 
       const assessResponse = await fetch("/api/speech/assess", {
@@ -229,6 +349,7 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
       // Get AI character feedback
       setPhase("feedback");
 
+      let spokenFeedback = "";
       try {
         const feedbackResponse = await fetch("/api/ai/feedback", {
           method: "POST",
@@ -245,34 +366,34 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
 
         if (feedbackResponse.ok) {
           const feedbackData = await feedbackResponse.json();
-          setFeedbackText(feedbackData.feedback);
-          setDialogue(feedbackData.feedback);
+          spokenFeedback = feedbackData.feedback;
+          setFeedbackText(spokenFeedback);
+          setDialogue(spokenFeedback);
         } else {
-          const fallback = isPerfect
+          spokenFeedback = isPerfect
             ? "Outstanding reading! Your pronunciation, pacing, and fluency were excellent!"
             : isGood
             ? "Good reading! Focus on maintaining a steady pace and clear tones throughout."
             : "Keep practicing! Pay attention to each character's tone and try to read more smoothly.";
-          setFeedbackText(fallback);
-          setDialogue(fallback);
+          setFeedbackText(spokenFeedback);
+          setDialogue(spokenFeedback);
         }
       } catch {
-        const fallback = isPerfect
+        spokenFeedback = isPerfect
           ? `Excellent! Score: ${pronunciationScore}/100!`
           : isGood
           ? `Good effort! Score: ${pronunciationScore}/100.`
           : `Score: ${pronunciationScore}/100. Keep practicing!`;
-        setFeedbackText(fallback);
-        setDialogue(fallback);
+        setFeedbackText(spokenFeedback);
+        setDialogue(spokenFeedback);
       }
 
-      // Set expression based on score
-      if (isPerfect) {
-        setExpression("excited");
-      } else if (isGood) {
-        setExpression("happy");
-      } else {
-        setExpression("encouraging");
+      // Set expression based on score and voice the feedback
+      const feedbackExpression: ExpressionName = isPerfect ? "excited" : isGood ? "happy" : "encouraging";
+      setExpression(feedbackExpression);
+
+      if (spokenFeedback) {
+        playCompanionVoice(spokenFeedback, feedbackExpression);
       }
     } catch {
       setPhase("feedback");
@@ -281,7 +402,18 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
       setOverallScore(null);
       setFeedbackText("Assessment failed");
     }
-  }, [selectedPassage, sentences, character.personalityPrompt]);
+  }, [selectedPassage, sentences, character.personalityPrompt, playCompanionVoice]);
+
+  // Skip the current passage without recording
+  const handleSkipPassage = useCallback(() => {
+    setPhase("feedback");
+    setOverallScore(null);
+    setSentenceScores([]);
+    setTotalXPEarned(0);
+    setFeedbackText("Passage skipped");
+    setExpression("neutral");
+    setDialogue("No problem! You can try another passage or come back to this one later.");
+  }, []);
 
   // Select a passage
   const handleSelectPassage = useCallback((passage: Passage) => {
@@ -477,20 +609,40 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
 
           {/* Action buttons */}
           <div className="flex flex-col gap-2">
-            <Button
-              onClick={playModelReading}
-              disabled={isPlayingAudio || phase === "assessing"}
-              variant="outline"
-              className="w-full"
-            >
-              {isPlayingAudio && phase === "listening-model" ? "Playing Model..." : "Listen to Model"}
-            </Button>
+            {isPlayingAudio ? (
+              <Button
+                onClick={stopAudio}
+                variant="destructive"
+                className="w-full"
+              >
+                ⏹ Stop Audio
+              </Button>
+            ) : (
+              <Button
+                onClick={playModelReading}
+                disabled={phase === "assessing"}
+                variant="outline"
+                className="w-full"
+              >
+                🔊 Listen to Model
+              </Button>
+            )}
 
             {(phase === "ready" || phase === "listening-model") && (
-              <AudioRecorder
-                onRecordingComplete={handleRecordingComplete}
-                disabled={isPlayingAudio}
-              />
+              <>
+                <AudioRecorder
+                  onRecordingComplete={handleRecordingComplete}
+                  disabled={isPlayingAudio}
+                />
+                <Button
+                  onClick={handleSkipPassage}
+                  disabled={isPlayingAudio}
+                  variant="ghost"
+                  className="w-full"
+                >
+                  Skip Passage
+                </Button>
+              </>
             )}
           </div>
         </div>
@@ -513,18 +665,40 @@ export function ReadingSession({ passages, character }: ReadingSessionProps) {
                 </div>
               </div>
 
+              {/* Click hint / Stop button */}
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                  </svg>
+                  <span>Click any sentence to hear it read aloud</span>
+                </div>
+                {isPlayingAudio && playingSentenceIndex !== null && (
+                  <Button
+                    onClick={stopAudio}
+                    variant="ghost"
+                    size="sm"
+                    className="text-destructive hover:text-destructive hover:bg-destructive/10"
+                  >
+                    ⏹ Stop
+                  </Button>
+                )}
+              </div>
+
               {/* Passage content with clickable sentences */}
               <div className="rounded-lg border bg-muted/30 p-6 leading-relaxed">
                 {sentences.map((sentence, index) => (
                   <span
                     key={index}
                     onClick={() => playSentence(sentence, index)}
-                    className={`cursor-pointer transition-colors rounded-sm px-0.5 ${
-                      playingSentenceIndex === index
-                        ? "bg-primary/20 text-primary"
-                        : "hover:bg-accent"
-                    }`}
-                    title="Click to hear this sentence"
+                    className={`
+                      cursor-pointer transition-all duration-200 rounded-md px-1 py-0.5
+                      ${playingSentenceIndex === index
+                        ? "bg-primary/30 text-primary font-medium shadow-sm scale-105"
+                        : "hover:bg-primary/10 hover:shadow-sm hover:scale-[1.02]"
+                      }
+                    `}
+                    title="🔊 Click to hear this sentence"
                   >
                     <span className="text-lg leading-loose">{sentence}</span>
                   </span>
