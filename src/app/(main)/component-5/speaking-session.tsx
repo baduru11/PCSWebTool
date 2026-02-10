@@ -271,6 +271,7 @@ export function SpeakingSession({ topics, character, characterId, component }: S
       const formData = new FormData();
       formData.append("audio", audioBlob, "recording.wav");
       formData.append("referenceText", selectedTopic ?? "");
+      formData.append("mode", "long");
 
       const assessResponse = await fetch("/api/speech/assess", {
         method: "POST",
@@ -557,9 +558,9 @@ export function SpeakingSession({ topics, character, characterId, component }: S
   return (
     <div className="space-y-4">
       {/* Main content area */}
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row">
         {/* Left side: Character (30%) */}
-        <div className="space-y-3 lg:w-[30%]">
+        <div className="space-y-3 md:w-[30%]">
           <CharacterDisplay
             characterName={character.name}
             expressionImages={character.expressions}
@@ -570,8 +571,8 @@ export function SpeakingSession({ topics, character, characterId, component }: S
           {/* Timer display */}
           {phase === "recording" && (
             <div className="text-center space-y-2">
-              <p className={`text-4xl font-bold font-mono ${
-                timeRemaining <= 30 ? "text-red-600" : timeRemaining <= 60 ? "text-yellow-600" : ""
+              <p className={`text-4xl font-bold font-mono transition-colors ${
+                timeRemaining <= 10 ? "text-red-600 animate-pulse" : timeRemaining <= 30 ? "text-red-600" : timeRemaining <= 60 ? "text-yellow-600" : ""
               }`}>
                 {formatTime(timeRemaining)}
               </p>
@@ -579,8 +580,10 @@ export function SpeakingSession({ topics, character, characterId, component }: S
                 value={((TOTAL_TIME - timeRemaining) / TOTAL_TIME) * 100}
                 className="h-2"
               />
-              <p className="text-xs text-muted-foreground">
-                {timeRemaining <= 30
+              <p className={`text-xs ${timeRemaining <= 10 ? "text-red-600 font-medium" : "text-muted-foreground"}`}>
+                {timeRemaining <= 10
+                  ? "Almost done! Wrap up your conclusion."
+                  : timeRemaining <= 30
                   ? "Wrapping up..."
                   : timeRemaining <= 60
                   ? "About 1 minute left"
@@ -620,7 +623,7 @@ export function SpeakingSession({ topics, character, characterId, component }: S
         </div>
 
         {/* Right side: Topic and structure guide (70%) */}
-        <div className="flex-1 lg:w-[70%]">
+        <div className="flex-1 md:w-[70%]">
           <Card className="h-full">
             <CardContent className="py-6 space-y-6">
               {/* Topic display */}

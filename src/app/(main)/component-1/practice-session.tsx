@@ -233,9 +233,15 @@ export function PracticeSession({ questions, character, characterId, component }
 
       const assessResult = await assessResponse.json();
 
-      // Extract per-word scores from Azure's word-level breakdown
-      const scores = currentWords.map((word, idx) => {
-        const wordData = assessResult.words?.[idx];
+      // Extract per-word scores — match by text content, not index,
+      // because Azure may segment Chinese words differently than expected
+      const usedIndices = new Set<number>();
+      const scores = currentWords.map((word) => {
+        const idx = assessResult.words?.findIndex(
+          (w: { word: string }, i: number) => w.word === word && !usedIndices.has(i)
+        ) ?? -1;
+        if (idx >= 0) usedIndices.add(idx);
+        const wordData = idx >= 0 ? assessResult.words[idx] : null;
         return {
           word,
           score: wordData?.accuracyScore ?? null,
@@ -518,9 +524,9 @@ export function PracticeSession({ questions, character, characterId, component }
       </div>
 
       {/* Main content area */}
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row">
         {/* Left side: Character (30%) */}
-        <div className="space-y-3 lg:w-[30%]">
+        <div className="space-y-3 md:w-[30%]">
           <CharacterDisplay
             characterName={character.name}
             expressionImages={character.expressions}
@@ -533,7 +539,7 @@ export function PracticeSession({ questions, character, characterId, component }
         </div>
 
         {/* Right side: Practice area (70%) */}
-        <div className="flex-1 lg:w-[70%]">
+        <div className="flex-1 md:w-[70%]">
           <Card className="h-full">
             <CardContent className="flex flex-col items-center justify-center gap-6 py-8">
               {/* Show Pinyin toggle */}
@@ -551,7 +557,7 @@ export function PracticeSession({ questions, character, characterId, component }
               <div className="grid grid-cols-5 gap-3 w-full max-w-4xl">
                 {currentWords.map((word, idx) => (
                   <div key={idx} className="space-y-1">
-                    <div className="flex items-center justify-center rounded-lg border-2 border-muted p-4">
+                    <div className="flex items-center justify-center rounded-lg border-2 border-muted p-4 hover:border-primary transition-colors">
                       <p className="text-4xl font-bold">{word}</p>
                     </div>
                     {showPinyin && (
@@ -565,7 +571,7 @@ export function PracticeSession({ questions, character, characterId, component }
 
               {/* Score display (after assessment) */}
               {wordScores.length > 0 && phase === "feedback" && (
-                <div className="space-y-4 w-full max-w-4xl">
+                <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-4 w-full max-w-4xl">
                   {/* Individual word scores */}
                   <div className="grid grid-cols-5 gap-3">
                     {wordScores.map((item, idx) => (
@@ -601,9 +607,10 @@ export function PracticeSession({ questions, character, characterId, component }
 
               {/* Loading state */}
               {phase === "assessing" && (
-                <div className="text-center space-y-2">
-                  <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent mx-auto" />
-                  <p className="text-sm text-muted-foreground">Analyzing pronunciation...</p>
+                <div className="text-center space-y-3">
+                  <div className="h-10 w-10 animate-spin rounded-full border-4 border-primary border-t-transparent mx-auto" />
+                  <p className="text-sm font-medium">Analyzing pronunciation...</p>
+                  <p className="text-xs text-muted-foreground">Checking tones, accuracy, and fluency</p>
                 </div>
               )}
 
@@ -617,6 +624,7 @@ export function PracticeSession({ questions, character, characterId, component }
                         disabled={isPlayingAudio}
                         variant="outline"
                         size="lg"
+                        className="hover:scale-[1.02] transition-transform"
                       >
                         {isPlayingAudio ? "Playing..." : "Listen"}
                       </Button>
@@ -625,6 +633,7 @@ export function PracticeSession({ questions, character, characterId, component }
                         disabled={isPlayingAudio}
                         variant="ghost"
                         size="lg"
+                        className="hover:scale-[1.02] transition-transform"
                       >
                         Skip
                       </Button>

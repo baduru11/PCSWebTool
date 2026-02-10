@@ -833,6 +833,7 @@ function PassageComponent({ passage, timeLimitSeconds, onComplete }: PassageComp
       const formData = new FormData();
       formData.append("audio", blob, "recording.wav");
       formData.append("referenceText", passage.content);
+      formData.append("mode", "long");
 
       const response = await fetch("/api/speech/assess", {
         method: "POST",
@@ -988,6 +989,7 @@ function SpeakingComponent({ topics, timeLimitSeconds, onComplete }: SpeakingCom
       const formData = new FormData();
       formData.append("audio", blob, "recording.wav");
       formData.append("referenceText", selectedTopic);
+      formData.append("mode", "long");
 
       const response = await fetch("/api/speech/assess", {
         method: "POST",

@@ -274,13 +274,42 @@ export function PracticeSession({ questions, character, characterId, component }
 
       const assessResult = await assessResponse.json();
 
-      // Extract per-word scores from Azure's word-level breakdown
-      const scores = currentWords.map((word, idx) => {
-        const wordData = assessResult.words?.[idx];
-        return {
-          word,
-          score: wordData?.accuracyScore ?? null,
-        };
+      // Extract per-word scores — match by text content, not index,
+      // because Azure may segment Chinese words differently than expected.
+      // For multi-char words like "国王", try exact match first, then
+      // aggregate character-level scores as fallback.
+      const usedIndices = new Set<number>();
+      const scores = currentWords.map((word) => {
+        // Strategy 1: exact match
+        const idx = assessResult.words?.findIndex(
+          (w: { word: string }, i: number) => w.word === word && !usedIndices.has(i)
+        ) ?? -1;
+        if (idx >= 0) {
+          usedIndices.add(idx);
+          return { word, score: assessResult.words[idx]?.accuracyScore ?? null };
+        }
+
+        // Strategy 2: aggregate character-level matches for multi-char words
+        if (word.length > 1 && assessResult.words?.length) {
+          const charScores: number[] = [];
+          for (const char of word) {
+            const charIdx = assessResult.words.findIndex(
+              (w: { word: string }, i: number) => w.word === char && !usedIndices.has(i)
+            );
+            if (charIdx >= 0) {
+              usedIndices.add(charIdx);
+              charScores.push(assessResult.words[charIdx].accuracyScore ?? 0);
+            }
+          }
+          if (charScores.length > 0) {
+            return {
+              word,
+              score: Math.round(charScores.reduce((a: number, b: number) => a + b, 0) / charScores.length),
+            };
+          }
+        }
+
+        return { word, score: null };
       });
       setWordScores(scores);
 
@@ -559,9 +588,9 @@ export function PracticeSession({ questions, character, characterId, component }
       </div>
 
       {/* Main content area */}
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row">
         {/* Left side: Character (30%) */}
-        <div className="space-y-3 lg:w-[30%]">
+        <div className="space-y-3 md:w-[30%]">
           <CharacterDisplay
             characterName={character.name}
             expressionImages={character.expressions}
@@ -574,7 +603,7 @@ export function PracticeSession({ questions, character, characterId, component }
         </div>
 
         {/* Right side: Practice area (70%) */}
-        <div className="flex-1 lg:w-[70%]">
+        <div className="flex-1 md:w-[70%]">
           <Card className="h-full">
             <CardContent className="flex flex-col items-center justify-center gap-6 py-8">
               {/* Show Pinyin toggle */}
@@ -592,7 +621,7 @@ export function PracticeSession({ questions, character, characterId, component }
               <div className="grid grid-cols-5 gap-4 w-full max-w-4xl">
                 {currentWords.map((word, idx) => (
                   <div key={idx} className="space-y-2">
-                    <div className="flex items-center justify-center rounded-lg border-2 border-muted p-6">
+                    <div className="flex items-center justify-center rounded-lg border-2 border-muted p-6 hover:border-primary transition-colors">
                       <p className="text-4xl font-bold">{word}</p>
                     </div>
                     {showPinyin && (
@@ -616,7 +645,7 @@ export function PracticeSession({ questions, character, characterId, component }
 
               {/* Score display (after assessment) */}
               {wordScores.length > 0 && phase === "feedback" && (
-                <div className="space-y-4 w-full max-w-4xl">
+                <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-4 w-full max-w-4xl">
                   {/* Individual word scores */}
                   <div className="grid grid-cols-5 gap-3">
                     {wordScores.map((item, idx) => (
@@ -658,9 +687,10 @@ export function PracticeSession({ questions, character, characterId, component }
 
               {/* Loading state */}
               {phase === "assessing" && (
-                <div className="text-center space-y-2">
-                  <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent mx-auto" />
-                  <p className="text-sm text-muted-foreground">Analyzing pronunciation...</p>
+                <div className="text-center space-y-3">
+                  <div className="h-10 w-10 animate-spin rounded-full border-4 border-primary border-t-transparent mx-auto" />
+                  <p className="text-sm font-medium">Analyzing pronunciation...</p>
+                  <p className="text-xs text-muted-foreground">Checking tones, accuracy, and fluency</p>
                 </div>
               )}
 
@@ -674,6 +704,7 @@ export function PracticeSession({ questions, character, characterId, component }
                         disabled={isPlayingAudio}
                         variant="outline"
                         size="lg"
+                        className="hover:scale-[1.02] transition-transform"
                       >
                         {isPlayingAudio ? "Playing..." : "Listen"}
                       </Button>
@@ -682,6 +713,7 @@ export function PracticeSession({ questions, character, characterId, component }
                         disabled={isPlayingAudio}
                         variant="ghost"
                         size="lg"
+                        className="hover:scale-[1.02] transition-transform"
                       >
                         Skip
                       </Button>

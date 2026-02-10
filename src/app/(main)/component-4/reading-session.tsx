@@ -322,6 +322,7 @@ export function ReadingSession({ passages, character, characterId, component }: 
       const formData = new FormData();
       formData.append("audio", audioBlob, "recording.wav");
       formData.append("referenceText", selectedPassage.content);
+      formData.append("mode", "long");
 
       const assessResponse = await fetch("/api/speech/assess", {
         method: "POST",
@@ -335,17 +336,23 @@ export function ReadingSession({ passages, character, characterId, component }: 
         const assessResult = await assessResponse.json();
         pronunciationScore = assessResult.pronunciationScore ?? 0;
 
-        // Build sentence-by-sentence scores if word-level data is available
+        // Build sentence-by-sentence scores from word-level data.
+        // Track consumed characters from each sentence to handle Azure's
+        // multi-character word segmentation (e.g. "明白" = 1 word, 2 chars).
         if (assessResult.words && assessResult.words.length > 0) {
           let wordIndex = 0;
           for (const sentence of sentences) {
-            const sentenceChars = sentence.replace(/[。！？；，、：""''（）\s]/g, "");
-            const charCount = sentenceChars.length;
+            const rawSentence = sentence.replace(/[。！？；，、：""''（）《》\s]/g, "");
+            let consumed = 0;
             let sentenceTotal = 0;
             let sentenceWordCount = 0;
 
-            while (sentenceWordCount < charCount && wordIndex < assessResult.words.length) {
-              sentenceTotal += assessResult.words[wordIndex].accuracyScore ?? 0;
+            while (consumed < rawSentence.length && wordIndex < assessResult.words.length) {
+              const azureWord = assessResult.words[wordIndex];
+              // Don't overflow into next sentence
+              if (consumed + azureWord.word.length > rawSentence.length + 1) break;
+              consumed += azureWord.word.length;
+              sentenceTotal += azureWord.accuracyScore ?? 0;
               sentenceWordCount++;
               wordIndex++;
             }
@@ -629,9 +636,9 @@ export function ReadingSession({ passages, character, characterId, component }: 
   return (
     <div className="space-y-4">
       {/* Main content area */}
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row">
         {/* Left side: Character (30%) */}
-        <div className="space-y-3 lg:w-[30%]">
+        <div className="space-y-3 md:w-[30%]">
           <CharacterDisplay
             characterName={character.name}
             expressionImages={character.expressions}
@@ -680,7 +687,7 @@ export function ReadingSession({ passages, character, characterId, component }: 
         </div>
 
         {/* Right side: Passage area (70%) */}
-        <div className="flex-1 lg:w-[70%]">
+        <div className="flex-1 md:w-[70%]">
           <Card className="h-full">
             <CardContent className="py-6 space-y-4">
               {/* Passage header */}

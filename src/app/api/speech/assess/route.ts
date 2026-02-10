@@ -18,8 +18,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing audio or referenceText" }, { status: 400 });
     }
 
+    const mode = (formData.get("mode") as string) === "long" ? "long" as const : "short" as const;
     const buffer = Buffer.from(await audio.arrayBuffer());
-    const result = await assessPronunciation(buffer, referenceText);
+    const result = await assessPronunciation(buffer, referenceText, "zh-CN", mode);
 
     return NextResponse.json(result);
   } catch (error) {
