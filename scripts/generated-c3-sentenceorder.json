@@ -1,0 +1,362 @@
+[
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这本书被他看完了。", "这本书他被看完了。"],
+    "correctIndex": 0,
+    "explanation": "被字句: Subject (受事) + 被 + Agent (施事) + Verb + Complement. '被他' must stay together before the verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["我的手机被修好了。", "我的手机修好被了。"],
+    "correctIndex": 0,
+    "explanation": "被字句: In agentless passives, '被' precedes the verb directly: Subject + 被 + Verb + Complement."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["窗户被风吹开了。", "窗户风被吹开了。"],
+    "correctIndex": 0,
+    "explanation": "被字句: The passive marker '被' must directly precede the agent '风', forming '被风吹开了'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他的钱包被小偷偷走了。", "他的钱包偷走了被小偷。"],
+    "correctIndex": 0,
+    "explanation": "被字句: Subject + 被 + Agent + Verb + Complement. The verb phrase '偷走了' cannot precede '被小偷'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["信被邮递员送来了。", "信送来了被邮递员。"],
+    "correctIndex": 0,
+    "explanation": "被字句: '被邮递员' must come before the verb phrase '送来了'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["作业没有被交上去。", "作业没有交上去被。"],
+    "correctIndex": 0,
+    "explanation": "被字句: In the negative form, '没有' precedes '被', and '被' precedes the verb: 没有 + 被 + Verb + Complement."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["那条路已经被堵住了。", "那条路已经堵住被了。"],
+    "correctIndex": 0,
+    "explanation": "被字句: Adverb '已经' can precede '被', but '被' must still precede the verb '堵住了'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["所有的菜都被客人吃光了。", "所有的菜被都客人吃光了。"],
+    "correctIndex": 0,
+    "explanation": "被字句: '都' as an adverb precedes '被', and '被' + agent '客人' precedes the verb '吃光了'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他比她很聪明。", "他比她聪明。"],
+    "correctIndex": 1,
+    "explanation": "比字句: In '比' comparisons, degree adverbs like '很' cannot be used. '他比她聪明' is the correct form."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这个比那个贵一点儿。", "这个比那个很贵。"],
+    "correctIndex": 0,
+    "explanation": "比字句: After '比', use specific degree markers like '一点儿', '得多', '多了', not '很'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["北京的冬天比上海冷得多。", "北京的冬天比上海非常冷。"],
+    "correctIndex": 0,
+    "explanation": "比字句: '非常' cannot modify comparisons with '比'. Use '冷得多' to express a large difference."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她比我大两岁。", "她比我两岁大。"],
+    "correctIndex": 0,
+    "explanation": "比字句: The specific difference '两岁' follows the adjective '大': A + 比 + B + Adj + Specific Difference."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["今年比去年更热。", "今年比去年很更热。"],
+    "correctIndex": 0,
+    "explanation": "比字句: '更' can be used with '比' to mean 'even more', but '很' cannot be combined with '更' in this structure."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这本书比那本有意思多了。", "这本书比那本十分有意思。"],
+    "correctIndex": 0,
+    "explanation": "比字句: '十分' is an absolute degree adverb that cannot be used in '比' comparisons. Use '多了' instead."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["天越来越冷了。", "天越冷来越了。"],
+    "correctIndex": 0,
+    "explanation": "越来越: The pattern is '越来越 + Adj', meaning 'more and more'. The structure cannot be broken up."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他越说越激动。", "他越激动越说。"],
+    "correctIndex": 0,
+    "explanation": "越...越...: The first '越' introduces the cause/condition, the second '越' introduces the result. Speaking causes excitement, not the reverse."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["越努力越幸运。", "越幸运努力越。"],
+    "correctIndex": 0,
+    "explanation": "越...越...: The structure is 越 + A + 越 + B, where A leads to B. '越努力越幸运' is correct."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["雨越大下越。", "雨越下越大。"],
+    "correctIndex": 1,
+    "explanation": "越...越...: The pattern is Subject + 越 + Verb + 越 + Adj. '越下越大' means the rain gets heavier as it continues."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["路越走越远。", "路越远越走。"],
+    "correctIndex": 0,
+    "explanation": "越...越...: '越走越远' means the more you walk, the farther it gets. The action precedes the resulting state."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他连自己的生日都忘了。", "他自己的生日连都忘了。"],
+    "correctIndex": 0,
+    "explanation": "连...都/也: '连' must directly precede the emphasized element '自己的生日', followed by '都' + verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她连水也没喝就走了。", "她水连也没喝就走了。"],
+    "correctIndex": 0,
+    "explanation": "连...都/也: '连' precedes the noun '水', then '也' + negative + verb. The emphasized element cannot precede '连'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这道题连老师也不会做。", "这道题老师连也不会做。"],
+    "correctIndex": 0,
+    "explanation": "连...都/也: '连' must come before the emphasized subject '老师', showing even the teacher can't do it."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他连一块钱都没有。", "他一块钱连都没有。"],
+    "correctIndex": 0,
+    "explanation": "连...都/也: '连' + emphasized element '一块钱' + '都' + verb. Emphasizes that even one yuan is absent."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["连小孩子都知道这个道理。", "小孩子连知道都这个道理。"],
+    "correctIndex": 0,
+    "explanation": "连...都/也: '连' precedes the subject '小孩子' to emphasize that even children know this principle."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他是在北京学的中文。", "他在北京是学的中文。"],
+    "correctIndex": 0,
+    "explanation": "是...的结构: '是' precedes the emphasized element '在北京' (place), and '的' follows the verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她是昨天来的。", "她昨天是来的。"],
+    "correctIndex": 0,
+    "explanation": "是...的结构: '是' precedes the emphasized time '昨天', with '的' closing the structure after the verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他们是坐飞机去的。", "他们坐飞机是去的。"],
+    "correctIndex": 0,
+    "explanation": "是...的结构: '是' precedes the means '坐飞机' being emphasized, and '的' comes after the main verb '去'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["你是跟谁一起来的？", "你跟谁是一起来的？"],
+    "correctIndex": 0,
+    "explanation": "是...的结构: '是' precedes the questioned element '跟谁一起', and '的' follows the verb '来'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这件衣服是在哪儿买的？", "这件衣服在哪儿是买的？"],
+    "correctIndex": 0,
+    "explanation": "是...的结构: '是' comes before the place question '在哪儿', with '的' after the verb '买'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["除了他以外，大家都去了。", "除了他以外，大家去都了。"],
+    "correctIndex": 0,
+    "explanation": "除了...以外: '都' must precede the verb '去了', not interrupt the verb-complement structure."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["除了中文以外，她还会说英语。", "除了中文以外，她会说还英语。"],
+    "correctIndex": 0,
+    "explanation": "除了...以外...还: '还' is an adverb that must precede the verb phrase '会说英语'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["除了星期天以外，他每天都工作。", "除了星期天以外，他每天工作都。"],
+    "correctIndex": 0,
+    "explanation": "除了...以外: '都' serves as an adverb before the verb '工作'. It cannot follow the verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["除了唱歌，她也喜欢跳舞。", "除了唱歌，她喜欢也跳舞。"],
+    "correctIndex": 0,
+    "explanation": "除了...也: '也' is an adverb that must precede the verb '喜欢', not come between the verb and its object."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["除了苹果以外，我什么水果都喜欢。", "除了苹果以外，我什么水果喜欢都。"],
+    "correctIndex": 0,
+    "explanation": "除了...以外...都: '都' must precede the verb '喜欢' as an adverb. It cannot follow the verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他高兴得跳了起来。", "他高兴跳了得起来。"],
+    "correctIndex": 0,
+    "explanation": "得 complement: The degree complement structure is Adj/Verb + 得 + Complement. '高兴得跳了起来' is correct."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她说得很清楚。", "她很清楚说得。"],
+    "correctIndex": 0,
+    "explanation": "得 complement: Verb + 得 + Complement is the standard order. The complement '很清楚' must follow '得'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这个菜做得不太好。", "这个菜不太好做得。"],
+    "correctIndex": 0,
+    "explanation": "得 complement: Verb + 得 + negative complement: '做得不太好' is correct."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她感动得流下了眼泪。", "她流下了眼泪感动得。"],
+    "correctIndex": 0,
+    "explanation": "得 complement: The result description '流下了眼泪' follows '感动得', not the other way around."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他跑来了过。", "他跑过来了。"],
+    "correctIndex": 1,
+    "explanation": "Direction complement: The verb '跑' + compound directional complement '过来' + aspect '了'. The direction words cannot be reordered."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她走了出去。", "她走出了去。"],
+    "correctIndex": 0,
+    "explanation": "Direction complement: '了' is inserted between the directional complement '出' and '去': Verb + Direction1 + 了 + Direction2."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他拿了一本书出来。", "他出来拿了一本书。"],
+    "correctIndex": 0,
+    "explanation": "Direction complement with object: Verb + 了 + Object + Directional Complement. The object '一本书' is placed between the verb and the directional complement."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["小鸟飞了进来。", "小鸟飞进来了。"],
+    "correctIndex": 1,
+    "explanation": "Direction complement: For completed actions, '了' can go at the end: '飞进来了'. '飞了进来' is also acceptable but less natural."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他每天在公园里跑步。", "他在公园里每天跑步。"],
+    "correctIndex": 0,
+    "explanation": "Time/place adverb order: Time adverb '每天' generally precedes place phrase '在公园里': Subject + Time + Place + Verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她昨天在家里看电视。", "她在家里昨天看电视。"],
+    "correctIndex": 0,
+    "explanation": "Time/place adverb order: Time '昨天' comes before place '在家里' in standard Putonghua."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他们明天早上在学校集合。", "他们在学校明天早上集合。"],
+    "correctIndex": 0,
+    "explanation": "Time/place adverb order: Time phrase '明天早上' precedes place phrase '在学校': Subject + Time + Place + Verb."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["我下午三点在图书馆等你。", "我在图书馆下午三点等你。"],
+    "correctIndex": 0,
+    "explanation": "Time/place adverb order: The more specific time '下午三点' precedes place '在图书馆'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她经常在这家餐厅吃饭。", "她在这家餐厅经常吃饭。"],
+    "correctIndex": 0,
+    "explanation": "Time/place adverb order: Frequency adverb '经常' precedes place phrase '在这家餐厅'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["我们总是在会议室开会。", "我们在会议室总是开会。"],
+    "correctIndex": 0,
+    "explanation": "Time/place adverb order: Frequency adverb '总是' should precede place '在会议室'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他不但会游泳，而且游得很好。", "他不但而且会游泳，游得很好。"],
+    "correctIndex": 0,
+    "explanation": "不但...而且: '不但' introduces the first clause, '而且' introduces the second. They cannot be placed in the same clause."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这个手机不但便宜，而且质量好。", "这个手机不但而且便宜质量好。"],
+    "correctIndex": 0,
+    "explanation": "不但...而且: Each conjunction heads its own clause. '不但便宜' and '而且质量好' are separate progressive clauses."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["不但他来了，而且还带了礼物。", "他不但来了，而且还带了礼物。"],
+    "correctIndex": 1,
+    "explanation": "不但...而且: When the subject is the same in both clauses, the subject '他' precedes '不但'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这不是他的错，而是大家的责任。", "这不是他的错，不是而是大家的责任。"],
+    "correctIndex": 0,
+    "explanation": "不是...而是: '不是' negates the first element and '而是' introduces the correct one. They head separate clauses."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他不是不想去，而是没有时间。", "他不是不想去，但是没有时间。"],
+    "correctIndex": 0,
+    "explanation": "不是...而是: This pattern means 'it's not X, but rather Y'. '而是' is the correct pairing, not '但是'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她不但聪明，而且很努力。", "她不但聪明，所以很努力。"],
+    "correctIndex": 0,
+    "explanation": "不但...而且: This progressive pattern means 'not only...but also'. '所以' (therefore) is incorrect pairing."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他一下课就去图书馆。", "他一去图书馆就下课。"],
+    "correctIndex": 0,
+    "explanation": "一...就...: '一' + trigger event + '就' + result. '一下课就去图书馆' means 'as soon as class ends, he goes to the library'."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["她一听到这个消息就哭了。", "她一哭了就听到这个消息。"],
+    "correctIndex": 0,
+    "explanation": "一...就...: The first event '听到消息' triggers the second '哭了'. The temporal order must be logical."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["天一黑他就回家了。", "天他一黑就回家了。"],
+    "correctIndex": 0,
+    "explanation": "一...就...: '天一黑' (as soon as it gets dark) is the trigger. '一' must follow the subject of the first clause directly."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["他不是不知道。", "他不不是知道。"],
+    "correctIndex": 0,
+    "explanation": "Double negation: '不是不知道' means 'it's not that he doesn't know' (i.e., he does know). The negation words must be in proper order."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["没有人不喜欢她。", "不喜欢没有人她。"],
+    "correctIndex": 0,
+    "explanation": "Double negation: '没有人不喜欢她' means everyone likes her. '没有人' + '不' + verb is the standard double negative structure."
+  },
+  {
+    "prompt": "Which sentence is correct?",
+    "options": ["这件事不能不做。", "这件事不不能做。"],
+    "correctIndex": 0,
+    "explanation": "Double negation: '不能不做' means 'must do' (cannot not do). The double negative is '不能' + '不' + verb."
+  }
+]

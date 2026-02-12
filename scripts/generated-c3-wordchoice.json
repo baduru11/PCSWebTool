@@ -1,0 +1,602 @@
+[
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["洗衣服", "汰衣裳"],
+    "correctIndex": 0,
+    "explanation": "'洗衣服' is standard Putonghua; '汰衣裳' is Wu dialect (Shanghainese/Jiangsu) for washing clothes."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["什么时候", "啥辰光"],
+    "correctIndex": 0,
+    "explanation": "'什么时候' is standard Putonghua; '啥辰光' is Shanghainese/Wu dialect for 'when'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["东西", "物事"],
+    "correctIndex": 0,
+    "explanation": "'东西' is standard Putonghua; '物事' is Wu dialect (Jiangsu/Zhejiang) for 'thing/stuff'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["说话", "讲闲话"],
+    "correctIndex": 0,
+    "explanation": "'说话' is standard Putonghua; '讲闲话' is Wu dialect (Shanghainese) for chatting or talking."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["漂亮", "标致"],
+    "correctIndex": 0,
+    "explanation": "'漂亮' is standard Putonghua; '标致' meaning 'pretty' is commonly used in Wu dialect regions (Shanghai/Jiangsu)."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吵架", "吵相骂"],
+    "correctIndex": 0,
+    "explanation": "'吵架' is standard Putonghua; '吵相骂' is Wu dialect (Shanghainese) for quarreling."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["害怕", "发慌"],
+    "correctIndex": 0,
+    "explanation": "'害怕' is standard Putonghua; '发慌' meaning scared is commonly used in Wu dialect areas."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["玩", "白相"],
+    "correctIndex": 0,
+    "explanation": "'玩' is standard Putonghua; '白相' is a classic Wu dialect (Shanghainese) word for 'to play/to have fun'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["筷子", "箸"],
+    "correctIndex": 0,
+    "explanation": "'筷子' is standard Putonghua; '箸' (zhù) is an archaic form preserved in Wu and Min dialects for chopsticks."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["生气", "来三"],
+    "correctIndex": 0,
+    "explanation": "'生气' is standard Putonghua; '来三' meaning angry is Wu dialect (Shanghainese) usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["晚上", "夜里向"],
+    "correctIndex": 0,
+    "explanation": "'晚上' is standard Putonghua; '夜里向' is Wu dialect (Jiangsu/Zhejiang) for evening/night."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["下雨", "落雨"],
+    "correctIndex": 0,
+    "explanation": "'下雨' is standard Putonghua; '落雨' is Wu dialect (and some southern dialects) for raining."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["明天", "明朝"],
+    "correctIndex": 0,
+    "explanation": "'明天' is standard Putonghua; '明朝' meaning tomorrow is Wu dialect (Shanghainese/Suzhou)."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["他", "伊"],
+    "correctIndex": 0,
+    "explanation": "'他' is standard Putonghua; '伊' is Wu dialect (Shanghainese) for the third-person pronoun 'he/she'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["不要", "覅"],
+    "correctIndex": 0,
+    "explanation": "'不要' is standard Putonghua; '覅' (fiào) is a Wu dialect contraction of '勿要', meaning 'don't'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["聪明", "灵光"],
+    "correctIndex": 0,
+    "explanation": "'聪明' is standard Putonghua; '灵光' meaning clever/smart is a Wu dialect expression from Shanghai/Jiangsu."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["女儿", "囡囡"],
+    "correctIndex": 0,
+    "explanation": "'女儿' is standard Putonghua; '囡囡' is Wu dialect (Shanghainese) for daughter or little girl."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["小气", "寒酸"],
+    "correctIndex": 0,
+    "explanation": "'小气' is standard Putonghua for stingy; '寒酸' meaning stingy/miserly is a Wu dialect regional usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["热闹", "闹猛"],
+    "correctIndex": 0,
+    "explanation": "'热闹' is standard Putonghua; '闹猛' is a Wu dialect (Shanghainese) expression for lively/bustling."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["里面", "里向"],
+    "correctIndex": 0,
+    "explanation": "'里面' is standard Putonghua; '里向' is Wu dialect (Jiangsu/Zhejiang) for 'inside'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吃早饭", "吃早"],
+    "correctIndex": 0,
+    "explanation": "'吃早饭' is standard Putonghua; '吃早' is a Wu dialect abbreviation for eating breakfast."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["厉害", "结棍"],
+    "correctIndex": 0,
+    "explanation": "'厉害' is standard Putonghua; '结棍' is Wu dialect (Shanghainese) meaning 'awesome/formidable'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["开玩笑", "寻开心"],
+    "correctIndex": 0,
+    "explanation": "'开玩笑' is standard Putonghua; '寻开心' is Wu dialect (Shanghainese) for joking around or teasing."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["外面", "外头"],
+    "correctIndex": 0,
+    "explanation": "'外面' is standard Putonghua; '外头' is commonly used in Wu dialect and some northern dialect regions for 'outside'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["回家", "转去"],
+    "correctIndex": 0,
+    "explanation": "'回家' is standard Putonghua; '转去' is Wu dialect (Jiangsu) meaning 'to go home/go back'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["舒服", "巴适"],
+    "correctIndex": 0,
+    "explanation": "'舒服' is standard Putonghua; '巴适' is Sichuan dialect for comfortable/nice."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["做", "整"],
+    "correctIndex": 0,
+    "explanation": "'做' is standard Putonghua; '整' as a general verb meaning 'to do/make' is Sichuan/Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["傻子", "莽子"],
+    "correctIndex": 0,
+    "explanation": "'傻子' is standard Putonghua; '莽子' is Sichuan dialect for a fool/dummy."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["没问题", "没得问题"],
+    "correctIndex": 0,
+    "explanation": "'没问题' is standard Putonghua; '没得问题' uses the Sichuan dialectal negative '没得' instead of '没有'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["非常", "恼火"],
+    "correctIndex": 0,
+    "explanation": "'非常' is standard Putonghua for 'very'; '恼火' meaning 'very/hard to deal with' is Sichuan dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吃饭", "吃嘎嘎"],
+    "correctIndex": 0,
+    "explanation": "'吃饭' is standard Putonghua; '吃嘎嘎' is Sichuan dialect baby-talk for eating meat/food."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["看", "瞅"],
+    "correctIndex": 0,
+    "explanation": "'看' is standard Putonghua; '瞅' meaning to look/glance is commonly used in Sichuan and northern dialects."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["说大话", "冲壳子"],
+    "correctIndex": 0,
+    "explanation": "'说大话' is standard Putonghua for bragging; '冲壳子' is Sichuan dialect for boasting/talking big."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["没有", "没得"],
+    "correctIndex": 0,
+    "explanation": "'没有' is standard Putonghua; '没得' is Sichuan/southwestern Mandarin for 'don't have'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["小孩子", "娃儿"],
+    "correctIndex": 0,
+    "explanation": "'小孩子' is standard Putonghua; '娃儿' is Sichuan/southwestern dialect for child."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["去哪里", "去哪儿"],
+    "correctIndex": 0,
+    "explanation": "'去哪里' is standard Putonghua; '去哪儿' is Beijing/northern colloquial with erhua but widely accepted. In strict PSC contexts, '哪里' is more standard."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吝啬", "抠门"],
+    "correctIndex": 0,
+    "explanation": "'吝啬' is standard Putonghua; '抠门' meaning stingy is Sichuan/northern colloquial."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["膝盖", "磕膝头"],
+    "correctIndex": 0,
+    "explanation": "'膝盖' is standard Putonghua; '磕膝头' is Sichuan dialect for knee."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["厨房", "灶房"],
+    "correctIndex": 0,
+    "explanation": "'厨房' is standard Putonghua; '灶房' is Sichuan/southwestern dialect for kitchen."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["摔倒", "摔跟头"],
+    "correctIndex": 0,
+    "explanation": "'摔倒' is standard Putonghua; '摔跟头' is Sichuan/northern colloquial for falling down."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["一会儿", "一哈儿"],
+    "correctIndex": 0,
+    "explanation": "'一会儿' is standard Putonghua; '一哈儿' is Sichuan dialect for 'a moment/a little while'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["漂亮", "排场"],
+    "correctIndex": 0,
+    "explanation": "'漂亮' is standard Putonghua; '排场' meaning attractive/beautiful is Sichuan dialect usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["聊天", "摆龙门阵"],
+    "correctIndex": 0,
+    "explanation": "'聊天' is standard Putonghua; '摆龙门阵' is a famous Sichuan expression for chatting/telling stories."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["拖鞋", "趿拉板儿"],
+    "correctIndex": 0,
+    "explanation": "'拖鞋' is standard Putonghua; '趿拉板儿' is Sichuan/northwestern dialect for slippers."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["开心", "安逸"],
+    "correctIndex": 0,
+    "explanation": "'开心' is standard Putonghua; '安逸' meaning 'pleasant/comfortable/great' is Sichuan dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["聊天", "唠嗑"],
+    "correctIndex": 0,
+    "explanation": "'聊天' is standard Putonghua; '唠嗑' is Northeastern dialect for chatting."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["非常", "嘎嘎"],
+    "correctIndex": 0,
+    "explanation": "'非常' is standard Putonghua; '嘎嘎' meaning 'extremely/very' is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["什么", "啥"],
+    "correctIndex": 0,
+    "explanation": "'什么' is standard Putonghua; '啥' is Northeastern/northern dialectal abbreviation for 'what'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吓人", "膈应"],
+    "correctIndex": 0,
+    "explanation": "'吓人' is standard Putonghua for scary; '膈应' meaning disgusting or creepy is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["调皮", "皮实"],
+    "correctIndex": 0,
+    "explanation": "'调皮' is standard Putonghua for naughty; '皮实' meaning tough/mischievous is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["能干", "有两下子"],
+    "correctIndex": 0,
+    "explanation": "'能干' is standard Putonghua; '有两下子' meaning capable/skilled is Northeastern colloquial."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["行", "中"],
+    "correctIndex": 0,
+    "explanation": "'行' is standard Putonghua for 'OK/fine'; '中' meaning OK is Henan/Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吝啬", "抠"],
+    "correctIndex": 0,
+    "explanation": "'吝啬' is standard Putonghua for stingy; '抠' meaning stingy/tight-fisted is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["打架", "干仗"],
+    "correctIndex": 0,
+    "explanation": "'打架' is standard Putonghua; '干仗' meaning to fight is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["胡说", "扯犊子"],
+    "correctIndex": 0,
+    "explanation": "'胡说' is standard Putonghua for talking nonsense; '扯犊子' is Northeastern dialect for rambling/nonsense."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["不好", "埋汰"],
+    "correctIndex": 0,
+    "explanation": "'不好' or '脏' is standard Putonghua; '埋汰' meaning dirty/degrading is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["发呆", "发苞米"],
+    "correctIndex": 0,
+    "explanation": "'发呆' is standard Putonghua for spacing out; '发苞米' meaning daydreaming is Northeastern humorous dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["摔倒", "出溜"],
+    "correctIndex": 0,
+    "explanation": "'摔倒' is standard Putonghua; '出溜' meaning to slip/slide and fall is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["批评", "削"],
+    "correctIndex": 0,
+    "explanation": "'批评' is standard Putonghua for criticize; '削' meaning to scold/beat is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["显摆", "炫耀"],
+    "correctIndex": 1,
+    "explanation": "'炫耀' is standard Putonghua; '显摆' meaning to show off is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吃饭", "造"],
+    "correctIndex": 0,
+    "explanation": "'吃饭' is standard Putonghua; '造' meaning to eat heartily is Northeastern dialect slang."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["聪明", "机灵"],
+    "correctIndex": 0,
+    "explanation": "'聪明' is standard Putonghua; '机灵' meaning clever/sharp is more commonly used in Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["可以", "管"],
+    "correctIndex": 0,
+    "explanation": "'可以' is standard Putonghua; '管' meaning 'sure/OK' is Northeastern dialect usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["讨厌", "烦人"],
+    "correctIndex": 0,
+    "explanation": "'讨厌' is standard Putonghua; '烦人' used as an interjection meaning 'annoying!' is typical Northeastern dialect style."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["傻", "彪"],
+    "correctIndex": 0,
+    "explanation": "'傻' is standard Putonghua; '彪' meaning stupid/crazy is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["找", "整"],
+    "correctIndex": 0,
+    "explanation": "'找' is standard Putonghua for 'to find/get'; '整' as a general verb for 'do/get/make' is Northeastern dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["房子", "厝"],
+    "correctIndex": 0,
+    "explanation": "'房子' is standard Putonghua; '厝' (cuò) is Min dialect (Fujian/Taiwan) for house."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吃了吗", "吃饱没"],
+    "correctIndex": 0,
+    "explanation": "'吃了吗' is standard Putonghua; '吃饱没' is Min dialect (Taiwan/Fujian) greeting style for 'have you eaten'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["老板", "头家"],
+    "correctIndex": 0,
+    "explanation": "'老板' is standard Putonghua; '头家' (thâu-ke) is Hokkien/Min dialect for boss."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["漂亮", "水"],
+    "correctIndex": 0,
+    "explanation": "'漂亮' is standard Putonghua; '水' (suí) meaning beautiful is Taiwanese Hokkien/Min dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["可怜", "歹命"],
+    "correctIndex": 0,
+    "explanation": "'可怜' is standard Putonghua; '歹命' is Min dialect (Hokkien) for unfortunate/pitiful fate."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["男孩", "查甫"],
+    "correctIndex": 0,
+    "explanation": "'男孩' is standard Putonghua; '查甫' (tsa-poo) is Hokkien/Min dialect for male/man."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["好吃", "好食"],
+    "correctIndex": 0,
+    "explanation": "'好吃' is standard Putonghua; '好食' is Min dialect (Hokkien) for delicious."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["多少钱", "几块钱"],
+    "correctIndex": 0,
+    "explanation": "'多少钱' is standard Putonghua; '几块钱' as a general price question is Taiwanese/Min dialect influenced."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["锅", "鼎"],
+    "correctIndex": 0,
+    "explanation": "'锅' is standard Putonghua; '鼎' meaning cooking pot is Hokkien/Min dialect usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["朋友", "牵手"],
+    "correctIndex": 0,
+    "explanation": "'朋友' is standard Putonghua; '牵手' meaning close friend/partner is Hokkien/Min dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["不知道", "不知影"],
+    "correctIndex": 0,
+    "explanation": "'不知道' is standard Putonghua; '不知影' (m̄-tsai-iáⁿ) is Hokkien/Min dialect for 'don't know'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["下午", "下昼"],
+    "correctIndex": 0,
+    "explanation": "'下午' is standard Putonghua; '下昼' is Min dialect (Fujian/Teochew) for afternoon."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["走路", "行路"],
+    "correctIndex": 0,
+    "explanation": "'走路' is standard Putonghua; '行路' meaning 'to walk' is Min dialect and Cantonese usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["谢谢", "多谢"],
+    "correctIndex": 0,
+    "explanation": "'谢谢' is standard Putonghua; '多谢' is more commonly used in Cantonese and Min dialect regions."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["什么", "么斯"],
+    "correctIndex": 0,
+    "explanation": "'什么' is standard Putonghua; '么斯' is Hubei dialect (Wuhan area) for 'what'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["没有", "冇"],
+    "correctIndex": 0,
+    "explanation": "'没有' is standard Putonghua; '冇' (mǎo) is Cantonese/Hunan dialect for 'don't have'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["怎么", "何解"],
+    "correctIndex": 0,
+    "explanation": "'怎么' is standard Putonghua; '何解' is Hubei/Hunan dialect for 'why/how come'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["不知道", "晓不得"],
+    "correctIndex": 0,
+    "explanation": "'不知道' is standard Putonghua; '晓不得' is Hubei/Hunan dialect for 'don't know'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["一起", "一伙"],
+    "correctIndex": 0,
+    "explanation": "'一起' is standard Putonghua; '一伙' meaning 'together' is Hubei/Hunan dialectal usage."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["很多", "蛮多"],
+    "correctIndex": 0,
+    "explanation": "'很多' is standard Putonghua; '蛮多' uses the Hunan/Wu dialectal intensifier '蛮' instead of standard '很'."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["地方", "场子"],
+    "correctIndex": 0,
+    "explanation": "'地方' is standard Putonghua; '场子' meaning 'place' is a Hubei/Hunan dialectal term."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["妻子", "堂客"],
+    "correctIndex": 0,
+    "explanation": "'妻子' is standard Putonghua; '堂客' is Hunan dialect for wife."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["男人", "男将"],
+    "correctIndex": 0,
+    "explanation": "'男人' is standard Putonghua; '男将' is Hunan dialect for man/husband."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["吃", "恰"],
+    "correctIndex": 0,
+    "explanation": "'吃' is standard Putonghua; '恰' (qiā) meaning 'to eat' is Hunan dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["昨天", "昨日个"],
+    "correctIndex": 0,
+    "explanation": "'昨天' is standard Putonghua; '昨日个' is Hubei dialect for yesterday."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["容易", "好搞"],
+    "correctIndex": 0,
+    "explanation": "'容易' is standard Putonghua; '好搞' meaning 'easy to handle' is colloquial Hubei dialect."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["猪肉", "大肉"],
+    "correctIndex": 0,
+    "explanation": "'猪肉' is standard Putonghua; '大肉' is a northwestern/regional dialectal euphemism for pork."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["太阳", "日头"],
+    "correctIndex": 0,
+    "explanation": "'太阳' is standard Putonghua; '日头' meaning the sun is used in many regional dialects across China."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["打雷", "响雷"],
+    "correctIndex": 0,
+    "explanation": "'打雷' is standard Putonghua; '响雷' is a dialectal variant used in various regions for thunder."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["姑娘", "丫头"],
+    "correctIndex": 0,
+    "explanation": "'姑娘' is standard Putonghua; '丫头' is a northern colloquial/dialectal term for girl."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["衣服", "衣裳"],
+    "correctIndex": 0,
+    "explanation": "'衣服' is standard Putonghua; '衣裳' is a northern dialectal/classical variant for clothes."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["傍晚", "擦黑"],
+    "correctIndex": 0,
+    "explanation": "'傍晚' is standard Putonghua; '擦黑' meaning dusk is a northern dialectal expression."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["口袋", "兜兜"],
+    "correctIndex": 0,
+    "explanation": "'口袋' is standard Putonghua; '兜兜' meaning pocket is a dialectal/colloquial diminutive used in various regions."
+  },
+  {
+    "prompt": "Which is more standard Putonghua?",
+    "options": ["赶快", "紧到"],
+    "correctIndex": 0,
+    "explanation": "'赶快' is standard Putonghua; '紧到' meaning 'hurry up/quickly' is southwestern dialectal usage."
+  }
+]

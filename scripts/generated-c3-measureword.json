@@ -1,0 +1,602 @@
+[
+  {
+    "prompt": "一___音乐会",
+    "options": ["场", "个", "次", "台"],
+    "correctIndex": 0,
+    "explanation": "音乐会用「场」作量词，适用于演出、比赛等活动。"
+  },
+  {
+    "prompt": "一___演讲",
+    "options": ["次", "场", "个", "段"],
+    "correctIndex": 1,
+    "explanation": "演讲用「场」作量词，表示一场完整的演讲活动。"
+  },
+  {
+    "prompt": "一___新闻报道",
+    "options": ["个", "条", "篇", "则"],
+    "correctIndex": 3,
+    "explanation": "新闻报道用「则」作量词，专用于新闻、消息类。"
+  },
+  {
+    "prompt": "一___诗歌",
+    "options": ["篇", "首", "段", "个"],
+    "correctIndex": 1,
+    "explanation": "诗歌用「首」作量词，是诗歌的专用量词。"
+  },
+  {
+    "prompt": "一___曲子",
+    "options": ["首", "支", "段", "个"],
+    "correctIndex": 0,
+    "explanation": "曲子用「首」作量词，与歌曲类搭配一致。"
+  },
+  {
+    "prompt": "一___戏",
+    "options": ["场", "出", "个", "台"],
+    "correctIndex": 1,
+    "explanation": "戏用「出」作量词，表示一出戏剧表演。"
+  },
+  {
+    "prompt": "一___地铁",
+    "options": ["辆", "列", "台", "节"],
+    "correctIndex": 1,
+    "explanation": "地铁用「列」作量词，因为地铁和火车一样由多节车厢组成。"
+  },
+  {
+    "prompt": "一___船",
+    "options": ["艘", "只", "条", "辆"],
+    "correctIndex": 2,
+    "explanation": "小船用「条」作量词，大型船只也可用「艘」。一般语境下「条」更为常用。"
+  },
+  {
+    "prompt": "一___马",
+    "options": ["头", "匹", "只", "条"],
+    "correctIndex": 1,
+    "explanation": "马用「匹」作量词，这是马的专用量词。"
+  },
+  {
+    "prompt": "一___鸡",
+    "options": ["个", "头", "只", "条"],
+    "correctIndex": 2,
+    "explanation": "鸡用「只」作量词，适用于禽类和较小的动物。"
+  },
+  {
+    "prompt": "一___蛇",
+    "options": ["只", "条", "根", "个"],
+    "correctIndex": 1,
+    "explanation": "蛇用「条」作量词，因为蛇是长条形的动物。"
+  },
+  {
+    "prompt": "一___旗",
+    "options": ["面", "条", "块", "张"],
+    "correctIndex": 0,
+    "explanation": "旗用「面」作量词，因为旗是平面展开的物品。"
+  },
+  {
+    "prompt": "一___针",
+    "options": ["支", "根", "枚", "个"],
+    "correctIndex": 2,
+    "explanation": "针用「枚」作量词，适用于小而尖细的物品。也可用「根」。"
+  },
+  {
+    "prompt": "一___线",
+    "options": ["条", "根", "段", "股"],
+    "correctIndex": 1,
+    "explanation": "线用「根」作量词，因为线是细长的丝状物。"
+  },
+  {
+    "prompt": "一___镜子",
+    "options": ["面", "块", "个", "张"],
+    "correctIndex": 0,
+    "explanation": "镜子用「面」作量词，因为镜子是平面反光物体。"
+  },
+  {
+    "prompt": "一___锁",
+    "options": ["把", "个", "只", "件"],
+    "correctIndex": 0,
+    "explanation": "锁用「把」作量词，因为锁是可以手持操作的物品。"
+  },
+  {
+    "prompt": "一___钟",
+    "options": ["台", "座", "个", "只"],
+    "correctIndex": 1,
+    "explanation": "大钟用「座」作量词，适用于较大的固定物品。小闹钟可用「个」。"
+  },
+  {
+    "prompt": "一___手表",
+    "options": ["只", "块", "个", "枚"],
+    "correctIndex": 1,
+    "explanation": "手表用「块」作量词，这是手表的惯用量词搭配。"
+  },
+  {
+    "prompt": "一___戒指",
+    "options": ["枚", "个", "只", "颗"],
+    "correctIndex": 0,
+    "explanation": "戒指用「枚」作量词，适用于小而精致的环形物品。"
+  },
+  {
+    "prompt": "一___扇子",
+    "options": ["把", "面", "个", "张"],
+    "correctIndex": 0,
+    "explanation": "扇子用「把」作量词，因为扇子有柄可以手持。"
+  },
+  {
+    "prompt": "一___琴",
+    "options": ["台", "把", "架", "个"],
+    "correctIndex": 2,
+    "explanation": "大型琴（如钢琴）用「架」或「台」作量词。中小型弦乐器用「把」。"
+  },
+  {
+    "prompt": "一___鼓",
+    "options": ["面", "个", "台", "只"],
+    "correctIndex": 0,
+    "explanation": "鼓用「面」作量词，因为鼓面是其主要特征。"
+  },
+  {
+    "prompt": "一___钢笔",
+    "options": ["支", "根", "条", "个"],
+    "correctIndex": 0,
+    "explanation": "钢笔用「支」作量词，适用于笔类文具。"
+  },
+  {
+    "prompt": "一___粉笔",
+    "options": ["根", "支", "条", "个"],
+    "correctIndex": 1,
+    "explanation": "粉笔用「支」作量词，与其他笔类用法一致。也可用「根」。"
+  },
+  {
+    "prompt": "一___墨",
+    "options": ["瓶", "块", "锭", "滴"],
+    "correctIndex": 2,
+    "explanation": "固体墨（墨锭）用「锭」作量词，液体墨水用「瓶」。"
+  },
+  {
+    "prompt": "一___砖",
+    "options": ["块", "个", "片", "条"],
+    "correctIndex": 0,
+    "explanation": "砖用「块」作量词，因为砖是块状建筑材料。"
+  },
+  {
+    "prompt": "一___石头",
+    "options": ["块", "颗", "个", "粒"],
+    "correctIndex": 0,
+    "explanation": "石头用「块」作量词，因为石头是不规则块状物。"
+  },
+  {
+    "prompt": "一___绳子",
+    "options": ["根", "条", "段", "把"],
+    "correctIndex": 0,
+    "explanation": "绳子用「根」作量词，适用于细长物品。也可用「条」。"
+  },
+  {
+    "prompt": "一___板",
+    "options": ["块", "张", "片", "条"],
+    "correctIndex": 0,
+    "explanation": "板（木板等）用「块」作量词，表示一整块板材。"
+  },
+  {
+    "prompt": "一___毯子",
+    "options": ["条", "块", "床", "张"],
+    "correctIndex": 2,
+    "explanation": "毯子用「床」作量词，与被子搭配相同，适用于铺盖类物品。"
+  },
+  {
+    "prompt": "一___围巾",
+    "options": ["条", "块", "根", "件"],
+    "correctIndex": 0,
+    "explanation": "围巾用「条」作量词，因为围巾是长条形纺织品。"
+  },
+  {
+    "prompt": "一___领带",
+    "options": ["条", "根", "个", "块"],
+    "correctIndex": 0,
+    "explanation": "领带用「条」作量词，因为领带是长条形的。"
+  },
+  {
+    "prompt": "一___披肩",
+    "options": ["条", "块", "件", "张"],
+    "correctIndex": 2,
+    "explanation": "披肩用「件」作量词，适用于穿戴类物品。"
+  },
+  {
+    "prompt": "一___阵雨",
+    "options": ["场", "阵", "次", "股"],
+    "correctIndex": 1,
+    "explanation": "阵雨用「阵」作量词，表示一阵短暂的降雨。"
+  },
+  {
+    "prompt": "一___大风",
+    "options": ["场", "阵", "股", "次"],
+    "correctIndex": 0,
+    "explanation": "大风用「场」作量词，表示一场持续的大风。"
+  },
+  {
+    "prompt": "一___雪",
+    "options": ["场", "片", "阵", "层"],
+    "correctIndex": 0,
+    "explanation": "雪用「场」作量词，表示一场完整的降雪。"
+  },
+  {
+    "prompt": "一___雷",
+    "options": ["阵", "声", "个", "次"],
+    "correctIndex": 0,
+    "explanation": "雷用「阵」作量词，表示一阵雷声。也可用「声」形容单声雷。"
+  },
+  {
+    "prompt": "一___火",
+    "options": ["场", "把", "团", "堆"],
+    "correctIndex": 1,
+    "explanation": "火用「把」作量词，如一把火。大型火灾用「场」。"
+  },
+  {
+    "prompt": "一___烟",
+    "options": ["缕", "股", "团", "根"],
+    "correctIndex": 0,
+    "explanation": "烟雾用「缕」作量词，表示细细的一缕烟。"
+  },
+  {
+    "prompt": "一___星",
+    "options": ["颗", "粒", "个", "点"],
+    "correctIndex": 0,
+    "explanation": "星星用「颗」作量词，适用于小而圆的发光天体。"
+  },
+  {
+    "prompt": "一___月",
+    "options": ["轮", "弯", "个", "颗"],
+    "correctIndex": 0,
+    "explanation": "满月用「轮」作量词，弯月可用「弯」。一般也可用「个」。"
+  },
+  {
+    "prompt": "一___应用程序",
+    "options": ["个", "款", "套", "件"],
+    "correctIndex": 1,
+    "explanation": "应用程序（App）用「款」作量词，适用于软件产品。"
+  },
+  {
+    "prompt": "一___视频",
+    "options": ["段", "个", "条", "部"],
+    "correctIndex": 2,
+    "explanation": "短视频用「条」作量词，与信息类搭配一致。长视频可用「部」或「段」。"
+  },
+  {
+    "prompt": "一___文章",
+    "options": ["篇", "则", "段", "个"],
+    "correctIndex": 0,
+    "explanation": "文章用「篇」作量词，是文章的标准量词搭配。"
+  },
+  {
+    "prompt": "一___合同",
+    "options": ["份", "张", "个", "本"],
+    "correctIndex": 0,
+    "explanation": "合同用「份」作量词，适用于文件、协议等。"
+  },
+  {
+    "prompt": "一___签名",
+    "options": ["个", "份", "枚", "笔"],
+    "correctIndex": 0,
+    "explanation": "签名用「个」作量词，表示一个签名。"
+  },
+  {
+    "prompt": "一___电话",
+    "options": ["通", "个", "次", "台"],
+    "correctIndex": 0,
+    "explanation": "打电话用「通」作量词，表示一次完整的通话。"
+  },
+  {
+    "prompt": "一___作业",
+    "options": ["份", "个", "道", "项"],
+    "correctIndex": 0,
+    "explanation": "作业用「份」作量词，适用于一整份需要完成的任务。"
+  },
+  {
+    "prompt": "一___任务",
+    "options": ["个", "项", "件", "条"],
+    "correctIndex": 1,
+    "explanation": "任务用「项」作量词，适用于工作事项。"
+  },
+  {
+    "prompt": "一___建筑",
+    "options": ["栋", "座", "幢", "间"],
+    "correctIndex": 1,
+    "explanation": "建筑用「座」作量词，适用于大型固定建筑物。"
+  },
+  {
+    "prompt": "一___塔",
+    "options": ["座", "栋", "个", "根"],
+    "correctIndex": 0,
+    "explanation": "塔用「座」作量词，适用于高大固定的建筑结构。"
+  },
+  {
+    "prompt": "一___寺庙",
+    "options": ["座", "间", "栋", "处"],
+    "correctIndex": 0,
+    "explanation": "寺庙用「座」作量词，适用于庄严的大型建筑。"
+  },
+  {
+    "prompt": "一___宫殿",
+    "options": ["座", "栋", "间", "个"],
+    "correctIndex": 0,
+    "explanation": "宫殿用「座」作量词，适用于宏伟的建筑群。"
+  },
+  {
+    "prompt": "一___城堡",
+    "options": ["座", "栋", "个", "幢"],
+    "correctIndex": 0,
+    "explanation": "城堡用「座」作量词，表示一座完整的城堡建筑。"
+  },
+  {
+    "prompt": "一___雕塑",
+    "options": ["座", "尊", "件", "个"],
+    "correctIndex": 1,
+    "explanation": "雕塑用「尊」作量词，适用于人物塑像等庄重作品。一般雕塑也可用「座」。"
+  },
+  {
+    "prompt": "一___瀑布",
+    "options": ["条", "道", "个", "处"],
+    "correctIndex": 0,
+    "explanation": "瀑布用「条」作量词，因为瀑布呈水流带状。也可用「道」。"
+  },
+  {
+    "prompt": "一___泉",
+    "options": ["眼", "口", "个", "股"],
+    "correctIndex": 0,
+    "explanation": "泉水用「眼」作量词，表示一眼泉水从地下涌出。"
+  },
+  {
+    "prompt": "一___洞",
+    "options": ["个", "口", "眼", "座"],
+    "correctIndex": 0,
+    "explanation": "洞穴用「个」作量词，是通用量词搭配。大型洞穴也可用「座」。"
+  },
+  {
+    "prompt": "一___山谷",
+    "options": ["条", "个", "道", "座"],
+    "correctIndex": 0,
+    "explanation": "山谷用「条」作量词，因为山谷呈狭长形。"
+  },
+  {
+    "prompt": "一___山峰",
+    "options": ["座", "个", "道", "条"],
+    "correctIndex": 0,
+    "explanation": "山峰用「座」作量词，适用于大型自然地貌。"
+  },
+  {
+    "prompt": "一___面粉",
+    "options": ["袋", "包", "斤", "堆"],
+    "correctIndex": 0,
+    "explanation": "面粉一般用「袋」作量词，表示一袋面粉的包装单位。"
+  },
+  {
+    "prompt": "一___盐",
+    "options": ["粒", "包", "袋", "撮"],
+    "correctIndex": 3,
+    "explanation": "少量盐用「撮」作量词，表示一小撮。成包用「包」或「袋」。"
+  },
+  {
+    "prompt": "一___药",
+    "options": ["副", "剂", "服", "味"],
+    "correctIndex": 1,
+    "explanation": "药用「剂」作量词，表示一剂药的用量。中药也用「服」或「副」。"
+  },
+  {
+    "prompt": "一___药丸",
+    "options": ["粒", "颗", "个", "枚"],
+    "correctIndex": 0,
+    "explanation": "药丸用「粒」作量词，适用于小而圆的颗粒状物品。"
+  },
+  {
+    "prompt": "一___注射",
+    "options": ["针", "次", "个", "剂"],
+    "correctIndex": 0,
+    "explanation": "注射用「针」作量词，表示打一针的动作。"
+  },
+  {
+    "prompt": "一___手术",
+    "options": ["台", "次", "场", "个"],
+    "correctIndex": 0,
+    "explanation": "手术用「台」作量词，这是医学领域的惯用搭配。"
+  },
+  {
+    "prompt": "一___病",
+    "options": ["场", "次", "种", "个"],
+    "correctIndex": 0,
+    "explanation": "生病用「场」作量词，表示经历一场疾病过程。"
+  },
+  {
+    "prompt": "一___秘密",
+    "options": ["个", "件", "桩", "条"],
+    "correctIndex": 0,
+    "explanation": "秘密用「个」作量词，是抽象名词的通用量词搭配。"
+  },
+  {
+    "prompt": "一___笑话",
+    "options": ["个", "则", "条", "段"],
+    "correctIndex": 1,
+    "explanation": "笑话用「则」作量词，适用于短篇叙述类内容。也可用「个」。"
+  },
+  {
+    "prompt": "一___故事",
+    "options": ["个", "则", "段", "篇"],
+    "correctIndex": 0,
+    "explanation": "故事用「个」作量词，如讲一个故事。书面也可用「则」。"
+  },
+  {
+    "prompt": "一___梦",
+    "options": ["个", "场", "次", "回"],
+    "correctIndex": 0,
+    "explanation": "梦用「个」作量词，如做了一个梦。也可用「场」表示一场梦。"
+  },
+  {
+    "prompt": "一___错误",
+    "options": ["个", "次", "件", "桩"],
+    "correctIndex": 0,
+    "explanation": "错误用「个」作量词，是通用量词的标准搭配。"
+  },
+  {
+    "prompt": "一___建议",
+    "options": ["条", "个", "项", "件"],
+    "correctIndex": 0,
+    "explanation": "建议用「条」作量词，适用于建议、意见等条目类事项。"
+  },
+  {
+    "prompt": "一___规则",
+    "options": ["条", "项", "个", "则"],
+    "correctIndex": 0,
+    "explanation": "规则用「条」作量词，如一条规则、一条法律。"
+  },
+  {
+    "prompt": "一___法律",
+    "options": ["条", "部", "项", "个"],
+    "correctIndex": 1,
+    "explanation": "整部法律用「部」作量词，法律中的具体条款用「条」。"
+  },
+  {
+    "prompt": "一___命",
+    "options": ["条", "个", "次", "份"],
+    "correctIndex": 0,
+    "explanation": "命（生命）用「条」作量词，如一条命。"
+  },
+  {
+    "prompt": "一___眼泪",
+    "options": ["滴", "颗", "行", "串"],
+    "correctIndex": 0,
+    "explanation": "眼泪用「滴」作量词，因为眼泪是液体滴落形态。"
+  },
+  {
+    "prompt": "一___吻",
+    "options": ["个", "次", "口", "记"],
+    "correctIndex": 0,
+    "explanation": "吻用「个」作量词，如给了一个吻。"
+  },
+  {
+    "prompt": "一___牛",
+    "options": ["头", "只", "匹", "条"],
+    "correctIndex": 0,
+    "explanation": "牛用「头」作量词，适用于大型家畜。"
+  },
+  {
+    "prompt": "一___猪",
+    "options": ["头", "只", "口", "条"],
+    "correctIndex": 0,
+    "explanation": "猪用「头」作量词，适用于大型家畜。也可用「口」。"
+  },
+  {
+    "prompt": "一___羊",
+    "options": ["只", "头", "匹", "条"],
+    "correctIndex": 0,
+    "explanation": "羊用「只」作量词，适用于中小型动物。"
+  },
+  {
+    "prompt": "一___蜡烛",
+    "options": ["根", "支", "条", "个"],
+    "correctIndex": 0,
+    "explanation": "蜡烛用「根」作量词，因为蜡烛是细长圆柱形物品。也可用「支」。"
+  },
+  {
+    "prompt": "一___项链",
+    "options": ["条", "串", "根", "个"],
+    "correctIndex": 0,
+    "explanation": "项链用「条」作量词，因为项链是链条形的饰品。"
+  },
+  {
+    "prompt": "一___戏剧",
+    "options": ["出", "场", "台", "个"],
+    "correctIndex": 0,
+    "explanation": "戏剧用「出」作量词，如一出好戏。"
+  },
+  {
+    "prompt": "一___交响乐",
+    "options": ["首", "部", "场", "支"],
+    "correctIndex": 1,
+    "explanation": "交响乐用「部」作量词，适用于大型音乐作品。"
+  },
+  {
+    "prompt": "一___歌曲",
+    "options": ["首", "支", "个", "段"],
+    "correctIndex": 0,
+    "explanation": "歌曲用「首」作量词，是歌曲的标准量词。"
+  },
+  {
+    "prompt": "一___话剧",
+    "options": ["出", "场", "台", "部"],
+    "correctIndex": 3,
+    "explanation": "话剧用「部」作量词，适用于完整的戏剧作品。单场演出可用「场」。"
+  },
+  {
+    "prompt": "一___运河",
+    "options": ["条", "道", "个", "段"],
+    "correctIndex": 0,
+    "explanation": "运河用「条」作量词，因为运河是长条形的水道。"
+  },
+  {
+    "prompt": "一___邮票",
+    "options": ["枚", "张", "个", "片"],
+    "correctIndex": 0,
+    "explanation": "邮票用「枚」作量词，适用于小而精致的收藏品。"
+  },
+  {
+    "prompt": "一___奖牌",
+    "options": ["枚", "块", "个", "面"],
+    "correctIndex": 0,
+    "explanation": "奖牌用「枚」作量词，适用于勋章、奖牌类物品。"
+  },
+  {
+    "prompt": "一___硬币",
+    "options": ["枚", "个", "块", "颗"],
+    "correctIndex": 0,
+    "explanation": "硬币用「枚」作量词，适用于钱币类小物件。"
+  },
+  {
+    "prompt": "一___珠子",
+    "options": ["颗", "粒", "个", "枚"],
+    "correctIndex": 0,
+    "explanation": "珠子用「颗」作量词，适用于小而圆的物品。"
+  },
+  {
+    "prompt": "一___牙齿",
+    "options": ["颗", "个", "只", "枚"],
+    "correctIndex": 0,
+    "explanation": "牙齿用「颗」作量词，适用于小而硬的颗粒状物品。"
+  },
+  {
+    "prompt": "一___种子",
+    "options": ["颗", "粒", "个", "枚"],
+    "correctIndex": 0,
+    "explanation": "种子用「颗」作量词，适用于小的圆形物品。也可用「粒」。"
+  },
+  {
+    "prompt": "一___米粒",
+    "options": ["粒", "颗", "个", "滴"],
+    "correctIndex": 0,
+    "explanation": "米粒用「粒」作量词，适用于细小的颗粒状物。"
+  },
+  {
+    "prompt": "一___画作",
+    "options": ["幅", "张", "件", "个"],
+    "correctIndex": 0,
+    "explanation": "画作用「幅」作量词，适用于绘画、书法等平面艺术作品。"
+  },
+  {
+    "prompt": "一___地图",
+    "options": ["幅", "张", "份", "个"],
+    "correctIndex": 0,
+    "explanation": "大型地图用「幅」作量词，小张地图也可用「张」。"
+  },
+  {
+    "prompt": "一___作文",
+    "options": ["篇", "个", "张", "份"],
+    "correctIndex": 0,
+    "explanation": "作文用「篇」作量词，适用于文章类书面作品。"
+  },
+  {
+    "prompt": "一___笔生意",
+    "options": ["笔", "个", "桩", "件"],
+    "correctIndex": 0,
+    "explanation": "生意用「笔」作量词，表示一笔交易或买卖。"
+  },
+  {
+    "prompt": "一___事情",
+    "options": ["件", "桩", "个", "项"],
+    "correctIndex": 1,
+    "explanation": "事情用「桩」作量词，表示一桩事情。也常用「件」。"
+  }
+]
