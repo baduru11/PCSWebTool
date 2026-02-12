@@ -2,6 +2,8 @@ import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
 import { getCharacterImageFallback } from "@/lib/character-images";
+import { shuffle } from "@/lib/utils";
+import type { QuizQuestion } from "@/types/practice";
 
 const ExamRunner = dynamic(() => import("./exam-runner").then(m => m.ExamRunner), {
   loading: () => (
@@ -43,8 +45,8 @@ export default async function MockExamPage() {
 
   const userId = user!.id;
 
-  // Fetch character, C1 characters, and C2 words in parallel
-  const [{ data: userCharacter }, { data: c1Questions }, { data: c2Questions }] = await Promise.all([
+  // Fetch character and all component questions in parallel
+  const [{ data: userCharacter }, { data: c1Questions }, { data: c2Questions }, { data: c3Questions }, { data: c4Passages }, { data: c5Topics }] = await Promise.all([
     supabase
       .from("user_characters")
       .select(`
@@ -67,10 +69,57 @@ export default async function MockExamPage() {
       .select("content")
       .eq("component", 2)
       .limit(100),
+    supabase
+      .from("question_banks")
+      .select("id, content, metadata")
+      .eq("component", 3)
+      .limit(500),
+    supabase
+      .from("question_banks")
+      .select("id, content, metadata")
+      .eq("component", 4)
+      .limit(50),
+    supabase
+      .from("question_banks")
+      .select("content")
+      .eq("component", 5)
+      .limit(150),
   ]);
 
-  const examCharacters: string[] = c1Questions?.length ? c1Questions.map(q => q.content) : FALLBACK_CHARACTERS;
-  const examWords: string[] = c2Questions?.length ? c2Questions.map(q => q.content) : FALLBACK_WORDS;
+  const examCharacters: string[] = shuffle(c1Questions?.length ? c1Questions.map(q => q.content) : FALLBACK_CHARACTERS);
+  const examWords: string[] = shuffle(c2Questions?.length ? c2Questions.map(q => q.content) : FALLBACK_WORDS);
+
+  // C3: Parse quiz questions — pick 10 word-choice + 10 measure-word + 5 sentence-order
+  let examQuizQuestions: QuizQuestion[] | undefined;
+  if (c3Questions && c3Questions.length > 0) {
+    const allParsed = c3Questions
+      .filter((row: { metadata: unknown }) => row.metadata && typeof row.metadata === "object")
+      .map((row: { id: string; content: string; metadata: { type: string; options: string[]; correctIndex: number; explanation: string } }) => ({
+        id: row.id,
+        type: row.metadata.type as QuizQuestion["type"],
+        prompt: row.content,
+        options: row.metadata.options,
+        correctIndex: row.metadata.correctIndex,
+        explanation: row.metadata.explanation,
+      }));
+    const wc = shuffle(allParsed.filter(q => q.type === "word-choice")).slice(0, 10);
+    const mw = shuffle(allParsed.filter(q => q.type === "measure-word")).slice(0, 10);
+    const so = shuffle(allParsed.filter(q => q.type === "sentence-order")).slice(0, 5);
+    examQuizQuestions = [...wc, ...mw, ...so];
+  }
+
+  // C4: Pick one random passage
+  let examPassage: { id: string; title: string; content: string } | undefined;
+  if (c4Passages && c4Passages.length > 0) {
+    const picked = c4Passages[Math.floor(Math.random() * c4Passages.length)] as { id: string; content: string; metadata: { title: string } };
+    examPassage = { id: picked.id, title: picked.metadata.title ?? "Untitled", content: picked.content };
+  }
+
+  // C5: Pick random topics
+  let examTopics: string[] | undefined;
+  if (c5Topics && c5Topics.length > 0) {
+    examTopics = shuffle(c5Topics.map((q: { content: string }) => q.content)).slice(0, 10);
+  }
 
   // Build character data
   const characterData = userCharacter?.characters;
@@ -103,7 +152,14 @@ export default async function MockExamPage() {
         </p>
       </div>
 
-      <ExamRunner character={character} characters={examCharacters} words={examWords} />
+      <ExamRunner
+        character={character}
+        characters={examCharacters}
+        words={examWords}
+        quizQuestions={examQuizQuestions}
+        passage={examPassage}
+        topics={examTopics}
+      />
     </div>
   );
 }

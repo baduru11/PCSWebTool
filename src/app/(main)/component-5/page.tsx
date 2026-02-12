@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
 import { getCharacterImageFallback } from "@/lib/character-images";
+import { shuffle } from "@/lib/utils";
 
 const SpeakingSession = dynamic(() => import("./speaking-session").then(m => m.SpeakingSession), {
   loading: () => (
@@ -28,19 +29,26 @@ export default async function Component5Page() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
-  // Fetch selected character with expressions
-  const { data: userCharacter } = await supabase
-    .from("user_characters")
-    .select(`
-      *,
-      characters (
+  // Fetch selected character and topics in parallel
+  const [{ data: userCharacter }, { data: dbTopics }] = await Promise.all([
+    supabase
+      .from("user_characters")
+      .select(`
         *,
-        character_expressions (*)
-      )
-    `)
-    .eq("user_id", user!.id)
-    .eq("is_selected", true)
-    .single();
+        characters (
+          *,
+          character_expressions (*)
+        )
+      `)
+      .eq("user_id", user!.id)
+      .eq("is_selected", true)
+      .single(),
+    supabase
+      .from("question_banks")
+      .select("content")
+      .eq("component", 5)
+      .limit(150),
+  ]);
 
   // Build character data for the speaking session
   const characterData = userCharacter?.characters;
@@ -63,8 +71,12 @@ export default async function Component5Page() {
     expressions: getCharacterImageFallback(characterName, expressions),
   };
 
-  // Use fallback topics
-  const topics = FALLBACK_TOPICS;
+  // Use DB topics with shuffle, or fallback
+  const topics: string[] = shuffle(
+    dbTopics && dbTopics.length > 0
+      ? dbTopics.map((q: { content: string }) => q.content)
+      : FALLBACK_TOPICS
+  );
 
   return (
     <div className="space-y-4">

@@ -482,33 +482,39 @@ export function ReadingSession({ passages, character, characterId, component }: 
   if (phase === "select") {
     return (
       <div className="space-y-4">
-        <div className="flex flex-col items-center gap-4">
-          <CharacterDisplay
-            characterName={character.name}
-            expressionImages={character.expressions}
-            currentExpression={expression}
-          />
-          <DialogueBox text={dialogue} characterName={character.name} />
-        </div>
+        <div className="flex flex-col gap-4 md:flex-row">
+          {/* Left side: Character (30%) */}
+          <div className="space-y-3 md:w-[30%]">
+            <CharacterDisplay
+              characterName={character.name}
+              expressionImages={character.expressions}
+              currentExpression={expression}
+            />
+            <DialogueBox text={dialogue} characterName={character.name} />
+          </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          {passages.map((passage) => (
-            <Card
-              key={passage.id}
-              className="cursor-pointer transition-all hover:border-primary hover:shadow-md"
-              onClick={() => handleSelectPassage(passage)}
-            >
-              <CardContent className="pt-6">
-                <h3 className="text-lg font-bold font-chinese mb-2">{passage.title}</h3>
-                <p className="text-sm text-muted-foreground font-chinese line-clamp-3">
-                  {passage.content}
-                </p>
-                <p className="mt-2 text-xs text-muted-foreground">
-                  {passage.content.length} characters
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+          {/* Right side: Passage selection (70%) */}
+          <div className="flex-1 md:w-[70%]">
+            <div className="grid gap-4 sm:grid-cols-2 max-h-[70vh] overflow-y-auto pr-2">
+              {passages.map((passage) => (
+                <Card
+                  key={passage.id}
+                  className="cursor-pointer transition-all hover:border-primary hover:shadow-md h-fit"
+                  onClick={() => handleSelectPassage(passage)}
+                >
+                  <CardContent className="pt-6">
+                    <h3 className="text-lg font-bold font-chinese mb-2">{passage.title}</h3>
+                    <p className="text-sm text-muted-foreground font-chinese line-clamp-3">
+                      {passage.content}
+                    </p>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      {passage.content.length} characters
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -720,7 +726,7 @@ export function ReadingSession({ passages, character, characterId, component }: 
               </div>
 
               {/* Passage content with clickable sentences */}
-              <div className="rounded-lg border bg-muted/30 p-6 leading-relaxed">
+              <div className="rounded-lg border bg-muted/30 p-6 leading-relaxed max-h-[60vh] overflow-y-auto">
                 {sentences.map((sentence, index) => (
                   <span
                     key={index}

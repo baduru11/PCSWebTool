@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
+import { randomizeAnswerPositions } from "@/lib/utils";
 import { AudioRecorder } from "@/components/practice/audio-recorder";
 import type { QuizQuestion } from "@/types/practice";
 
@@ -267,9 +268,20 @@ interface ExamRunnerProps {
   };
   characters: string[];
   words: string[];
+  quizQuestions?: QuizQuestion[];
+  passage?: { id: string; title: string; content: string };
+  topics?: string[];
 }
 
-export function ExamRunner({ characters, words }: ExamRunnerProps) {
+export function ExamRunner({ characters, words, quizQuestions, passage, topics }: ExamRunnerProps) {
+  // Randomize answer positions on client side
+  const activeQuizQuestions = useMemo(() => {
+    const questions = quizQuestions ?? EXAM_QUIZ_QUESTIONS;
+    return questions.map(randomizeAnswerPositions);
+  }, [quizQuestions]);
+
+  const activePassage = passage ?? EXAM_PASSAGE;
+  const activeTopics = topics ?? EXAM_TOPICS;
   const [examPhase, setExamPhase] = useState<ExamPhase>("start");
   const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
   const [rawDataList, setRawDataList] = useState<ComponentRawData[]>([]);
@@ -312,7 +324,7 @@ export function ExamRunner({ characters, words }: ExamRunnerProps) {
       if (raw.componentNumber === 3) {
         // C3: Quiz scoring (no API call needed)
         const answers = raw.quizAnswers ?? [];
-        const quizResults = EXAM_QUIZ_QUESTIONS.map((q, i) => ({
+        const quizResults = activeQuizQuestions.map((q, i) => ({
           question: q,
           selectedIndex: answers[i] ?? -1,
           isCorrect: answers[i] === q.correctIndex,
@@ -320,7 +332,7 @@ export function ExamRunner({ characters, words }: ExamRunnerProps) {
 
         // Weighted scoring
         let rawScore = 0;
-        EXAM_QUIZ_QUESTIONS.forEach((q, i) => {
+        activeQuizQuestions.forEach((q, i) => {
           if (quizResults[i].isCorrect) {
             rawScore += q.type === "word-choice" ? 0.25 : 0.5;
           }
@@ -447,7 +459,7 @@ export function ExamRunner({ characters, words }: ExamRunnerProps) {
 
     setComponentResults(results);
     setExamPhase("results");
-  }, []);
+  }, [activeQuizQuestions]);
 
   // ---- Component complete handler ----
   const handleComponentDone = useCallback((rawData: ComponentRawData) => {
@@ -715,21 +727,21 @@ export function ExamRunner({ characters, words }: ExamRunnerProps) {
       )}
       {currentComp.number === 3 && (
         <QuizComponent
-          questions={EXAM_QUIZ_QUESTIONS}
+          questions={activeQuizQuestions}
           timeLimitSeconds={currentComp.timeLimitSeconds}
           onComplete={handleComponentDone}
         />
       )}
       {currentComp.number === 4 && (
         <PassageComponent
-          passage={EXAM_PASSAGE}
+          passage={activePassage}
           timeLimitSeconds={currentComp.timeLimitSeconds}
           onComplete={handleComponentDone}
         />
       )}
       {currentComp.number === 5 && (
         <SpeakingComponent
-          topics={EXAM_TOPICS}
+          topics={activeTopics}
           timeLimitSeconds={currentComp.timeLimitSeconds}
           onComplete={handleComponentDone}
         />

@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
+import { shuffle } from "@/lib/utils";
 import type { ExpressionName } from "@/types/character";
 
 // Speaking structure template
@@ -76,7 +77,7 @@ export function SpeakingSession({ topics, character, characterId, component }: S
 
   // Pick 6 random topics on mount
   useEffect(() => {
-    const shuffled = [...topics].sort(() => Math.random() - 0.5);
+    const shuffled = shuffle(topics);
     setDisplayTopics(shuffled.slice(0, 6));
   }, [topics]);
 
@@ -183,7 +184,7 @@ export function SpeakingSession({ topics, character, characterId, component }: S
 
   // Shuffle displayed topics
   const shuffleTopics = useCallback(() => {
-    const shuffled = [...topics].sort(() => Math.random() - 0.5);
+    const shuffled = shuffle(topics);
     setDisplayTopics(shuffled.slice(0, 6));
   }, [topics]);
 
@@ -390,7 +391,7 @@ export function SpeakingSession({ topics, character, characterId, component }: S
     setTotalXPEarned(0);
     setExpression("neutral");
     setDialogue("Choose a topic to speak about! You'll have 3 minutes.");
-    const shuffled = [...topics].sort(() => Math.random() - 0.5);
+    const shuffled = shuffle(topics);
     setDisplayTopics(shuffled.slice(0, 6));
   }, [topics]);
 
@@ -398,36 +399,42 @@ export function SpeakingSession({ topics, character, characterId, component }: S
   if (phase === "select") {
     return (
       <div className="space-y-4">
-        <div className="flex flex-col items-center gap-4">
-          <CharacterDisplay
-            characterName={character.name}
-            expressionImages={character.expressions}
-            currentExpression={expression}
-          />
-          <DialogueBox text={dialogue} characterName={character.name} />
-        </div>
+        <div className="flex flex-col gap-4 md:flex-row">
+          {/* Left side: Character (30%) */}
+          <div className="space-y-3 md:w-[30%]">
+            <CharacterDisplay
+              characterName={character.name}
+              expressionImages={character.expressions}
+              currentExpression={expression}
+            />
+            <DialogueBox text={dialogue} characterName={character.name} />
 
-        <div className="flex gap-2 justify-center">
-          <Button onClick={selectRandomTopic} variant="default">
-            Random Topic
-          </Button>
-          <Button onClick={shuffleTopics} variant="outline">
-            Shuffle Topics
-          </Button>
-        </div>
+            <div className="flex flex-col gap-2">
+              <Button onClick={selectRandomTopic} variant="default" className="w-full">
+                Random Topic
+              </Button>
+              <Button onClick={shuffleTopics} variant="outline" className="w-full">
+                Shuffle Topics
+              </Button>
+            </div>
+          </div>
 
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {displayTopics.map((topic, index) => (
-            <Card
-              key={`${topic}-${index}`}
-              className="cursor-pointer transition-all hover:border-primary hover:shadow-md"
-              onClick={() => handleSelectTopic(topic)}
-            >
-              <CardContent className="flex items-center justify-center py-6">
-                <p className="text-lg font-medium text-center">{topic}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {/* Right side: Topic selection (70%) */}
+          <div className="flex-1 md:w-[70%]">
+            <div className="grid gap-3 sm:grid-cols-2 max-h-[70vh] overflow-y-auto pr-2">
+              {displayTopics.map((topic, index) => (
+                <Card
+                  key={`${topic}-${index}`}
+                  className="cursor-pointer transition-all hover:border-primary hover:shadow-md h-fit"
+                  onClick={() => handleSelectTopic(topic)}
+                >
+                  <CardContent className="flex items-center justify-center py-6">
+                    <p className="text-lg font-medium text-center font-chinese">{topic}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -436,18 +443,41 @@ export function SpeakingSession({ topics, character, characterId, component }: S
   // Feedback / completion screen
   if (phase === "feedback" || phase === "complete") {
     return (
-      <div className="space-y-6">
-        <div className="flex flex-col items-center gap-4">
-          <CharacterDisplay
-            characterName={character.name}
-            expressionImages={character.expressions}
-            currentExpression={expression}
-          />
-          <DialogueBox text={dialogue} characterName={character.name} />
-        </div>
+      <div className="space-y-4">
+        <div className="flex flex-col gap-4 md:flex-row">
+          {/* Left side: Character (30%) */}
+          <div className="space-y-3 md:w-[30%]">
+            <CharacterDisplay
+              characterName={character.name}
+              expressionImages={character.expressions}
+              currentExpression={expression}
+            />
+            <DialogueBox text={dialogue} characterName={character.name} />
 
-        <Card>
-          <CardContent className="pt-6 space-y-4">
+            <div className="flex flex-col gap-2">
+              <Button onClick={() => {
+                setPhase("prepare");
+                setTimeRemaining(TOTAL_TIME);
+                setAnalysis(null);
+                setTotalXPEarned(0);
+                setExpression("encouraging");
+                setDialogue(`Let's try "${selectedTopic}" again! Remember to follow the structure.`);
+              }} className="w-full">
+                Try Again
+              </Button>
+              <Button variant="outline" onClick={handleBackToSelection} className="w-full">
+                Choose Another Topic
+              </Button>
+              <Button variant="outline" asChild className="w-full">
+                <a href="/dashboard">Back to Dashboard</a>
+              </Button>
+            </div>
+          </div>
+
+          {/* Right side: Results (70%) */}
+          <div className="flex-1 md:w-[70%]">
+            <Card className="h-full">
+              <CardContent className="pt-6 space-y-4 max-h-[75vh] overflow-y-auto">
             <h2 className="font-pixel text-sm text-center">
               Speaking Assessment: <span className="font-chinese text-base">{selectedTopic}</span>
             </h2>
@@ -522,27 +552,10 @@ export function SpeakingSession({ topics, character, characterId, component }: S
                 Assessment data unavailable. Please try again.
               </div>
             )}
-
-            <div className="flex gap-3 justify-center pt-2">
-              <Button onClick={() => {
-                setPhase("prepare");
-                setTimeRemaining(TOTAL_TIME);
-                setAnalysis(null);
-                setTotalXPEarned(0);
-                setExpression("encouraging");
-                setDialogue(`Let's try "${selectedTopic}" again! Remember to follow the structure.`);
-              }}>
-                Try Again
-              </Button>
-              <Button variant="outline" onClick={handleBackToSelection}>
-                Choose Another Topic
-              </Button>
-              <Button variant="outline" asChild>
-                <a href="/dashboard">Back to Dashboard</a>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     );
   }
@@ -626,7 +639,7 @@ export function SpeakingSession({ topics, character, characterId, component }: S
               </div>
 
               {/* Speaking structure template */}
-              <div className="rounded-lg border bg-muted/30 p-6 space-y-4">
+              <div className="rounded-lg border bg-muted/30 p-6 space-y-4 max-h-[50vh] overflow-y-auto">
                 <h3 className="text-sm font-bold text-muted-foreground uppercase tracking-wide">
                   万能结构 Speaking Structure Guide
                 </h3>

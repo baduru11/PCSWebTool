@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
 import { getCharacterImageFallback } from "@/lib/character-images";
+import { shuffle } from "@/lib/utils";
 
 const PracticeSession = dynamic(() => import("./practice-session").then(m => m.PracticeSession), {
   loading: () => (
@@ -45,7 +46,7 @@ export default async function Component2Page() {
       .from("question_banks")
       .select("content")
       .eq("component", 2)
-      .limit(100),
+      .limit(50),
   ]);
 
   // Build character data for the practice session
@@ -69,10 +70,11 @@ export default async function Component2Page() {
     expressions: getCharacterImageFallback(characterName, expressions),
   };
 
-  const questions: string[] =
+  const questions: string[] = shuffle(
     dbQuestions && dbQuestions.length > 0
       ? dbQuestions.map((q: { content: string }) => q.content)
-      : DEFAULT_WORDS;
+      : DEFAULT_WORDS
+  );
 
   return (
     <div className="space-y-4">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import { CharacterDisplay } from "@/components/character/character-display";
 import { DialogueBox } from "@/components/character/dialogue-box";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
+import { randomizeAnswerPositions } from "@/lib/utils";
 import type { ExpressionName } from "@/types/character";
 import type { QuizQuestion, QuestionResult } from "@/types/practice";
 
@@ -25,6 +26,11 @@ interface QuizSessionProps {
 type SessionPhase = "answering" | "result" | "complete";
 
 export function QuizSession({ questions, character, characterId, component }: QuizSessionProps) {
+  // Randomize answer positions on client side
+  const randomizedQuestions = useMemo(() => {
+    return questions.map(randomizeAnswerPositions);
+  }, [questions]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [phase, setPhase] = useState<SessionPhase>("answering");
   const [expression, setExpression] = useState<ExpressionName>("neutral");
@@ -35,8 +41,8 @@ export function QuizSession({ questions, character, characterId, component }: Qu
   const [results, setResults] = useState<QuestionResult[]>([]);
   const [isLoadingFeedback, setIsLoadingFeedback] = useState(false);
 
-  const currentQuestion = questions[currentIndex];
-  const progressPercent = questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0;
+  const currentQuestion = randomizedQuestions[currentIndex];
+  const progressPercent = randomizedQuestions.length > 0 ? Math.round((currentIndex / randomizedQuestions.length) * 100) : 0;
 
   // Save progress when quiz completes
   useEffect(() => {
@@ -141,7 +147,7 @@ export function QuizSession({ questions, character, characterId, component }: Qu
   }, [phase, currentQuestion, streak, character.personalityPrompt]);
 
   const handleNext = useCallback(() => {
-    if (currentIndex + 1 >= questions.length) {
+    if (currentIndex + 1 >= randomizedQuestions.length) {
       setPhase("complete");
       setExpression("proud");
       setDialogue("Great job completing the quiz! Let's review your results.");
@@ -152,7 +158,7 @@ export function QuizSession({ questions, character, characterId, component }: Qu
       setExpression("neutral");
       setDialogue("Next question! Think carefully before you answer.");
     }
-  }, [currentIndex, questions.length]);
+  }, [currentIndex, randomizedQuestions.length]);
 
   // Get label for question type
   function getTypeLabel(type: QuizQuestion["type"]): string {
@@ -192,9 +198,9 @@ export function QuizSession({ questions, character, characterId, component }: Qu
     const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
     // Count by type
-    const wordChoiceResults = results.filter((_, i) => questions[i]?.type === "word-choice");
-    const measureWordResults = results.filter((_, i) => questions[i]?.type === "measure-word");
-    const sentenceOrderResults = results.filter((_, i) => questions[i]?.type === "sentence-order");
+    const wordChoiceResults = results.filter((_, i) => randomizedQuestions[i]?.type === "word-choice");
+    const measureWordResults = results.filter((_, i) => randomizedQuestions[i]?.type === "measure-word");
+    const sentenceOrderResults = results.filter((_, i) => randomizedQuestions[i]?.type === "sentence-order");
 
     const wordChoiceCorrect = wordChoiceResults.filter((r) => r.isCorrect).length;
     const measureWordCorrect = measureWordResults.filter((r) => r.isCorrect).length;
@@ -270,7 +276,7 @@ export function QuizSession({ questions, character, characterId, component }: Qu
                 >
                   <div className="flex-1 min-w-0">
                     <span className="text-sm font-medium truncate block">
-                      Q{index + 1}: {questions[index]?.prompt}
+                      Q{index + 1}: {randomizedQuestions[index]?.prompt}
                     </span>
                     <span className="text-xs text-muted-foreground">
                       Your answer: <span className="font-chinese">{result.userAnswer}</span>
@@ -309,7 +315,7 @@ export function QuizSession({ questions, character, characterId, component }: Qu
       <div className="space-y-1">
         <div className="flex justify-between text-sm text-muted-foreground">
           <span>
-            Question {currentIndex + 1} of {questions.length}
+            Question {currentIndex + 1} of {randomizedQuestions.length}
           </span>
           <span className="flex items-center gap-2">
             {streak > 0 && (
@@ -418,7 +424,7 @@ export function QuizSession({ questions, character, characterId, component }: Qu
               {phase === "result" && (
                 <div className="flex justify-center">
                   <Button onClick={handleNext} size="lg">
-                    {currentIndex + 1 >= questions.length ? "See Results" : "Next Question"}
+                    {currentIndex + 1 >= randomizedQuestions.length ? "See Results" : "Next Question"}
                   </Button>
                 </div>
               )}

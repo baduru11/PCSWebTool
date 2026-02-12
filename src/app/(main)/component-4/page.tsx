@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import type { ExpressionName } from "@/types/character";
 import { getCharacterImageFallback } from "@/lib/character-images";
+import { shuffle } from "@/lib/utils";
 
 const ReadingSession = dynamic(() => import("./reading-session").then(m => m.ReadingSession), {
   loading: () => (
@@ -37,19 +38,26 @@ export default async function Component4Page() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
-  // Fetch selected character with expressions
-  const { data: userCharacter } = await supabase
-    .from("user_characters")
-    .select(`
-      *,
-      characters (
+  // Fetch selected character and passages in parallel
+  const [{ data: userCharacter }, { data: dbPassages }] = await Promise.all([
+    supabase
+      .from("user_characters")
+      .select(`
         *,
-        character_expressions (*)
-      )
-    `)
-    .eq("user_id", user!.id)
-    .eq("is_selected", true)
-    .single();
+        characters (
+          *,
+          character_expressions (*)
+        )
+      `)
+      .eq("user_id", user!.id)
+      .eq("is_selected", true)
+      .single(),
+    supabase
+      .from("question_banks")
+      .select("id, content, metadata")
+      .eq("component", 4)
+      .limit(50),
+  ]);
 
   // Build character data for the reading session
   const characterData = userCharacter?.characters;
@@ -72,8 +80,17 @@ export default async function Component4Page() {
     expressions: getCharacterImageFallback(characterName, expressions),
   };
 
-  // Use fallback passages (DB likely won't have component 4 data yet)
-  const passages = FALLBACK_PASSAGES;
+  // Parse DB passages or use fallback
+  let passages: Passage[];
+  if (dbPassages && dbPassages.length > 0) {
+    passages = shuffle(dbPassages.map((row: { id: string; content: string; metadata: { title: string } }) => ({
+      id: row.id,
+      title: row.metadata.title ?? "Untitled",
+      content: row.content,
+    })));
+  } else {
+    passages = FALLBACK_PASSAGES;
+  }
 
   return (
     <div className="space-y-4">
