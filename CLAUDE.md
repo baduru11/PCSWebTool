@@ -43,11 +43,8 @@ src/app/
     ├── tts/speak               # Academic TTS via iFlytek WebSocket (POST JSON → audio/wav)
     ├── tts/companion           # Character voice via iFlytek WebSocket (POST JSON → audio/wav)
     ├── ai/feedback             # Gemini character-personalized feedback
-    ├── ai/generate             # Gemini dynamic question generation
     ├── auth/callback           # OAuth callback handler
     ├── progress/update         # XP, level, affection, streaks, daily bonus
-    ├── progress/unlock-character
-    ├── progress/select-character
     └── social/                 # Friends system
         ├── search              # Search users by username
         ├── lookup              # Look up user by display name

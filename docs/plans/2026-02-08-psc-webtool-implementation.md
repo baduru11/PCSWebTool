@@ -45,8 +45,8 @@
 - `src/lib/voice/client.ts` — iFlytek TTS WebSocket: Academic, Companion, and Word Group synthesis
 - `src/lib/gamification/xp.ts` — calculateXP(), getUserLevel(), getAffectionLevel()
 
-### Task 7: Question Bank Parser [COMPLETE]
-- `src/lib/question-bank/parser.ts` — Markdown parser for monosyllabic and multisyllabic files
+### Task 7: Question Bank Parser [REMOVED]
+- Removed — questions are now loaded directly from the `question_banks` DB table
 
 ---
 
@@ -123,8 +123,7 @@
 
 ### Task 20: Progress API Routes [COMPLETE]
 - `src/app/api/progress/update/route.ts` — Session creation, XP award, streak tracking, affection update
-- `src/app/api/progress/select-character/route.ts` — Set active companion
-- `src/app/api/progress/unlock-character/route.ts` — Unlock via XP spend
+- Select/unlock character functionality moved to server actions in `src/app/(main)/characters/actions.ts`
 
 ---
 
@@ -141,8 +140,8 @@
 ### Task 22: Landing Page & Root Redirect [COMPLETE]
 - `src/app/page.tsx` — Public landing page
 
-### Task 23: AI Question Generation [COMPLETE]
-- `src/app/api/ai/generate/route.ts` — Gemini dynamic question generation
+### Task 23: AI Question Generation [REMOVED]
+- Removed — questions are loaded from the `question_banks` DB table instead
 
 ### Task 24: Performance & UX [COMPLETE]
 - Loading skeletons for every route under `(main)/`

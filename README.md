@@ -187,7 +187,6 @@ src/
 │       ├── tts/speak/                      # Academic TTS (iFlytek WebSocket)
 │       ├── tts/companion/                  # Companion TTS (iFlytek WebSocket)
 │       ├── ai/feedback/                    # Gemini AI feedback
-│       ├── ai/generate/                    # Gemini question generation
 │       ├── auth/callback/                  # OAuth callback
 │       ├── progress/                       # XP, character, session management
 │       └── social/                         # Friends system (search, request, respond, etc.)
@@ -203,7 +202,6 @@ src/
 │   ├── voice/pinyin-data.ts                # Pinyin lookup tables (1,583 lines)
 │   ├── gemini/client.ts                    # Gemini with retry logic
 │   ├── gamification/xp.ts                  # XP, levels, streaks, affection
-│   ├── question-bank/parser.ts             # Markdown question parser
 │   ├── character-images.ts                 # Local image fallback mapping
 │   └── pinyin.ts                           # Tone-number → tone-mark conversion
 ├── types/
@@ -230,15 +228,12 @@ src/
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/ai/feedback` | Character-personalized feedback via Gemini 2.0 Flash. |
-| POST | `/api/ai/generate` | Dynamic PSC question generation. Accepts `{ component, count, difficulty }`. |
 
 ### Progress & Gamification
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/progress/update` | Record session, update XP, level, streaks, and character affection. |
-| POST | `/api/progress/select-character` | Switch the active character companion. |
-| POST | `/api/progress/unlock-character` | Spend XP to unlock a new character. |
 
 ### Social
 

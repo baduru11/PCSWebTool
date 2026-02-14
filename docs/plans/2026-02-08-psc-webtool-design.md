@@ -46,10 +46,7 @@ An AI-powered web tool to help HKUST students prepare for the Putonghua Proficie
 - `POST /api/tts/speak` — iFlytek TTS WebSocket (academic, clear pronunciation)
 - `POST /api/tts/companion` — iFlytek TTS WebSocket (companion voice)
 - `POST /api/ai/feedback` — Gemini 2.0 Flash feedback with character personality
-- `POST /api/ai/generate` — Gemini dynamic PSC question generation
 - `POST /api/progress/update` — XP, affection, streak tracking
-- `POST /api/progress/unlock-character` — Character unlock via XP spend
-- `POST /api/progress/select-character` — Set active companion
 - `GET /api/auth/callback` — OAuth callback handler
 
 ---
@@ -250,7 +247,6 @@ src/
 │       ├── tts/speak/
 │       ├── tts/companion/
 │       ├── ai/feedback/
-│       ├── ai/generate/
 │       ├── auth/callback/
 │       └── progress/
 ├── components/

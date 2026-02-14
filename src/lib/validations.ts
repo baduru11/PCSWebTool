@@ -27,14 +27,6 @@ export const progressUpdateSchema = z.object({
   bestStreak: z.number().int().min(0).optional().default(0),
 });
 
-export const selectCharacterSchema = z.object({
-  characterId: uuid,
-});
-
-export const unlockCharacterSchema = z.object({
-  characterId: uuid,
-});
-
 // --- AI API Schemas ---
 
 export const aiFeedbackSchema = z.object({
@@ -44,12 +36,6 @@ export const aiFeedbackSchema = z.object({
   userAnswer: z.string(),
   pronunciationScore: z.number().min(0).max(100).optional(),
   isCorrect: z.boolean(),
-});
-
-export const aiGenerateSchema = z.object({
-  component: z.number().int().min(1).max(5),
-  count: z.number().int().min(1).max(50).optional().default(10),
-  difficulty: z.string().optional(),
 });
 
 // --- TTS API Schemas ---
