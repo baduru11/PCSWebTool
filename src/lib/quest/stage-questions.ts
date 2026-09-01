@@ -44,6 +44,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）皮带",
         options: ["条", "根", "段", "个", "副"],
         correctIndex: 0,
+        acceptedAnswers: ["条", "根"],
       },
       {
         context: "这根绳子太长了，需要剪掉一截。",
@@ -138,6 +139,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "下面哪个说法是普通话正确说法？",
         options: ["我比他三岁大", "我大他三岁", "我比他大三岁"],
         correctIndex: 2,
+        acceptedAnswers: ["我大他三岁", "我比他大三岁"],
       },
       {
         prompt: "下面哪个说法是普通话正确说法？",
@@ -190,9 +192,9 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["地瓜", "红薯", "番薯"],
-        correctIndex: 1,
+        prompt: "一（ ）菜刀",
+        options: ["把", "个", "棵", "名", "所"],
+        correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
@@ -203,11 +205,13 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "下面哪个是普通话标准说法？",
         options: ["土豆", "洋芋", "薯仔", "马铃薯"],
         correctIndex: 0,
+        acceptedAnswers: ["土豆", "马铃薯"],
       },
       {
         prompt: "一（ ）伞",
         options: ["把", "顶", "张", "个", "柄"],
         correctIndex: 0,
+        acceptedAnswers: ["把", "顶"],
       },
       {
         prompt: "一（ ）棍子",
@@ -533,11 +537,13 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）钢琴",
         options: ["架", "台", "个", "座", "具"],
         correctIndex: 0,
+        acceptedAnswers: ["架", "台"],
       },
       {
         prompt: "一（ ）被子",
         options: ["床", "条", "张", "个", "套"],
         correctIndex: 0,
+        acceptedAnswers: ["床", "条"],
       },
       {
         prompt: "一（ ）眼镜",
@@ -548,6 +554,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）门",
         options: ["扇", "道", "个", "座", "孔"],
         correctIndex: 0,
+        acceptedAnswers: ["扇", "道"],
       },
       {
         context: "悟空沿着山路往前走，月光洒在他身上。",
@@ -583,41 +590,49 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）猪",
         options: ["头", "只", "条", "个", "口"],
         correctIndex: 0,
+        acceptedAnswers: ["头", "口"],
       },
       {
         prompt: "一（ ）云",
         options: ["朵", "片", "团", "块", "层"],
         correctIndex: 0,
+        acceptedAnswers: ["朵", "片"],
       },
       {
         prompt: "一（ ）蜡烛",
         options: ["根", "支", "条", "个", "盏"],
         correctIndex: 0,
+        acceptedAnswers: ["根", "支"],
       },
       {
         prompt: "一（ ）火车",
         options: ["列", "辆", "节", "台", "条"],
         correctIndex: 0,
+        acceptedAnswers: ["列", "辆"],
       },
       {
         prompt: "一（ ）鼓",
         options: ["面", "个", "只", "架", "通"],
         correctIndex: 0,
+        acceptedAnswers: ["面", "架"],
       },
       {
         prompt: "下面哪个句子语法正确？",
         options: ["这孩子可爱真", "这孩子可爱得很", "这孩子真可爱"],
         correctIndex: 2,
+        acceptedAnswers: ["这孩子可爱得很", "这孩子真可爱"],
       },
       {
         prompt: "下面哪个句子语法正确？",
         options: ["他住上海", "他在上海住", "他住在上海"],
         correctIndex: 2,
+        acceptedAnswers: ["他住上海", "他住在上海"],
       },
       {
         prompt: "下面哪个句子语法正确？",
         options: ["你帮我能吗？", "你能帮我吗？", "你可不可以帮我？"],
         correctIndex: 1,
+        acceptedAnswers: ["你能帮我吗？", "你可不可以帮我？"],
       },
       {
         prompt: "下面哪个句子语法正确？",
@@ -628,6 +643,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "下面哪个句子语法正确？",
         options: ["他跳很好舞", "他跳舞很好", "他跳舞跳得很好"],
         correctIndex: 2,
+        acceptedAnswers: ["他跳舞很好", "他跳舞跳得很好"],
       },
     ],
   },
@@ -744,11 +760,6 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["馒头", "馍", "蒸饼", "馍馍"],
-        correctIndex: 0,
-      },
-      {
-        prompt: "下面哪个是普通话标准说法？",
         options: ["辣椒", "番椒", "辣子", "海椒"],
         correctIndex: 0,
       },
@@ -769,7 +780,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["手机", "手电", "移动", "大哥大"],
+        options: ["手机", "手提电话", "电话仔", "水货机"],
         correctIndex: 0,
       },
       {
@@ -789,8 +800,9 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["西红柿", "番茄", "洋柿子", "红茄"],
+        options: ["西红柿", "番茄", "洋柿子", "柑仔蜜"],
         correctIndex: 0,
+        acceptedAnswers: ["西红柿", "番茄"],
       },
       {
         prompt: "一（ ）桌子",
@@ -806,6 +818,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）衣服",
         options: ["件", "条", "套", "身", "个"],
         correctIndex: 0,
+        acceptedAnswers: ["件", "套"],
       },
       {
         prompt: "一（ ）井",
@@ -826,6 +839,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）糖",
         options: ["颗", "块", "粒", "个", "包"],
         correctIndex: 0,
+        acceptedAnswers: ["颗", "块"],
       },
       {
         prompt: "一（ ）军舰",
@@ -836,16 +850,19 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）耳朵",
         options: ["只", "个", "对", "扇", "片"],
         correctIndex: 0,
+        acceptedAnswers: ["只", "对"],
       },
       {
         prompt: "一（ ）墙",
         options: ["面", "道", "堵", "个", "扇"],
         correctIndex: 0,
+        acceptedAnswers: ["面", "道"],
       },
       {
         prompt: "一（ ）葡萄",
         options: ["颗", "粒", "个", "串", "枝"],
         correctIndex: 3,
+        acceptedAnswers: ["颗", "粒", "串"],
       },
     ],
   },
@@ -1064,57 +1081,52 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["漂亮", "靓", "好看", "美"],
+        options: ["漂亮", "靓", "好睇", "标致"],
         correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["干净", "清洁", "清爽", "净办"],
+        options: ["冰箱", "雪柜", "冻柜", "冰柜仔"],
         correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["舒服", "舒坦", "受用", "好过"],
+        options: ["空调", "冷气机", "冷气箱", "凉风机"],
         correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["着急", "心急", "发急", "急眼"],
+        options: ["生气", "嬲", "谷气", "火滚"],
         correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["开心", "快乐", "高兴", "欢喜"],
+        options: ["想念", "挂住", "谂住", "记挂住"],
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["想念", "想", "思念", "惦记"],
+        prompt: "一（ ）剪刀",
+        options: ["把", "名", "所", "张", "场"],
         correctIndex: 0,
       },
       {
-        prompt: "一（ ）耳朵",
-        options: ["只", "个", "对", "扇", "片"],
+        prompt: "一（ ）扫帚",
+        options: ["把", "滴", "个", "棵", "名"],
         correctIndex: 0,
       },
       {
-        prompt: "一（ ）墙",
-        options: ["面", "道", "堵", "个", "扇"],
+        prompt: "一（ ）茶壶",
+        options: ["把", "对", "家", "口", "盘"],
         correctIndex: 0,
       },
       {
-        prompt: "一（ ）葡萄",
-        options: ["颗", "粒", "个", "串", "枝"],
-        correctIndex: 3,
-      },
-      {
-        prompt: "一（ ）钢琴",
-        options: ["架", "台", "个", "座", "具"],
+        prompt: "一（ ）扇子",
+        options: ["把", "场", "幅", "件", "辆"],
         correctIndex: 0,
       },
       {
-        prompt: "一（ ）被子",
-        options: ["床", "条", "张", "个", "套"],
+        prompt: "一（ ）电视剧",
+        options: ["部", "支", "滴", "个", "棵"],
         correctIndex: 0,
       },
     ],
@@ -1374,26 +1386,30 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）香烟",
         options: ["根", "支", "条", "包", "盒"],
         correctIndex: 1,
+        acceptedAnswers: ["根", "支"],
       },
       {
         prompt: "一（ ）黄瓜",
         options: ["根", "条", "个", "段", "棵"],
         correctIndex: 0,
+        acceptedAnswers: ["根", "条"],
       },
       {
         prompt: "一（ ）项链",
         options: ["条", "根", "串", "个", "副"],
         correctIndex: 0,
+        acceptedAnswers: ["条", "根"],
       },
       {
-        prompt: "一（ ）皮带",
-        options: ["条", "根", "段", "个", "副"],
+        prompt: "一（ ）大风",
+        options: ["场", "所", "张", "幅", "件"],
         correctIndex: 0,
       },
       {
         prompt: "一（ ）竹子",
         options: ["根", "条", "棵", "节", "竿"],
         correctIndex: 0,
+        acceptedAnswers: ["根", "棵"],
       },
       {
         prompt: "一（ ）桥",
@@ -1409,6 +1425,7 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         prompt: "一（ ）牛",
         options: ["头", "只", "条", "匹", "个"],
         correctIndex: 0,
+        acceptedAnswers: ["头", "只", "条"],
       },
       {
         prompt: "一（ ）镜子",
@@ -1476,23 +1493,18 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["西红柿", "番茄", "洋柿子", "红茄"],
+        prompt: "一（ ）官司",
+        options: ["场", "颗", "面", "台", "只"],
         correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["客厅", "堂屋", "厅下", "厅堂"],
+        options: ["电梯", "升降机", "较剪梯", "自动梯仔"],
         correctIndex: 0,
       },
       {
         prompt: "下面哪个是普通话标准说法？",
-        options: ["学校", "学堂", "书院", "学舍"],
-        correctIndex: 0,
-      },
-      {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["老师", "先生", "教书匠", "教授"],
+        options: ["上学", "返学", "返书院", "上堂课"],
         correctIndex: 0,
       },
       {
@@ -1506,28 +1518,23 @@ export const STAGE_QUESTIONS: Record<StageNumber, StageQuestions> = {
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["漂亮", "靓", "好看", "美"],
+        prompt: "一（ ）闪电",
+        options: ["道", "对", "家", "口", "盘"],
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["干净", "清洁", "清爽", "净办"],
+        prompt: "一（ ）帽子",
+        options: ["顶", "门", "双", "项", "部"],
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["舒服", "舒坦", "受用", "好过"],
+        prompt: "一（ ）蚊帐",
+        options: ["顶", "部", "份", "间", "粒"],
         correctIndex: 0,
       },
       {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["着急", "心急", "发急", "急眼"],
-        correctIndex: 0,
-      },
-      {
-        prompt: "下面哪个是普通话标准说法？",
-        options: ["开心", "快乐", "高兴", "欢喜"],
+        prompt: "一（ ）夫妻",
+        options: ["对", "位", "本", "朵", "架"],
         correctIndex: 0,
       },
       {

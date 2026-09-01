@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { fetchQuestionIdSample, fetchQuestionCount } from "@/lib/question-bank";
 import { createClient, getSessionUser } from "@/lib/supabase/server";
 import { generatePhase, calculateTotalCheckpoints } from "@/lib/gemini/client";
 import type { PhaseGenerationInput } from "@/lib/gemini/client";
@@ -45,14 +46,15 @@ export async function POST(request: NextRequest) {
     // Fetch available question IDs per component (1-7)
     const availableQuestionIds: Record<number, string[]> = {};
     const availableQuestionCounts: Record<number, number> = {};
+    // Bounded random ID pool via the sampling RPC — an unranged .select("id")
+    // silently truncates at PostgREST's max-rows cap now that C2 has 15k+ rows.
     const componentPromises = [1, 2, 3, 4, 5, 6, 7].map(async (comp) => {
-      const { data } = await supabase
-        .from("question_banks")
-        .select("id")
-        .eq("component", comp);
-      const ids = (data ?? []).map((row) => row.id);
+      const [ids, total] = await Promise.all([
+        fetchQuestionIdSample(supabase, comp, 500),
+        fetchQuestionCount(supabase, comp),
+      ]);
       availableQuestionIds[comp] = ids;
-      availableQuestionCounts[comp] = ids.length;
+      availableQuestionCounts[comp] = total;
     });
     await Promise.all(componentPromises);
 

@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { buildPlayerMemory } from "@/lib/gemini/player-memory";
 import { shuffle } from "@/lib/utils";
+import { fetchQuestionSample } from "@/lib/question-bank";
 import Link from "next/link";
 import {
   getSupplementarySpeakingTopics,
@@ -30,20 +31,18 @@ export default async function Component5Page({
   const supabase = await createClient();
   const user = await getSessionUser();
 
-  // Fetch selected character and topics in parallel
-  const [character, { data: dbTopics }] = await Promise.all([
+  // Fetch selected character and a server-side random topic sample in
+  // parallel (sample_question_bank RPC — a plain .limit() without ORDER BY
+  // serves physical row order and starves newly inserted rows).
+  const [character, dbTopics] = await Promise.all([
     loadSelectedCharacter(supabase, user!.id),
-    supabase
-      .from("question_banks")
-      .select("content")
-      .eq("component", 5)
-      .limit(150),
+    fetchQuestionSample(supabase, 5, 150),
   ]);
 
   const playerMemory = await buildPlayerMemory(supabase, user!.id, character.id ?? "").catch(() => "");
 
   const supplementaryTopics = getSupplementarySpeakingTopics(
-    (dbTopics ?? []).map((question: { content: string }) => question.content)
+    dbTopics.map((question) => question.content)
   );
   const usesSupplementaryBank = bank === "supplementary" && supplementaryTopics.length > 0;
   const topics = shuffle(

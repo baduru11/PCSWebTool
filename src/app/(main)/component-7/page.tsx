@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { buildPlayerMemory } from "@/lib/gemini/player-memory";
 import { randomizeAnswerPositions, shuffle } from "@/lib/utils";
+import { fetchQuestionSampleWithMetadata } from "@/lib/question-bank";
 import { QUIZ_SIZES } from "@/lib/constants";
 import type { QuizQuestion } from "@/types/practice";
 
@@ -16,23 +17,27 @@ const QuizSession = dynamic(() => import("../component-3/quiz-session").then(m =
   ),
 });
 
-// Fallback polyphonic questions
+// Fallback polyphonic questions, used only when the bank read returns nothing.
+// Every entry is drawn from the same verified source as the bank itself: the
+// character's readings and both example words come from the official 2021
+// 普通话水平测试用普通话词语表.
 const FALLBACK_QUESTIONS: QuizQuestion[] = [
-  { id: "1", type: "polyphonic", prompt: "这根绳子太**长**了，需要剪掉一截。", options: ["cháng", "zhǎng"], correctIndex: 0, explanation: "表示长度，读 cháng。" },
-  { id: "2", type: "polyphonic", prompt: "几年不见，这孩子**长**高了不少。", options: ["cháng", "zhǎng"], correctIndex: 1, explanation: "「长高」表示生长，读 zhǎng。" },
-  { id: "3", type: "polyphonic", prompt: "你**行**动快一点，我们要迟到了。", options: ["xíng", "háng"], correctIndex: 0, explanation: "「行动」表示行为动作，读 xíng。" },
-  { id: "4", type: "polyphonic", prompt: "我在银**行**办了点业务，耽误了一会儿。", options: ["xíng", "háng"], correctIndex: 1, explanation: "「银行」读 yín háng。" },
-  { id: "5", type: "polyphonic", prompt: "这部电影很**好**看，推荐你也去瞧瞧。", options: ["hǎo", "hào"], correctIndex: 0, explanation: "「好看」表示好的程度，读 hǎo。" },
-  { id: "6", type: "polyphonic", prompt: "他从小就**好**学，如今终于成了博士。", options: ["hǎo", "hào"], correctIndex: 1, explanation: "「好学」表示喜爱学习，读 hào。" },
-  { id: "7", type: "polyphonic", prompt: "我**还**有一本书没看完，明天再还你。", options: ["hái", "huán"], correctIndex: 0, explanation: "「还有」表示仍然，读 hái。" },
-  { id: "8", type: "polyphonic", prompt: "借了图书馆的书要记得按时**还**。", options: ["hái", "huán"], correctIndex: 1, explanation: "「还书」表示归还，读 huán。" },
-  { id: "9", type: "polyphonic", prompt: "这个箱子很**重**，我一个人搬不动。", options: ["zhòng", "chóng"], correctIndex: 0, explanation: "表示重量大，读 zhòng。" },
-  { id: "10", type: "polyphonic", prompt: "我没听清楚，请你**重**说一遍。", options: ["zhòng", "chóng"], correctIndex: 1, explanation: "「重说」表示再说一次，读 chóng。" },
-  { id: "11", type: "polyphonic", prompt: "妈妈**教**我怎么做红烧肉。", options: ["jiào", "jiāo"], correctIndex: 1, explanation: "「教我」表示教授，读 jiāo。" },
-  { id: "12", type: "polyphonic", prompt: "他**为**人正直，大家都愿意和他交朋友。", options: ["wéi", "wèi"], correctIndex: 0, explanation: "「为人」表示做人，读 wéi。" },
-  { id: "13", type: "polyphonic", prompt: "这东西很**便**宜，才十块钱。", options: ["biàn", "pián"], correctIndex: 1, explanation: "「便宜」读 pián yi。" },
-  { id: "14", type: "polyphonic", prompt: "他**背**着书包去上学。", options: ["bēi", "bèi"], correctIndex: 0, explanation: "「背着」表示用背部承载，读 bēi。" },
-  { id: "15", type: "polyphonic", prompt: "衣服晾在外面，已经**干**了。", options: ["gān", "gàn"], correctIndex: 0, explanation: "「干了」表示干燥，读 gān。" },
+  { id: "1", type: "polyphonic", prompt: "**背**包", options: ["bēi", "bèi"], correctIndex: 0, explanation: "「背包」中的「背」读 bēi。该字的规范读音为 bēi／bèi（2021年版词语表）。" },
+  { id: "2", type: "polyphonic", prompt: "手**背**", options: ["bēi", "bèi"], correctIndex: 1, explanation: "「手背」中的「背」读 bèi。该字的规范读音为 bēi／bèi（2021年版词语表）。" },
+  { id: "3", type: "polyphonic", prompt: "不**便**", options: ["biàn", "pián"], correctIndex: 0, explanation: "「不便」中的「便」读 biàn。该字的规范读音为 biàn／pián（2021年版词语表）。" },
+  { id: "4", type: "polyphonic", prompt: "**便**宜", options: ["biàn", "pián"], correctIndex: 1, explanation: "「便宜」中的「便」读 pián。该字的规范读音为 biàn／pián（2021年版词语表）。" },
+  { id: "5", type: "polyphonic", prompt: "专**长**", options: ["cháng", "zhǎng"], correctIndex: 0, explanation: "「专长」中的「长」读 cháng。该字的规范读音为 cháng／zhǎng（2021年版词语表）。" },
+  { id: "6", type: "polyphonic", prompt: "兄**长**", options: ["cháng", "zhǎng"], correctIndex: 1, explanation: "「兄长」中的「长」读 zhǎng。该字的规范读音为 cháng／zhǎng（2021年版词语表）。" },
+  { id: "7", type: "polyphonic", prompt: "双**重**", options: ["chóng", "zhòng"], correctIndex: 0, explanation: "「双重」中的「重」读 chóng。该字的规范读音为 chóng／zhòng（2021年版词语表）。" },
+  { id: "8", type: "polyphonic", prompt: "严**重**", options: ["chóng", "zhòng"], correctIndex: 1, explanation: "「严重」中的「重」读 zhòng。该字的规范读音为 chóng／zhòng（2021年版词语表）。" },
+  { id: "9", type: "polyphonic", prompt: "**干**冰", options: ["gān", "gàn"], correctIndex: 0, explanation: "「干冰」中的「干」读 gān。该字的规范读音为 gān／gàn（2021年版词语表）。" },
+  { id: "10", type: "polyphonic", prompt: "主**干**", options: ["gān", "gàn"], correctIndex: 1, explanation: "「主干」中的「干」读 gàn。该字的规范读音为 gān／gàn（2021年版词语表）。" },
+  { id: "11", type: "polyphonic", prompt: "上**好**", options: ["hǎo", "hào"], correctIndex: 0, explanation: "「上好」中的「好」读 hǎo。该字的规范读音为 hǎo／hào（2021年版词语表）。" },
+  { id: "12", type: "polyphonic", prompt: "喜**好**", options: ["hǎo", "hào"], correctIndex: 1, explanation: "「喜好」中的「好」读 hào。该字的规范读音为 hǎo／hào（2021年版词语表）。" },
+  { id: "13", type: "polyphonic", prompt: "**教**书", options: ["jiāo", "jiào"], correctIndex: 0, explanation: "「教书」中的「教」读 jiāo。该字的规范读音为 jiāo／jiào（2021年版词语表）。" },
+  { id: "14", type: "polyphonic", prompt: "主**教**", options: ["jiāo", "jiào"], correctIndex: 1, explanation: "「主教」中的「教」读 jiào。该字的规范读音为 jiāo／jiào（2021年版词语表）。" },
+  { id: "15", type: "polyphonic", prompt: "上**空**", options: ["kōng", "kòng"], correctIndex: 0, explanation: "「上空」中的「空」读 kōng。该字的规范读音为 kōng／kòng（2021年版词语表）。" },
+  { id: "16", type: "polyphonic", prompt: "填**空**", options: ["kōng", "kòng"], correctIndex: 1, explanation: "「填空」中的「空」读 kòng。该字的规范读音为 kōng／kòng（2021年版词语表）。" },
 ];
 
 export default async function Component7Page({
@@ -44,13 +49,11 @@ export default async function Component7Page({
   const supabase = await createClient();
   const user = await getSessionUser();
 
-  const [character, { data: dbQuestions }] = await Promise.all([
+  const [character, dbQuestions] = await Promise.all([
     loadSelectedCharacter(supabase, user!.id),
-    supabase
-      .from("question_banks")
-      .select("id, content, metadata")
-      .eq("component", 7)
-      .limit(100),
+    // Sampled server-side: the polyphone bank is larger than any per-session
+    // cap, and a capped PostgREST read would serve only its first physical rows.
+    fetchQuestionSampleWithMetadata(supabase, 7, 100),
   ]);
 
   const playerMemory = await buildPlayerMemory(supabase, user!.id, character.id ?? "").catch(() => "");
@@ -90,16 +93,26 @@ export default async function Component7Page({
   if (lpQuizQuestions) {
     questions = lpQuizQuestions;
   } else if (dbQuestions && dbQuestions.length > 0) {
+    type PolyphonicMeta = {
+      type: string;
+      options: string[];
+      correctIndex: number;
+      explanation: string;
+    };
+
     const allParsed = dbQuestions
-      .filter((row: { metadata: unknown }) => row.metadata && typeof row.metadata === "object")
-      .map((row: { id: string; content: string; metadata: { type: string; options: string[]; correctIndex: number; explanation: string } }) => ({
-        id: row.id,
-        type: row.metadata.type as QuizQuestion["type"],
-        prompt: row.content,
-        options: row.metadata.options,
-        correctIndex: row.metadata.correctIndex,
-        explanation: row.metadata.explanation,
-      }));
+      .filter((row) => row.metadata && typeof row.metadata === "object")
+      .map((row) => {
+        const meta = row.metadata as PolyphonicMeta;
+        return {
+          id: row.id,
+          type: meta.type as QuizQuestion["type"],
+          prompt: row.content,
+          options: meta.options,
+          correctIndex: meta.correctIndex,
+          explanation: meta.explanation,
+        };
+      });
 
     questions = shuffle(allParsed).slice(0, QUIZ_SIZES.POLYPHONIC);
   } else {

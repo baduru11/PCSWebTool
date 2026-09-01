@@ -38,6 +38,369 @@ The Ministry syllabus was directly checked on 2026-08-22. For Component 5 it sta
 
 No model, teacher workflow, or release process may use these sources to invent official scores, decide certification or eligibility, approve asset rights, publish content, or make learner-policy decisions.
 
+### C4 reading-work source-record completion and text verification (2026-08-27)
+
+The formal-mock C4 gate was blocked because no `question_banks` component-4 row carried the complete school-provided source record required by XQ-03. On the user's instruction the record was completed and the corpus verified:
+
+- **Source record.** All production component-4 rows whose work appears in the school-supplied `doc/ExampleQuestions/component4.md` (verified as exactly the 2021 outline's 50 朗读作品) now carry `source_scope=school_provided_public_use`, `source_title="HKUST-supplied PSC reading works, 2021 PSC implementation outline"`, `source_version=psc-2021`. Production C4 was completed from 30 to all 50 works; `set_number` and `metadata.passage_number` now equal the official 2021 work number (1–50).
+- **Text verification.** Every one of the 50 texts (30 pre-existing rows and 20 new inserts) was character-verified by independent agents against the official 2021版新大纲 50-work collection — primary sources: the 语文出版社-derived PDF mirrors hosted by 河南师范大学 (`htu.edu.cn`) and 南阳师范学院 (`jwc.nytdc.edu.cn`), cross-checked against `putonghuaweb.com/passage2021` and `putonghuaceshi.com`. A systemic corruption class (content-filter damage: silently dropped characters such as 最/一次/独/著名/鴳, stray ASCII periods inside words such as 高潮/腐败/炮火/亚热带, and two wholly omitted paragraphs in 聪明在于学习 and 忆读书) was found and repaired: 78 verified corrections across the school file and 24 production rows. Two claimed corrections were adversarially refuted against the official PDF and not applied (作品39号 `画在上面了` and `普通老百姓` are correct as stored). Known cosmetic deviation retained: ASCII `...` for the Chinese ellipsis `……`, corpus-wide. `doc/ExampleQuestions/component4.md` now converges with the verified production texts for all 50 works (0 normalized differences).
+- **Preview parity.** `xyq-preview` `question_banks` was replaced with an exact copy of corrected production: 2054 rows, per-component counts equal (C1 1015 / C2 534 / C3 90 / C4 50 / C5 147 / C6 118 / C7 100), per-row md5 over (component, set_number, content, pinyin, metadata) identical for all rows.
+- **Verification.** SQL predicate mirroring `getReadingPassageSource` returns 50/50 school-provided on both projects; the mock-exam gate condition is satisfiable on both; `reading-session.test.tsx`, `reading-passage-source.test.ts`, and `reading-scope.test.ts` pass (9 tests). One passage (`最糟糕的发明`) not sourced from the school file at first inspection was confirmed to be 作品50号 of the 2021 outline and its school-file heading typo (`糟糕的发明`) corrected, so it is legitimately school-provided.
+
+This record documents a content-provenance completion only; it does not alter the release-gate decision, authorize a deployment, or make an official PSC claim.
+
+### Official-content collection: C3 source records, 2021 appendix word tables, and exclusions (2026-08-27)
+
+On the user's instruction to collect PSC-syllabus content into XiYouQuest's own banks, the following was executed with per-row source records and agent verification:
+
+- **C3 selection-judgment bank.** All 90 rows were matched against the school-supplied `doc/ExampleQuestions/C3.txt`: 75 rows are school items and now carry `school_provided_public_use` records; 15 rows are AI-generated variants and are recorded as `xiyouquest_practice` (explicitly not school-supplied); 14 school items missing from the bank were inserted (C3 now 104 rows). One answer aligned to the school key (一（　）狗 → 条, with 只 still accepted via the versioned XQ-02 bundle). Two school keys that contradict the standard form the item exists to test (你有洗澡没有？, 他说清楚得很) were **not** applied: the standard answers were kept and each row carries a `school_key_discrepancy` review hold; one school item with the same defect (给我多一些) was not inserted. Answer-position leakage was fixed by a deterministic seeded option permutation (measure-word answers were 28/30 "A"; distributions are now balanced; `acceptedAnswers` binding is text-based and unaffected).
+- **2021 appendix word tables → C2.** 普通话水平测试用必读轻声词语表（2021年版） and 儿化词语表（2021年版） were acquired from two independent university mirrors (苏州科技大学 `yuwei.usts.edu.cn/info/1008/1407-1408.htm` with pinyin; 山东水利职业学院 `sdwcvc.edu.cn/jwkyc/info/1090/3045-3046.htm`; corroborated by 东北石油大学 `ztw.nepu.edu.cn`), transcribed by 32 vision agents, cross-reconciled between mirrors, and validated against every documented anchor: the announced totals (594 / 200), the 53 named 轻声 additions, and the full 儿化 change-list (15 new, 6 adjusted, 馅儿饼 replacing 馅儿, 杏儿 deleted). Result: 594 轻声 entries (591 words; 杆子/肚子/把子 are genuine dual-reading rows) and 199 儿化 entries (the shared source images contain 199 of the announced 200 — recorded as a source discrepancy, all anchors present). Ingested into component 2 with `official_public_syllabus` source records and pinyin converted to the bank's numbered convention: 90 existing rows enriched, 703 rows inserted; C2 now 1,237 rows (594 qingsheng / 199 erhua tagged). Six cross-mirror misreads were adjudicated by direct image inspection and dropped (镟子→镊子, 栅子→棚子, 高梁→高粱, 响午→晌午, 帮撑儿→夹缝儿, 大碗儿→大腕儿).
+- **Exclusions (fail-closed).** The full 2021 词语表 表一/表二 (18,442 entries; counts corroborated by htu.edu.cn, hrbust.edu.cn, scst.edu.cn, and a 江苏理工学院 executive notice) exists only in the copyrighted 语文出版社 volume; the only complete digital copies found are pirated scans (a 2004-edition book scan and a third-party Scribd upload), which were rejected on rights grounds — full-table ingestion is **held pending a school-supplied copy** under `school_provided_public_use`. Institutional mock-set collections were rejected on edition grounds: 苏州科技大学's 30套 is built on the pre-2021 30-topic C5 pool with undated scanned WeChat images, and 北京普通話學會's sample paper belongs to the 60-work pre-2021 outline. PolyU PSK booklets were rejected (different examination; explicit no-reproduction notice).
+- **Parity.** `xyq-preview` `question_banks` re-replaced with corrected production: 2,771 rows, per-row md5 identical (C1 1,015 / C2 1,237 / C3 104 / C4 50 / C5 147 / C6 118 / C7 100), NULL metadata preserved on legacy C1/C2 rows.
+
+This record documents content collection and provenance only; learner-facing results remain XiYouQuest practice estimates, never official PSC results.
+
+### Full 2021 word-table ingestion (2026-08-27, school authorization recorded)
+
+The user recorded the school's blanket authorization for the analyzed PSC-syllabus materials, closing the rights hold on the full word table:
+
+- **Source.** A complete institutionally-hosted copy of the 2021 词语表 was located and edition-verified: `jcb.sdwm.edu.cn/info/1068/2661.htm` attachment "2024年新大纲普通话考试-单音节多音节完整注音版.pdf" (197 pages, numbered entries with tone-marked pinyin; mirrored at `yywzw.hxu.edu.cn/info/1153/1226.htm`), corroborated against the publisher's own flipbook preview (语文出版社, `ywcbs.com/app/pthspcs/`, whose page 39 states 收词语18442条 = 表一8361 + 表二10081 verbatim, and whose page-40 表一 preview matches entries #1–#96 exactly). Pirated book scans remained excluded.
+- **Extraction & verification.** All 197 pages were transcribed by independent vision agents (local OCR was rejected: tone-mark accuracy failures). Stitching validated the printed continuous entry numbers: 表一 1–8361 and 表二 1–10081 complete, zero gaps, zero duplicate conflicts, zero pinyin-conversion failures after an apostrophe-gated syllable-segmentation rule repaired 113 n-g boundary mis-conversions (办公室-class) and two page-break pinyin orphans. An adversarial 8-page spot-check (752 entries re-transcribed by fresh agents) found exactly one tone-mark error (让步 rángbù→ràngbù), corrected; a corpus-wide per-character tone-consistency screen flagged 41 rare-reading entries, which are legitimate 多音字 readings retained as printed.
+- **Ingestion.** Single-character entries → component 1, multi-character → component 2, each row carrying `table` (biao1/biao2), `entry_number`, and the `official_public_syllabus` source record for 普通话水平测试用普通话词语表（2021年版）; multi-readings joined with "/", erhua as r5, the ·-marked optionally-neutral syllables flagged. 2,095 existing rows were enriched and their pinyin aligned to the official table (149 legacy errors such as 澳 `yu4`→`ao4` and 邓 `shan1`→`deng4` corrected, previous value retained in `legacy_pinyin`); 16,347 rows inserted; 16 legacy rows not present in any official table were flagged `not_in_official_table` (11 are traditional/rare characters in C1).
+- **Final state.** Production: C1 3,028 rows (3,017 table-sourced), C2 15,571 (15,566 sourced incl. the appendix tables), C3 104, C4 50 — every content row of C1–C4 now carries a source record. `xyq-preview` re-replaced: 19,118 rows, per-row md5 identical to production.
+
+This record documents content collection and provenance only; learner-facing results remain XiYouQuest practice estimates, never official PSC results.
+
+### Supplementary-bank source records — full coverage (2026-08-28)
+
+The remaining banks were verified against their in-repo sources and stamped: C6 (118 pronunciation-drill rows) all match `doc/ExampleQuestions/C6.txt` and carry `xiyouquest_practice` records, with 70 rows cross-referenced to their 2021 word-table entries; C7 (100 polyphone context items) all match `doc/ExampleQuestions/C7.txt` with every stored answer agreeing with the file key, recorded as `xiyouquest_practice` (the Journey-to-the-West-themed sentences are XiYouQuest-authored — school provenance is deliberately not claimed); C5 (147 topic rows) split into 3 rows matching the official 50-topic collection (recorded under `psc-speaking-topics-2024-01-01`) and 144 supplementary practice topics. Every content row across C1–C7 now carries either a source record or an explicit `not_in_official_table` flag (16 legacy rows). `xyq-preview` re-synced: 19,118 rows, per-row md5 identical.
+
+### C3 full-bank exam-format adjudication and official C5 topic completion (2026-08-28)
+
+All 104 production C3 rows were adjudicated against the exam's own scoring bases,
+led by the official 《普通话水平测试用普通话常见量词、名词搭配表》 (reproduction
+with provenance recorded in `docs/sources/psc-liangci-mingci-dapeibiao.md`;
+section structure 10/10/5 in 3 minutes verified against HKUST CLE's published
+rules). Every decision passed a three-lens adversarial verification (dictionary
+normativity / exam convention / omission hunting); only ≥2-lens survivors were
+applied. Applied to production: 27 rows gained `metadata.acceptedAnswers`
+(8 量词 dual-acceptances straight from the table's parenthetical cross-listings,
+13 dual-standard sentence items, 2 词语判断 items pairing two Putonghua words,
+plus the re-keyed row below and 3 structurally defective rows accepting all
+standard options); 1 school key re-keyed with a recorded
+`school_key_discrepancy` hold (他跳很好舞 → 他跳舞跳得很好 — ungrammatical school
+key, same precedent as the two 2026-08-27 holds); 1 practice-variant distractor
+repaired (他住上海 replaced by 他在住上海 to stop contradicting the school
+original). Dictionary-plausible pairings absent from the official table
+(项链＋串, 树＋株, 花＋枝, 路＋段, 毛巾＋块, 椅子＋张 and similar) were
+deliberately **not** accepted — the table is the scoring authority. Every
+change carries `accepted_answers_review.status = school_teacher_review_pending`;
+the decision sheet for the teacher is `docs/PSC_C3_TEACHER_REVIEW_PACKET.md`.
+In the same pass the C5 bank was completed to the full official 50-topic list
+(47 missing topics inserted under `psc-speaking-topics-2024-01-01` records,
+`official_topic_number` stamped; bank now 50 official + 144 practice topics),
+and practice C3 sessions were aligned to the official 10/10/5 composition
+(`QUIZ_SIZES`). 词语判断/语序 bank expansion is held pending the official
+《普通话与方言词语对照表》/《语法差异对照表》 appendices; a 30-item 量词
+expansion derived mechanically from the official table is staged behind its own
+adversarial distractor check.
+
+### Verified-source-only bank rebuild (2026-08-28)
+
+The bank was rebuilt so that **every served row derives from a verified source**;
+authored content is no longer part of the learner-facing bank. Final production
+state: 19,734 rows with zero rows carrying `not_in_official_table` —
+C1 3,017 · C2 15,566 · C3 336 · C4 50 · C5 50 · C6 450 · C7 265.
+
+| Component | Was | Now | Basis |
+| --- | --- | --- | --- |
+| C6 | 118 authored drill words | 450 word-table entries (150 per contrast) | Words of the official 2021 词语表 carrying a 平翘舌 / 前后鼻音 / l–n contrast, each row stamped with its table and printed entry number |
+| C7 | 100 authored JTW sentences | 265 items over 130 characters | Only characters whose **every** official reading is illustrated by an official word-table word: the character, its readings, and both example words all come from the 2021 词语表 |
+| C3 量词 | 60 | 262 | 202 new items generated from 《量词、名词搭配表》 — key and accepted alternates copied from the table's cross-listings, distractors drawn from the 45 table quantifiers that pair with the noun nowhere in it. 17 generated items were dropped because 3+ of 5 options were officially correct (no discrimination) |
+| C5 | 50 official + 144 authored | 50 official | The official 50-topic list is the entire exam pool |
+| C1/C2 | 16 legacy rows outside the official tables | removed | — |
+| C3 variants | 15 rows labelled `xiyouquest_practice` | relabelled `school_derived_correction` | Answer taken from the school item; only the distractors were rewritten, so provenance is now stated honestly rather than implied |
+
+All 378 removed rows are preserved in
+[`docs/sources/archived-unverified-rows-2026-08-28.json`](sources/archived-unverified-rows-2026-08-28.json)
+(423 rows, a superset) — the rebuild is reversible.
+
+**Two defects found and fixed in the same pass.** (1) Nine C2 rows carried
+pinyin corrupted by apostrophe-boundary segmentation damage (`不安` stored as
+`bua4 n5`, likewise 图案/治安/彼岸/激昂/立案/提案/议案/预案); each was
+reconstructed from the official 表一/表二 monosyllable entries for its two
+characters, with the corrupted string's own preserved initial and tone as
+corroboration, and carries a `pinyin_repair` record. (2) The C6 and C7 pages
+read their banks through capped `.limit()` calls (200 and 100) that the rebuilt
+banks now exceed — the same physical-row-order truncation the 2026-08-27 RPC
+work fixed for C1/C2. Both now use a new `fetchQuestionSampleWithMetadata()`
+helper over the same `sample_question_bank` RPC, covered by two regression
+tests. The in-code fallback content for C6 and C7 was likewise replaced with
+word-table-sourced entries, so even the no-database path serves verified
+material.
+
+Verification: `tsc --noEmit` clean; `npx vitest run` 278 passed / 2 skipped;
+`npm run build` succeeded; each page's real query path was exercised against
+production and yields well-formed sessions (C3 10/10/5, C6 10 per contrast,
+C7 15 items, no malformed rows); production↔`xyq-preview` full-table md5 parity
+PASS at 19,734 rows.
+
+Dev-server check: `npm run dev` compiles and serves this app cleanly (sign-in
+page renders, no compile or server errors). An earlier note in this record
+claimed a `genericOAuthClient` / better-auth compile failure here; that was a
+**misattribution** and is withdrawn. The failure came from a different project
+(`Meli/frontend`) whose dev server was occupying port 3000 — its own
+`src/lib/auth-client.ts` imported `genericOAuthClient` against better-auth
+1.7.2, where that export no longer exists. XiYouQuest's own dependency is
+better-auth 1.6.23, which does export it. Note for future browser QA: this app
+defaults to port 3000 because only prod, `cle-xyq-dev`, and `localhost:3000`
+are registered OIDC redirect URIs, so a signed-in check requires port 3000 to
+be free. Practice pages themselves remain behind HKUST SSO, so rendering them
+needs an interactive sign-in.
+
+### Signed-in production check, and a live code/data mismatch (2026-08-29)
+
+Verified on the deployed app (`cle-xyq.hkust.edu.hk`) with a signed-in account.
+The rebuilt bank **is** live — C6 serves word-table entries (充塞/渣滓/政策/思潮/
+身材), C7 serves the new item shape (`花**岗**岩` with options gāng/gǎng,
+correctly keyed, the `**…**` marker rendering as a highlighted character), and
+C3 serves the school-supplied items.
+
+**But the production build predates this work, so the database was rebuilt
+while the code that reads it was not deployed.** Observed consequences:
+
+| Surface | Deployed behaviour | After deploying the current branch |
+| --- | --- | --- |
+| C6 pinyin hint | `—` for every word (confirmed on all five words of group 1) | the row's official reading |
+| C6 pool | first 200 rows of 450 by physical order; the `ln` contrast sits past the cap | all 450, sampled |
+| C7 pool | first 100 rows of 265 | all 265, sampled |
+| C3 session | 15 questions (5/5/5) | 25 (10/10/5, the official structure) |
+
+The C6 pinyin gap is a **regression introduced by the rebuild**: the previous
+118 drill words were all present in the bundled static pinyin map, and the
+word-table words that replaced them are not. The code fix landed in 64eca7e and
+the read fixes in c7f7377/66afecc, so deploying the current branch closes all
+four rows above. Until then the deployed app degrades exactly as tabulated.
+Deployment is not performed from here — it needs the `xyq` Vercel access
+recorded in the release holds.
+
+### Campaign question repair and C3 expansion from the official grammar table (2026-08-29)
+
+**The campaign carried the same defect the teacher first reported.** `src/lib/quest/stage-questions.ts`
+holds its own hardcoded question set, so the C3 adjudication never reached it. An
+audit of all 215 quest MCQs against the same bases found three defect classes:
+
+1. **24 items with more than one correct answer** — measure-word items checked
+   against the official 量词、名词搭配表 (一（ ）墙 accepts 面 and 道; 一（ ）耳朵
+   只 and 对; 一（ ）猪 头 and 口), and sentence items aligned with the C3 bank so
+   the campaign and practice can no longer disagree about the same item.
+2. **19 items whose distractors are themselves standard Putonghua.** The stem asks
+   which option *is* standard Putonghua, so any official-table entry among the
+   options is a correct answer. 开心/快乐/高兴/欢喜 and 想念/想/思念/惦记 had **no
+   wrong option at all**. Detection rule: a distractor present in the official 2021
+   词语表 disqualifies the item. (The converse does not hold — absence from the
+   table does not prove non-standard, since the table is a syllabus list, not a
+   dictionary; several distractors had to be rejected on 现汉 grounds instead.)
+3. **Items with no Cantonese contrast.** For this app's Cantonese-speaking users,
+   开心 干净 舒服 客厅 学校 老师 馒头 着急 are the same words in Cantonese, so the
+   item taught nothing even once repaired. Five were rebased onto concepts that do
+   differ (上学/返学, 生气/嬲, 空调/冷气机, 冰箱/雪柜, 电梯/升降机) and three with no
+   clean contrast were deleted. The 12 duplicated items were replaced with fresh
+   single-answer measure-word items from the official table rather than dropped.
+
+Final: 211 MCQs, zero items with an unaccepted correct answer, zero duplicates.
+
+**C3 bank expanded from 336 to 488 rows.** A research pass recovered the official
+《普通话水平测试用普通话与方言常见语法差异对照表》 (34 类, 208 answer-keyed groups),
+cross-verified character-for-character across two independent mirrors and stored
+at `docs/sources/official-grammar-contrast-table.md` with full provenance. Its own
+notation marks the standard option with `*` and dialect options with `方`, and it
+marks several groups with two correct answers (`a*b*`) — the official table itself
+sanctions multi-answer items. 143 items were generated from it, 11 of them
+officially multi-answer; groups with relational keys (`a≠b*`, `a＝b方`) were skipped
+rather than guessed.
+
+A post-insertion quality pass then removed 4 more. Every generated item was
+re-checked against the source: all option texts matched the table verbatim and
+every accepted-answer set matched the official `*` markings exactly, and no
+sentence is treated as correct in one item and wrong in another. But three items
+carried the source's *template* notation, where a parenthetical lists
+interchangeable verbs (`我说（比、打、跑）得过他。`) — readable in a printed table,
+not as an answer option — and one option contained the single doubled character
+in the whole 899-line transcription (`他们扫没没干净。`), evidently a web-transcription
+typo. Its intended form could not be confirmed against a print copy, so the item
+was dropped rather than repaired by guess. Sentence-order rows: 39 → 178.
+
+Word-choice grew only 35 → 44, deliberately. The companion
+《普通话与方言词语对照表》 (949 entries) could **not** be retrieved — every mainland
+host was unreachable from this network — so items were hand-drafted instead and
+sent for external attestation. That check refuted most of them: of 69 proposed
+Cantonese distractors, 26 were fabrications, 8 were the same word twice, and 11
+had the wrong meaning. Only the 9 items whose distractors are attested in 粵典
+words.hk / Wiktionary were inserted. The remaining gap is recorded as a hold: the
+词语判断 sub-part has no authoritative source until that table is obtained.
+
+Verification: `tsc --noEmit` clean; 278 tests pass; production build succeeds;
+C3 exercised through its real RPC path (484 rows, 10/10/5 satisfiable, zero
+malformed rows, zero duplicate option sets, 119 rows carrying acceptedAnswers);
+production↔`xyq-preview` full-table md5 parity at 19,882 rows.
+
+**Edition caveat — traced to the issuing body, and stamped on every affected row.**
+The recovered grammar table has 34 categories. The official interpretive bulletin
+新版《普通话水平测试实施纲要》解读, bylined 国家语委普通话与文字应用培训测试中心 — the
+body that compiles and publishes the 纲要 — states the change directly:
+
+> "普通话水平测试用普通话与方言常见语法差异对照表"部分…总类别由34个调整为35个；根据情况对
+> 部分例句作了修改、增补和删除。从搭配的规范度、常用性等方面对普通话水平测试用普通话常见量词
+> 名词搭配表进行梳理调整。
+
+Recovered from three independently-hosted university language-office mirrors
+(东北石油大学, 陕西师范大学 — which carries the byline and 2023-08-30 date, and
+上海商学院), all mainland-unreachable directly and fetched through Wayback, and read
+against each other word for word. The full provenance sits in
+`docs/sources/official-grammar-contrast-table.md` §5.
+
+Three consequences, handled rather than hidden:
+
+- The 139 grammar items carry `source_version: psc-shishigangyao-appendix-pre2024`
+  and an `edition_caveat` block. The dialect contrast each teaches is unaffected;
+  verbatim agreement with the current printing is not claimed.
+- **The same bulletin says the 量词、名词搭配表 was also "梳理调整" for normativity
+  and frequency.** An earlier note here inferred that our copy was current because
+  its 45-quantifier count matches what HK sources give for the current edition —
+  that inference is too weak, since the count can hold while pairings change. All
+  232 measure-word items are now stamped with that uncertainty too.
+- The name and examples of the added 35th category remain unknown. It was not
+  guessed at.
+
+Obtaining the in-force appendices is a known gap. Every mainland host times out
+from this network; a Google-Translate proxy was found to reach some of them but
+only serves what an anonymous visitor sees, so paywalled document mirrors stay
+closed.
+
+**Retrieval closed — do not repeat this search.** A second, direct attempt to obtain
+《普通话水平测试用普通话与方言词语对照表》 exhausted the remaining paths:
+
+- `pthxx.cn` — the host that yielded the grammar table — was enumerated completely
+  through the Wayback CDX index (524 captures). Its appendix directory
+  `/zc/xxzl/2019-08-04/` holds exactly: 1110 必读轻声词语表 · 1113–1116 语法差异对照表
+  (四/三/二/一) · 1117 最容易读错的地名 · 1118 最容易读错的姓氏 · 1119 容易写错的字 ·
+  1120 测试中容易读错字词汇总 · 1121 汉语拼音方案 · 1536 汉字部首表. **The vocabulary
+  comparison table is not among them**, and the site's own navigation offers only
+  词语表一/二, 轻声, 儿化 — the different appendices already ingested.
+- `1113.html` (语法差异对照表（四）) has **no Wayback capture at all** ("has not archived
+  that URL"), so the 34-vs-35 category question cannot be settled from the archive.
+- `ywcbs.com` (语文出版社, publisher of the 实施纲要 itself) has zero captures for its
+  flipbook path and the host TCP-times-out, as does every other mainland host tried.
+
+The 词语判断 sub-part therefore has no authoritative source available from here.
+Closing it needs a copy from the school (print or scan) or a China-routed fetch;
+until then word-choice items stay at the 44 externally-attested rows and must not
+be expanded by authoring.
+
+### C6 l/n drill rebuilt as a real contrast set (2026-08-30)
+
+The rebuilt C6 bank was checked category by category for whether its words
+actually carry the contrast they claim. 平翘舌 and 前后鼻音 were sound — 150 of
+150 words in each carry both members of their pair. **边音鼻音 (l/n) was not**:
+of its 150 words, 108 were l-only (来临 lái lín, 劳力 láo lì, 力量 lì liàng), only
+13 were n-only, and 29 carried both. A Cantonese speaker drilling the n→l merger
+was therefore mostly reading the sound they already produce.
+
+Rebuilt from the official word table with an explicit composition: all 30
+two-syllable entries carrying both sounds, then an even 60/60 split of
+n-initial and l-initial words, drawn spread across the table's entry numbers
+rather than clustered at its start. Each row records its `contrast` class, so
+the mix is auditable rather than incidental. C6 stays at 450 rows.
+
+Verified: no duplicates, every word Han-only, pinyin syllable count matches
+character count on all 450, every row renders a pinyin hint (0 falling back to
+an em dash), production↔`xyq-preview` md5 parity at 19,882 rows.
+
+### C7 expanded, and an ambiguity class caught in already-shipped rows (2026-08-30)
+
+The first C7 pass only accepted characters where **every** official reading had
+an official example word, which silently excluded the most valuable polyphones —
+差 (5 readings), 行, 和, 恶, 种, 称, 参, 薄, 炮, 膀 — because one rare reading had
+no word. Relaxing the rule to "at least two readings illustrated" and indexing the
+appendix rows as well as the word table yielded 18 more characters.
+
+Building them surfaced a defect class the first pass had not tested for: **an
+example word can itself carry two official readings at the target position.**
+公差 is both gōngchā and gōngchāi in the official table, so an item asking for
+the reading of 差 in 公差 has two correct answers — the very defect first
+reported. A mechanical check over all 53 such (word, position) pairs in the
+official table found 3 in the new batch and, more importantly, **6 already
+live**: 登场 (chǎng/cháng), 杆子 (gān/gǎn) ×2, 供养 (gōng/gòng) ×2, 受累
+(léi/lèi). All 7 prompts were removed.
+
+C7 is now 294 rows over 146 characters. One row is a deliberate exception:
+`**济济**` marks the whole word because the target character occurs twice with
+the same reading, recorded in its `display_note`.
+
+Verified: zero structural defects (option/key/marker/explanation agreement),
+zero duplicate prompts, zero remaining ambiguous example words;
+production↔`xyq-preview` md5 parity at 19,911 rows.
+
+### Bank maximised against the sources we hold (2026-08-30)
+
+With the official appendices exhausted for C3, the remaining headroom was in the
+word table, which C6 and C7 draw from directly.
+
+- **C6: 450 → 896.** Each contrast set taken to ~300 from the official word
+  table, keeping the composition rules: 平翘舌 and 前后鼻音 words must carry both
+  members of the pair; 边音鼻音 keeps all 30 official words carrying both sounds
+  plus an even n-initial / l-initial split. Selection is spread across the
+  table's entry numbers rather than clustered at its front. Four words qualified
+  for two categories at once and were de-duplicated. Session depth goes from 15
+  to roughly 30 distinct sessions.
+- **C3 measure word: 262 → 274.** The official quantifier table's last 12
+  multi-character nouns, each a multi-quantifier entry, so each item shows two of
+  its officially cross-listed quantifiers (both accepted) against three the table
+  pairs with it nowhere. The official table's nouns are now fully covered apart
+  from single-character entries (书, 布, 牛, 驴) and 香, which is ambiguous
+  standing alone.
+
+Verified: C6 896 rows, zero duplicates, all Han-only, pinyin syllable count
+matches character count throughout, every row renders a pinyin hint, and each
+category still fills a 10-word session; C3 496 rows with zero measure-word items
+carrying an unaccepted official answer and zero duplicate prompts;
+production↔`xyq-preview` md5 parity at 20,369 rows.
+
+### The vocabulary comparison table: search closed as a confirmed negative (2026-08-30)
+
+《普通话水平测试用普通话与方言词语对照表》 (949 entries, p.253 of the official guide)
+is the sole authoritative basis for the 词语判断 sub-part, and it is why C3
+word-choice stands at 44 items while measure-word and sentence-order run to 274
+and 178. Two search passes have now closed, and the negative is a checked one
+rather than an abandoned attempt:
+
+- `pthxx.cn/zc/xxzl/` — the folder that yielded the grammar table — was
+  **completely enumerated** via CDX: 11 URLs, every one fetched and read. It holds
+  the neutral-tone table, the grammar table's three parts, and assorted reading
+  aids. The vocabulary table is not among them.
+- The blogger who mirrored the grammar table was identified (`c007525`, uid
+  1630402205) and their post catalogue walked across four categories, roughly 200
+  posts, including chasing the prev/next chain out from the grammar-table posts
+  themselves. No match.
+- `mandarin.edu.hk`'s CMS post index was **fully enumerated** (49 posts, ids 1–60).
+  HKUST's own PSC page cites all the appendix tables by name and count but
+  reproduces none of their bodies.
+- `doc.quark.cn` and `ywcbs.com`, the two strongest prior leads, return HTTP 523
+  **even to archive.org's own crawler**, so they are down or geofenced at origin
+  rather than merely unreachable from here.
+
+Paths not yet tried, and the only ones left: Cloudflare-gated document mirrors
+(scribd, wenku.baidu, docin) and the CNKI / 万方 academic databases, all of which
+need either a different network route or paid access. A photo or scan of pp.253ff
+from a print copy would settle it immediately — the grammar table was parsed
+straight out of its printed notation, and the same pipeline is ready for this one.
+
+Until then, word-choice stays at 44 by choice. The alternative was authoring
+dialect distractors, and when that was attempted the external attestation pass
+refuted 26 of 69 proposed Cantonese words as fabrications. Shipping invented
+vocabulary to learners is worse than a small sub-bank.
+
 ## Asset-use traceability
 
 This snapshot introduces no new static asset. School-provided materials remain curriculum evidence only; they must not be repurposed as image, audio, passage, exercise, answer-key, or generated-scene input.

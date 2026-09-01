@@ -71,3 +71,18 @@ export function lookupPinyinDisplay(word: string): string | null {
   if (!raw) return null;
   return raw.split(" ").map(syllableToToneMark).join(" ");
 }
+
+/**
+ * Convert a stored tone-number pinyin string to tone-mark display form.
+ * Handles the question-bank conventions: space-separated syllables
+ * ("guo2 wang2" → "guó wáng"), "/"-joined alternate readings from the 2021
+ * word table ("che3/chi3" → "chě / chǐ"), and erhua "r5" tokens.
+ * Returns null for empty input so callers can chain fallbacks.
+ */
+export function numberedPinyinDisplay(raw: string | null | undefined): string | null {
+  if (!raw?.trim()) return null;
+  return raw
+    .split("/")
+    .map((variant) => variant.trim().split(/\s+/).map(syllableToToneMark).join(" "))
+    .join(" / ");
+}

@@ -1,0 +1,6359 @@
+{
+ "qingsheng": [
+  {
+   "word": "栗子",
+   "pinyin": "li4 zi5",
+   "rawPinyin": "lìzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "痢疾",
+   "pinyin": "li4 ji5",
+   "rawPinyin": "lìji",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "连累",
+   "pinyin": "lian2 lei5",
+   "rawPinyin": "liánlei",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "帘子",
+   "pinyin": "lian2 zi5",
+   "rawPinyin": "liánzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "凉快",
+   "pinyin": "liang2 kuai5",
+   "rawPinyin": "liángkuai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "粮食",
+   "pinyin": "liang2 shi5",
+   "rawPinyin": "liángshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "两口子",
+   "pinyin": "liang3 kou3 zi5",
+   "rawPinyin": "liǎngkǒuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "料子",
+   "pinyin": "liao4 zi5",
+   "rawPinyin": "liàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "林子",
+   "pinyin": "lin2 zi5",
+   "rawPinyin": "línzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "铃铛",
+   "pinyin": "ling2 dang5",
+   "rawPinyin": "língdang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "翎子",
+   "pinyin": "ling2 zi5",
+   "rawPinyin": "língzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "领子",
+   "pinyin": "ling3 zi5",
+   "rawPinyin": "lǐngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "溜达",
+   "pinyin": "liu1 da5",
+   "rawPinyin": "liūda",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "聋子",
+   "pinyin": "long2 zi5",
+   "rawPinyin": "lóngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "笼子",
+   "pinyin": "long2 zi5",
+   "rawPinyin": "lóngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "炉子",
+   "pinyin": "lu2 zi5",
+   "rawPinyin": "lúzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "路子",
+   "pinyin": "lu4 zi5",
+   "rawPinyin": "lùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "轮子",
+   "pinyin": "lun2 zi5",
+   "rawPinyin": "lúnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "啰嗦",
+   "pinyin": "luo1 suo5",
+   "rawPinyin": "luōsuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "萝卜",
+   "pinyin": "luo2 bo5",
+   "rawPinyin": "luóbo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "骡子",
+   "pinyin": "luo2 zi5",
+   "rawPinyin": "luózi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "骆驼",
+   "pinyin": "luo4 tuo5",
+   "rawPinyin": "luòtuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "妈妈",
+   "pinyin": "ma1 ma5",
+   "rawPinyin": "māma",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "麻烦",
+   "pinyin": "ma2 fan5",
+   "rawPinyin": "máfan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "麻利",
+   "pinyin": "ma2 li5",
+   "rawPinyin": "máli",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "麻子",
+   "pinyin": "ma2 zi5",
+   "rawPinyin": "mázi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "马虎",
+   "pinyin": "ma3 hu5",
+   "rawPinyin": "mǎhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "码头",
+   "pinyin": "ma3 tou5",
+   "rawPinyin": "mǎtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "买卖",
+   "pinyin": "mai3 mai5",
+   "rawPinyin": "mǎimai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "麦子",
+   "pinyin": "mai4 zi5",
+   "rawPinyin": "màizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "馒头",
+   "pinyin": "man2 tou5",
+   "rawPinyin": "mántou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "忙活",
+   "pinyin": "mang2 huo5",
+   "rawPinyin": "mánghuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "冒失",
+   "pinyin": "mao4 shi5",
+   "rawPinyin": "màoshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "帽子",
+   "pinyin": "mao4 zi5",
+   "rawPinyin": "màozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "眉毛",
+   "pinyin": "mei2 mao5",
+   "rawPinyin": "méimao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "媒人",
+   "pinyin": "mei2 ren5",
+   "rawPinyin": "méiren",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "妹妹",
+   "pinyin": "mei4 mei5",
+   "rawPinyin": "mèimei",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "门道",
+   "pinyin": "men2 dao5",
+   "rawPinyin": "méndao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "眯缝",
+   "pinyin": "mi1 feng5",
+   "rawPinyin": "mīfeng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "迷糊",
+   "pinyin": "mi2 hu5",
+   "rawPinyin": "míhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "面子",
+   "pinyin": "mian4 zi5",
+   "rawPinyin": "miànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "苗条",
+   "pinyin": "miao2 tiao5",
+   "rawPinyin": "miáotiao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "苗头",
+   "pinyin": "miao2 tou5",
+   "rawPinyin": "miáotou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "苗子",
+   "pinyin": "miao2 zi5",
+   "rawPinyin": "miáozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "名堂",
+   "pinyin": "ming2 tang5",
+   "rawPinyin": "míngtang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "名字",
+   "pinyin": "ming2 zi5",
+   "rawPinyin": "míngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "明白",
+   "pinyin": "ming2 bai5",
+   "rawPinyin": "míngbai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蘑菇",
+   "pinyin": "mo2 gu5",
+   "rawPinyin": "mógu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "模糊",
+   "pinyin": "mo2 hu5",
+   "rawPinyin": "móhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "木匠",
+   "pinyin": "mu4 jiang5",
+   "rawPinyin": "mùjiang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "木头",
+   "pinyin": "mu4 tou5",
+   "rawPinyin": "mùtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "那么",
+   "pinyin": "na4 me5",
+   "rawPinyin": "nàme",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "奶奶",
+   "pinyin": "nai3 nai5",
+   "rawPinyin": "nǎinai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "难为",
+   "pinyin": "nan2 wei5",
+   "rawPinyin": "nánwei",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "尺子",
+   "pinyin": "chi3 zi5",
+   "rawPinyin": "chǐzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "虫子",
+   "pinyin": "chong2 zi5",
+   "rawPinyin": "chóngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "绸子",
+   "pinyin": "chou2 zi5",
+   "rawPinyin": "chóuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "出息",
+   "pinyin": "chu1 xi5",
+   "rawPinyin": "chūxi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "除了",
+   "pinyin": "chu2 le5",
+   "rawPinyin": "chúle",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "锄头",
+   "pinyin": "chu2 tou5",
+   "rawPinyin": "chútou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "畜生",
+   "pinyin": "chu4 sheng5",
+   "rawPinyin": "chùsheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "窗户",
+   "pinyin": "chuang1 hu5",
+   "rawPinyin": "chuānghu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "窗子",
+   "pinyin": "chuang1 zi5",
+   "rawPinyin": "chuāngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "锤子",
+   "pinyin": "chui2 zi5",
+   "rawPinyin": "chuízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "伺候",
+   "pinyin": "ci4 hou5",
+   "rawPinyin": "cìhou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "刺猬",
+   "pinyin": "ci4 wei5",
+   "rawPinyin": "cìwei",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "凑合",
+   "pinyin": "cou4 he5",
+   "rawPinyin": "còuhe",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "村子",
+   "pinyin": "cun1 zi5",
+   "rawPinyin": "cūnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "耷拉",
+   "pinyin": "da1 la5",
+   "rawPinyin": "dāla",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "答应",
+   "pinyin": "da1 ying5",
+   "rawPinyin": "dāying",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打扮",
+   "pinyin": "da3 ban5",
+   "rawPinyin": "dǎban",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打点",
+   "pinyin": "da3 dian5",
+   "rawPinyin": "dǎdian",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打发",
+   "pinyin": "da3 fa5",
+   "rawPinyin": "dǎfa",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打量",
+   "pinyin": "da3 liang5",
+   "rawPinyin": "dǎliang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打算",
+   "pinyin": "da3 suan5",
+   "rawPinyin": "dǎsuan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打听",
+   "pinyin": "da3 ting5",
+   "rawPinyin": "dǎting",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打招呼",
+   "pinyin": "da3 zhao1 hu5",
+   "rawPinyin": "dǎzhāohu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大方",
+   "pinyin": "da4 fang5",
+   "rawPinyin": "dàfang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大爷",
+   "pinyin": "da4 ye5",
+   "rawPinyin": "dàye",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大意",
+   "pinyin": "da4 yi5",
+   "rawPinyin": "dàyi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大夫",
+   "pinyin": "dai4 fu5",
+   "rawPinyin": "dàifu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "带子",
+   "pinyin": "dai4 zi5",
+   "rawPinyin": "dàizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "袋子",
+   "pinyin": "dai4 zi5",
+   "rawPinyin": "dàizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "单子",
+   "pinyin": "dan1 zi5",
+   "rawPinyin": "dānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "耽搁",
+   "pinyin": "dang1 e5",
+   "rawPinyin": "dānge",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "耽误",
+   "pinyin": "dan1 wu5",
+   "rawPinyin": "dānwu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胆子",
+   "pinyin": "dan3 zi5",
+   "rawPinyin": "dǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "担子",
+   "pinyin": "dan4 zi5",
+   "rawPinyin": "dànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "刀子",
+   "pinyin": "dao1 zi5",
+   "rawPinyin": "dāozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "道士",
+   "pinyin": "dao4 shi5",
+   "rawPinyin": "dàoshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "稻子",
+   "pinyin": "dao4 zi5",
+   "rawPinyin": "dàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "灯笼",
+   "pinyin": "deng1 long5",
+   "rawPinyin": "dēnglong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "凳子",
+   "pinyin": "deng4 zi5",
+   "rawPinyin": "dèngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "提防",
+   "pinyin": "di1 fang5",
+   "rawPinyin": "dīfang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "滴水",
+   "pinyin": "di1 shui5",
+   "rawPinyin": "dīshui",
+   "note": "名词",
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "笛子",
+   "pinyin": "di2 zi5",
+   "rawPinyin": "dízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嘀咕",
+   "pinyin": "di2 gu5",
+   "rawPinyin": "dígu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "底子",
+   "pinyin": "di3 zi5",
+   "rawPinyin": "dǐzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "地道",
+   "pinyin": "di4 dao5",
+   "rawPinyin": "dìdao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "地方",
+   "pinyin": "di4 fang5",
+   "rawPinyin": "dìfang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "弟弟",
+   "pinyin": "di4 di5",
+   "rawPinyin": "dìdi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "弟兄",
+   "pinyin": "di4 xiong5",
+   "rawPinyin": "dìxiong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "点心",
+   "pinyin": "dian3 xin5",
+   "rawPinyin": "diǎnxin",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "点子",
+   "pinyin": "dian3 zi5",
+   "rawPinyin": "diǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "调子",
+   "pinyin": "diao4 zi5",
+   "rawPinyin": "diàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "碟子",
+   "pinyin": "die2 zi5",
+   "rawPinyin": "diézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "钉子",
+   "pinyin": "ding1 zi5",
+   "rawPinyin": "dīngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "东家",
+   "pinyin": "dong1 jia5",
+   "rawPinyin": "dōngjia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "东西",
+   "pinyin": "dong1 xi5",
+   "rawPinyin": "dōngxi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "动静",
+   "pinyin": "dong4 jing5",
+   "rawPinyin": "dòngjing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "动弹",
+   "pinyin": "dong4 tan5",
+   "rawPinyin": "dòngtan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "豆腐",
+   "pinyin": "dou4 fu5",
+   "rawPinyin": "dòufu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "豆子",
+   "pinyin": "dou4 zi5",
+   "rawPinyin": "dòuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嘟囔",
+   "pinyin": "dun1 ang5",
+   "rawPinyin": "dūnang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "肚子",
+   "pinyin": "du3 zi5",
+   "rawPinyin": "dǔzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "肚子",
+   "pinyin": "du4 zi5",
+   "rawPinyin": "dùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "端详",
+   "pinyin": "duan1 xiang5",
+   "rawPinyin": "duānxiang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "缎子",
+   "pinyin": "duan4 zi5",
+   "rawPinyin": "duànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "队伍",
+   "pinyin": "dui4 wu5",
+   "rawPinyin": "duìwu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "对付",
+   "pinyin": "dui4 fu5",
+   "rawPinyin": "duìfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "对头",
+   "pinyin": "dui4 tou5",
+   "rawPinyin": "duìtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "对子",
+   "pinyin": "dui4 zi5",
+   "rawPinyin": "duìzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "多么",
+   "pinyin": "duo1 me5",
+   "rawPinyin": "duōme",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "哆嗦",
+   "pinyin": "duo1 suo5",
+   "rawPinyin": "duōsuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蛾子",
+   "pinyin": "e2 zi5",
+   "rawPinyin": "ézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "儿子",
+   "pinyin": "er2 zi5",
+   "rawPinyin": "érzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "耳朵",
+   "pinyin": "er3 duo5",
+   "rawPinyin": "ěrduo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "贩子",
+   "pinyin": "fan4 zi5",
+   "rawPinyin": "fànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "房子",
+   "pinyin": "fang2 zi5",
+   "rawPinyin": "fángzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "废物",
+   "pinyin": "fei4 wu5",
+   "rawPinyin": "fèiwu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "份子",
+   "pinyin": "fen4 zi5",
+   "rawPinyin": "fènzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "风筝",
+   "pinyin": "feng1 zheng5",
+   "rawPinyin": "fēngzheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "疯子",
+   "pinyin": "feng1 zi5",
+   "rawPinyin": "fēngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "福气",
+   "pinyin": "fu2 qi5",
+   "rawPinyin": "fúqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "斧子",
+   "pinyin": "fu3 zi5",
+   "rawPinyin": "fǔzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "富余",
+   "pinyin": "fu4 yu5",
+   "rawPinyin": "fùyu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "盖子",
+   "pinyin": "gai4 zi5",
+   "rawPinyin": "gàizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "甘蔗",
+   "pinyin": "gan1 zhe5",
+   "rawPinyin": "gānzhe",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "杆子",
+   "pinyin": "gan1 zi5",
+   "rawPinyin": "gānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "杆子",
+   "pinyin": "gan3 zi5",
+   "rawPinyin": "gǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "干事",
+   "pinyin": "gan4 shi5",
+   "rawPinyin": "gànshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "杠子",
+   "pinyin": "gang4 zi5",
+   "rawPinyin": "gàngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "高粱",
+   "pinyin": "gao1 liang5",
+   "rawPinyin": "gāoliang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "膏药",
+   "pinyin": "gao1 yao5",
+   "rawPinyin": "gāoyao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "稿子",
+   "pinyin": "gao3 zi5",
+   "rawPinyin": "gǎozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "告诉",
+   "pinyin": "gao4 su5",
+   "rawPinyin": "gàosu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "疙瘩",
+   "pinyin": "ge1 da5",
+   "rawPinyin": "gēda",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "哥哥",
+   "pinyin": "ge1 ge5",
+   "rawPinyin": "gēge",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胳膊",
+   "pinyin": "ge1 bo5",
+   "rawPinyin": "gēbo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鸽子",
+   "pinyin": "ge1 zi5",
+   "rawPinyin": "gēzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "格子",
+   "pinyin": "ge2 zi5",
+   "rawPinyin": "gézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "个子",
+   "pinyin": "ge4 zi5",
+   "rawPinyin": "gèzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "根子",
+   "pinyin": "gen1 zi5",
+   "rawPinyin": "gēnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "裤子",
+   "pinyin": "ku4 zi5",
+   "rawPinyin": "kùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "快活",
+   "pinyin": "kuai4 huo5",
+   "rawPinyin": "kuàihuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "筷子",
+   "pinyin": "kuai4 zi5",
+   "rawPinyin": "kuàizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "框子",
+   "pinyin": "kuang4 zi5",
+   "rawPinyin": "kuàngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "阔气",
+   "pinyin": "kuo4 qi5",
+   "rawPinyin": "kuòqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "拉扯",
+   "pinyin": "la1 che5",
+   "rawPinyin": "lāche",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "喇叭",
+   "pinyin": "la3 ba5",
+   "rawPinyin": "lǎba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "喇嘛",
+   "pinyin": "la3 ma5",
+   "rawPinyin": "lǎma",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "来得及",
+   "pinyin": "lai2 de5 ji2",
+   "rawPinyin": "láidejí",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "篮子",
+   "pinyin": "lan2 zi5",
+   "rawPinyin": "lánzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "懒得",
+   "pinyin": "lan3 de5",
+   "rawPinyin": "lǎnde",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "榔头",
+   "pinyin": "lang2 tou5",
+   "rawPinyin": "lángtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "浪头",
+   "pinyin": "lang4 tou5",
+   "rawPinyin": "làngtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "唠叨",
+   "pinyin": "lao2 dao5",
+   "rawPinyin": "láodao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老婆",
+   "pinyin": "lao3 po5",
+   "rawPinyin": "lǎopo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老实",
+   "pinyin": "lao3 shi5",
+   "rawPinyin": "lǎoshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老太太",
+   "pinyin": "lao3 tai4 tai5",
+   "rawPinyin": "lǎotàitai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老头子",
+   "pinyin": "lao3 tou2 zi5",
+   "rawPinyin": "lǎotóuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老爷",
+   "pinyin": "lao3 ye5",
+   "rawPinyin": "lǎoye",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老爷子",
+   "pinyin": "lao3 ye2 zi5",
+   "rawPinyin": "lǎoyézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老子",
+   "pinyin": "lao3 zi5",
+   "rawPinyin": "lǎozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "姥姥",
+   "pinyin": "lao3 lao5",
+   "rawPinyin": "lǎolao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "累赘",
+   "pinyin": "lei2 zhui5",
+   "rawPinyin": "léizhui",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "篱笆",
+   "pinyin": "li2 ba5",
+   "rawPinyin": "líba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "里头",
+   "pinyin": "li3 tou5",
+   "rawPinyin": "lǐtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "力气",
+   "pinyin": "li4 qi5",
+   "rawPinyin": "lìqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "厉害",
+   "pinyin": "li4 hai5",
+   "rawPinyin": "lìhai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "利落",
+   "pinyin": "li4 luo5",
+   "rawPinyin": "lìluo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "利索",
+   "pinyin": "li4 suo5",
+   "rawPinyin": "lìsuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "例子",
+   "pinyin": "li4 zi5",
+   "rawPinyin": "lìzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脑袋",
+   "pinyin": "nao3 dai5",
+   "rawPinyin": "nǎodai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脑子",
+   "pinyin": "nao3 zi5",
+   "rawPinyin": "nǎozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "能耐",
+   "pinyin": "neng2 nai5",
+   "rawPinyin": "néngnai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "你们",
+   "pinyin": "ni3 men5",
+   "rawPinyin": "nǐmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "念叨",
+   "pinyin": "nian4 dao5",
+   "rawPinyin": "niàndao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "念头",
+   "pinyin": "nian4 tou5",
+   "rawPinyin": "niàntou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "娘家",
+   "pinyin": "niang2 jia5",
+   "rawPinyin": "niángjia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "镊子",
+   "pinyin": "nie4 zi5",
+   "rawPinyin": "nièzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "奴才",
+   "pinyin": "nu2 cai5",
+   "rawPinyin": "núcai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "女婿",
+   "pinyin": "nv3 xu5",
+   "rawPinyin": "nǚxu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "暖和",
+   "pinyin": "nuan3 huo5",
+   "rawPinyin": "nuǎnhuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "疟疾",
+   "pinyin": "nve4 ji5",
+   "rawPinyin": "nüèji",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "拍子",
+   "pinyin": "pai1 zi5",
+   "rawPinyin": "pāizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "牌楼",
+   "pinyin": "pai2 lou5",
+   "rawPinyin": "páilou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "牌子",
+   "pinyin": "pai2 zi5",
+   "rawPinyin": "páizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "盘算",
+   "pinyin": "pan2 suan5",
+   "rawPinyin": "pánsuan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "盘子",
+   "pinyin": "pan2 zi5",
+   "rawPinyin": "pánzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胖子",
+   "pinyin": "pang4 zi5",
+   "rawPinyin": "pàngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "狍子",
+   "pinyin": "pao2 zi5",
+   "rawPinyin": "páozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "袍子",
+   "pinyin": "pao2 zi5",
+   "rawPinyin": "páozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "盆子",
+   "pinyin": "pen2 zi5",
+   "rawPinyin": "pénzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "朋友",
+   "pinyin": "peng2 you5",
+   "rawPinyin": "péngyou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "棚子",
+   "pinyin": "peng2 zi5",
+   "rawPinyin": "péngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脾气",
+   "pinyin": "pi2 qi5",
+   "rawPinyin": "píqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "皮子",
+   "pinyin": "pi2 zi5",
+   "rawPinyin": "pízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "痞子",
+   "pinyin": "pi3 zi5",
+   "rawPinyin": "pǐzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "屁股",
+   "pinyin": "pi4 gu5",
+   "rawPinyin": "pìgu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "片子",
+   "pinyin": "pian1 zi5",
+   "rawPinyin": "piānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "便宜",
+   "pinyin": "pian2 yi5",
+   "rawPinyin": "piányi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "骗子",
+   "pinyin": "pian4 zi5",
+   "rawPinyin": "piànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "票子",
+   "pinyin": "piao4 zi5",
+   "rawPinyin": "piàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "漂亮",
+   "pinyin": "piao4 liang5",
+   "rawPinyin": "piàoliang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "瓶子",
+   "pinyin": "ping2 zi5",
+   "rawPinyin": "píngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "婆家",
+   "pinyin": "po2 jia5",
+   "rawPinyin": "pójia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "婆婆",
+   "pinyin": "po2 po5",
+   "rawPinyin": "pópo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "铺盖",
+   "pinyin": "pu1 gai5",
+   "rawPinyin": "pūgai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "欺负",
+   "pinyin": "qi1 fu5",
+   "rawPinyin": "qīfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "旗子",
+   "pinyin": "qi2 zi5",
+   "rawPinyin": "qízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "前头",
+   "pinyin": "qian2 tou5",
+   "rawPinyin": "qiántou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "钳子",
+   "pinyin": "qian2 zi5",
+   "rawPinyin": "qiánzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "茄子",
+   "pinyin": "qie2 zi5",
+   "rawPinyin": "qiézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "亲戚",
+   "pinyin": "qin1 qi5",
+   "rawPinyin": "qīnqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "勤快",
+   "pinyin": "qin2 kuai5",
+   "rawPinyin": "qínkuai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "清楚",
+   "pinyin": "qing1 chu5",
+   "rawPinyin": "qīngchu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "亲家",
+   "pinyin": "qing4 jia5",
+   "rawPinyin": "qìngjia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "曲子",
+   "pinyin": "qu3 zi5",
+   "rawPinyin": "qǔzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "圈子",
+   "pinyin": "quan1 zi5",
+   "rawPinyin": "quānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "拳头",
+   "pinyin": "quan2 tou5",
+   "rawPinyin": "quántou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "裙子",
+   "pinyin": "qun2 zi5",
+   "rawPinyin": "qúnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "热闹",
+   "pinyin": "ren4 ao5",
+   "rawPinyin": "rènao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "人家",
+   "pinyin": "ren2 jia5",
+   "rawPinyin": "rénjia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "人们",
+   "pinyin": "ren2 men5",
+   "rawPinyin": "rénmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "认识",
+   "pinyin": "ren4 shi5",
+   "rawPinyin": "rènshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "日子",
+   "pinyin": "ri4 zi5",
+   "rawPinyin": "rìzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "褥子",
+   "pinyin": "ru4 zi5",
+   "rawPinyin": "rùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "塞子",
+   "pinyin": "sai1 zi5",
+   "rawPinyin": "sāizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嗓子",
+   "pinyin": "sang3 zi5",
+   "rawPinyin": "sǎngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嫂子",
+   "pinyin": "sao3 zi5",
+   "rawPinyin": "sǎozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "扫帚",
+   "pinyin": "sao4 zhou5",
+   "rawPinyin": "sàozhou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "沙子",
+   "pinyin": "sha1 zi5",
+   "rawPinyin": "shāzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "傻子",
+   "pinyin": "sha3 zi5",
+   "rawPinyin": "shǎzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "扇子",
+   "pinyin": "shan4 zi5",
+   "rawPinyin": "shànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "商量",
+   "pinyin": "shang1 liang5",
+   "rawPinyin": "shāngliang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "晌午",
+   "pinyin": "shang3 wu5",
+   "rawPinyin": "shǎngwu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "上司",
+   "pinyin": "shang4 si5",
+   "rawPinyin": "shàngsi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "上头",
+   "pinyin": "shang4 tou5",
+   "rawPinyin": "shàngtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "烧饼",
+   "pinyin": "shao1 bing5",
+   "rawPinyin": "shāobing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "勺子",
+   "pinyin": "shao2 zi5",
+   "rawPinyin": "sháozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "少爷",
+   "pinyin": "shao4 ye5",
+   "rawPinyin": "shàoye",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "哨子",
+   "pinyin": "shao4 zi5",
+   "rawPinyin": "shàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "舌头",
+   "pinyin": "she2 tou5",
+   "rawPinyin": "shétou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "舍不得",
+   "pinyin": "she3 bu5 de5",
+   "rawPinyin": "shěbude",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "舍得",
+   "pinyin": "she3 de5",
+   "rawPinyin": "shěde",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "身子",
+   "pinyin": "shen1 zi5",
+   "rawPinyin": "shēnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "什么",
+   "pinyin": "shen2 me5",
+   "rawPinyin": "shénme",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "婶子",
+   "pinyin": "shen3 zi5",
+   "rawPinyin": "shěnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "生意",
+   "pinyin": "sheng1 yi5",
+   "rawPinyin": "shēngyi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "牲口",
+   "pinyin": "sheng1 kou5",
+   "rawPinyin": "shēngkou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "绳子",
+   "pinyin": "sheng2 zi5",
+   "rawPinyin": "shéngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "师父",
+   "pinyin": "shi1 fu5",
+   "rawPinyin": "shīfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "师傅",
+   "pinyin": "shi1 fu5",
+   "rawPinyin": "shīfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "虱子",
+   "pinyin": "shi1 zi5",
+   "rawPinyin": "shīzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "狮子",
+   "pinyin": "shi1 zi5",
+   "rawPinyin": "shīzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "石匠",
+   "pinyin": "shi2 jiang5",
+   "rawPinyin": "shíjiang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "石榴",
+   "pinyin": "shi2 liu5",
+   "rawPinyin": "shíliu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "石头",
+   "pinyin": "shi2 tou5",
+   "rawPinyin": "shítou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "时辰",
+   "pinyin": "shi2 chen5",
+   "rawPinyin": "shíchen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "时候",
+   "pinyin": "shi2 hou5",
+   "rawPinyin": "shíhou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "实在",
+   "pinyin": "shi2 zai5",
+   "rawPinyin": "shízai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "拾掇",
+   "pinyin": "shi2 duo5",
+   "rawPinyin": "shíduo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "使唤",
+   "pinyin": "shi3 huan5",
+   "rawPinyin": "shǐhuan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "世故",
+   "pinyin": "shi4 gu5",
+   "rawPinyin": "shìgu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "似的",
+   "pinyin": "shi4 de5",
+   "rawPinyin": "shìde",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "事情",
+   "pinyin": "shi4 qing5",
+   "rawPinyin": "shìqing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "试探",
+   "pinyin": "shi4 tan5",
+   "rawPinyin": "shìtan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "柿子",
+   "pinyin": "shi4 zi5",
+   "rawPinyin": "shìzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "收成",
+   "pinyin": "shou1 cheng5",
+   "rawPinyin": "shōucheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "收拾",
+   "pinyin": "shou1 shi5",
+   "rawPinyin": "shōushi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "首饰",
+   "pinyin": "shou3 shi5",
+   "rawPinyin": "shǒushi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "叔叔",
+   "pinyin": "shu1 shu5",
+   "rawPinyin": "shūshu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "梳子",
+   "pinyin": "shu1 zi5",
+   "rawPinyin": "shūzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "舒服",
+   "pinyin": "shu1 fu5",
+   "rawPinyin": "shūfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "舒坦",
+   "pinyin": "shu1 tan5",
+   "rawPinyin": "shūtan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "疏忽",
+   "pinyin": "shu1 hu5",
+   "rawPinyin": "shūhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "爽快",
+   "pinyin": "shuang3 kuai5",
+   "rawPinyin": "shuǎngkuai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "思量",
+   "pinyin": "si1 liang5",
+   "rawPinyin": "sīliang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "俗气",
+   "pinyin": "su2 qi5",
+   "rawPinyin": "súqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "算计",
+   "pinyin": "suan4 ji5",
+   "rawPinyin": "suànji",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "岁数",
+   "pinyin": "sui4 shu5",
+   "rawPinyin": "suìshu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "孙子",
+   "pinyin": "sun1 zi5",
+   "rawPinyin": "sūnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "他们",
+   "pinyin": "ta1 men5",
+   "rawPinyin": "tāmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "它们",
+   "pinyin": "ta1 men5",
+   "rawPinyin": "tāmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "她们",
+   "pinyin": "ta1 men5",
+   "rawPinyin": "tāmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "踏实",
+   "pinyin": "ta1 shi5",
+   "rawPinyin": "tāshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "台子",
+   "pinyin": "tai2 zi5",
+   "rawPinyin": "táizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "太太",
+   "pinyin": "tai4 tai5",
+   "rawPinyin": "tàitai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "摊子",
+   "pinyin": "tan1 zi5",
+   "rawPinyin": "tānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "坛子",
+   "pinyin": "tan2 zi5",
+   "rawPinyin": "tánzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "毯子",
+   "pinyin": "tan3 zi5",
+   "rawPinyin": "tǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "桃子",
+   "pinyin": "tao2 zi5",
+   "rawPinyin": "táozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "特务",
+   "pinyin": "te4 wu5",
+   "rawPinyin": "tèwu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "梯子",
+   "pinyin": "ti1 zi5",
+   "rawPinyin": "tīzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蹄子",
+   "pinyin": "ti2 zi5",
+   "rawPinyin": "tízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "甜头",
+   "pinyin": "tian2 tou5",
+   "rawPinyin": "tiántou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "挑剔",
+   "pinyin": "tiao1 ti5",
+   "rawPinyin": "tiāoti",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "挑子",
+   "pinyin": "tiao1 zi5",
+   "rawPinyin": "tiāozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "条子",
+   "pinyin": "tiao2 zi5",
+   "rawPinyin": "tiáozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "跳蚤",
+   "pinyin": "tiao4 zao5",
+   "rawPinyin": "tiàozao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "铁匠",
+   "pinyin": "tie3 jiang5",
+   "rawPinyin": "tiějiang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "亭子",
+   "pinyin": "ting2 zi5",
+   "rawPinyin": "tíngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "头发",
+   "pinyin": "tou2 fa5",
+   "rawPinyin": "tóufa",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "头子",
+   "pinyin": "tou2 zi5",
+   "rawPinyin": "tóuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "兔子",
+   "pinyin": "tu4 zi5",
+   "rawPinyin": "tùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "妥当",
+   "pinyin": "tuo3 dang5",
+   "rawPinyin": "tuǒdang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "唾沫",
+   "pinyin": "tuo4 mo5",
+   "rawPinyin": "tuòmo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "挖苦",
+   "pinyin": "wa1 ku5",
+   "rawPinyin": "wāku",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "娃娃",
+   "pinyin": "wa2 wa5",
+   "rawPinyin": "wáwa",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "袜子",
+   "pinyin": "wa4 zi5",
+   "rawPinyin": "wàzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "外甥",
+   "pinyin": "wai4 sheng5",
+   "rawPinyin": "wàisheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "外头",
+   "pinyin": "wai4 tou5",
+   "rawPinyin": "wàitou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "晚上",
+   "pinyin": "wan3 shang5",
+   "rawPinyin": "wǎnshang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "尾巴",
+   "pinyin": "wei3 ba5",
+   "rawPinyin": "wěiba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "委屈",
+   "pinyin": "wei3 qu5",
+   "rawPinyin": "wěiqu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "为了",
+   "pinyin": "wei4 le5",
+   "rawPinyin": "wèile",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "位置",
+   "pinyin": "wei4 zhi5",
+   "rawPinyin": "wèizhi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "位子",
+   "pinyin": "wei4 zi5",
+   "rawPinyin": "wèizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "温和",
+   "pinyin": "wen1 huo5",
+   "rawPinyin": "wēnhuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蚊子",
+   "pinyin": "wen2 zi5",
+   "rawPinyin": "wénzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "稳当",
+   "pinyin": "wen3 dang5",
+   "rawPinyin": "wěndang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "窝囊",
+   "pinyin": "wo1 nang5",
+   "rawPinyin": "wōnang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "我们",
+   "pinyin": "wo3 men5",
+   "rawPinyin": "wǒmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "屋子",
+   "pinyin": "wu1 zi5",
+   "rawPinyin": "wūzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "稀罕",
+   "pinyin": "xi1 han5",
+   "rawPinyin": "xīhan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "席子",
+   "pinyin": "xi2 zi5",
+   "rawPinyin": "xízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "媳妇",
+   "pinyin": "xi2 fu5",
+   "rawPinyin": "xífu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "喜欢",
+   "pinyin": "xi3 huan5",
+   "rawPinyin": "xǐhuan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "瞎子",
+   "pinyin": "xia1 zi5",
+   "rawPinyin": "xiāzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "匣子",
+   "pinyin": "xia2 zi5",
+   "rawPinyin": "xiázi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "下巴",
+   "pinyin": "xia4 ba5",
+   "rawPinyin": "xiàba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一辈子",
+   "pinyin": "yi2 bei4 zi5",
+   "rawPinyin": "yíbèizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "衣服",
+   "pinyin": "yi1 fu5",
+   "rawPinyin": "yīfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "衣裳",
+   "pinyin": "yi1 shang5",
+   "rawPinyin": "yīshang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "椅子",
+   "pinyin": "yi3 zi5",
+   "rawPinyin": "yǐzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "意思",
+   "pinyin": "yi4 si5",
+   "rawPinyin": "yìsi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "银子",
+   "pinyin": "yin2 zi5",
+   "rawPinyin": "yínzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "影子",
+   "pinyin": "ying3 zi5",
+   "rawPinyin": "yǐngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "应酬",
+   "pinyin": "ying4 chou5",
+   "rawPinyin": "yìngchou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "柚子",
+   "pinyin": "you4 zi5",
+   "rawPinyin": "yòuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "芋头",
+   "pinyin": "yu4 tou5",
+   "rawPinyin": "yùtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "冤家",
+   "pinyin": "yuan1 jia5",
+   "rawPinyin": "yuānjia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "冤枉",
+   "pinyin": "yuan1 wang5",
+   "rawPinyin": "yuānwang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "园子",
+   "pinyin": "yuan2 zi5",
+   "rawPinyin": "yuánzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "院子",
+   "pinyin": "yuan4 zi5",
+   "rawPinyin": "yuànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "月饼",
+   "pinyin": "yue4 bing5",
+   "rawPinyin": "yuèbing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "月亮",
+   "pinyin": "yue4 liang5",
+   "rawPinyin": "yuèliang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "云彩",
+   "pinyin": "yun2 cai5",
+   "rawPinyin": "yúncai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "运气",
+   "pinyin": "yun4 qi5",
+   "rawPinyin": "yùnqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "在乎",
+   "pinyin": "zai4 hu5",
+   "rawPinyin": "zàihu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "咱们",
+   "pinyin": "zan2 men5",
+   "rawPinyin": "zánmen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "早上",
+   "pinyin": "zao3 shang5",
+   "rawPinyin": "zǎoshang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "怎么",
+   "pinyin": "zen3 me5",
+   "rawPinyin": "zěnme",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "扎实",
+   "pinyin": "zha1 shi5",
+   "rawPinyin": "zhāshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "眨巴",
+   "pinyin": "zha3 ba5",
+   "rawPinyin": "zhǎba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "栅栏",
+   "pinyin": "zha4 lan5",
+   "rawPinyin": "zhàlan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "寨子",
+   "pinyin": "zhai4 zi5",
+   "rawPinyin": "zhàizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "张罗",
+   "pinyin": "zhang1 luo5",
+   "rawPinyin": "zhāngluo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "丈夫",
+   "pinyin": "zhang4 fu5",
+   "rawPinyin": "zhàngfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "帐篷",
+   "pinyin": "zhang4 peng5",
+   "rawPinyin": "zhàngpeng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "丈人",
+   "pinyin": "zhang4 ren5",
+   "rawPinyin": "zhàngren",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "帐子",
+   "pinyin": "zhang4 zi5",
+   "rawPinyin": "zhàngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "招呼",
+   "pinyin": "zhao1 hu5",
+   "rawPinyin": "zhāohu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "招牌",
+   "pinyin": "zhao1 pai5",
+   "rawPinyin": "zhāopai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "折腾",
+   "pinyin": "zhe1 teng5",
+   "rawPinyin": "zhēteng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "这个",
+   "pinyin": "zhe4 ge5",
+   "rawPinyin": "zhège",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "这么",
+   "pinyin": "zhe4 me5",
+   "rawPinyin": "zhème",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "枕头",
+   "pinyin": "zhen3 tou5",
+   "rawPinyin": "zhěntou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "芝麻",
+   "pinyin": "zhi1 ma5",
+   "rawPinyin": "zhīma",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "知识",
+   "pinyin": "zhi1 shi5",
+   "rawPinyin": "zhīshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "侄子",
+   "pinyin": "zhi2 zi5",
+   "rawPinyin": "zhízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "指甲",
+   "pinyin": "zhi3 jia5",
+   "rawPinyin": "zhǐjia",
+   "note": null,
+   "base": null,
+   "altPinyin": "zhǐjia"
+  },
+  {
+   "word": "指头",
+   "pinyin": "zhi3 tou5",
+   "rawPinyin": "zhǐtou",
+   "note": null,
+   "base": null,
+   "altPinyin": "zhítou"
+  },
+  {
+   "word": "种子",
+   "pinyin": "zhong3 zi5",
+   "rawPinyin": "zhǒngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "珠子",
+   "pinyin": "zhu1 zi5",
+   "rawPinyin": "zhūzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "竹子",
+   "pinyin": "zhu2 zi5",
+   "rawPinyin": "zhúzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "主意",
+   "pinyin": "zhu3 yi5",
+   "rawPinyin": "zhǔyi",
+   "note": null,
+   "base": null,
+   "altPinyin": "zhúyi"
+  },
+  {
+   "word": "主子",
+   "pinyin": "zhu3 zi5",
+   "rawPinyin": "zhǔzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "柱子",
+   "pinyin": "zhu4 zi5",
+   "rawPinyin": "zhùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "爪子",
+   "pinyin": "zhua3 zi5",
+   "rawPinyin": "zhuǎzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "爱人",
+   "pinyin": "ai4 ren5",
+   "rawPinyin": "àiren",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "案子",
+   "pinyin": "an4 zi5",
+   "rawPinyin": "ànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "巴结",
+   "pinyin": "ba1 jie5",
+   "rawPinyin": "bājie",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "巴掌",
+   "pinyin": "ba1 zhang5",
+   "rawPinyin": "bāzhang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "把子",
+   "pinyin": "ba3 zi5",
+   "rawPinyin": "bǎzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "把子",
+   "pinyin": "ba4 zi5",
+   "rawPinyin": "bàzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "爸爸",
+   "pinyin": "ba4 ba5",
+   "rawPinyin": "bàba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "白净",
+   "pinyin": "bai2 jing4",
+   "rawPinyin": "báijìng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "班子",
+   "pinyin": "ban1 zi5",
+   "rawPinyin": "bānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "板子",
+   "pinyin": "ban3 zi5",
+   "rawPinyin": "bǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "帮手",
+   "pinyin": "bang1 shou5",
+   "rawPinyin": "bāngshou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "梆子",
+   "pinyin": "bang1 zi5",
+   "rawPinyin": "bāngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "膀子",
+   "pinyin": "bang3 zi5",
+   "rawPinyin": "bǎngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "棒槌",
+   "pinyin": "bang4 chui5",
+   "rawPinyin": "bàngchui",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "棒子",
+   "pinyin": "bang4 zi5",
+   "rawPinyin": "bàngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "包袱",
+   "pinyin": "bao1 fu5",
+   "rawPinyin": "bāofu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "包子",
+   "pinyin": "bao1 zi5",
+   "rawPinyin": "bāozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "刨子",
+   "pinyin": "bao4 zi5",
+   "rawPinyin": "bàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "豹子",
+   "pinyin": "bao4 zi5",
+   "rawPinyin": "bàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "杯子",
+   "pinyin": "bei1 zi5",
+   "rawPinyin": "bēizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "被子",
+   "pinyin": "bei4 zi5",
+   "rawPinyin": "bèizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "本事",
+   "pinyin": "ben3 shi5",
+   "rawPinyin": "běnshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "本子",
+   "pinyin": "ben3 zi5",
+   "rawPinyin": "běnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鼻子",
+   "pinyin": "bi2 zi5",
+   "rawPinyin": "bízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "比方",
+   "pinyin": "bi3 fang5",
+   "rawPinyin": "bǐfang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鞭子",
+   "pinyin": "bian1 zi5",
+   "rawPinyin": "biānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "扁担",
+   "pinyin": "bian3 dan5",
+   "rawPinyin": "biǎndan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "辫子",
+   "pinyin": "bian4 zi5",
+   "rawPinyin": "biànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "别扭",
+   "pinyin": "bie4 niu5",
+   "rawPinyin": "bièniu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "饼子",
+   "pinyin": "bing3 zi5",
+   "rawPinyin": "bǐngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脖子",
+   "pinyin": "bo2 zi5",
+   "rawPinyin": "bózi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "薄荷",
+   "pinyin": "bo4 he5",
+   "rawPinyin": "bòhe",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "簸箕",
+   "pinyin": "bo4 ji5",
+   "rawPinyin": "bòji",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "补丁",
+   "pinyin": "bu3 ding5",
+   "rawPinyin": "bǔding",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "不由得",
+   "pinyin": "bu4 you2 de5",
+   "rawPinyin": "bùyóude",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "步子",
+   "pinyin": "bu4 zi5",
+   "rawPinyin": "bùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "部分",
+   "pinyin": "bu4 fen5",
+   "rawPinyin": "bùfen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "财主",
+   "pinyin": "cai2 zhu5",
+   "rawPinyin": "cáizhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "裁缝",
+   "pinyin": "cai2 feng5",
+   "rawPinyin": "cáifeng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "苍蝇",
+   "pinyin": "cang1 ying5",
+   "rawPinyin": "cāngying",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "差事",
+   "pinyin": "chai1 shi5",
+   "rawPinyin": "chāishi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "柴火",
+   "pinyin": "chai2 huo5",
+   "rawPinyin": "cháihuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "肠子",
+   "pinyin": "chang2 zi5",
+   "rawPinyin": "chángzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "厂子",
+   "pinyin": "chang3 zi5",
+   "rawPinyin": "chǎngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "场子",
+   "pinyin": "chang3 zi5",
+   "rawPinyin": "chǎngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "车子",
+   "pinyin": "che1 zi5",
+   "rawPinyin": "chēzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "称呼",
+   "pinyin": "cheng1 hu5",
+   "rawPinyin": "chēnghu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "池子",
+   "pinyin": "chi2 zi5",
+   "rawPinyin": "chízi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "跟头",
+   "pinyin": "gen1 tou5",
+   "rawPinyin": "gēntou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "工夫",
+   "pinyin": "gong1 fu5",
+   "rawPinyin": "gōngfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "弓子",
+   "pinyin": "gong1 zi5",
+   "rawPinyin": "gōngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "公公",
+   "pinyin": "gong1 gong5",
+   "rawPinyin": "gōnggong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "功夫",
+   "pinyin": "gong1 fu5",
+   "rawPinyin": "gōngfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "钩子",
+   "pinyin": "gou1 zi5",
+   "rawPinyin": "gōuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "姑姑",
+   "pinyin": "gu1 gu5",
+   "rawPinyin": "gūgu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "姑娘",
+   "pinyin": "gun1 iang5",
+   "rawPinyin": "gūniang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "谷子",
+   "pinyin": "gu3 zi5",
+   "rawPinyin": "gǔzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "骨头",
+   "pinyin": "gu3 tou5",
+   "rawPinyin": "gǔtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "故事",
+   "pinyin": "gu4 shi5",
+   "rawPinyin": "gùshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "寡妇",
+   "pinyin": "gua3 fu5",
+   "rawPinyin": "guǎfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "褂子",
+   "pinyin": "gua4 zi5",
+   "rawPinyin": "guàzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "怪不得",
+   "pinyin": "guai4 bu5 de5",
+   "rawPinyin": "guàibude",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "怪物",
+   "pinyin": "guai4 wu5",
+   "rawPinyin": "guàiwu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "关系",
+   "pinyin": "guan1 xi5",
+   "rawPinyin": "guānxi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "官司",
+   "pinyin": "guan1 si5",
+   "rawPinyin": "guānsi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "棺材",
+   "pinyin": "guan1 cai5",
+   "rawPinyin": "guāncai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "罐头",
+   "pinyin": "guan4 tou5",
+   "rawPinyin": "guàntou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "罐子",
+   "pinyin": "guan4 zi5",
+   "rawPinyin": "guànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "规矩",
+   "pinyin": "gui1 ju5",
+   "rawPinyin": "guīju",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "闺女",
+   "pinyin": "gui1 nv3",
+   "rawPinyin": "guīnǚ",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鬼子",
+   "pinyin": "gui3 zi5",
+   "rawPinyin": "guǐzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "柜子",
+   "pinyin": "gui4 zi5",
+   "rawPinyin": "guìzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "棍子",
+   "pinyin": "gun4 zi5",
+   "rawPinyin": "gùnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "果子",
+   "pinyin": "guo3 zi5",
+   "rawPinyin": "guǒzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "哈欠",
+   "pinyin": "ha1 qian5",
+   "rawPinyin": "hāqian",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蛤蟆",
+   "pinyin": "ha2 ma5",
+   "rawPinyin": "háma",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "孩子",
+   "pinyin": "hai2 zi5",
+   "rawPinyin": "háizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "含糊",
+   "pinyin": "han2 hu5",
+   "rawPinyin": "hánhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "汉子",
+   "pinyin": "han4 zi5",
+   "rawPinyin": "hànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "行当",
+   "pinyin": "hang2 dang5",
+   "rawPinyin": "hángdang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "合同",
+   "pinyin": "he2 tong5",
+   "rawPinyin": "hétong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "和尚",
+   "pinyin": "he2 shang5",
+   "rawPinyin": "héshang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "核桃",
+   "pinyin": "he2 tao5",
+   "rawPinyin": "hétao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "盒子",
+   "pinyin": "he2 zi5",
+   "rawPinyin": "hézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "恨不得",
+   "pinyin": "hen4 bu5 de5",
+   "rawPinyin": "hènbude",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "红火",
+   "pinyin": "hong2 huo5",
+   "rawPinyin": "hónghuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "猴子",
+   "pinyin": "hou2 zi5",
+   "rawPinyin": "hóuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "后头",
+   "pinyin": "hou4 tou5",
+   "rawPinyin": "hòutou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "厚道",
+   "pinyin": "hou4 dao5",
+   "rawPinyin": "hòudao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "狐狸",
+   "pinyin": "hu2 li5",
+   "rawPinyin": "húli",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胡萝卜",
+   "pinyin": "hu2 luo2 bo5",
+   "rawPinyin": "húluóbo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胡琴",
+   "pinyin": "hu2 qin5",
+   "rawPinyin": "húqin",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胡子",
+   "pinyin": "hu2 zi5",
+   "rawPinyin": "húzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "葫芦",
+   "pinyin": "hu2 lu5",
+   "rawPinyin": "húlu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "糊涂",
+   "pinyin": "hu2 tu5",
+   "rawPinyin": "hútu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "护士",
+   "pinyin": "hu4 shi5",
+   "rawPinyin": "hùshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "皇上",
+   "pinyin": "huang2 shang5",
+   "rawPinyin": "huángshang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "幌子",
+   "pinyin": "huang3 zi5",
+   "rawPinyin": "huǎngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "活泼",
+   "pinyin": "huo2 po5",
+   "rawPinyin": "huópo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "火候",
+   "pinyin": "huo3 hou5",
+   "rawPinyin": "huǒhou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "伙计",
+   "pinyin": "huo3 ji5",
+   "rawPinyin": "huǒji",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "机灵",
+   "pinyin": "ji1 ling5",
+   "rawPinyin": "jīling",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "记号",
+   "pinyin": "ji4 hao5",
+   "rawPinyin": "jìhao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "记性",
+   "pinyin": "ji4 xing5",
+   "rawPinyin": "jìxing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "夹子",
+   "pinyin": "jia1 zi5",
+   "rawPinyin": "jiāzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "家伙",
+   "pinyin": "jia1 huo5",
+   "rawPinyin": "jiāhuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "架势",
+   "pinyin": "jia4 shi5",
+   "rawPinyin": "jiàshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "架子",
+   "pinyin": "jia4 zi5",
+   "rawPinyin": "jiàzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嫁妆",
+   "pinyin": "jia4 zhuang5",
+   "rawPinyin": "jiàzhuang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "尖子",
+   "pinyin": "jian1 zi5",
+   "rawPinyin": "jiānzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "茧子",
+   "pinyin": "jian3 zi5",
+   "rawPinyin": "jiǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "剪子",
+   "pinyin": "jian3 zi5",
+   "rawPinyin": "jiǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "见识",
+   "pinyin": "jian4 shi5",
+   "rawPinyin": "jiànshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "键子",
+   "pinyin": "jian4 zi5",
+   "rawPinyin": "jiànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "将就",
+   "pinyin": "jiang1 jiu5",
+   "rawPinyin": "jiāngjiu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "交情",
+   "pinyin": "jiao1 qing5",
+   "rawPinyin": "jiāoqing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "饺子",
+   "pinyin": "jiao3 zi5",
+   "rawPinyin": "jiǎozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "叫唤",
+   "pinyin": "jiao4 huan5",
+   "rawPinyin": "jiàohuan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "轿子",
+   "pinyin": "jiao4 zi5",
+   "rawPinyin": "jiàozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "结实",
+   "pinyin": "jie1 shi5",
+   "rawPinyin": "jiēshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "街坊",
+   "pinyin": "jie1 fang5",
+   "rawPinyin": "jiēfang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "姐夫",
+   "pinyin": "jie3 fu5",
+   "rawPinyin": "jiěfu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "姐姐",
+   "pinyin": "jie3 jie5",
+   "rawPinyin": "jiějie",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "戒指",
+   "pinyin": "jie4 zhi5",
+   "rawPinyin": "jièzhi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "芥末",
+   "pinyin": "jie4 mo5",
+   "rawPinyin": "jièmo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "金子",
+   "pinyin": "jin1 zi5",
+   "rawPinyin": "jīnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "精神",
+   "pinyin": "jing1 shen5",
+   "rawPinyin": "jīngshen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "镜子",
+   "pinyin": "jing4 zi5",
+   "rawPinyin": "jìngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "舅舅",
+   "pinyin": "jiu4 jiu5",
+   "rawPinyin": "jiùjiu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "橘子",
+   "pinyin": "ju2 zi5",
+   "rawPinyin": "júzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "句子",
+   "pinyin": "ju4 zi5",
+   "rawPinyin": "jùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "卷子",
+   "pinyin": "juan4 zi5",
+   "rawPinyin": "juànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "开通",
+   "pinyin": "kai1 tong5",
+   "rawPinyin": "kāitong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "靠得住",
+   "pinyin": "kao4 de5 zhu4",
+   "rawPinyin": "kàodezhù",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "咳嗽",
+   "pinyin": "ke2 sou5",
+   "rawPinyin": "késou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "客气",
+   "pinyin": "ke4 qi5",
+   "rawPinyin": "kèqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "空子",
+   "pinyin": "kong4 zi5",
+   "rawPinyin": "kòngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "口袋",
+   "pinyin": "kou3 dai5",
+   "rawPinyin": "kǒudai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "口子",
+   "pinyin": "kou3 zi5",
+   "rawPinyin": "kǒuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "扣子",
+   "pinyin": "kou4 zi5",
+   "rawPinyin": "kòuzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "窟窿",
+   "pinyin": "ku1 long5",
+   "rawPinyin": "kūlong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "吓唬",
+   "pinyin": "xia4 hu5",
+   "rawPinyin": "xiàhu",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "先生",
+   "pinyin": "xian1 sheng5",
+   "rawPinyin": "xiānsheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "乡下",
+   "pinyin": "xiang1 xia5",
+   "rawPinyin": "xiāngxia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "箱子",
+   "pinyin": "xiang1 zi5",
+   "rawPinyin": "xiāngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "相声",
+   "pinyin": "xiang4 sheng5",
+   "rawPinyin": "xiàngsheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "消息",
+   "pinyin": "xiao1 xi5",
+   "rawPinyin": "xiāoxi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小伙子",
+   "pinyin": "xiao3 huo3 zi5",
+   "rawPinyin": "xiǎohuǒzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小气",
+   "pinyin": "xiao3 qi5",
+   "rawPinyin": "xiǎoqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小子",
+   "pinyin": "xiao3 zi5",
+   "rawPinyin": "xiǎozi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "笑话",
+   "pinyin": "xiao4 hua5",
+   "rawPinyin": "xiàohua",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "歇息",
+   "pinyin": "xie1 xi5",
+   "rawPinyin": "xiēxi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蝎子",
+   "pinyin": "xie1 zi5",
+   "rawPinyin": "xiēzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鞋子",
+   "pinyin": "xie2 zi5",
+   "rawPinyin": "xiézi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "谢谢",
+   "pinyin": "xie4 xie5",
+   "rawPinyin": "xièxie",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "心思",
+   "pinyin": "xin1 si5",
+   "rawPinyin": "xīnsi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "星星",
+   "pinyin": "xing1 xing5",
+   "rawPinyin": "xīngxing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "猩猩",
+   "pinyin": "xing1 xing5",
+   "rawPinyin": "xīngxing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "行李",
+   "pinyin": "xing2 li5",
+   "rawPinyin": "xíngli",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "行头",
+   "pinyin": "xing2 tou5",
+   "rawPinyin": "xíngtou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "性子",
+   "pinyin": "xing4 zi5",
+   "rawPinyin": "xìngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "兄弟",
+   "pinyin": "xiong1 di5",
+   "rawPinyin": "xiōngdi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "休息",
+   "pinyin": "xiu1 xi5",
+   "rawPinyin": "xiūxi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "秀才",
+   "pinyin": "xiu4 cai5",
+   "rawPinyin": "xiùcai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "秀气",
+   "pinyin": "xiu4 qi5",
+   "rawPinyin": "xiùqi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "袖子",
+   "pinyin": "xiu4 zi5",
+   "rawPinyin": "xiùzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "靴子",
+   "pinyin": "xue1 zi5",
+   "rawPinyin": "xuēzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "学生",
+   "pinyin": "xue2 sheng5",
+   "rawPinyin": "xuésheng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "学问",
+   "pinyin": "xue2 wen5",
+   "rawPinyin": "xuéwen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "丫头",
+   "pinyin": "ya1 tou5",
+   "rawPinyin": "yātou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鸭子",
+   "pinyin": "ya1 zi5",
+   "rawPinyin": "yāzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "衙门",
+   "pinyin": "ya2 men5",
+   "rawPinyin": "yámen",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "哑巴",
+   "pinyin": "ya3 ba5",
+   "rawPinyin": "yǎba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胭脂",
+   "pinyin": "yan1 zhi5",
+   "rawPinyin": "yānzhi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "烟筒",
+   "pinyin": "yan1 tong5",
+   "rawPinyin": "yāntong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "眼睛",
+   "pinyin": "yan3 jing5",
+   "rawPinyin": "yǎnjing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "燕子",
+   "pinyin": "yan4 zi5",
+   "rawPinyin": "yànzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "秧歌",
+   "pinyin": "yang1 ge5",
+   "rawPinyin": "yāngge",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "养活",
+   "pinyin": "yang3 huo5",
+   "rawPinyin": "yǎnghuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "样子",
+   "pinyin": "yang4 zi5",
+   "rawPinyin": "yàngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "吆喝",
+   "pinyin": "yao1 he5",
+   "rawPinyin": "yāohe",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "妖精",
+   "pinyin": "yao1 jing5",
+   "rawPinyin": "yāojing",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "钥匙",
+   "pinyin": "yao4 shi5",
+   "rawPinyin": "yàoshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "椰子",
+   "pinyin": "ye1 zi5",
+   "rawPinyin": "yēzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "爷爷",
+   "pinyin": "ye2 ye5",
+   "rawPinyin": "yéye",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "叶子",
+   "pinyin": "ye4 zi5",
+   "rawPinyin": "yèzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一揽子",
+   "pinyin": "yi4 lan3 zi5",
+   "rawPinyin": "yìlǎnzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "宅子",
+   "pinyin": "zhai2 zi5",
+   "rawPinyin": "zháizi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "转悠",
+   "pinyin": "zhuan4 you5",
+   "rawPinyin": "zhuànyou",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "庄稼",
+   "pinyin": "zhuang1 jia5",
+   "rawPinyin": "zhuāngjia",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "庄子",
+   "pinyin": "zhuang1 zi5",
+   "rawPinyin": "zhuāngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "壮实",
+   "pinyin": "zhuang4 shi5",
+   "rawPinyin": "zhuàngshi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "状元",
+   "pinyin": "zhuang4 yuan5",
+   "rawPinyin": "zhuàngyuan",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "锥子",
+   "pinyin": "zhui1 zi5",
+   "rawPinyin": "zhuīzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "桌子",
+   "pinyin": "zhuo1 zi5",
+   "rawPinyin": "zhuōzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "字号",
+   "pinyin": "zi4 hao5",
+   "rawPinyin": "zìhao",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "自在",
+   "pinyin": "zi4 zai5",
+   "rawPinyin": "zìzai",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "粽子",
+   "pinyin": "zong4 zi5",
+   "rawPinyin": "zòngzi",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "祖宗",
+   "pinyin": "zu3 zong5",
+   "rawPinyin": "zǔzong",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嘴巴",
+   "pinyin": "zui3 ba5",
+   "rawPinyin": "zuǐba",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "作坊",
+   "pinyin": "zuo1 fang5",
+   "rawPinyin": "zuōfang",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "琢磨",
+   "pinyin": "zuo2 mo5",
+   "rawPinyin": "zuómo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "做作",
+   "pinyin": "zuo4 zuo5",
+   "rawPinyin": "zuòzuo",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  }
+ ],
+ "erhua": [
+  {
+   "word": "夹缝儿",
+   "pinyin": "jia1 feng4 r5",
+   "rawPinyin": "jiāfèngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "钢镚儿",
+   "pinyin": "gang1 beng4 r5",
+   "rawPinyin": "gāngbèngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "提成儿",
+   "pinyin": "ti2 cheng2 r5",
+   "rawPinyin": "tíchéngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "半截儿",
+   "pinyin": "ban4 jie2 r5",
+   "rawPinyin": "bànjiér",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小鞋儿",
+   "pinyin": "xiao3 xie2 r5",
+   "rawPinyin": "xiǎoxiér",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "旦角儿",
+   "pinyin": "dan4 jue2 r5",
+   "rawPinyin": "dànjuér",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "主角儿",
+   "pinyin": "zhu3 jue2 r5",
+   "rawPinyin": "zhǔjuér",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "耳垂儿",
+   "pinyin": "er3 chui2 r5",
+   "rawPinyin": "ěrchuír",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "围嘴儿",
+   "pinyin": "wei2 zui3 r5",
+   "rawPinyin": "wéizuǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "墨水儿",
+   "pinyin": "mo4 shui3 r5",
+   "rawPinyin": "mòshuǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一会儿",
+   "pinyin": "yi1 hui4 r5",
+   "rawPinyin": "yīhuìr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "跑腿儿",
+   "pinyin": "pao3 tui3 r5",
+   "rawPinyin": "pǎotuǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "走味儿",
+   "pinyin": "zou3 wei4 r5",
+   "rawPinyin": "zǒuwèir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "冰棍儿",
+   "pinyin": "bing1 gun4 r5",
+   "rawPinyin": "bīnggùnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "没准儿",
+   "pinyin": "mei2 zhun3 r5",
+   "rawPinyin": "méizhǔnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打盹儿",
+   "pinyin": "da3 dun3 r5",
+   "rawPinyin": "dǎdǔnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胖墩儿",
+   "pinyin": "pang4 dun1 r5",
+   "rawPinyin": "pàngdūnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "光棍儿",
+   "pinyin": "guang1 gun4 r5",
+   "rawPinyin": "guānggùnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "砂轮儿",
+   "pinyin": "sha1 lun2 r5",
+   "rawPinyin": "shālúnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "开春儿",
+   "pinyin": "kai1 chun1 r5",
+   "rawPinyin": "kāichūnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小瓮儿",
+   "pinyin": "xiao3 weng4 r5",
+   "rawPinyin": "xiǎowèngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "掉价儿",
+   "pinyin": "diao4 jia4 r5",
+   "rawPinyin": "diàojiàr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一下儿",
+   "pinyin": "yi1 xia4 r5",
+   "rawPinyin": "yīxiàr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "豆芽儿",
+   "pinyin": "dou4 ya2 r5",
+   "rawPinyin": "dòuyár",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "半点儿",
+   "pinyin": "ban4 dian3 r5",
+   "rawPinyin": "bàndiǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "馅儿饼",
+   "pinyin": "xian4 r5 bing3",
+   "rawPinyin": "xiànrbǐng",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "差点儿",
+   "pinyin": "cha4 dian3 r5",
+   "rawPinyin": "chàdiǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小辫儿",
+   "pinyin": "xiao3 bian4 r5",
+   "rawPinyin": "xiǎobiànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "坎肩儿",
+   "pinyin": "kan3 jian1 r5",
+   "rawPinyin": "kǎnjiānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "心眼儿",
+   "pinyin": "xin1 yan3 r5",
+   "rawPinyin": "xīnyǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "拉链儿",
+   "pinyin": "la1 lian4 r5",
+   "rawPinyin": "lāliànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "牙签儿",
+   "pinyin": "ya2 qian1 r5",
+   "rawPinyin": "yáqiānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "聊天儿",
+   "pinyin": "liao2 tian1 r5",
+   "rawPinyin": "liáotiānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一点儿",
+   "pinyin": "yi1 dian3 r5",
+   "rawPinyin": "yīdiǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "露馅儿",
+   "pinyin": "lou4 xian4 r5",
+   "rawPinyin": "lòuxiànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "有点儿",
+   "pinyin": "you3 dian3 r5",
+   "rawPinyin": "yǒudiǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "冒尖儿",
+   "pinyin": "mao4 jian1 r5",
+   "rawPinyin": "màojiānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "雨点儿",
+   "pinyin": "yu3 dian3 r5",
+   "rawPinyin": "yǔdiǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "扇面儿",
+   "pinyin": "shan4 mian4 r5",
+   "rawPinyin": "shànmiànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "照片儿",
+   "pinyin": "zhao4 pian1 r5",
+   "rawPinyin": "zhàopiānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "透亮儿",
+   "pinyin": "tou4 liang4 r5",
+   "rawPinyin": "tòuliàngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鼻梁儿",
+   "pinyin": "bi2 liang2 r5",
+   "rawPinyin": "bíliángr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "花样儿",
+   "pinyin": "hua1 yang4 r5",
+   "rawPinyin": "huāyàngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大褂儿",
+   "pinyin": "da4 gua4 r5",
+   "rawPinyin": "dàguàr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小褂儿",
+   "pinyin": "xiao3 gua4 r5",
+   "rawPinyin": "xiǎoguàr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "麻花儿",
+   "pinyin": "ma2 hua1 r5",
+   "rawPinyin": "máhuār",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "笑话儿",
+   "pinyin": "xiao4 hua5 r5",
+   "rawPinyin": "xiàohuar",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "马褂儿",
+   "pinyin": "ma3 gua4 r5",
+   "rawPinyin": "mǎguàr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "牙刷儿",
+   "pinyin": "ya2 shua1 r5",
+   "rawPinyin": "yáshuār",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脑瓜儿",
+   "pinyin": "nao3 gua1 r5",
+   "rawPinyin": "nǎoguār",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一块儿",
+   "pinyin": "yi1 kuai4 r5",
+   "rawPinyin": "yīkuàir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "茶馆儿",
+   "pinyin": "cha2 guan3 r5",
+   "rawPinyin": "cháguǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "好玩儿",
+   "pinyin": "hao3 wan2 r5",
+   "rawPinyin": "hǎowánr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打转儿",
+   "pinyin": "da3 zhuan4 r5",
+   "rawPinyin": "dǎzhuànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "火罐儿",
+   "pinyin": "huo3 guan4 r5",
+   "rawPinyin": "huǒguànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "落款儿",
+   "pinyin": "luo4 kuan3 r5",
+   "rawPinyin": "luòkuǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "拐弯儿",
+   "pinyin": "guai3 wan1 r5",
+   "rawPinyin": "guǎiwānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打晃儿",
+   "pinyin": "da3 huang4 r5",
+   "rawPinyin": "dǎhuàngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "天窗儿",
+   "pinyin": "tian1 chuang1 r5",
+   "rawPinyin": "tiānchuāngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蛋黄儿",
+   "pinyin": "dan4 huang2 r5",
+   "rawPinyin": "dànhuángr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "包圆儿",
+   "pinyin": "bao1 yuan2 r5",
+   "rawPinyin": "bāoyuánr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "手绢儿",
+   "pinyin": "shou3 juan4 r5",
+   "rawPinyin": "shǒujuànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "出圈儿",
+   "pinyin": "chu1 quan1 r5",
+   "rawPinyin": "chūquānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "烟卷儿",
+   "pinyin": "yan1 juan3 r5",
+   "rawPinyin": "yānjuǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "绕远儿",
+   "pinyin": "rao4 yuan3 r5",
+   "rawPinyin": "ràoyuǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "杂院儿",
+   "pinyin": "za2 yuan4 r5",
+   "rawPinyin": "záyuànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "人缘儿",
+   "pinyin": "ren2 yuan2 r5",
+   "rawPinyin": "rényuánr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "刀背儿",
+   "pinyin": "dao1 bei4 r5",
+   "rawPinyin": "dāobèir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "摸黑儿",
+   "pinyin": "mo1 hei1 r5",
+   "rawPinyin": "mōhēir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "把门儿",
+   "pinyin": "ba3 men2 r5",
+   "rawPinyin": "bǎménr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "面人儿",
+   "pinyin": "mian4 ren2 r5",
+   "rawPinyin": "miànrénr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "别针儿",
+   "pinyin": "bie2 zhen1 r5",
+   "rawPinyin": "biézhēnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "纳闷儿",
+   "pinyin": "na4 men4 r5",
+   "rawPinyin": "nàmènr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大婶儿",
+   "pinyin": "da4 shen3 r5",
+   "rawPinyin": "dàshěnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "嗓门儿",
+   "pinyin": "sang3 men2 r5",
+   "rawPinyin": "sǎngménr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "刀刃儿",
+   "pinyin": "dao1 ren4 r5",
+   "rawPinyin": "dāorènr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小人儿书",
+   "pinyin": "xiao3 ren2 r5 shu1",
+   "rawPinyin": "xiǎorénrshū",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "高跟儿鞋",
+   "pinyin": "gao1 gen1 r5 xie2",
+   "rawPinyin": "gāogēnrxié",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "杏仁儿",
+   "pinyin": "xing4 ren2 r5",
+   "rawPinyin": "xìngrénr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "哥们儿",
+   "pinyin": "ge1 men5 r5",
+   "rawPinyin": "gēmenr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "压根儿",
+   "pinyin": "ya4 gen1 r5",
+   "rawPinyin": "yàgēnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "后跟儿",
+   "pinyin": "hou4 gen1 r5",
+   "rawPinyin": "hòugēnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "一阵儿",
+   "pinyin": "yi1 zhen4 r5",
+   "rawPinyin": "yīzhènr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "花盆儿",
+   "pinyin": "hua1 pen2 r5",
+   "rawPinyin": "huāpénr",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "走神儿",
+   "pinyin": "zou3 shen2 r5",
+   "rawPinyin": "zǒushénr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老本儿",
+   "pinyin": "lao3 ben3 r5",
+   "rawPinyin": "lǎoběnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脖颈儿",
+   "pinyin": "bo2 geng3 r5",
+   "rawPinyin": "bógěngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "瓜子儿",
+   "pinyin": "gua1 zi3 r5",
+   "rawPinyin": "guāzǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "石子儿",
+   "pinyin": "shi2 zi3 r5",
+   "rawPinyin": "shízǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "没词儿",
+   "pinyin": "mei2 ci2 r5",
+   "rawPinyin": "méicír",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "挑刺儿",
+   "pinyin": "tiao1 ci4 r5",
+   "rawPinyin": "tiāocìr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "记事儿",
+   "pinyin": "ji4 shi4 r5",
+   "rawPinyin": "jìshìr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "墨汁儿",
+   "pinyin": "mo4 zhi1 r5",
+   "rawPinyin": "mòzhīr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "锯齿儿",
+   "pinyin": "ju4 chi3 r5",
+   "rawPinyin": "jùchǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "垫底儿",
+   "pinyin": "dian4 di3 r5",
+   "rawPinyin": "diàndǐr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "玩意儿",
+   "pinyin": "wan2 yi4 r5",
+   "rawPinyin": "wányìr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "肚脐儿",
+   "pinyin": "du4 qi2 r5",
+   "rawPinyin": "dùqír",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "针鼻儿",
+   "pinyin": "zhen1 bi2 r5",
+   "rawPinyin": "zhēnbír",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "有劲儿",
+   "pinyin": "you3 jin4 r5",
+   "rawPinyin": "yǒujìnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "送信儿",
+   "pinyin": "song4 xin4 r5",
+   "rawPinyin": "sòngxìnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打鸣儿",
+   "pinyin": "da3 ming2 r5",
+   "rawPinyin": "dǎmíngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "门铃儿",
+   "pinyin": "men2 ling2 r5",
+   "rawPinyin": "ménlíngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蛋清儿",
+   "pinyin": "dan4 qing1 r5",
+   "rawPinyin": "dànqīngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "人影儿",
+   "pinyin": "ren2 ying3 r5",
+   "rawPinyin": "rényǐngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "花瓶儿",
+   "pinyin": "hua1 ping2 r5",
+   "rawPinyin": "huāpíngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "图钉儿",
+   "pinyin": "tu2 ding1 r5",
+   "rawPinyin": "túdīngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "火星儿",
+   "pinyin": "huo3 xing1 r5",
+   "rawPinyin": "huǒxīngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "眼镜儿",
+   "pinyin": "yan3 jing4 r5",
+   "rawPinyin": "yǎnjìngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "毛驴儿",
+   "pinyin": "mao2 lv2 r5",
+   "rawPinyin": "máolǘr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小曲儿",
+   "pinyin": "xiao3 qu3 r5",
+   "rawPinyin": "xiǎoqǔr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "痰盂儿",
+   "pinyin": "tan2 yu2 r5",
+   "rawPinyin": "tányúr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "合群儿",
+   "pinyin": "he2 qun2 r5",
+   "rawPinyin": "héqúnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "挨个儿",
+   "pinyin": "ai1 ge4 r5",
+   "rawPinyin": "āigèr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "逗乐儿",
+   "pinyin": "dou4 le4 r5",
+   "rawPinyin": "dòulèr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "唱歌儿",
+   "pinyin": "chang4 ge1 r5",
+   "rawPinyin": "chànggēr",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "饭盒儿",
+   "pinyin": "fan4 he2 r5",
+   "rawPinyin": "fànhér",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打嗝儿",
+   "pinyin": "da3 ge2 r5",
+   "rawPinyin": "dǎgér",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "模特儿",
+   "pinyin": "mo2 te4 r5",
+   "rawPinyin": "mótèr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "单个儿",
+   "pinyin": "dang1 e4 r5",
+   "rawPinyin": "dāngèr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "泪珠儿",
+   "pinyin": "lei4 zhu1 r5",
+   "rawPinyin": "lèizhūr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "碎步儿",
+   "pinyin": "sui4 bu4 r5",
+   "rawPinyin": "suìbùr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "梨核儿",
+   "pinyin": "li2 hu2 r5",
+   "rawPinyin": "líhúr",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "媳妇儿",
+   "pinyin": "xi2 fu5 r5",
+   "rawPinyin": "xífur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "没谱儿",
+   "pinyin": "mei2 pu3 r5",
+   "rawPinyin": "méipǔr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "有数儿",
+   "pinyin": "you3 shu4 r5",
+   "rawPinyin": "yǒushùr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "抽空儿",
+   "pinyin": "chou1 kong4 r5",
+   "rawPinyin": "chōukòngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "酒盅儿",
+   "pinyin": "jiu3 zhong1 r5",
+   "rawPinyin": "jiǔzhōngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "果冻儿",
+   "pinyin": "guo3 dong4 r5",
+   "rawPinyin": "guǒdòngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "门洞儿",
+   "pinyin": "men2 dong4 r5",
+   "rawPinyin": "méndòngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "胡同儿",
+   "pinyin": "hu2 tong4 r5",
+   "rawPinyin": "hútòngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小葱儿",
+   "pinyin": "xiao3 cong1 r5",
+   "rawPinyin": "xiǎocōngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小熊儿",
+   "pinyin": "xiao3 xiong2 r5",
+   "rawPinyin": "xiǎoxióngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "半道儿",
+   "pinyin": "ban4 dao4 r5",
+   "rawPinyin": "bàndàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "口哨儿",
+   "pinyin": "kou3 shao4 r5",
+   "rawPinyin": "kǒushàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "灯泡儿",
+   "pinyin": "deng1 pao4 r5",
+   "rawPinyin": "dēngpàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "口罩儿",
+   "pinyin": "kou3 zhao4 r5",
+   "rawPinyin": "kǒuzhàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "红包儿",
+   "pinyin": "hong2 bao1 r5",
+   "rawPinyin": "hóngbāor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蜜枣儿",
+   "pinyin": "mi4 zao3 r5",
+   "rawPinyin": "mìzǎor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "叫好儿",
+   "pinyin": "jiao4 hao3 r5",
+   "rawPinyin": "jiàohǎor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "手套儿",
+   "pinyin": "shou3 tao4 r5",
+   "rawPinyin": "shǒutàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "绝着儿",
+   "pinyin": "jue2 zhao1 r5",
+   "rawPinyin": "juézhāor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "跳高儿",
+   "pinyin": "tiao4 gao1 r5",
+   "rawPinyin": "tiàogāor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "豆角儿",
+   "pinyin": "dou4 jiao3 r5",
+   "rawPinyin": "dòujiǎor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "面条儿",
+   "pinyin": "mian4 tiao2 r5",
+   "rawPinyin": "miàntiáor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "火苗儿",
+   "pinyin": "huo3 miao2 r5",
+   "rawPinyin": "huǒmiáor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "跑调儿",
+   "pinyin": "pao3 diao4 r5",
+   "rawPinyin": "pǎodiàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "开窍儿",
+   "pinyin": "kai1 qiao4 r5",
+   "rawPinyin": "kāiqiàor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鱼漂儿",
+   "pinyin": "yu2 piao1 r5",
+   "rawPinyin": "yúpiāor",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "个头儿",
+   "pinyin": "ge4 tou2 r5",
+   "rawPinyin": "gètóur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小丑儿",
+   "pinyin": "xiao3 chou3 r5",
+   "rawPinyin": "xiǎochǒur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老头儿",
+   "pinyin": "lao3 tou2 r5",
+   "rawPinyin": "lǎotóur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小偷儿",
+   "pinyin": "xiao3 tou1 r5",
+   "rawPinyin": "xiǎotōur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "门口儿",
+   "pinyin": "men2 kou3 r5",
+   "rawPinyin": "ménkǒur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "衣兜儿",
+   "pinyin": "yi1 dou1 r5",
+   "rawPinyin": "yīdōur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "年头儿",
+   "pinyin": "nian2 tou2 r5",
+   "rawPinyin": "niántóur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "顶牛儿",
+   "pinyin": "ding3 niu2 r5",
+   "rawPinyin": "dǐngniúr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "纽扣儿",
+   "pinyin": "niu3 kou4 r5",
+   "rawPinyin": "niǔkòur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "加油儿",
+   "pinyin": "jia1 you2 r5",
+   "rawPinyin": "jiāyóur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "线轴儿",
+   "pinyin": "xian4 zhou2 r5",
+   "rawPinyin": "xiànzhóur",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "板擦儿",
+   "pinyin": "ban3 ca1 r5",
+   "rawPinyin": "bǎncār",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "没法儿",
+   "pinyin": "mei2 fa3 r5",
+   "rawPinyin": "méifǎr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "打杂儿",
+   "pinyin": "da3 za2 r5",
+   "rawPinyin": "dǎzár",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "戏法儿",
+   "pinyin": "xi4 fa3 r5",
+   "rawPinyin": "xìfǎr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "刀把儿",
+   "pinyin": "dao1 ba4 r5",
+   "rawPinyin": "dāobàr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "找碴儿",
+   "pinyin": "zhao3 cha2 r5",
+   "rawPinyin": "zhǎochár",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "号码儿",
+   "pinyin": "hao4 ma3 r5",
+   "rawPinyin": "hàomǎr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "壶盖儿",
+   "pinyin": "hu2 gai4 r5",
+   "rawPinyin": "húgàir",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "小孩儿",
+   "pinyin": "xiao3 hai2 r5",
+   "rawPinyin": "xiǎoháir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "加塞儿",
+   "pinyin": "jia1 sai1 r5",
+   "rawPinyin": "jiāsāir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "鞋带儿",
+   "pinyin": "xie2 dai4 r5",
+   "rawPinyin": "xiédàir",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "名牌儿",
+   "pinyin": "ming2 pai2 r5",
+   "rawPinyin": "míngpáir",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "包干儿",
+   "pinyin": "bao1 gan1 r5",
+   "rawPinyin": "bāogānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脸盘儿",
+   "pinyin": "lian3 pan2 r5",
+   "rawPinyin": "liǎnpánr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "笔杆儿",
+   "pinyin": "bi3 gan3 r5",
+   "rawPinyin": "bǐgǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "门槛儿",
+   "pinyin": "men2 kan3 r5",
+   "rawPinyin": "ménkǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "快板儿",
+   "pinyin": "kuai4 ban3 r5",
+   "rawPinyin": "kuàibǎnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "收摊儿",
+   "pinyin": "shou1 tan1 r5",
+   "rawPinyin": "shōutānr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "老伴儿",
+   "pinyin": "lao3 ban4 r5",
+   "rawPinyin": "lǎobànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "蒜瓣儿",
+   "pinyin": "suan4 ban4 r5",
+   "rawPinyin": "suànbànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脸蛋儿",
+   "pinyin": "lian3 dan4 r5",
+   "rawPinyin": "liǎndànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "栅栏儿",
+   "pinyin": "zha4 lan5 r5",
+   "rawPinyin": "zhàlanr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "香肠儿",
+   "pinyin": "xiang1 chang2 r5",
+   "rawPinyin": "xiāngchángr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "赶趟儿",
+   "pinyin": "gan3 tang4 r5",
+   "rawPinyin": "gǎntàngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "药方儿",
+   "pinyin": "yao4 fang1 r5",
+   "rawPinyin": "yàofāngr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "瓜瓤儿",
+   "pinyin": "gua1 rang2 r5",
+   "rawPinyin": "guārángr",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "大腕儿",
+   "pinyin": "da4 wan4 r5",
+   "rawPinyin": "dàwànr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "脚印儿",
+   "pinyin": "jiao3 yin4 r5",
+   "rawPinyin": "jiǎoyìnr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "棉球儿",
+   "pinyin": "mian2 qiu2 r5",
+   "rawPinyin": "miánqiúr",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "抓阄儿",
+   "pinyin": "zhua1 jiu1 r5",
+   "rawPinyin": "zhuājiūr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "被窝儿",
+   "pinyin": "bei4 wo1 r5",
+   "rawPinyin": "bèiwōr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "绝活儿",
+   "pinyin": "jue2 huo2 r5",
+   "rawPinyin": "juéhuór",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "出活儿",
+   "pinyin": "chu1 huo2 r5",
+   "rawPinyin": "chūhuór",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "小说儿",
+   "pinyin": "xiao3 shuo1 r5",
+   "rawPinyin": "xiǎoshuōr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "大伙儿",
+   "pinyin": "da4 huo3 r5",
+   "rawPinyin": "dàhuǒr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "邮戳儿",
+   "pinyin": "you2 chuo1 r5",
+   "rawPinyin": "yóuchuōr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "火锅儿",
+   "pinyin": "huo3 guo1 r5",
+   "rawPinyin": "huǒguōr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "做活儿",
+   "pinyin": "zuo4 huo2 r5",
+   "rawPinyin": "zuòhuór",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  },
+  {
+   "word": "耳膜儿",
+   "pinyin": "er3 mo2 r5",
+   "rawPinyin": "ěrmór",
+   "note": null,
+   "base": null,
+   "altPinyin": null,
+   "starred": true
+  },
+  {
+   "word": "粉末儿",
+   "pinyin": "fen3 mo4 r5",
+   "rawPinyin": "fěnmòr",
+   "note": null,
+   "base": null,
+   "altPinyin": null
+  }
+ ]
+}

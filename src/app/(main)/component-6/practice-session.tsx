@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { calculateXP } from "@/lib/gamification/xp";
-import { lookupPinyinDisplay } from "@/lib/pinyin";
+import { lookupPinyinDisplay, numberedPinyinDisplay } from "@/lib/pinyin";
 import { C6_WORDS_PER_GROUP } from "@/lib/constants";
 import { fetchWithRetry } from "@/lib/fetch-retry";
 import { useAchievementToast } from "@/components/shared/achievement-toast";
@@ -27,6 +27,7 @@ interface CategoryBoundary {
 
 interface PracticeSessionProps {
   questions: string[];
+  pinyinByWord?: Record<string, string | null>;
   character: {
     name: string;
     personalityPrompt: string;
@@ -55,7 +56,7 @@ interface GroupResult {
   groupXP: number;
 }
 
-export function PracticeSession({ questions, character, characterId, component, categoryBoundaries, lpNodeId }: PracticeSessionProps) {
+export function PracticeSession({ questions, pinyinByWord, character, characterId, component, categoryBoundaries, lpNodeId }: PracticeSessionProps) {
   const router = useRouter();
   const { showAchievementToasts } = useAchievementToast();
   const { applyTtsVolume, applyUtteranceVolume } = useAudioSettings();
@@ -615,7 +616,7 @@ export function PracticeSession({ questions, character, characterId, component, 
                     </button>
                     {showPinyin && (
                       <p className="text-center text-base sm:text-2xl text-muted-foreground italic">
-                        {lookupPinyinDisplay(word) ?? "—"}
+                        {numberedPinyinDisplay(pinyinByWord?.[word]) ?? lookupPinyinDisplay(word) ?? "—"}
                       </p>
                     )}
                   </div>

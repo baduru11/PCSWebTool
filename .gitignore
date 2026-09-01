@@ -69,3 +69,4 @@ doc/
 # Supabase CLI temp files
 supabase/.temp/
 .gstack/
+docs/sources/psc2021-wordtable-source-sdwm.pdf

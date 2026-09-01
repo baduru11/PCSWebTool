@@ -8,10 +8,8 @@ import {
 import { analyzeC5Speaking } from "@/lib/gemini/client";
 import { calculateC5Score } from "@/lib/scoring/c5-scoring";
 import { getPcmWavDurationSeconds } from "@/lib/audio-utils";
-import {
-  getSupplementarySpeakingTopics,
-  OFFICIAL_PSC_SPEAKING_TOPICS,
-} from "@/lib/psc/official-speaking-topics";
+import { OFFICIAL_PSC_SPEAKING_TOPICS } from "@/lib/psc/official-speaking-topics";
+import { questionBankHasContent } from "@/lib/question-bank";
 
 // ISE read_chapter max audio duration. 120s fails; 82s works. Use 90s with margin.
 // PCM 16kHz 16-bit mono = 32000 bytes/s.
@@ -25,17 +23,11 @@ async function isControlledSpeakingTopic(
   supabase: Awaited<ReturnType<typeof createClient>>,
 ): Promise<boolean> {
   if (OFFICIAL_PSC_SPEAKING_TOPICS.some((officialTopic) => officialTopic === topic)) return true;
+  if (!topic.trim()) return false;
 
-  const { data, error } = await supabase
-    .from("question_banks")
-    .select("content")
-    .eq("component", 5)
-    .limit(150);
-  if (error) return false;
-
-  return getSupplementarySpeakingTopics(
-    (data ?? []).map((question: { content: string }) => question.content),
-  ).includes(topic);
+  // Exact-content lookup against the whole bank: the previous capped list
+  // fetch (.limit(150), physical order) silently rejected topics past the cap.
+  return questionBankHasContent(supabase, 5, topic);
 }
 
 /**

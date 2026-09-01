@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { buildPlayerMemory } from "@/lib/gemini/player-memory";
 import { shuffle, sampleByTone } from "@/lib/utils";
+import { fetchQuestionSample } from "@/lib/question-bank";
 
 const PracticeSession = dynamic(() => import("./practice-session").then(m => m.PracticeSession), {
   loading: () => (
@@ -34,14 +35,12 @@ export default async function Component1Page({
 
   const userId = user!.id;
 
-  // Fetch character and questions in parallel
-  const [character, { data: dbQuestions }] = await Promise.all([
+  // Fetch character and a server-side random question sample in parallel
+  // (sample_question_bank RPC — a plain .limit() without ORDER BY serves
+  // physical row order and starves newly inserted rows).
+  const [character, dbQuestions] = await Promise.all([
     loadSelectedCharacter(supabase, userId),
-    supabase
-      .from("question_banks")
-      .select("content, pinyin")
-      .eq("component", 1)
-      .limit(600),
+    fetchQuestionSample(supabase, 1, 600),
   ]);
 
   const playerMemory = await buildPlayerMemory(supabase, userId, character.id ?? "").catch(() => "");
@@ -58,20 +57,29 @@ export default async function Component1Page({
     if (nodeData?.question_ids?.length) {
       const { data: qData } = await supabase
         .from("question_banks")
-        .select("content")
+        .select("content, pinyin")
         .in("id", nodeData.question_ids);
 
       if (qData?.length) {
         lpQuestions = qData.map((q: { content: string }) => q.content);
+        for (const q of qData as { content: string; pinyin: string | null }[]) {
+          if (q.pinyin) dbQuestions.push(q);
+        }
       }
     }
   }
+
+  // Word → DB pinyin (tone-number form) for the on-screen pinyin hint; the
+  // session falls back to the static map for words without a DB reading.
+  const pinyinByWord = Object.fromEntries(
+    dbQuestions.filter((q) => q.pinyin).map((q) => [q.content, q.pinyin]),
+  );
 
   // Learning-path questions are intentionally chosen, so keep them as-is (just shuffled).
   // Otherwise draw a tone-balanced set so practice isn't skewed toward one tone.
   const questions: string[] = lpQuestions
     ? shuffle(lpQuestions)
-    : dbQuestions && dbQuestions.length > 0
+    : dbQuestions.length > 0
       ? sampleByTone(dbQuestions, 50).map((q) => q.content)
       : shuffle(DEFAULT_CHARACTERS);
 
@@ -86,7 +94,7 @@ export default async function Component1Page({
         </p>
       </div>
 
-      <PracticeSession questions={questions} character={character} characterId={character.id} component={1} playerMemory={playerMemory} lpNodeId={lpNode} />
+      <PracticeSession questions={questions} pinyinByWord={pinyinByWord} character={character} characterId={character.id} component={1} playerMemory={playerMemory} lpNodeId={lpNode} />
     </div>
   );
 }

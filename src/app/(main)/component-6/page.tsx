@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { buildPlayerMemory } from "@/lib/gemini/player-memory";
 import { shuffle } from "@/lib/utils";
+import { fetchQuestionSampleWithMetadata } from "@/lib/question-bank";
 import { C6_GROUPS_PER_CATEGORY, C6_WORDS_PER_GROUP } from "@/lib/constants";
 
 const PracticeSession = dynamic(() => import("./practice-session").then(m => m.PracticeSession), {
@@ -15,11 +16,13 @@ const PracticeSession = dynamic(() => import("./practice-session").then(m => m.P
   ),
 });
 
-// Fallback words per category
+// Fallback words per category, used only when the bank read returns nothing.
+// Drawn from the same verified source as the bank: each word is an entry of the
+// official 2021 普通话水平测试用普通话词语表 that carries the target contrast.
 const FALLBACK_WORDS: Record<string, string[]> = {
-  zhcs: ["杂志", "竹子", "自习", "知识", "早餐", "长城", "从此", "城市", "三十", "山水"],
-  nng: ["真正", "陈成", "分风", "民明", "人仍", "针征", "亲清", "身生", "品评", "林灵"],
-  ln: ["奶奶", "来来", "牛奶", "流利", "那里", "哪里", "男女", "褴褛", "蓝绿", "南岭"],
+  zhcs: ["财产", "财政", "菜蔬", "参数", "参照", "侧重", "场所", "沉思", "称赞", "充足"],
+  nng: ["安定", "安静", "安装", "暗中", "板凳", "半径", "傍晚", "奔腾", "本领", "本能"],
+  ln: ["老年", "哪里", "那里", "奶酪", "能力", "能量", "年龄", "奴隶", "努力", "来年"],
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -41,19 +44,18 @@ export default async function Component6Page({
 
   const wordsPerCategory = C6_GROUPS_PER_CATEGORY * C6_WORDS_PER_GROUP;
 
-  const [character, { data: dbQuestions }] = await Promise.all([
+  const [character, dbQuestions] = await Promise.all([
     loadSelectedCharacter(supabase, user!.id),
-    supabase
-      .from("question_banks")
-      .select("content, metadata")
-      .eq("component", 6)
-      .limit(200),
+    // Sampled server-side: the drill bank is larger than any per-session cap,
+    // and a capped PostgREST read would serve only its first physical rows.
+    fetchQuestionSampleWithMetadata(supabase, 6, 200),
   ]);
 
   const playerMemory = await buildPlayerMemory(supabase, user!.id, character.id ?? "").catch(() => "");
 
   // If launched from learning path, use the node's specific questions
   let lpQuestions: string[] | null = null;
+  let lpPinyin: Array<{ content: string; pinyin: string | null }> = [];
   if (lpNode) {
     const { data: nodeData } = await supabase
       .from("learning_nodes")
@@ -64,14 +66,24 @@ export default async function Component6Page({
     if (nodeData?.question_ids?.length) {
       const { data: qData } = await supabase
         .from("question_banks")
-        .select("content")
+        .select("content, pinyin")
         .in("id", nodeData.question_ids);
 
       if (qData?.length) {
         lpQuestions = qData.map((q: { content: string }) => q.content);
+        lpPinyin = qData as Array<{ content: string; pinyin: string | null }>;
       }
     }
   }
+
+  // Word → DB pinyin (tone-number form) for the on-screen pinyin hint. The drill
+  // words are official word-table entries, most of which are absent from the
+  // static bundled map, so the DB reading is the primary source here.
+  const pinyinByWord = Object.fromEntries(
+    [...dbQuestions, ...lpPinyin]
+      .filter((q) => q.pinyin)
+      .map((q) => [q.content, q.pinyin as string]),
+  );
 
   // Group by category, shuffle, and take subset
   const categoryWords: Record<string, string[]> = { zhcs: [], nng: [], ln: [] };
@@ -118,6 +130,7 @@ export default async function Component6Page({
 
       <PracticeSession
         questions={questions}
+        pinyinByWord={pinyinByWord}
         character={character}
         characterId={character.id}
         component={6}

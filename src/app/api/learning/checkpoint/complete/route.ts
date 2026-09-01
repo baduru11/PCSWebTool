@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { fetchQuestionIdSample, fetchQuestionCount } from "@/lib/question-bank";
 import { createClient, getSessionUser } from "@/lib/supabase/server";
 import {
   generateCheckpointFeedback,
@@ -144,12 +145,14 @@ export async function POST(request: NextRequest) {
       // Fetch available question IDs, excluding already-used ones
       const availableQuestionIds: Record<number, string[]> = {};
       const availableQuestionCounts: Record<number, number> = {};
+      // Bounded random ID pool (see generate-plan): avoids the PostgREST max-rows cap.
       const componentPromises = [1, 2, 3, 4, 5, 6, 7].map(async (comp) => {
-        const { data } = await supabase
-          .from("question_banks")
-          .select("id")
-          .eq("component", comp);
-        availableQuestionIds[comp] = (data ?? []).map((row) => row.id);
+        const [ids, total] = await Promise.all([
+          fetchQuestionIdSample(supabase, comp, 500),
+          fetchQuestionCount(supabase, comp),
+        ]);
+        availableQuestionIds[comp] = ids;
+        availableQuestionCounts[comp] = total;
       });
       await Promise.all(componentPromises);
 

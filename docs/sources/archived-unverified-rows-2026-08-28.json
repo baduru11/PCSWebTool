@@ -1,0 +1,6967 @@
+{
+ "archived": "2026-08-28",
+ "reason": "Bank rebuilt so every served row traces to a verified official source (2021 official word table / appendix tables / official reading works / official topic list / official quantifier-noun table / school-supplied real items). These rows were authored or legacy and are archived here for recoverability, not deleted from history.",
+ "count": 423,
+ "rows": [
+  {
+   "id": "8d5cad0b-bac2-4446-8c37-391bffd16bc0",
+   "component": 1,
+   "set_number": 11,
+   "content": "悅",
+   "pinyin": "yue4",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "b1285174-f149-4142-9451-5494fd59b18e",
+   "component": 1,
+   "set_number": 56,
+   "content": "壤",
+   "pinyin": "rang3",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "e62e7d64-4564-49af-aa3e-aff9cba8117b",
+   "component": 1,
+   "set_number": 196,
+   "content": "撼",
+   "pinyin": "han4",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "f4b18168-80b9-4cdf-b1a7-4fdedf624a31",
+   "component": 1,
+   "set_number": 455,
+   "content": "柺",
+   "pinyin": "guai3",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "85cc3570-54f8-4d3e-989b-5f644be81046",
+   "component": 1,
+   "set_number": 630,
+   "content": "邹",
+   "pinyin": "zou1",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "a8ab5c1d-daf9-4ee6-bd2a-64566b9d8e6c",
+   "component": 1,
+   "set_number": 632,
+   "content": "酚",
+   "pinyin": "fen1",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "19d20031-6f3c-4177-b719-45995aa65953",
+   "component": 1,
+   "set_number": 676,
+   "content": "膛",
+   "pinyin": "tang2",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "2bd14eb1-f9bd-48ea-8530-375cf4b9cd21",
+   "component": 1,
+   "set_number": 720,
+   "content": "僻",
+   "pinyin": "pi4",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "12a90712-5de4-44fd-8c36-0ef66432bfec",
+   "component": 1,
+   "set_number": 769,
+   "content": "翡",
+   "pinyin": "fei3",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "93b2c019-09a9-4195-9716-c59277408519",
+   "component": 1,
+   "set_number": 846,
+   "content": "繅",
+   "pinyin": "sao1",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "09b8671e-ca05-40b7-8b36-2a8f0eb01312",
+   "component": 1,
+   "set_number": 932,
+   "content": "栖",
+   "pinyin": "qi1",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "211f6d08-1aef-47b0-a461-940cc2d1eec6",
+   "component": 2,
+   "set_number": 52,
+   "content": "在这儿",
+   "pinyin": "zai4 zhe4 r5",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "26350b97-3d79-482f-825c-381f6bebfd07",
+   "component": 2,
+   "set_number": 393,
+   "content": "脸盆儿",
+   "pinyin": "lian3 pen2 r5",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "b855a5f2-029f-45dc-a668-34cb52ef7752",
+   "component": 2,
+   "set_number": 458,
+   "content": "生存力",
+   "pinyin": "sheng1 cun2 li4",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "0001fda8-c028-4407-add7-c76366e161a0",
+   "component": 2,
+   "set_number": 502,
+   "content": "小翁儿",
+   "pinyin": "xiao3 weng1 r5",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "8767cb94-a39e-4ad1-979a-fa41dbaa37f1",
+   "component": 2,
+   "set_number": 538,
+   "content": "涅槃",
+   "pinyin": "nie4 pan2",
+   "metadata": {
+    "not_in_official_table": true
+   }
+  },
+  {
+   "id": "8a22a68f-0888-4baf-9227-4474853e2913",
+   "component": 3,
+   "set_number": 12,
+   "content": "选择普通话词语",
+   "pinyin": null,
+   "metadata": {
+    "type": "word-choice",
+    "options": [
+     "聊天",
+     "嗑牙",
+     "摆龙门阵",
+     "倾计"
+    ],
+    "explanation": "「聊天」是普通话标准说法；「嗑牙」「摆龙门阵」是方言，「倾计」是粤语。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "0638e776-bf5d-4801-a31f-cf4c48a3bf35",
+   "component": 3,
+   "set_number": 24,
+   "content": "选择普通话词语",
+   "pinyin": null,
+   "metadata": {
+    "type": "word-choice",
+    "options": [
+     "晓的",
+     "作兴",
+     "知道"
+    ],
+    "explanation": "「知道」是普通话标准说法；「作兴」是方言，「晓的」是误写。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "5ed5b211-a2a7-4075-8efc-a8ca58cd1bd9",
+   "component": 3,
+   "set_number": 27,
+   "content": "选择普通话词语",
+   "pinyin": null,
+   "metadata": {
+    "type": "word-choice",
+    "options": [
+     "红薯",
+     "红苕",
+     "山芋"
+    ],
+    "explanation": "「红薯」是普通话标准说法；「红苕」「山芋」是方言。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "8a735b3f-e487-46d3-9c8a-e4a00058cb51",
+   "component": 3,
+   "set_number": 29,
+   "content": "选择普通话词语",
+   "pinyin": null,
+   "metadata": {
+    "type": "word-choice",
+    "options": [
+     "薯仔",
+     "山药蛋",
+     "洋芋",
+     "土豆"
+    ],
+    "explanation": "「土豆」是普通话标准说法；其余为方言。",
+    "correctIndex": 3,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "24ee437a-8686-420e-b21e-30c6e1660ee1",
+   "component": 3,
+   "set_number": 30,
+   "content": "选择普通话词语",
+   "pinyin": null,
+   "metadata": {
+    "type": "word-choice",
+    "options": [
+     "婆姨",
+     "堂客",
+     "妻子",
+     "屋里的"
+    ],
+    "explanation": "「妻子」是普通话标准说法；「屋里的」「堂客」「婆姨」是方言。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "1a8a8b75-5c8e-48ce-b0c4-7b5442e5dda8",
+   "component": 3,
+   "set_number": 2006,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "给多一点我",
+     "再多给我一点",
+     "给多我一点"
+    ],
+    "explanation": "「再多给我一点」语序正确，其余语序不当。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "34af908b-06de-45bf-bc31-5a3d1b075345",
+   "component": 3,
+   "set_number": 2015,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "我邮件给你",
+     "我发邮件你给",
+     "我发给你邮件"
+    ],
+    "explanation": "「我发给你邮件」是标准双宾语句式。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "b3318330-180e-49a3-9435-6e5ca3d686ea",
+   "component": 3,
+   "set_number": 2018,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "他在住上海",
+     "他住上海在",
+     "他住在上海"
+    ],
+    "explanation": "「他住在上海」标准，「住」后加「在」引出处所。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1",
+    "distractor_repair": {
+     "reason": "他住上海 是规范说法，不能作错误干扰项",
+     "recorded": "2026-08-28",
+     "replaced": {
+      "他住上海": "他在住上海"
+     }
+    }
+   }
+  },
+  {
+   "id": "157a4ba1-fac2-4dae-82d2-531163f46c9a",
+   "component": 3,
+   "set_number": 2021,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "他跳舞得很好",
+     "他跳很好舞",
+     "他跳舞跳得很好"
+    ],
+    "explanation": "「他跳舞跳得很好」是标准动词重复加述补结构。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "2028c415-882c-449f-8617-db646dfe6e1c",
+   "component": 3,
+   "set_number": 2023,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "外面落雨了",
+     "外面雨下了",
+     "外面下雨了"
+    ],
+    "explanation": "「外面下雨了」标准；「外面雨下了」语序不当，「外面落雨了」是方言。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "77100d10-df2a-45e9-a14d-59558af102ac",
+   "component": 3,
+   "set_number": 2025,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "这活儿我干不了",
+     "这活儿我不来干",
+     "这活儿我不了干"
+    ],
+    "explanation": "「这活儿我干不了」是标准可能补语否定式。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "d2fe6ab3-4dd1-4897-8644-eb85b618de99",
+   "component": 3,
+   "set_number": 2027,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "他迟到时不时",
+     "他常常迟到",
+     "他迟到常常"
+    ],
+    "explanation": "「他常常迟到」语序正确，频率副词在动词前。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "5f9bfe35-be52-4213-b4f6-d167d621a3b3",
+   "component": 3,
+   "set_number": 2028,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "我一件事提醒你",
+     "我提醒一件事你",
+     "我提醒你一件事"
+    ],
+    "explanation": "「我提醒你一件事」是标准双宾语句式。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "78c39fc9-e576-4043-964f-aa0854f94f38",
+   "component": 3,
+   "set_number": 2029,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "这汤太淡了",
+     "这汤咸不够",
+     "这汤淡太了"
+    ],
+    "explanation": "「这汤太淡了」是标准程度表达。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "14c16af5-2f32-476c-b459-c201fa37f4f1",
+   "component": 3,
+   "set_number": 2030,
+   "content": "选择正确的句子",
+   "pinyin": null,
+   "metadata": {
+    "type": "sentence-order",
+    "options": [
+     "他弟弟当医生",
+     "他弟弟做着医生",
+     "他弟弟医生当"
+    ],
+    "explanation": "「他弟弟当医生」标准（「当」加职业）。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest practice variant (not school-supplied)",
+    "source_version": "xiyouquest-c3-v1"
+   }
+  },
+  {
+   "id": "5b3b4cc0-914b-45f2-b251-e3268c246130",
+   "component": 3,
+   "set_number": 2045,
+   "content": "一（　）马",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "匹",
+     "条",
+     "张",
+     "面",
+     "双"
+    ],
+    "explanation": "官方搭配表：马用「匹」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "1cc3143b-ed3f-43fc-b6df-58fb81e445cb",
+   "component": 3,
+   "set_number": 2046,
+   "content": "一（　）井",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "口",
+     "把",
+     "条",
+     "张",
+     "顶"
+    ],
+    "explanation": "官方搭配表：井用「口」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "94c0c49c-8961-48fc-a86a-e24b830b0451",
+   "component": 3,
+   "set_number": 2047,
+   "content": "一（　）猪",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "头",
+     "口",
+     "支",
+     "面",
+     "双"
+    ],
+    "explanation": "官方搭配表：猪可配「头／口」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "头",
+     "口"
+    ]
+   }
+  },
+  {
+   "id": "df7eadce-c850-48f1-b751-390450e7cd77",
+   "component": 3,
+   "set_number": 2048,
+   "content": "一（　）鸟",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "只",
+     "头",
+     "条",
+     "匹",
+     "口"
+    ],
+    "explanation": "官方搭配表：鸟用「只」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "4a18e0bd-421c-46ee-b71a-3b6956651534",
+   "component": 3,
+   "set_number": 2049,
+   "content": "一（　）珍珠",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "颗",
+     "粒",
+     "块",
+     "条",
+     "支"
+    ],
+    "explanation": "官方搭配表：珍珠可配「颗／粒」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "颗",
+     "粒"
+    ]
+   }
+  },
+  {
+   "id": "c1e33822-ec7e-428c-b338-ad35483c3173",
+   "component": 3,
+   "set_number": 2050,
+   "content": "一（　）星星",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "颗",
+     "支",
+     "条",
+     "面",
+     "张"
+    ],
+    "explanation": "官方搭配表：星星用「颗」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "708b6226-8515-4044-8315-f868b5e6027b",
+   "component": 3,
+   "set_number": 2051,
+   "content": "一（　）米",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "粒",
+     "条",
+     "张",
+     "面",
+     "顶"
+    ],
+    "explanation": "官方搭配表：米用「粒」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "12ce9640-544b-41d6-9771-af380884a6aa",
+   "component": 3,
+   "set_number": 2052,
+   "content": "一（　）桥",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "座",
+     "条",
+     "面",
+     "根",
+     "顶"
+    ],
+    "explanation": "官方搭配表：桥用「座」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "0bcbff71-3684-4db4-8dd9-dc78f1c6c0bf",
+   "component": 3,
+   "set_number": 2053,
+   "content": "一（　）城市",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "座",
+     "家",
+     "所",
+     "间",
+     "面"
+    ],
+    "explanation": "官方搭配表：城市用「座」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "e06753a9-3e3f-49d1-bad7-c07d79ff393b",
+   "component": 3,
+   "set_number": 2054,
+   "content": "一（　）飞机",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "架",
+     "条",
+     "匹",
+     "面",
+     "块"
+    ],
+    "explanation": "官方搭配表：飞机用「架」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "099eb7a7-e96f-4c4d-8a75-89b5c050d38f",
+   "component": 3,
+   "set_number": 2055,
+   "content": "一（　）钢琴",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "台",
+     "架",
+     "面",
+     "条",
+     "双"
+    ],
+    "explanation": "官方搭配表：钢琴可配「台／架」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "台",
+     "架"
+    ]
+   }
+  },
+  {
+   "id": "34b84400-1bd4-4f48-8229-4bcf9a2a75e4",
+   "component": 3,
+   "set_number": 2056,
+   "content": "一（　）报纸",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "张",
+     "份",
+     "面",
+     "根",
+     "口"
+    ],
+    "explanation": "官方搭配表：报纸可配「张／份」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "张",
+     "份"
+    ]
+   }
+  },
+  {
+   "id": "f4c55141-e0c1-4159-99fd-58b00333f159",
+   "component": 3,
+   "set_number": 2057,
+   "content": "一（　）大炮",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "门",
+     "把",
+     "条",
+     "面",
+     "双"
+    ],
+    "explanation": "官方搭配表：大炮用「门」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "3e5bc6ae-46e8-4ab5-b98f-32cea7634a12",
+   "component": 3,
+   "set_number": 2058,
+   "content": "一（　）课",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "门",
+     "节",
+     "面",
+     "口",
+     "张"
+    ],
+    "explanation": "官方搭配表：课可配「门／节」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "门",
+     "节"
+    ]
+   }
+  },
+  {
+   "id": "82ffe0cf-ee23-4599-9312-61763817ee03",
+   "component": 3,
+   "set_number": 2059,
+   "content": "一（　）门",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "扇",
+     "道",
+     "条",
+     "口",
+     "匹"
+    ],
+    "explanation": "官方搭配表：门可配「扇／道」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "扇",
+     "道"
+    ]
+   }
+  },
+  {
+   "id": "d4ffe7af-143a-479a-8402-22490eded377",
+   "component": 3,
+   "set_number": 2060,
+   "content": "一（　）墙",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "面",
+     "道",
+     "条",
+     "块",
+     "张"
+    ],
+    "explanation": "官方搭配表：墙可配「面／道」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "面",
+     "道"
+    ]
+   }
+  },
+  {
+   "id": "ec4ad586-9028-4f38-8ca1-d379954f34f3",
+   "component": 3,
+   "set_number": 2061,
+   "content": "一（　）镜子",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "面",
+     "条",
+     "双",
+     "顶",
+     "支"
+    ],
+    "explanation": "官方搭配表：镜子用「面」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "6a8f9efc-8f57-44ea-a301-709b54d91ffc",
+   "component": 3,
+   "set_number": 2062,
+   "content": "一（　）鞋",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "双",
+     "只",
+     "副",
+     "条",
+     "张"
+    ],
+    "explanation": "官方搭配表：鞋可配「双／只」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "双",
+     "只"
+    ]
+   }
+  },
+  {
+   "id": "7a97c6cb-1303-439b-bd74-100e991a807e",
+   "component": 3,
+   "set_number": 2063,
+   "content": "一（　）手套",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "副",
+     "顶",
+     "块",
+     "条",
+     "面"
+    ],
+    "explanation": "官方搭配表：手套可配「副／双／只」；本题选项中仅「副」为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "557b673a-6e69-426f-bcbb-6c0db9da4e6e",
+   "component": 3,
+   "set_number": 2064,
+   "content": "一（　）眼镜",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "副",
+     "双",
+     "只",
+     "张",
+     "条"
+    ],
+    "explanation": "官方搭配表：眼镜用「副」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "3c156adc-2c1e-4ed7-bdc4-b676121df3db",
+   "component": 3,
+   "set_number": 2065,
+   "content": "一（　）骆驼",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "头",
+     "只",
+     "张",
+     "口",
+     "双"
+    ],
+    "explanation": "官方搭配表：骆驼可配「头／只」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "头",
+     "只"
+    ]
+   }
+  },
+  {
+   "id": "a3f7478b-6d83-4b8c-9eea-1011a67aee9f",
+   "component": 3,
+   "set_number": 2066,
+   "content": "一（　）羊",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "只",
+     "头",
+     "条",
+     "口",
+     "张"
+    ],
+    "explanation": "官方搭配表：羊可配「只／头」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "只",
+     "头"
+    ]
+   }
+  },
+  {
+   "id": "f3e687a9-3a8e-457a-86ee-9f21dfd92569",
+   "component": 3,
+   "set_number": 2067,
+   "content": "一（　）蜡烛",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "支",
+     "根",
+     "条",
+     "面",
+     "块"
+    ],
+    "explanation": "官方搭配表：蜡烛可配「支／根」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "支",
+     "根"
+    ]
+   }
+  },
+  {
+   "id": "34f7e6f2-0dc3-493e-8573-ee3bbea57ec0",
+   "component": 3,
+   "set_number": 2068,
+   "content": "一（　）绳子",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "根",
+     "条",
+     "面",
+     "口",
+     "张"
+    ],
+    "explanation": "官方搭配表：绳子可配「根／条」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "根",
+     "条"
+    ]
+   }
+  },
+  {
+   "id": "5e3715a2-511f-4c4d-a994-1a86ec51ac1a",
+   "component": 3,
+   "set_number": 2069,
+   "content": "一（　）辫子",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "条",
+     "根",
+     "面",
+     "口",
+     "双"
+    ],
+    "explanation": "官方搭配表：辫子可配「条／根」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "条",
+     "根"
+    ]
+   }
+  },
+  {
+   "id": "308d137e-09a3-415c-abf1-6ba0612bb83f",
+   "component": 3,
+   "set_number": 2070,
+   "content": "一（　）老虎",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "只",
+     "面",
+     "条",
+     "匹",
+     "口"
+    ],
+    "explanation": "官方搭配表：老虎用「只」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "001af9f6-d47e-449f-8413-8f51e9809c83",
+   "component": 3,
+   "set_number": 2071,
+   "content": "一（　）船",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "条",
+     "只",
+     "架",
+     "辆",
+     "匹"
+    ],
+    "explanation": "官方搭配表：船可配「条／只」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "条",
+     "只"
+    ]
+   }
+  },
+  {
+   "id": "df0caf0b-7373-4b16-9680-08ff0b7b4837",
+   "component": 3,
+   "set_number": 2072,
+   "content": "一（　）手表",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "块",
+     "只",
+     "条",
+     "面",
+     "双"
+    ],
+    "explanation": "官方搭配表：手表可配「块／只」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "块",
+     "只"
+    ]
+   }
+  },
+  {
+   "id": "dad8379b-f149-4e91-b623-2da911a0953d",
+   "component": 3,
+   "set_number": 2073,
+   "content": "一（　）肥皂",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "块",
+     "条",
+     "粒",
+     "面",
+     "张"
+    ],
+    "explanation": "官方搭配表：肥皂可配「块／条」，均为规范搭配。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    },
+    "acceptedAnswers": [
+     "块",
+     "条"
+    ]
+   }
+  },
+  {
+   "id": "99f3b972-3718-4a4c-8e24-cfa625f7d70b",
+   "component": 3,
+   "set_number": 2074,
+   "content": "一（　）帽子",
+   "pinyin": null,
+   "metadata": {
+    "type": "measure-word",
+    "options": [
+     "顶",
+     "件",
+     "条",
+     "双",
+     "块"
+    ],
+    "explanation": "官方搭配表：帽子用「顶」作量词。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_record": {
+     "basis": "普通话水平测试用普通话常见量词、名词搭配表",
+     "authored": "2026-08-28",
+     "basis_ref": "docs/sources/psc-liangci-mingci-dapeibiao.md"
+    }
+   }
+  },
+  {
+   "id": "b3a82aa6-e4c0-4006-98d4-40258d1fad3f",
+   "component": 5,
+   "set_number": 1,
+   "content": "我的家庭",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "a422b916-4a5a-44fa-bdc3-3d6915ce045b",
+   "component": 5,
+   "set_number": 2,
+   "content": "我的一位朋友",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "fffd732b-0edf-4a1e-9dcb-212b091143d6",
+   "component": 5,
+   "set_number": 3,
+   "content": "我尊敬的人",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "5f15ed12-e5cb-4b78-9abd-50579c7ca27f",
+   "component": 5,
+   "set_number": 4,
+   "content": "我最喜欢的季节",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "68384bc8-aee5-458c-8ff6-08ee946927aa",
+   "component": 5,
+   "set_number": 5,
+   "content": "我最喜欢的运动",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "663514ff-f3d8-4a84-a13e-c382430d9a82",
+   "component": 5,
+   "set_number": 6,
+   "content": "我的一次难忘旅行",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "aa89a28b-a54c-4eca-82c6-5d8b42002a7d",
+   "component": 5,
+   "set_number": 7,
+   "content": "我的一次失败经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "0ab858e8-e744-4bae-b8b9-9b784370fb5f",
+   "component": 5,
+   "set_number": 8,
+   "content": "我的一次成功经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d5fcaf4f-dcda-4fef-979a-d7c62023a4b2",
+   "component": 5,
+   "set_number": 9,
+   "content": "我学习普通话的体会",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "121b0a27-c456-449e-999f-55f496171303",
+   "component": 5,
+   "set_number": 11,
+   "content": "我的家乡",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "7395e1f2-9c25-4301-9769-6da2616031df",
+   "component": 5,
+   "set_number": 12,
+   "content": "我现在住的城市",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "ec59da5b-8401-4516-b5e3-349321d9abe0",
+   "component": 5,
+   "set_number": 14,
+   "content": "我会做的一道菜",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "828337a5-5a6d-49cc-894e-1c56567d74b7",
+   "component": 5,
+   "set_number": 15,
+   "content": "我喜欢的电影",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d0505adc-885e-4bcc-b5b5-b28820dbfc9c",
+   "component": 5,
+   "set_number": 16,
+   "content": "我喜欢的一本书",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "9d99be73-496a-4f93-b6d0-26c12e102256",
+   "component": 5,
+   "set_number": 17,
+   "content": "我喜欢的音乐",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "6dad1a3f-2df7-41b4-b7fd-ec81333e6d04",
+   "component": 5,
+   "set_number": 18,
+   "content": "我喜欢的歌手/演员",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "bfd9510f-665e-4a9b-aea7-f6114661ee24",
+   "component": 5,
+   "set_number": 19,
+   "content": "我喜欢的老师",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "f731ebe5-5924-4124-9e42-ad33d62e8efd",
+   "component": 5,
+   "set_number": 20,
+   "content": "我喜欢的一门课",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "60e6771a-ee1a-4616-b119-b6b3e106c7da",
+   "component": 5,
+   "set_number": 22,
+   "content": "我最想培养的习惯",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "598dda1a-c558-48cb-93c1-28cb493f2333",
+   "component": 5,
+   "set_number": 23,
+   "content": "我最想改掉的坏习惯",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "e36d332b-b169-4414-ae47-26d16b4a1a9c",
+   "component": 5,
+   "set_number": 24,
+   "content": "我对时间管理的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "91c20c22-3e71-42c3-a4ea-0ba21d6ea0dc",
+   "component": 5,
+   "set_number": 25,
+   "content": "我对压力的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "8ff5f06d-5be9-4940-a547-8d59b9ceffe6",
+   "component": 5,
+   "set_number": 26,
+   "content": "我对网络生活的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "f9bc8965-c46a-456c-9ca9-834f9017aa83",
+   "component": 5,
+   "set_number": 27,
+   "content": "我对短视频的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "f229bd60-48d0-40ad-b88d-21518a266efa",
+   "component": 5,
+   "set_number": 28,
+   "content": "我对网购的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2aeb8af9-17ca-467f-be0b-e652e292653f",
+   "component": 5,
+   "set_number": 29,
+   "content": "我对环保的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "3ba68277-5efb-4802-b8f5-874370454c5d",
+   "component": 5,
+   "set_number": 30,
+   "content": "我对垃圾分类的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "e1fb9e23-fa88-4cf4-91ff-cf0a7be283e5",
+   "component": 5,
+   "set_number": 31,
+   "content": "我对公共礼仪的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "504bb337-133f-4322-86cf-7c7e14e59438",
+   "component": 5,
+   "set_number": 32,
+   "content": "我对工作与生活平衡的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "36a6874d-422a-4c64-9b2d-edb9f8d8818f",
+   "component": 5,
+   "set_number": 33,
+   "content": "我理想的工作",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "0d703d41-de8c-4063-86be-42e54b5da872",
+   "component": 5,
+   "set_number": 34,
+   "content": "我现在的工作/学习",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b94bfe99-c87c-4057-91d7-698e879b76c3",
+   "component": 5,
+   "set_number": 35,
+   "content": "我对团队合作的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "080eaff1-871e-4496-962d-00d93989f7ea",
+   "component": 5,
+   "set_number": 36,
+   "content": "我最喜欢的节日",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "67fd6757-9e5b-436d-9e51-bce1b5d5d421",
+   "component": 5,
+   "set_number": 37,
+   "content": "我家的一个传统",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "420f9c31-666f-4992-8e46-fb6dc251d5e5",
+   "component": 5,
+   "set_number": 38,
+   "content": "我去过的一家博物馆",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "bd89cd3d-bc4a-407e-ba6c-9b5e8344e13d",
+   "component": 5,
+   "set_number": 39,
+   "content": "我喜欢的一处风景",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "44d540f7-6b5d-4c57-aedd-1ef9d213ba76",
+   "component": 5,
+   "set_number": 40,
+   "content": "我向往的地方",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "4ec44f02-57d4-43d6-9f68-a1393874992a",
+   "component": 5,
+   "set_number": 41,
+   "content": "我印象最深的一次活动",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "78d76780-41fe-4439-83f5-ecf6b5f88e9a",
+   "component": 5,
+   "set_number": 42,
+   "content": "我参加过的一次比赛",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "fd8340ce-726f-4ea2-89cd-4060059e20d6",
+   "component": 5,
+   "set_number": 43,
+   "content": "我的一次演讲经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d25a6124-194d-4abd-930c-0eb64a7a5fd4",
+   "component": 5,
+   "set_number": 44,
+   "content": "我的一次面试经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "c73f464b-2e66-41f6-8f68-871007e04c72",
+   "component": 5,
+   "set_number": 45,
+   "content": "我的一次志愿者经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "e3f030c8-b004-41ea-ac77-b81be32188b0",
+   "component": 5,
+   "set_number": 46,
+   "content": "我对健康生活方式的理解",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d71f3101-81f7-4bfe-a986-16f9e3a32529",
+   "component": 5,
+   "set_number": 47,
+   "content": "我常做的运动",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "a0e5bbb2-9ba3-47ec-8975-90772be52358",
+   "component": 5,
+   "set_number": 48,
+   "content": "我的一次生病经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "79fcdf6c-ac04-4543-9ac4-d7e58c8a32f9",
+   "component": 5,
+   "set_number": 49,
+   "content": "我如何保持睡眠",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "f32bc01c-c987-4208-8c7d-53abfc268d03",
+   "component": 5,
+   "set_number": 50,
+   "content": "我如何安排饮食",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "cfd22ab9-c635-4be6-bd86-727137205f97",
+   "component": 5,
+   "set_number": 51,
+   "content": "我最常用的App",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "5c30575d-29b9-4603-847f-45195afadaea",
+   "component": 5,
+   "set_number": 52,
+   "content": "我离不开的一件东西",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d6b4fdc3-fc40-4a90-92dd-75b9e9dd5a6f",
+   "component": 5,
+   "set_number": 53,
+   "content": "我喜欢的一家店",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "181a1ebd-e104-4d15-a245-2a6ea94b99fd",
+   "component": 5,
+   "set_number": 54,
+   "content": "我的一次购物体验",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "ad260eaa-28d8-4f21-898a-702e451b2bfd",
+   "component": 5,
+   "set_number": 55,
+   "content": "我的一次\"踩雷\"消费体验",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "170f3a87-b78b-427e-8e44-536214539640",
+   "component": 5,
+   "set_number": 56,
+   "content": "我对\"慢生活\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "1bc879ab-bb0e-4576-934a-e160478f826e",
+   "component": 5,
+   "set_number": 57,
+   "content": "我对\"效率\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2c1018fd-b2b2-42be-ac29-1eab2ffacbfb",
+   "component": 5,
+   "set_number": 58,
+   "content": "我对\"自律\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "70087228-888e-43be-bbee-0545258cfc46",
+   "component": 5,
+   "set_number": 59,
+   "content": "我对\"运气\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "86d8b2ac-7eb0-4a19-bd6b-92e269e35fd4",
+   "component": 5,
+   "set_number": 60,
+   "content": "我对\"选择\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "85b08a7e-3be8-4a38-b153-bc2840993625",
+   "component": 5,
+   "set_number": 61,
+   "content": "我最喜欢的交通方式",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "76a44de1-6ce1-4fb1-ad52-64f259ce01ba",
+   "component": 5,
+   "set_number": 62,
+   "content": "我对骑车/步行的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "54017b7d-6a6b-42ba-b6b3-18def49e05ae",
+   "component": 5,
+   "set_number": 63,
+   "content": "我对开车的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2c610243-46c2-47fa-9d4c-7ae91d599f1e",
+   "component": 5,
+   "set_number": 64,
+   "content": "我对地铁/公交的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "4203bb25-c953-4124-a2a2-ea88c9882484",
+   "component": 5,
+   "set_number": 65,
+   "content": "我对旅行计划的做法",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2d227b21-ecad-4286-a90c-9d1b9e554c5f",
+   "component": 5,
+   "set_number": 66,
+   "content": "我最喜欢的天气",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "664d0872-2b14-4ff4-9447-029c4ed29c00",
+   "component": 5,
+   "set_number": 67,
+   "content": "下雨天我会做什么",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "288d8adb-be92-42e8-b8b9-0fd69045f306",
+   "component": 5,
+   "set_number": 68,
+   "content": "我喜欢的城市夜景",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "22028169-9d64-4602-bb01-5b080104989b",
+   "component": 5,
+   "set_number": 69,
+   "content": "我喜欢的咖啡/茶",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "03e4d895-9558-4223-b619-e3093b725747",
+   "component": 5,
+   "set_number": 70,
+   "content": "我第一次学会的一项技能",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "067594b8-bdd7-45a2-be8c-23a049f0ce53",
+   "component": 5,
+   "set_number": 71,
+   "content": "我想学的一项技能",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "1d83309d-480f-49ac-a0e2-df63ef774523",
+   "component": 5,
+   "set_number": 72,
+   "content": "我如何学习新知识",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "fff935e9-7cd9-46ab-9c7d-ef26f7799f4a",
+   "component": 5,
+   "set_number": 73,
+   "content": "我如何记单词/记发音",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "07cb4b5a-8445-49b1-9762-926162c255d7",
+   "component": 5,
+   "set_number": 74,
+   "content": "我如何纠正发音",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "0ef69a12-c8bd-42d6-9d17-0145e961fb7b",
+   "component": 5,
+   "set_number": 75,
+   "content": "我如何练口语",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "327e27e9-7202-43f3-b7c0-dea7c625b237",
+   "component": 5,
+   "set_number": 76,
+   "content": "我对普通话推广的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "badb11c3-ab71-48c6-8aad-445ea805fea2",
+   "component": 5,
+   "set_number": 77,
+   "content": "我对方言的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b6db90bc-df3f-493d-9ce5-ddb9f79dc4c5",
+   "component": 5,
+   "set_number": 78,
+   "content": "我对多语言环境的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "ec177ee6-549e-46bc-9d23-dbe964e330d4",
+   "component": 5,
+   "set_number": 79,
+   "content": "我对语言礼貌的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "6b761fb3-3e14-4591-8c9f-55b58e78743b",
+   "component": 5,
+   "set_number": 80,
+   "content": "我对表达能力的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "5b8c3ad0-ec05-41e7-a0a2-b8438223e8b4",
+   "component": 5,
+   "set_number": 81,
+   "content": "我小时候最喜欢的游戏",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d302e800-d08f-4ca3-ac8a-cc2832b7b44c",
+   "component": 5,
+   "set_number": 82,
+   "content": "我童年的一个记忆",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "c0ce6b87-8f9f-4563-ad53-f5b5c1c9c489",
+   "component": 5,
+   "set_number": 83,
+   "content": "我最想感谢的人",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b04e30b8-e7d2-4d87-93de-9a2b110f0fce",
+   "component": 5,
+   "set_number": 84,
+   "content": "我的一次误会",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "a4e67df6-82e8-4ec2-9971-b4078eab229c",
+   "component": 5,
+   "set_number": 85,
+   "content": "我的一次道歉",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "67afde7f-fe92-4a0d-92dd-6611adedc6f4",
+   "component": 5,
+   "set_number": 86,
+   "content": "我的一次帮助别人经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "42f525de-3165-4b70-832e-52aa78f24d3d",
+   "component": 5,
+   "set_number": 87,
+   "content": "别人帮助我的一次经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "1c43f55c-1850-473d-a8ca-b0e968882338",
+   "component": 5,
+   "set_number": 88,
+   "content": "我对\"朋友\"的理解",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "0a2cea34-ffe5-4208-9a23-67fb09c7293b",
+   "component": 5,
+   "set_number": 89,
+   "content": "我对\"家庭\"的理解",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "87e0e411-ab69-441a-867c-500ac9ba88d0",
+   "component": 5,
+   "set_number": 90,
+   "content": "我对\"责任\"的理解",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "72857614-d61e-49f4-9666-0e59117011d9",
+   "component": 5,
+   "set_number": 91,
+   "content": "我对\"规则\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "6c789cab-f936-421f-920b-aa0e7b3a3ddc",
+   "component": 5,
+   "set_number": 92,
+   "content": "我对\"公平\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b9e910ca-abfd-418f-b24a-67d47f515d60",
+   "component": 5,
+   "set_number": 93,
+   "content": "我对\"教育\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "acbf2b71-98c0-48ca-9f89-3d8a23009ff1",
+   "component": 5,
+   "set_number": 94,
+   "content": "我对\"阅读\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "f468abf2-ee61-498d-be02-9ee47326fb27",
+   "component": 5,
+   "set_number": 95,
+   "content": "我对\"写作\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "8fc218b7-3640-4096-87c0-d75a882eda5e",
+   "component": 5,
+   "set_number": 96,
+   "content": "我对\"线上学习\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "14a2c6c5-1075-45b4-a471-001ad98525ad",
+   "component": 5,
+   "set_number": 97,
+   "content": "我对\"线下学习\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "ed21065e-c308-4a8e-b91a-00f77fbe68df",
+   "component": 5,
+   "set_number": 98,
+   "content": "我对\"考试\"的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "48054dc5-4bbe-4d06-9d45-dc934866453c",
+   "component": 5,
+   "set_number": 99,
+   "content": "我的一次考试经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "f27028b4-5634-4c58-a5cd-53bb1969eabd",
+   "component": 5,
+   "set_number": 100,
+   "content": "我对未来一年的计划",
+   "pinyin": null,
+   "metadata": {
+    "category": "procedural",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d5bdc650-0907-473f-ab57-9fb7a40a16a2",
+   "component": 5,
+   "set_number": 101,
+   "content": "我对人工智能的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "48ba4001-775b-42a9-8950-c04bc838552f",
+   "component": 5,
+   "set_number": 102,
+   "content": "科技对生活的影响",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "6d67016c-8194-4179-82a9-a279a1406304",
+   "component": 5,
+   "set_number": 103,
+   "content": "我对智能手机的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "55d8b714-d2d2-4f65-b1c6-9b4607181d29",
+   "component": 5,
+   "set_number": 104,
+   "content": "我对社交媒体的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "100dc5d0-9c78-429f-bf4b-d1bd0d5a2bb9",
+   "component": 5,
+   "set_number": 105,
+   "content": "我对网络购物的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2a6c9491-e4df-4672-86dd-72c33096de73",
+   "component": 5,
+   "set_number": 106,
+   "content": "我对电子支付的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "55df3668-8182-4c7b-b25f-ef26712b48e1",
+   "component": 5,
+   "set_number": 107,
+   "content": "我对网络教育的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b0a98f64-d8ce-43fc-9272-ff203f656ed0",
+   "component": 5,
+   "set_number": 108,
+   "content": "我对机器人的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "09a7c158-1985-4fe9-8978-a6e960532331",
+   "component": 5,
+   "set_number": 109,
+   "content": "我对志愿服务的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "06f8b2ed-7674-4bc4-9ed8-19af739b51e2",
+   "component": 5,
+   "set_number": 110,
+   "content": "我对城市化的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "91f16ae5-4a52-48f6-b60c-5cc91b29299b",
+   "component": 5,
+   "set_number": 111,
+   "content": "我对公共交通的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "5ff03e21-a2d0-409b-aba1-a0e354c84c78",
+   "component": 5,
+   "set_number": 112,
+   "content": "我对社区建设的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "64f6f9e8-4ada-4262-904c-d2f960ab2db3",
+   "component": 5,
+   "set_number": 113,
+   "content": "我对邻里关系的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "30a393ab-12b2-44fc-b99f-b4918b63ec6d",
+   "component": 5,
+   "set_number": 114,
+   "content": "我对慈善事业的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "c41ee8ea-749e-45a2-b120-2f1b04af9f39",
+   "component": 5,
+   "set_number": 115,
+   "content": "我对食品安全的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "118e5926-546e-4656-8fc1-b12a10578da9",
+   "component": 5,
+   "set_number": 116,
+   "content": "我对传统文化保护的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "da6fd242-291e-440b-a23f-a65f5e4ad619",
+   "component": 5,
+   "set_number": 117,
+   "content": "我最喜欢的传统手艺",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2ebd524d-3dec-40c0-9c1b-7c7f13c37a0c",
+   "component": 5,
+   "set_number": 118,
+   "content": "我对传统节日的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "53f8cd4c-a8be-4e5f-87c3-e275b6d46be2",
+   "component": 5,
+   "set_number": 119,
+   "content": "我对民间艺术的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "44d12eda-67bf-4a3c-bb12-2f3c0d288f5d",
+   "component": 5,
+   "set_number": 120,
+   "content": "我对书法的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "d349952e-c13f-40e0-a6fd-771348e0af15",
+   "component": 5,
+   "set_number": 121,
+   "content": "我对中国茶文化的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b788c3eb-6050-4171-a35e-1df01cae7b99",
+   "component": 5,
+   "set_number": 122,
+   "content": "我最喜欢的一首古诗",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "2770c66e-cb58-4a75-8425-cfea6bd7e0e5",
+   "component": 5,
+   "set_number": 123,
+   "content": "我对传统美德的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "5812e16d-2dac-47ef-a12c-79a62d170962",
+   "component": 5,
+   "set_number": 124,
+   "content": "我对动物保护的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "60194968-01ed-42fe-a271-263ab4f2e646",
+   "component": 5,
+   "set_number": 125,
+   "content": "我最喜欢的自然景观",
+   "pinyin": null,
+   "metadata": {
+    "category": "descriptive",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "1235f4e4-f031-4582-b46a-6db13f72affa",
+   "component": 5,
+   "set_number": 126,
+   "content": "我对环境污染的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "a16966a8-a5a1-456c-b5a4-c52bf6bc2a4b",
+   "component": 5,
+   "set_number": 127,
+   "content": "我对植树造林的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "17b6d43a-72ee-4917-b4ad-71b7331d23fc",
+   "component": 5,
+   "set_number": 128,
+   "content": "我对气候变化的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "fba86e24-fedd-46ff-bf84-f919bbb54d11",
+   "component": 5,
+   "set_number": 129,
+   "content": "我对节约用水的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b12ffa59-c2ff-4699-9002-41088118f16b",
+   "component": 5,
+   "set_number": 130,
+   "content": "我对终身学习的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "e8f50a54-c9ad-4f4b-8dbf-1e6e971ca528",
+   "component": 5,
+   "set_number": 131,
+   "content": "我的一次学习困难经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "9b616c6d-0556-4f37-b459-621a563c3da1",
+   "component": 5,
+   "set_number": 132,
+   "content": "我对课外阅读的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b32c004c-02a9-4a1f-9754-3f68a267b802",
+   "component": 5,
+   "set_number": 133,
+   "content": "我对考试制度的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "a2406a3d-7381-4446-8eba-dfb4105a4122",
+   "component": 5,
+   "set_number": 134,
+   "content": "我对兴趣班的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "48378f82-3baf-43f1-a7ac-f5bf875192c8",
+   "component": 5,
+   "set_number": 135,
+   "content": "我对师生关系的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "0392b7dd-70a5-4602-92e9-bf1e00afdf60",
+   "component": 5,
+   "set_number": 136,
+   "content": "我对自学能力的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "426e2e02-97a1-419b-8388-bc525be63784",
+   "component": 5,
+   "set_number": 137,
+   "content": "我对远程工作的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "9841c27d-9f7f-4a72-b32c-8707b56f0ef8",
+   "component": 5,
+   "set_number": 138,
+   "content": "我的一次职业选择经历",
+   "pinyin": null,
+   "metadata": {
+    "category": "narrative",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "ed74b3f6-952f-443a-8978-362f60700674",
+   "component": 5,
+   "set_number": 139,
+   "content": "我对创业的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "4f9150f7-c709-457b-9ccd-2da204b2108b",
+   "component": 5,
+   "set_number": 140,
+   "content": "我对职业规划的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "7b227800-9003-4ef9-95d4-ce871c9a3f5a",
+   "component": 5,
+   "set_number": 141,
+   "content": "我对跨文化交流的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "be8245bd-fda8-4779-9711-0d4a31c3f85a",
+   "component": 5,
+   "set_number": 142,
+   "content": "我对早起锻炼的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "b612988e-a0a3-48cb-912a-ac95a8172883",
+   "component": 5,
+   "set_number": 143,
+   "content": "我对健康饮食的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "1b477ebc-879b-4d29-97ab-a4701be5b847",
+   "component": 5,
+   "set_number": 144,
+   "content": "我对老年人生活的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "social-issue",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "43f6c3aa-15b9-4c31-9162-a6c49d187134",
+   "component": 5,
+   "set_number": 145,
+   "content": "我对独立生活的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "8e02dcbd-3b1e-46c2-9dc6-d5f4bed90069",
+   "component": 5,
+   "set_number": 146,
+   "content": "我对勇气的理解",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "5a296f19-73cd-45d7-baea-ebca4c51411e",
+   "component": 5,
+   "set_number": 147,
+   "content": "我对诚信的看法",
+   "pinyin": null,
+   "metadata": {
+    "category": "personal-opinion",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary speaking topics",
+    "source_version": "xiyouquest-c5-v1"
+   }
+  },
+  {
+   "id": "e61e80cb-d333-4052-a637-e901c9b8d2e9",
+   "component": 6,
+   "set_number": 1,
+   "content": "杂志",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 7615,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "2fc4626b-1aeb-4d1d-ab9a-931c1cfaf912",
+   "component": 6,
+   "set_number": 2,
+   "content": "竹子",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 9756,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "94f9f4fb-7666-4ec3-b0e3-8bf64a3d7c16",
+   "component": 6,
+   "set_number": 3,
+   "content": "自习",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "112718ec-16f9-4668-ae6d-536a49a2a61a",
+   "component": 6,
+   "set_number": 4,
+   "content": "知识",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 7914,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "3b6fdcdf-66c8-4f1e-916e-bb0a2d3d96b2",
+   "component": 6,
+   "set_number": 5,
+   "content": "早餐",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "8730d11b-7ec9-436e-aa38-b2b9ced39c00",
+   "component": 6,
+   "set_number": 6,
+   "content": "长城",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 623,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "20a12a33-3634-4a41-8fdb-af4a4834a791",
+   "component": 6,
+   "set_number": 7,
+   "content": "从此",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 949,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "897dd07b-bdb9-452a-a7a3-fb2b9ae5e683",
+   "component": 6,
+   "set_number": 8,
+   "content": "城市",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 736,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "acf914a0-c52d-4930-a320-1453b14a0881",
+   "component": 6,
+   "set_number": 9,
+   "content": "三十",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c0cacc7d-7b7f-4671-a550-9ddae5bc3d15",
+   "component": 6,
+   "set_number": 10,
+   "content": "山水",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5195,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "b2201acb-f409-4ce5-9996-c14a3d1d52f0",
+   "component": 6,
+   "set_number": 11,
+   "content": "十四",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "1a23cad9-cc93-42aa-901a-e5be52503d0b",
+   "component": 6,
+   "set_number": 12,
+   "content": "事实",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5500,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "d42074d3-4a0f-4317-8477-bf1bd173e6e6",
+   "component": 6,
+   "set_number": 13,
+   "content": "四十",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "8cb5b610-c985-48c9-ada2-e0f23a612aca",
+   "component": 6,
+   "set_number": 14,
+   "content": "时事",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6706,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c02de0c7-09d0-4912-b050-2040cdb0ae3d",
+   "component": 6,
+   "set_number": 15,
+   "content": "种子",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 8045,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "36f5171b-2966-4393-b416-aa50f7c12785",
+   "component": 6,
+   "set_number": 16,
+   "content": "中山",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "4e5a753a-6c40-4c26-b7cd-36b835efb2b6",
+   "component": 6,
+   "set_number": 17,
+   "content": "出色",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 822,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "1576af32-17ca-4e1f-83a4-d0433a90e9d7",
+   "component": 6,
+   "set_number": 18,
+   "content": "出操",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "f6c4eeb3-bddc-4e2d-b278-60749e1b1166",
+   "component": 6,
+   "set_number": 19,
+   "content": "春蚕",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "ade9ce5d-8467-4a71-8f6d-27f00d8ec324",
+   "component": 6,
+   "set_number": 20,
+   "content": "春茶",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "20e0dd72-acb8-429e-b06a-5f38ad66932d",
+   "component": 6,
+   "set_number": 21,
+   "content": "纯粹",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 907,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "1ef773d9-6636-4b4b-bd57-558336ab89ef",
+   "component": 6,
+   "set_number": 22,
+   "content": "辞职",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 925,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "75d2ae61-38fa-4f0c-9aca-c00207e3c9e5",
+   "component": 6,
+   "set_number": 23,
+   "content": "此时",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 1286,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c80d2f39-615f-439f-8880-0add1dd91bf6",
+   "component": 6,
+   "set_number": 24,
+   "content": "超市",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 869,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "3d4d0f42-1541-4a72-a273-40d0088d080e",
+   "component": 6,
+   "set_number": 25,
+   "content": "硕士",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5689,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a4992c3a-61b0-4c03-aad1-51d105faffec",
+   "component": 6,
+   "set_number": 26,
+   "content": "数字",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5636,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "b71d3dd5-c8c2-4173-931d-5f97e0fe071d",
+   "component": 6,
+   "set_number": 27,
+   "content": "松鼠",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 7089,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "2ac73fcc-d9a1-434a-b96b-98441a4089d9",
+   "component": 6,
+   "set_number": 28,
+   "content": "素食",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "4968699e-a553-440d-873a-f7858144bd6f",
+   "component": 6,
+   "set_number": 29,
+   "content": "随时",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5777,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "18177048-f3a3-47f2-ba49-9b948aa1e718",
+   "component": 6,
+   "set_number": 30,
+   "content": "损失",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5792,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "9905a38e-faf5-4b68-ab66-8e407ed75b2d",
+   "component": 6,
+   "set_number": 31,
+   "content": "组织",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 8305,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "3509381d-9575-44b8-8a65-b116ca28edf0",
+   "component": 6,
+   "set_number": 32,
+   "content": "阻止",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 8302,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "d1eec678-129e-497f-a0e8-8f31870126cd",
+   "component": 6,
+   "set_number": 33,
+   "content": "作战",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 8353,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "05bd120a-1b23-4426-84d7-9278f32a235b",
+   "component": 6,
+   "set_number": 34,
+   "content": "作者",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 8354,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "153f2568-3080-4777-a90d-5541877935a9",
+   "component": 6,
+   "set_number": 35,
+   "content": "差错",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 743,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "f5501837-9923-4b7b-8133-837fff36fd66",
+   "component": 6,
+   "set_number": 36,
+   "content": "插错",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "cfc2ed7e-0067-4017-9ef7-08de6964723e",
+   "component": 6,
+   "set_number": 37,
+   "content": "伸缩",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6510,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "bee6408a-ba66-48fa-b4e0-0c605e4a3b4a",
+   "component": 6,
+   "set_number": 38,
+   "content": "深思",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6529,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "107f0a27-1f28-4cd5-b301-bb9d5c473ccf",
+   "component": 6,
+   "set_number": 39,
+   "content": "生死",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6586,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "60cd86e4-b540-4b96-9c82-5a2c568e7577",
+   "component": 6,
+   "set_number": 40,
+   "content": "生产",
+   "pinyin": null,
+   "metadata": {
+    "category": "zhcs",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5350,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "02f2f9b5-0b67-47ec-b82a-ad854399a1ea",
+   "component": 6,
+   "set_number": 101,
+   "content": "北京",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "6d6b253a-aabf-4ae7-8e59-dbac86cc44e7",
+   "component": 6,
+   "set_number": 102,
+   "content": "上海",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "67796f02-b647-4491-b0f2-95a94a5bab64",
+   "component": 6,
+   "set_number": 103,
+   "content": "天津",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "9386d90f-b814-49dc-b434-5b107c7b2667",
+   "component": 6,
+   "set_number": 104,
+   "content": "重庆",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "cbceb764-fe67-48fa-8bad-f1de8378f7ea",
+   "component": 6,
+   "set_number": 105,
+   "content": "长城",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 623,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a8911ad2-48d2-499d-9e18-dd1d05938d2b",
+   "component": 6,
+   "set_number": 106,
+   "content": "长江",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "44e5b7f8-9f1c-4e08-a531-c13cfe1d99a3",
+   "component": 6,
+   "set_number": 107,
+   "content": "黄河",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "8dbfbeab-7205-40d1-8964-37dbb66183c9",
+   "component": 6,
+   "set_number": 108,
+   "content": "黄山",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "ac44a605-2f51-4721-bf0b-4e59927cc231",
+   "component": 6,
+   "set_number": 109,
+   "content": "心情",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6738,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "b91e25a8-5285-4d0d-9b6b-c425d5217a8a",
+   "component": 6,
+   "set_number": 110,
+   "content": "心静",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a779c1d5-ae85-45cc-afdf-e4f1c233bb53",
+   "component": 6,
+   "set_number": 111,
+   "content": "姓名",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6826,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "4169b4ad-5795-46b1-881b-df83ac342535",
+   "component": 6,
+   "set_number": 112,
+   "content": "性命",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 8342,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "8e1d6496-20a5-4043-829f-65f8debfd8d0",
+   "component": 6,
+   "set_number": 113,
+   "content": "拼音",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5619,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a105f4bd-32f6-4d86-bf96-77bcb15dd4ea",
+   "component": 6,
+   "set_number": 114,
+   "content": "平音",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "ab1ba4e8-4d2a-4184-969c-8eecd8f83c61",
+   "component": 6,
+   "set_number": 115,
+   "content": "英语",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a9ba48cd-be61-48ab-ac77-64f32d95469d",
+   "component": 6,
+   "set_number": 116,
+   "content": "硬语",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "d9b0f5a6-0d05-4ded-bef1-a8f0a1b3c7b5",
+   "component": 6,
+   "set_number": 117,
+   "content": "经常",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3180,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "1f6ea014-4f1d-40d2-a3f0-6d5216f7a558",
+   "component": 6,
+   "set_number": 118,
+   "content": "进入",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3165,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "09de54ad-85f4-4726-a778-df3c4998a577",
+   "component": 6,
+   "set_number": 119,
+   "content": "金星",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3928,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "744411da-81c9-4be0-ba3c-4c3365713d1f",
+   "component": 6,
+   "set_number": 120,
+   "content": "精心",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3214,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "003e71ce-e459-4342-b2c6-9f24b5011bbd",
+   "component": 6,
+   "set_number": 121,
+   "content": "亲人",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4834,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "b26da8d1-50ba-45a9-b0c1-0320269bc433",
+   "component": 6,
+   "set_number": 122,
+   "content": "清人",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a7fab06d-cf17-42da-b35f-2f4d3116bfbb",
+   "component": 6,
+   "set_number": 123,
+   "content": "信任",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6769,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "136e7078-97e7-4aef-b649-6b748e35eebf",
+   "component": 6,
+   "set_number": 124,
+   "content": "新任",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "6d099ca9-c523-44b8-bb27-289665f22996",
+   "component": 6,
+   "set_number": 125,
+   "content": "认真",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5054,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "6a33d4a0-199a-4127-a0c6-a9aa0c82441e",
+   "component": 6,
+   "set_number": 126,
+   "content": "任正",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "252a6178-b381-406f-99fd-376c1c4d33e2",
+   "component": 6,
+   "set_number": 127,
+   "content": "人参",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 6200,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a2ed625e-bc0c-483e-8f1c-8321f26f46c8",
+   "component": 6,
+   "set_number": 128,
+   "content": "人生",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5031,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "132fbc55-5f08-4bbe-8ff6-eaa1f4cbb312",
+   "component": 6,
+   "set_number": 129,
+   "content": "深沉",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5312,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "48933752-13e2-4baf-9485-a3ef332d04b9",
+   "component": 6,
+   "set_number": 130,
+   "content": "生成",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5352,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a5a021b7-d67b-4505-9ade-db23cdc73f17",
+   "component": 6,
+   "set_number": 131,
+   "content": "分针",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "b78892df-5095-41e9-aa58-281d18ae1050",
+   "component": 6,
+   "set_number": 132,
+   "content": "风筝",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 1732,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "668a7362-f0ed-437a-a963-e25bdd657800",
+   "component": 6,
+   "set_number": 133,
+   "content": "奔腾",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 223,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "179e5a1b-142e-4567-addb-057fd442266a",
+   "component": 6,
+   "set_number": 134,
+   "content": "本能",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 228,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "430d2802-6622-40b4-852b-33efbb206304",
+   "component": 6,
+   "set_number": 135,
+   "content": "愤恨",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 2286,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "53eb59d6-3a21-4ec9-9301-817e15c28ddd",
+   "component": 6,
+   "set_number": 136,
+   "content": "风横",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "36b14b2c-b79d-4835-a48b-865128a7af7a",
+   "component": 6,
+   "set_number": 137,
+   "content": "门诊",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5068,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "e5c8e6c8-f92b-4c4d-a5c9-ca4178910c21",
+   "component": 6,
+   "set_number": 138,
+   "content": "蒙眬",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "8845113f-239b-4e49-ae0c-4ae87ef5389d",
+   "component": 6,
+   "set_number": 139,
+   "content": "根本",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 1986,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "dbc2840e-0759-4a71-9688-9d57c6a1f840",
+   "component": 6,
+   "set_number": 140,
+   "content": "更笨",
+   "pinyin": null,
+   "metadata": {
+    "category": "nng",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "9d24d535-c87f-4f07-9b1f-4ced4090fdcf",
+   "component": 6,
+   "set_number": 201,
+   "content": "奶奶",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4284,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "5bb515b6-afd8-4c3d-9ccb-ea039ac7a634",
+   "component": 6,
+   "set_number": 202,
+   "content": "来来",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "65237f0b-3878-4754-b1e0-b2863bc94fde",
+   "component": 6,
+   "set_number": 203,
+   "content": "牛奶",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "0d4b4868-6e64-4aec-aa79-b0a1587fa9cb",
+   "component": 6,
+   "set_number": 204,
+   "content": "流利",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4817,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "2d35d2af-e847-42b6-90cb-e82e3d1b32ab",
+   "component": 6,
+   "set_number": 205,
+   "content": "那里",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4267,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "074f79ef-1f1c-4acd-9299-8a3a7200f068",
+   "component": 6,
+   "set_number": 206,
+   "content": "哪里",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4264,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "ee6462ca-54b7-408b-9d2c-90d3d97c53d8",
+   "component": 6,
+   "set_number": 207,
+   "content": "男女",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4289,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c2135681-2f23-40c7-927b-51ab4d43f0be",
+   "component": 6,
+   "set_number": 208,
+   "content": "褴褛",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "be844421-76ba-41ab-be17-39b974da582b",
+   "component": 6,
+   "set_number": 209,
+   "content": "蓝绿",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "7a31aa9f-feef-4d22-a276-27437726ccea",
+   "component": 6,
+   "set_number": 210,
+   "content": "南岭",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "782259f6-80d6-4c33-b3ee-69abebe5e30a",
+   "component": 6,
+   "set_number": 211,
+   "content": "辽宁",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "39c3b176-65e6-46eb-8600-5a27863df872",
+   "component": 6,
+   "set_number": 212,
+   "content": "南宁",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "966a2f07-00c3-4834-a6a3-edcd68da1466",
+   "component": 6,
+   "set_number": 213,
+   "content": "内陆",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5333,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "71239f35-548a-4c5e-8320-f052fca72f6c",
+   "component": 6,
+   "set_number": 214,
+   "content": "能量",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4330,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "ac6739f1-dd7a-4a5f-b0a1-395856d382d5",
+   "component": 6,
+   "set_number": 215,
+   "content": "冷暖",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4573,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "36440b0d-43de-4416-b3c8-671b600c9d37",
+   "component": 6,
+   "set_number": 216,
+   "content": "冷热",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "0b9fc803-3fed-4638-9866-6a6b531a8b43",
+   "component": 6,
+   "set_number": 217,
+   "content": "老年",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3647,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "5abc5086-4444-4efa-8d82-535b5d9ebbb3",
+   "component": 6,
+   "set_number": 218,
+   "content": "老娘",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "db3a31fa-052e-474d-88d2-7870e97ef723",
+   "component": 6,
+   "set_number": 219,
+   "content": "尼龙",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5352,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "6adfbb5b-3475-4698-abeb-d4df848b5673",
+   "component": 6,
+   "set_number": 220,
+   "content": "泥泞",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4337,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c352a7ce-d0af-4836-9403-3a904d3aaca5",
+   "component": 6,
+   "set_number": 221,
+   "content": "篱笆",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3697,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "222af554-263f-4017-89f8-651b0e9979d4",
+   "component": 6,
+   "set_number": 222,
+   "content": "泥巴",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c7459bcd-cbab-478d-8ecc-6d825a69ad03",
+   "component": 6,
+   "set_number": 223,
+   "content": "农历",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5414,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "a4687362-685f-446d-8d0a-560170a6e382",
+   "component": 6,
+   "set_number": 224,
+   "content": "奴隶",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4407,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "04b57770-dc65-4d9b-bc5e-2a2fd47a01a9",
+   "component": 6,
+   "set_number": 225,
+   "content": "努力",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4409,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "64e712bc-aa55-4909-a668-50b430e9bb60",
+   "component": 6,
+   "set_number": 226,
+   "content": "绿篱",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "f61eb972-a84a-4265-b9d3-a5273a1ee34c",
+   "component": 6,
+   "set_number": 227,
+   "content": "女篮",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "c733ff6c-3040-4b3f-b3c8-e53e7cfc5b73",
+   "component": 6,
+   "set_number": 228,
+   "content": "男篮",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "4d884e88-0213-4344-8272-c9ac77532fe6",
+   "component": 6,
+   "set_number": 229,
+   "content": "来年",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4480,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "3eaa021c-56d2-42ce-8585-1c305f96fa50",
+   "component": 6,
+   "set_number": 231,
+   "content": "老农",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "10754dda-77f9-418b-8aa3-605b16bfe103",
+   "component": 6,
+   "set_number": 232,
+   "content": "脑力",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 5321,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "3a45b0ba-9f36-40ce-b18d-52c9341d5ba9",
+   "component": 6,
+   "set_number": 233,
+   "content": "劳力",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 3636,
+     "table": "biao1"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "e567f4e3-77d1-499b-85f7-704878111b29",
+   "component": 6,
+   "set_number": 235,
+   "content": "南路",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "d84e3e89-9b2f-4e35-b97a-169f0ce340bd",
+   "component": 6,
+   "set_number": 236,
+   "content": "拦路",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "bdff8067-59af-4c99-b6e3-6e45146d2bcb",
+   "component": 6,
+   "set_number": 237,
+   "content": "烂泥",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "wordtable_ref": {
+     "n": 4499,
+     "table": "biao2"
+    },
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "7719886e-8cc8-47cf-b409-f0cea503a37b",
+   "component": 6,
+   "set_number": 238,
+   "content": "蓝鸟",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "ff5f808d-a844-419f-ace9-9eb5ffde3245",
+   "component": 6,
+   "set_number": 239,
+   "content": "岭南",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "f93e0824-8a7e-4b15-b38a-fa0b2bc2c372",
+   "component": 6,
+   "set_number": 240,
+   "content": "林南",
+   "pinyin": null,
+   "metadata": {
+    "category": "ln",
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest supplementary pronunciation drills (doc/ExampleQuestions/C6.txt)",
+    "source_version": "xiyouquest-c6-v1"
+   }
+  },
+  {
+   "id": "1924cf1f-d8c0-4d82-9e42-ae97a8d792a5",
+   "component": 7,
+   "set_number": 1,
+   "content": "那孙悟空的如意金箍棒，能随心意**长**短变化，小如绣花针，大如擎天之柱。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "cháng",
+     "zhǎng"
+    ],
+    "explanation": "这里「长」表示长度，读 cháng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "长",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "9431d576-7b1b-4bb6-b16c-8d70a6655511",
+   "component": 7,
+   "set_number": 2,
+   "content": "美猴王在花果山与群猴相伴，眼看着自己的声望日渐增**长**。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "cháng",
+     "zhǎng"
+    ],
+    "explanation": "「增长」表示增加，读 zhǎng。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "长",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "d038192f-fac5-4f68-b929-eb8b40fff0c0",
+   "component": 7,
+   "set_number": 3,
+   "content": "唐僧师徒四人，一路西**行**，历经九九八十一难，终见灵山。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "xíng",
+     "háng"
+    ],
+    "explanation": "「西行」表示行走，读 xíng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "行",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "91d094e0-ca7e-4102-a04a-4a668be07e9d",
+   "component": 7,
+   "set_number": 4,
+   "content": "那猪八戒挑着**行**李，嘴里嘟嘟囔囔，抱怨这路何时是个头。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "xíng",
+     "háng"
+    ],
+    "explanation": "「行李」读 xíng li。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "行",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "502b2eb3-0fca-4553-8a09-a61bf260381e",
+   "component": 7,
+   "set_number": 5,
+   "content": "孙悟空在五行山下压了五百年，那日子着实不**好**过。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hǎo",
+     "hào"
+    ],
+    "explanation": "「好过」表示容易过，读 hǎo。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "好",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "bd44b2c2-05f9-41fa-8838-5c3805ae772c",
+   "component": 7,
+   "set_number": 6,
+   "content": "那唐僧自幼**好**善信佛，见那猴子可怜，便救了他出来。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hǎo",
+     "hào"
+    ],
+    "explanation": "「好善」表示喜好善行，读 hào。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "好",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "06acf7d4-3889-40d4-a938-7ac9afbb9e04",
+   "component": 7,
+   "set_number": 7,
+   "content": "那白骨精三次变化，都被悟空识破，唐僧却**还**要念紧箍咒惩罚悟空。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hái",
+     "huán"
+    ],
+    "explanation": "「还要」表示仍然，读 hái。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "还",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f77aa7c7-3399-41b6-981a-d9aeab6a4140",
+   "component": 7,
+   "set_number": 8,
+   "content": "悟空临行前，对着师父**重**重地磕了几个头，含泪离去。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhòng",
+     "chóng"
+    ],
+    "explanation": "「重重地」表示用力沉重，读 zhòng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "重",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "881f5680-9c80-44e6-9f69-d9eae59a0277",
+   "component": 7,
+   "set_number": 9,
+   "content": "那妖怪武艺高强，悟空只得**重**新定计，再去请观音菩萨相助。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhòng",
+     "chóng"
+    ],
+    "explanation": "「重新」表示再一次，读 chóng。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "重",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f30c4f07-b695-4e31-9346-89afff5f4888",
+   "component": 7,
+   "set_number": 10,
+   "content": "观音菩萨**教**导唐僧，若遇危难，只需默念那紧箍咒。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiào",
+     "jiāo"
+    ],
+    "explanation": "「教导」表示教授指导，读 jiāo。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "教",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b07c2d7b-383b-40ae-98ce-46425742ff55",
+   "component": 7,
+   "set_number": 11,
+   "content": "那红孩儿在洞中设下**教**场，操练小妖，准备迎战孙悟空。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiào",
+     "jiāo"
+    ],
+    "explanation": "「教场」是操练场所，读 jiào。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "教",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "845e662d-0dc7-4ec2-b9b3-d66b0cc38dcd",
+   "component": 7,
+   "set_number": 12,
+   "content": "那妖怪急**着**追赶唐僧，却不防被孙悟空一棒打来。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zháo",
+     "zhe",
+     "zhāo"
+    ],
+    "explanation": "「急着」表示急忙，读 zháo。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "着",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "a5330acd-6ec3-40bc-9818-58494f717df4",
+   "component": 7,
+   "set_number": 13,
+   "content": "沙和尚挑**着**担子，默默跟在师父后面，一路无话。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zháo",
+     "zhe",
+     "zhāo"
+    ],
+    "explanation": "「挑着」表示持续状态，读 zhe。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "着",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "38663060-9eb1-4f67-85d3-ec0bd9f894dd",
+   "component": 7,
+   "set_number": 14,
+   "content": "你这泼猴，又在这里**着**甚来由，惊扰了师父！",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zháo",
+     "zhe",
+     "zhāo"
+    ],
+    "explanation": "这里「着」表示着急、招惹，读 zháo。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "着",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "981ee8c5-cdde-4b90-b926-8123ce8a4f8e",
+   "component": 7,
+   "set_number": 15,
+   "content": "那通天河水深不可测，**没**有舟楫，师徒四人如何得过？",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "méi",
+     "mò"
+    ],
+    "explanation": "「没有」表示不存在，读 méi。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "没",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3f70b674-f802-49d8-8682-011e14cb2df5",
+   "component": 7,
+   "set_number": 16,
+   "content": "那灵感大王作法，使河水一夜之间**没**过河岸，想要淹死行人。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "méi",
+     "mò"
+    ],
+    "explanation": "「没过」表示淹没，读 mò。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "没",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f8f03c36-4ede-46cc-a16e-b31a3cd9cb28",
+   "component": 7,
+   "set_number": 17,
+   "content": "那一**只**小妖，见大王被擒，吓得屁滚尿流，慌忙逃命。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhī",
+     "zhǐ"
+    ],
+    "explanation": "「一只」是量词，读 zhī。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "只",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3cb94e7e-e7c2-43ca-bc3c-c9ff69dc4c16",
+   "component": 7,
+   "set_number": 18,
+   "content": "那妖怪见孙悟空来势凶猛，便**将**手一挥，众小妖一拥而上。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiāng",
+     "jiàng"
+    ],
+    "explanation": "「将」表示把、拿，读 jiāng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "将",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "97a9e461-14c9-4575-80e6-3d1323761b5e",
+   "component": 7,
+   "set_number": 19,
+   "content": "悟空**的**确有一双火眼金睛，能辨妖魔。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "de",
+     "dì",
+     "dí"
+    ],
+    "explanation": "「的确」表示确实，读 dí。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "的",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "7db95b16-7e67-4be4-9c98-064997cd67ca",
+   "component": 7,
+   "set_number": 20,
+   "content": "目**的**地灵山就在眼前，师徒四人终于功德圆满。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "de",
+     "dì",
+     "dí"
+    ],
+    "explanation": "「目的地」中「的」读 dì。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "的",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "89878a49-0a07-42f9-a066-06332e3459b3",
+   "component": 7,
+   "set_number": 21,
+   "content": "这根绳子太**长**了，需要剪掉一截。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "cháng",
+     "zhǎng"
+    ],
+    "explanation": "表示长度，读 cháng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "长",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b28b9112-f8b2-48e8-a3cd-441b84f11a0f",
+   "component": 7,
+   "set_number": 22,
+   "content": "几年不见，这孩子**长**高了不少。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "cháng",
+     "zhǎng"
+    ],
+    "explanation": "「长高」表示生长，读 zhǎng。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "长",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "58bc172a-82c6-441d-9bc6-d7aadc270325",
+   "component": 7,
+   "set_number": 23,
+   "content": "你**行**动快一点，我们要迟到了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "xíng",
+     "háng"
+    ],
+    "explanation": "「行动」表示行为动作，读 xíng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "行",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "66cf9eca-cc5e-4f9d-8dc3-d3034488cb26",
+   "component": 7,
+   "set_number": 24,
+   "content": "我在银**行**办了点业务，耽误了一会儿。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "xíng",
+     "háng"
+    ],
+    "explanation": "「银行」读 yín háng。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "行",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "8b44b466-b4c8-4c91-aba6-173fe7c7ace1",
+   "component": 7,
+   "set_number": 25,
+   "content": "这部电影很**好**看，推荐你也去瞧瞧。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hǎo",
+     "hào"
+    ],
+    "explanation": "「好看」表示好的程度，读 hǎo。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "好",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "6beffaac-b49d-4444-ae87-b9283a529cdd",
+   "component": 7,
+   "set_number": 26,
+   "content": "他从小就**好**学，如今终于成了博士。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hǎo",
+     "hào"
+    ],
+    "explanation": "「好学」表示喜爱学习，读 hào。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "好",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b51e85ef-26d5-4a38-afa3-0746b057ac82",
+   "component": 7,
+   "set_number": 27,
+   "content": "我**还**有一本书没看完，明天再还你。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hái",
+     "huán"
+    ],
+    "explanation": "「还有」表示仍然，读 hái。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "还",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "44bcdfdc-edfe-46fa-aba5-074e00593d48",
+   "component": 7,
+   "set_number": 28,
+   "content": "借了图书馆的书要记得按时**还**。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hái",
+     "huán"
+    ],
+    "explanation": "「还书」表示归还，读 huán。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "还",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "0bc949ed-b6f2-4766-9bee-7160589b5852",
+   "component": 7,
+   "set_number": 29,
+   "content": "这个箱子很**重**，我一个人搬不动。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhòng",
+     "chóng"
+    ],
+    "explanation": "表示重量大，读 zhòng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "重",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b77033d8-59bf-4dd8-b154-757e2ff5a4a4",
+   "component": 7,
+   "set_number": 30,
+   "content": "我没听清楚，请你**重**说一遍。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhòng",
+     "chóng"
+    ],
+    "explanation": "「重说」表示再说一次，读 chóng。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "重",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "1d4cafcc-65c2-4860-87a7-15232865280e",
+   "component": 7,
+   "set_number": 31,
+   "content": "王老师在**教**室批改作业。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiào",
+     "jiāo"
+    ],
+    "explanation": "「教室」读 jiào shì。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "教",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "23468142-fc57-4013-808b-e058fcb1b370",
+   "component": 7,
+   "set_number": 32,
+   "content": "妈妈**教**我怎么做红烧肉。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiào",
+     "jiāo"
+    ],
+    "explanation": "「教我」表示教授，读 jiāo。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "教",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3b0d6bf2-6b8e-4a78-89f7-46165714473a",
+   "component": 7,
+   "set_number": 33,
+   "content": "他**为**人正直，大家都愿意和他交朋友。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "wéi",
+     "wèi"
+    ],
+    "explanation": "「为人」表示做人，读 wéi。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "为",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "184f7ec7-647e-48d4-a6a6-ecd78517f949",
+   "component": 7,
+   "set_number": 34,
+   "content": "你**为**什么不早点告诉我？",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "wéi",
+     "wèi"
+    ],
+    "explanation": "「为什么」表示原因，读 wèi。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "为",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "4ec4f15b-9282-4002-9a8d-efd550cdae94",
+   "component": 7,
+   "set_number": 35,
+   "content": "我**没**钱买那么贵的东西。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "méi",
+     "mò"
+    ],
+    "explanation": "「没钱」表示没有，读 méi。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "没",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "444ed8ec-709b-42e3-9b7c-35e6d74c77fe",
+   "component": 7,
+   "set_number": 36,
+   "content": "洪水**没**过了村口的石桥。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "méi",
+     "mò"
+    ],
+    "explanation": "「没过」表示淹没，读 mò。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "没",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3d9df234-b311-41ef-b9c3-546cf5daf798",
+   "component": 7,
+   "set_number": 37,
+   "content": "这东西很**便**宜，才十块钱。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "biàn",
+     "pián"
+    ],
+    "explanation": "「便宜」读 pián yi。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "便",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "fe35e4c6-e9b5-4e0a-906a-d45e6abc23f5",
+   "component": 7,
+   "set_number": 38,
+   "content": "小区门口新开了一家**便**利店。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "biàn",
+     "pián"
+    ],
+    "explanation": "「便利」读 biàn lì。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "便",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f75898d2-60ed-4f35-8c9c-05cab23f7bea",
+   "component": 7,
+   "set_number": 39,
+   "content": "我**着**急出门，忘了带钥匙。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zháo",
+     "zhe",
+     "zhāo"
+    ],
+    "explanation": "「着急」读 zháo jí。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "着",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "bd9742c1-617e-4c8a-b4f3-6ed229a2f5e9",
+   "component": 7,
+   "set_number": 40,
+   "content": "他笑**着**跟我打招呼。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zháo",
+     "zhe",
+     "zhāo"
+    ],
+    "explanation": "「笑着」表示持续状态，读 zhe。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "着",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "1fa2f2c2-f398-4f15-aa4c-a66b4fae3e02",
+   "component": 7,
+   "set_number": 41,
+   "content": "你这**着**棋走错了，应该防守才对。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zháo",
+     "zhe",
+     "zhāo"
+    ],
+    "explanation": "「着棋」表示棋招，读 zhāo。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "着",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "4b0140ee-057a-431c-882c-438b712e679d",
+   "component": 7,
+   "set_number": 42,
+   "content": "衣服晾在外面，已经**干**了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "gān",
+     "gàn"
+    ],
+    "explanation": "「干了」表示干燥，读 gān。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "干",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f7275550-2095-4a38-b574-c0e44e56f0ea",
+   "component": 7,
+   "set_number": 43,
+   "content": "你**干**什么工作？",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "gān",
+     "gàn"
+    ],
+    "explanation": "「干什么」表示做什么，读 gàn。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "干",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "81296891-e2ec-44d5-9ab2-ff3347af5907",
+   "component": 7,
+   "set_number": 44,
+   "content": "他**发**现了一个秘密。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "fā",
+     "fà"
+    ],
+    "explanation": "「发现」读 fā xiàn。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "发",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "1fb96681-a62b-4df0-84ff-04c46f36fdd2",
+   "component": 7,
+   "set_number": 45,
+   "content": "他去理**发**店剪了个新发型。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "fā",
+     "fà"
+    ],
+    "explanation": "「理发」读 lǐ fà。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "发",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "9f6b4061-f279-48a7-8fa4-dc3fcd41524f",
+   "component": 7,
+   "set_number": 46,
+   "content": "我**只**有一支笔，先借给你用。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhī",
+     "zhǐ"
+    ],
+    "explanation": "「只有」表示仅仅，读 zhǐ。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "只",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "4faac8db-6a90-4444-8196-9ee9f01e8827",
+   "component": 7,
+   "set_number": 47,
+   "content": "一**只**小鸟在窗外唱歌。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zhī",
+     "zhǐ"
+    ],
+    "explanation": "「一只」是量词，读 zhī。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "只",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "341f9d9e-d226-40ee-8028-d4b7dbbb202e",
+   "component": 7,
+   "set_number": 48,
+   "content": "他**背**着书包去上学。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bēi",
+     "bèi"
+    ],
+    "explanation": "「背着」表示用背部承载，读 bēi。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "背",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b7154ec0-ad2a-46f4-a9af-50216053746f",
+   "component": 7,
+   "set_number": 49,
+   "content": "这首古诗我早就**背**下来了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bēi",
+     "bèi"
+    ],
+    "explanation": "「背下来」表示背诵，读 bèi。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "背",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "39a87fb4-d084-42b8-9574-b28bc7ad6a56",
+   "component": 7,
+   "set_number": 50,
+   "content": "别**弄**脏了刚换的新衣服。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "nòng",
+     "lòng"
+    ],
+    "explanation": "「弄脏」读 nòng zāng。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "highlightChar": "弄",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "93961c66-bddf-4a95-8db2-93fdf0d86637",
+   "component": 7,
+   "set_number": 51,
+   "content": "他**便**利店买东西。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "biàn",
+     "pián"
+    ],
+    "explanation": "「便利」读 biàn lì，表示方便。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "aaa5c557-06a8-4097-b69c-7444b4bf7646",
+   "component": 7,
+   "set_number": 52,
+   "content": "这首**乐**曲听起来让人心旷神怡。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "yuè",
+     "lè"
+    ],
+    "explanation": "「乐曲」读 yuè qǔ，指音乐作品。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "43c518bf-e25f-4172-8fb1-d1ff33655767",
+   "component": 7,
+   "set_number": 53,
+   "content": "他做事总是**磨**磨蹭蹭，半天也完不成一件。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "mó",
+     "mò"
+    ],
+    "explanation": "「磨磨蹭蹭」读 mó，表示拖延磨蹭。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "e707bd09-5d81-47d6-95f8-0521e494ab31",
+   "component": 7,
+   "set_number": 54,
+   "content": "这家小**磨**坊磨出来的豆腐特别香。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "mó",
+     "mò"
+    ],
+    "explanation": "「磨坊」读 mò fáng，指磨面粉的作坊。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3e595ffa-83d3-45d4-b557-080d2b06187f",
+   "component": 7,
+   "set_number": 55,
+   "content": "他性格倔**强**，从不轻易向人低头。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "qiáng",
+     "qiǎng",
+     "jiàng"
+    ],
+    "explanation": "「倔强」读 jué jiàng，表示固执不屈。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "26b39453-cfcb-471c-87d4-b979be694b8e",
+   "component": 7,
+   "set_number": 56,
+   "content": "这个国家**强**大起来了，人民的生活越来越好。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "qiáng",
+     "qiǎng",
+     "jiàng"
+    ],
+    "explanation": "「强大」读 qiáng dà，表示力量大。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "7168690c-b561-456e-9570-e3870bd06641",
+   "component": 7,
+   "set_number": 57,
+   "content": "他**强**忍着泪水，不让它流下来。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "qiáng",
+     "qiǎng",
+     "jiàng"
+    ],
+    "explanation": "「强忍」读 qiǎng rěn，表示勉强忍住。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b16ddb58-002f-4cff-b1c8-b0b428319805",
+   "component": 7,
+   "set_number": 58,
+   "content": "你别在这**叨**叨了，我耳朵都快起茧子了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "dāo",
+     "tāo"
+    ],
+    "explanation": "「叨叨」读 dāo dāo，表示唠叨。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "6e4ac2f6-fe27-48ad-ba87-62f4c726e319",
+   "component": 7,
+   "set_number": 59,
+   "content": "同学们都在操场上**奔**跑锻炼。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bēn",
+     "bèn"
+    ],
+    "explanation": "「奔跑」读 bēn pǎo，表示快跑。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "399a37e0-2215-48de-8ba5-a78cc660a562",
+   "component": 7,
+   "set_number": 60,
+   "content": "他都六十岁了，还为了儿女的事到处**奔**波。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bēn",
+     "bèn"
+    ],
+    "explanation": "「奔波」读 bēn bō，表示忙碌奔走。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "1a86b736-7cdb-415a-95a2-505befba89b2",
+   "component": 7,
+   "set_number": 61,
+   "content": "你这**奔**六十的人了，身体还这么硬朗。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bēn",
+     "bèn"
+    ],
+    "explanation": "「奔六十」读 bèn，口语中表示接近某个年龄。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "24e80519-77eb-4a02-9e7c-ebaa81c207d3",
+   "component": 7,
+   "set_number": 62,
+   "content": "你**奔**着目标一直走，别回头。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bēn",
+     "bèn"
+    ],
+    "explanation": "「奔着」读 bèn zhe，表示朝着某个方向或目标。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "d619e75d-a1d5-4a4b-8d3c-fd508deaee4e",
+   "component": 7,
+   "set_number": 63,
+   "content": "他说话结结巴**巴**的，半天说不清楚。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "bā",
+     "ba"
+    ],
+    "explanation": "「结巴」读 jiē ba，但「巴」在叠词中读一声 bā。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "7f712688-1acf-46a0-9cac-990a95f0b2d7",
+   "component": 7,
+   "set_number": 64,
+   "content": "他的**咽**喉发炎了，连喝水都疼。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "yān",
+     "yàn",
+     "yè"
+    ],
+    "explanation": "「咽喉」读 yān hóu，指喉咙部位。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "c828e87a-ecd9-4fa5-8049-0e5d43ae9326",
+   "component": 7,
+   "set_number": 65,
+   "content": "他狼吞虎**咽**地吃完了饭。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "yān",
+     "yàn",
+     "yè"
+    ],
+    "explanation": "「狼吞虎咽」读 yàn，表示吞咽的动作。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "115b4a27-a041-4ff5-8f76-14b6c0709af4",
+   "component": 7,
+   "set_number": 66,
+   "content": "他**咽**咽地哭起来，听着让人心酸。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "yān",
+     "yàn",
+     "yè"
+    ],
+    "explanation": "「呜咽」读 yè，表示低声哭泣。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "ac00289a-c0e5-458e-9027-85970c6825c1",
+   "component": 7,
+   "set_number": 67,
+   "content": "他把**卷**子交上去就出来了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "juǎn",
+     "juàn"
+    ],
+    "explanation": "「卷子」读 juàn zi，指试卷。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "40fc950c-23a9-4513-be46-d5d9520bfb5a",
+   "component": 7,
+   "set_number": 68,
+   "content": "他把那张画**卷**起来放进了筒里。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "juǎn",
+     "juàn"
+    ],
+    "explanation": "「卷起来」读 juǎn，表示卷绕的动作。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b6beafcc-e72d-474d-9710-3faed10a963a",
+   "component": 7,
+   "set_number": 69,
+   "content": "这孩子**撒**娇的样子特别可爱。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "sā",
+     "sǎ"
+    ],
+    "explanation": "「撒娇」读 sā jiāo，表示故意做出娇气姿态。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "5ed3de14-d079-40a1-a8f5-3dad6169b007",
+   "component": 7,
+   "set_number": 70,
+   "content": "他不小心把水**撒**了一地。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "sā",
+     "sǎ"
+    ],
+    "explanation": "「撒了一地」读 sǎ，表示洒落。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "15fcb09e-435a-4320-af21-115179457bc9",
+   "component": 7,
+   "set_number": 71,
+   "content": "你**撒**手，我自己能走。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "sā",
+     "sǎ"
+    ],
+    "explanation": "「撒手」读 sā shǒu，表示放开手。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "5f853aa1-f3b0-4d49-8034-46b6024d5bdd",
+   "component": 7,
+   "set_number": 72,
+   "content": "他费了好大劲才把绳子**解**开。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiě",
+     "jiè",
+     "xiè"
+    ],
+    "explanation": "「解开」读 jiě kāi，表示打开、解除。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "760f71b6-a4d3-4538-a191-30cb4505a347",
+   "component": 7,
+   "set_number": 73,
+   "content": "他押**解**犯人去了外地。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiě",
+     "jiè",
+     "xiè"
+    ],
+    "explanation": "「押解」读 yā jiè，表示押送。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "b9c3eea5-67ca-40be-8bf0-559581893408",
+   "component": 7,
+   "set_number": 74,
+   "content": "他姓**解**，这个姓不多见。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "jiě",
+     "jiè",
+     "xiè"
+    ],
+    "explanation": "作姓氏时读 xiè。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "c0315bb8-3741-4330-ad66-2908dc6450f0",
+   "component": 7,
+   "set_number": 75,
+   "content": "我**和**你一起去图书馆。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hé",
+     "hè",
+     "huó",
+     "huò"
+    ],
+    "explanation": "「和」作连词读 hé。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "4c4b05ce-8e84-4351-b2fe-09e1a662d182",
+   "component": 7,
+   "set_number": 76,
+   "content": "他随声附**和**，其实根本没听懂。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hé",
+     "hè",
+     "huó",
+     "huò"
+    ],
+    "explanation": "「附和」读 fù hè，表示跟着别人说。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "56b09873-82b8-4306-bfc9-e9eefaf3c36f",
+   "component": 7,
+   "set_number": 77,
+   "content": "妈妈在**和**面，准备包饺子。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hé",
+     "hè",
+     "huó",
+     "huò"
+    ],
+    "explanation": "「和面」读 huó miàn，表示揉面。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "700788a7-50de-475e-b838-3f8ed6097067",
+   "component": 7,
+   "set_number": 78,
+   "content": "把这药粉**和**匀了再喝。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "hé",
+     "hè",
+     "huó",
+     "huò"
+    ],
+    "explanation": "「和匀」读 huò yún，表示搅拌均匀。",
+    "correctIndex": 3,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "cf4a2136-d78d-4500-a063-01e662bf4544",
+   "component": 7,
+   "set_number": 79,
+   "content": "树叶纷纷飘**落**下来。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "luò",
+     "lào",
+     "là"
+    ],
+    "explanation": "「飘落」读 luò，表示落下。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "fdcd99b4-adbc-4834-9e31-05366030ee43",
+   "component": 7,
+   "set_number": 80,
+   "content": "被子**落**在车上了，得回去拿。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "luò",
+     "lào",
+     "là"
+    ],
+    "explanation": "「落在」读 luò，表示遗留在某处。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "639210e1-06dd-4594-889a-78961386b33c",
+   "component": 7,
+   "set_number": 81,
+   "content": "奶奶做的**落**花生特别香。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "luò",
+     "lào",
+     "là"
+    ],
+    "explanation": "「落花生」读 lào huā shēng，是花生的别名。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "a6f8c4e3-3721-4861-909b-60b2e1a69e49",
+   "component": 7,
+   "set_number": 82,
+   "content": "他**落**了一个字没写。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "luò",
+     "lào",
+     "là"
+    ],
+    "explanation": "「落了」读 là，表示遗漏。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "44b7e840-7444-4265-b0c0-d46833e3a555",
+   "component": 7,
+   "set_number": 83,
+   "content": "这两个数相**差**很大。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "chā",
+     "chà",
+     "chāi",
+     "cī"
+    ],
+    "explanation": "「相差」读 chā，表示差别。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "50e199df-11da-429e-a84c-76975d1586de",
+   "component": 7,
+   "set_number": 84,
+   "content": "他今天表现太**差**了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "chā",
+     "chà",
+     "chāi",
+     "cī"
+    ],
+    "explanation": "「差」表示不好，读 chà。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f69f355d-5604-48e0-9858-d187444a107e",
+   "component": 7,
+   "set_number": 85,
+   "content": "领导派他出**差**去了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "chā",
+     "chà",
+     "chāi",
+     "cī"
+    ],
+    "explanation": "「出差」读 chū chāi，表示因公外出。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "72553ef6-a221-4cf3-aa00-0a2b22cacebc",
+   "component": 7,
+   "set_number": 86,
+   "content": "这两件衣服颜色参**差**不齐。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "chā",
+     "chà",
+     "chāi",
+     "cī"
+    ],
+    "explanation": "「参差」读 cēn cī，表示不整齐。",
+    "correctIndex": 3,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "7195cbfa-1519-43f0-b954-2820e235ead9",
+   "component": 7,
+   "set_number": 87,
+   "content": "这本书**给**你吧。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "gěi",
+     "jǐ"
+    ],
+    "explanation": "「给你」读 gěi nǐ，表示递给。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "511a023d-3fc9-405f-b45a-64bdb498fee3",
+   "component": 7,
+   "set_number": 88,
+   "content": "家里的**给**养快用完了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "gěi",
+     "jǐ"
+    ],
+    "explanation": "「给养」读 jǐ yǎng，表示供给的物资。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "f67a4359-4109-4fb5-9cf7-b73242023778",
+   "component": 7,
+   "set_number": 89,
+   "content": "他住在**宿**舍里。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "sù",
+     "xiǔ",
+     "xiù"
+    ],
+    "explanation": "「宿舍」读 sù shè，指住所。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3d67a774-4ed3-4ec0-b450-d65a7fd0b41b",
+   "component": 7,
+   "set_number": 90,
+   "content": "他在朋友家住了一**宿**。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "sù",
+     "xiǔ",
+     "xiù"
+    ],
+    "explanation": "「一宿」读 yī xiǔ，表示一夜。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "d097bd40-f7cf-43cd-a62e-18d214967510",
+   "component": 7,
+   "set_number": 91,
+   "content": "二十八星**宿**是古代天文概念。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "sù",
+     "xiǔ",
+     "xiù"
+    ],
+    "explanation": "「星宿」读 xīng xiù，天文术语。",
+    "correctIndex": 2,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "7ef38b65-07ac-44a5-b40f-9526e4449b02",
+   "component": 7,
+   "set_number": 92,
+   "content": "这本书**载**有很多历史故事。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zǎi",
+     "zài"
+    ],
+    "explanation": "「载有」读 zǎi，表示记载、刊登。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "4b414d25-6e3d-49f3-814a-c2b27529ecb6",
+   "component": 7,
+   "set_number": 93,
+   "content": "车上**载**满了货物。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "zǎi",
+     "zài"
+    ],
+    "explanation": "「载满」读 zài mǎn，表示装载。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "ff3efb0d-1097-4e31-9021-905a9f31bf04",
+   "component": 7,
+   "set_number": 94,
+   "content": "这把椅子是**钉**死的，搬不动。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "dīng",
+     "dìng"
+    ],
+    "explanation": "「钉死」读 dìng sǐ，动词，表示用钉子固定。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "884a5179-3570-49b6-875b-4cec11de0f29",
+   "component": 7,
+   "set_number": 95,
+   "content": "他在墙上**钉**了一颗钉子。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "dīng",
+     "dìng"
+    ],
+    "explanation": "「钉了」读 dìng le，动词，表示钉入的动作。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "9f913d75-cb74-4cf3-b6f5-cc1a7a24fbe4",
+   "component": 7,
+   "set_number": 96,
+   "content": "他买了一盒**钉**子回来。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "dīng",
+     "dìng"
+    ],
+    "explanation": "「钉子」读 dīng zi，名词，指物件。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "aee3db8e-6012-47cd-a457-743c8e5b23af",
+   "component": 7,
+   "set_number": 97,
+   "content": "那家店铺已经**打**烊了。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "dǎ",
+     "dá"
+    ],
+    "explanation": "「打烊」读 dǎ yàng，表示关门歇业。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "abe0662b-8b1b-4602-bf9f-91ec3d7803af",
+   "component": 7,
+   "set_number": 98,
+   "content": "他买了两**打**铅笔。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "dǎ",
+     "dá"
+    ],
+    "explanation": "「打」作量词读 dá，一打等于十二个。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "3a0c314e-daf5-45c0-87af-2a08f81b7a69",
+   "component": 7,
+   "set_number": 99,
+   "content": "他的**兴**趣很广泛。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "xīng",
+     "xìng"
+    ],
+    "explanation": "「兴趣」读 xìng qù，表示爱好。",
+    "correctIndex": 1,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  },
+  {
+   "id": "fb2a6c1b-6782-4202-bba7-91397a501e96",
+   "component": 7,
+   "set_number": 100,
+   "content": "国家**兴**亡，匹夫有责。",
+   "pinyin": null,
+   "metadata": {
+    "type": "polyphonic",
+    "options": [
+     "xīng",
+     "xìng"
+    ],
+    "explanation": "「兴亡」读 xīng wáng，表示兴盛与衰亡。",
+    "correctIndex": 0,
+    "source_scope": "xiyouquest_practice",
+    "source_title": "XiYouQuest polyphone context drills (doc/ExampleQuestions/C7.txt)",
+    "source_version": "xiyouquest-c7-v1"
+   }
+  }
+ ]
+}

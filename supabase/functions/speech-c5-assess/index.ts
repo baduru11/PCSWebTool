@@ -15,10 +15,7 @@ import {
 } from "../_shared/c5-scoring.ts";
 import { createRequestClient } from "../_shared/supabase.ts";
 import { getPcmWavDurationSeconds } from "../_shared/c5-wav.ts";
-import {
-  getSupplementarySpeakingTopics,
-  OFFICIAL_PSC_SPEAKING_TOPICS,
-} from "../_shared/official-speaking-topics.ts";
+import { OFFICIAL_PSC_SPEAKING_TOPICS } from "../_shared/official-speaking-topics.ts";
 
 // ISE read_chapter max audio duration. 90s with margin.
 // PCM 16kHz 16-bit mono = 32000 bytes/s.
@@ -32,18 +29,20 @@ async function isControlledSpeakingTopic(
   user: { id: string },
 ): Promise<boolean> {
   if (OFFICIAL_PSC_SPEAKING_TOPICS.some((officialTopic) => officialTopic === topic)) return true;
+  if (!topic.trim()) return false;
 
+  // Exact-content lookup against the whole bank: the previous capped list
+  // fetch (.limit(150), physical order) silently rejected topics past the cap.
   const supabase = createRequestClient(user);
   const { data, error } = await supabase
     .from("question_banks")
-    .select("content")
+    .select("id")
     .eq("component", 5)
-    .limit(150);
+    .eq("content", topic)
+    .limit(1);
   if (error) return false;
 
-  return getSupplementarySpeakingTopics(
-    (data ?? []).map((question: { content: string }) => question.content),
-  ).includes(topic);
+  return (data ?? []).length > 0;
 }
 
 // ---------- Buffer helpers ----------

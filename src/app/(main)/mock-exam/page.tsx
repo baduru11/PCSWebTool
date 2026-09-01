@@ -2,6 +2,7 @@ import { createClient, getSessionUser } from "@/lib/supabase/server";
 import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { shuffle, sampleByTone } from "@/lib/utils";
+import { fetchQuestionSample, fetchQuestionSampleWithMetadata } from "@/lib/question-bank";
 import type { QuizQuestion } from "@/types/practice";
 import { OFFICIAL_PSC_SPEAKING_TOPICS } from "@/lib/psc/official-speaking-topics";
 import { scopeOfficialReadingPassage } from "@/lib/psc/reading-scope";
@@ -50,34 +51,21 @@ export default async function MockExamPage() {
 
   const userId = user!.id;
 
-  // Fetch character and all component questions in parallel
-  const [character, { data: c1Questions }, { data: c2Questions }, { data: c3Questions }, { data: c4Passages }] = await Promise.all([
+  // Fetch character and all component questions in parallel. C1/C2 use the
+  // sample_question_bank RPC (server-side random sample — a plain .limit()
+  // without ORDER BY serves physical row order and starves newly inserted
+  // rows); C3/C4 still need their full metadata sets.
+  const [character, c1Questions, c2Questions, c3Questions, c4Passages] = await Promise.all([
     loadSelectedCharacter(supabase, userId),
-    supabase
-      .from("question_banks")
-      .select("content, pinyin")
-      .eq("component", 1)
-      .limit(1100),
-    supabase
-      .from("question_banks")
-      .select("content, pinyin")
-      .eq("component", 2)
-      .limit(600),
-    supabase
-      .from("question_banks")
-      .select("id, content, metadata")
-      .eq("component", 3)
-      .limit(500),
-    supabase
-      .from("question_banks")
-      .select("id, content, metadata")
-      .eq("component", 4)
-      .limit(50),
+    fetchQuestionSample(supabase, 1, 1100),
+    fetchQuestionSample(supabase, 2, 600),
+    fetchQuestionSampleWithMetadata(supabase, 3, 500),
+    fetchQuestionSampleWithMetadata(supabase, 4, 50),
   ]);
 
   // Tone-stratified selection so the exam isn't skewed toward one tone (e.g. 3rd tone)
-  const eligibleC1Questions = c1Questions?.filter((question) => countHanSyllables(question.content) === 1) ?? [];
-  const eligibleC2Questions = c2Questions?.filter((question) => countHanSyllables(question.content) === 2) ?? [];
+  const eligibleC1Questions = c1Questions.filter((question) => countHanSyllables(question.content) === 1);
+  const eligibleC2Questions = c2Questions.filter((question) => countHanSyllables(question.content) === 2);
   const examCharacters: string[] = eligibleC1Questions.length >= 100
     ? sampleByTone(eligibleC1Questions, 100).map((q) => q.content)
     : shuffle(FALLBACK_CHARACTERS);
@@ -89,16 +77,25 @@ export default async function MockExamPage() {
   let examQuizQuestions: QuizQuestion[] | undefined;
   if (c3Questions && c3Questions.length > 0) {
     const allParsed = c3Questions
-      .filter((row: { metadata: unknown }) => row.metadata && typeof row.metadata === "object")
-      .map((row: { id: string; content: string; metadata: { type: string; options: string[]; correctIndex: number; explanation: string; acceptedAnswers?: string[] } }) => ({
-        id: row.id,
-        type: row.metadata.type as QuizQuestion["type"],
-        prompt: row.content,
-        options: row.metadata.options,
-        correctIndex: row.metadata.correctIndex,
-        explanation: row.metadata.explanation,
-        acceptedAnswers: row.metadata.acceptedAnswers,
-      }))
+      .filter((row) => row.metadata && typeof row.metadata === "object")
+      .map((row) => {
+        const meta = row.metadata as {
+          type: string;
+          options: string[];
+          correctIndex: number;
+          explanation: string;
+          acceptedAnswers?: string[];
+        };
+        return {
+          id: row.id,
+          type: meta.type as QuizQuestion["type"],
+          prompt: row.content,
+          options: meta.options,
+          correctIndex: meta.correctIndex,
+          explanation: meta.explanation,
+          acceptedAnswers: meta.acceptedAnswers,
+        };
+      })
       .map(withConfiguredAcceptedAnswers);
     const wc = shuffle(allParsed.filter(q => q.type === "word-choice")).slice(0, 10);
     const mw = shuffle(allParsed.filter(q => q.type === "measure-word")).slice(0, 10);

@@ -47,14 +47,21 @@ Deno.serve(async (req: Request) => {
     // Fetch available question IDs per component (1-7)
     const availableQuestionIds: Record<number, string[]> = {};
     const availableQuestionCounts: Record<number, number> = {};
+    // Bounded random ID pool via the sample_question_bank RPC — an unranged
+    // .select("id") silently truncates at PostgREST's max-rows cap now that
+    // the C1/C2 banks hold thousands of rows.
     const componentPromises = [1, 2, 3, 4, 5, 6, 7].map(async (comp) => {
-      const { data } = await supabase
-        .from("question_banks")
-        .select("id")
-        .eq("component", comp);
-      const ids = (data ?? []).map((row: { id: string }) => row.id);
-      availableQuestionIds[comp] = ids;
-      availableQuestionCounts[comp] = ids.length;
+      const [{ data: sampled }, { count }] = await Promise.all([
+        supabase
+          .rpc("sample_question_bank", { p_component: comp, p_n: 500 })
+          .select("id"),
+        supabase
+          .from("question_banks")
+          .select("id", { count: "exact", head: true })
+          .eq("component", comp),
+      ]);
+      availableQuestionIds[comp] = ((sampled ?? []) as { id: string }[]).map((row) => row.id);
+      availableQuestionCounts[comp] = count ?? availableQuestionIds[comp].length;
     });
     await Promise.all(componentPromises);
 

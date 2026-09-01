@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { buildPlayerMemory } from "@/lib/gemini/player-memory";
 import { shuffle } from "@/lib/utils";
+import { fetchQuestionSampleWithMetadata } from "@/lib/question-bank";
 import { scopeOfficialReadingPassage } from "@/lib/psc/reading-scope";
 import {
   getReadingPassageSource,
@@ -59,13 +60,11 @@ export default async function Component4Page({
   const user = await getSessionUser();
 
   // Fetch selected character and passages in parallel
-  const [character, { data: dbPassages }] = await Promise.all([
+  const [character, dbPassages] = await Promise.all([
     loadSelectedCharacter(supabase, user!.id),
-    supabase
-      .from("question_banks")
-      .select("id, content, metadata")
-      .eq("component", 4)
-      .limit(50),
+    // Sampled server-side: a plain .limit() without ORDER BY serves physical row
+    // order, so anything past the cap is never shown once the bank grows.
+    fetchQuestionSampleWithMetadata(supabase, 4, 50),
   ]);
 
   const playerMemory = await buildPlayerMemory(supabase, user!.id, character.id ?? "").catch(() => "");
@@ -73,13 +72,14 @@ export default async function Component4Page({
   // Parse DB passages or use fallback
   let passages: Passage[];
   if (dbPassages && dbPassages.length > 0) {
-    passages = shuffle(dbPassages.map((row: { id: string; content: string; metadata: { title: string; passage_number?: number; source_scope?: string; source_title?: string; source_version?: string } }) => {
+    passages = shuffle(dbPassages.map((row) => {
+      const meta = (row.metadata ?? {}) as { title?: string; passage_number?: number };
       const scope = scopeOfficialReadingPassage(row.content);
       return {
         id: row.id,
-        title: row.metadata.title ?? "Untitled",
+        title: meta.title ?? "Untitled",
         content: scope.text,
-        passageNumber: row.metadata.passage_number ?? null,
+        passageNumber: meta.passage_number ?? null,
         syllableCount: scope.syllableCount,
         source: getReadingPassageSource(row.metadata),
       };

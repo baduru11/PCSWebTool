@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { loadSelectedCharacter } from "@/lib/character-loader";
 import { buildPlayerMemory } from "@/lib/gemini/player-memory";
 import { randomizeAnswerPositions, shuffle } from "@/lib/utils";
+import { fetchQuestionSampleWithMetadata } from "@/lib/question-bank";
 import { QUIZ_SIZES } from "@/lib/constants";
 import type { QuizQuestion } from "@/types/practice";
 import { withConfiguredAcceptedAnswers } from "@/lib/quiz-answers";
@@ -16,6 +17,15 @@ const QuizSession = dynamic(() => import("./quiz-session").then(m => m.QuizSessi
     </div>
   ),
 });
+
+/** Shape of a C3/C7 quiz item stored in `question_banks.metadata`. */
+type QuizItemMetadata = {
+  type: string;
+  options: string[];
+  correctIndex: number;
+  acceptedAnswers?: string[];
+  explanation: string;
+};
 
 // Default quiz questions covering all 3 sub-types (matches new real question format)
 const FALLBACK_QUESTIONS: QuizQuestion[] = [
@@ -46,13 +56,11 @@ export default async function Component3Page({
   const user = await getSessionUser();
 
   // Fetch selected character and quiz questions in parallel
-  const [character, { data: dbQuestions }] = await Promise.all([
+  const [character, dbQuestions] = await Promise.all([
     loadSelectedCharacter(supabase, user!.id),
-    supabase
-      .from("question_banks")
-      .select("id, content, metadata")
-      .eq("component", 3)
-      .limit(500),
+    // Sampled server-side: a plain .limit() without ORDER BY serves physical row
+    // order, so anything past the cap is never shown once the bank grows.
+    fetchQuestionSampleWithMetadata(supabase, 3, 500),
   ]);
 
   const playerMemory = await buildPlayerMemory(supabase, user!.id, character.id ?? "").catch(() => "");
@@ -96,16 +104,19 @@ export default async function Component3Page({
   } else if (dbQuestions && dbQuestions.length > 0) {
     // Parse all questions (skip rows with missing metadata)
     const allParsed = dbQuestions
-      .filter((row: { metadata: unknown }) => row.metadata && typeof row.metadata === "object")
-      .map((row: { id: string; content: string; metadata: { type: string; options: string[]; correctIndex: number; acceptedAnswers?: string[]; explanation: string } }) => ({
-        id: row.id,
-        type: row.metadata.type as QuizQuestion["type"],
-        prompt: row.content,
-        options: row.metadata.options,
-        correctIndex: row.metadata.correctIndex,
-        acceptedAnswers: row.metadata.acceptedAnswers,
-        explanation: row.metadata.explanation,
-      }));
+      .filter((row) => row.metadata && typeof row.metadata === "object")
+      .map((row) => {
+        const meta = row.metadata as QuizItemMetadata;
+        return {
+          id: row.id,
+          type: meta.type as QuizQuestion["type"],
+          prompt: row.content,
+          options: meta.options,
+          correctIndex: meta.correctIndex,
+          acceptedAnswers: meta.acceptedAnswers,
+          explanation: meta.explanation,
+        };
+      });
 
     // Filter by type and take subsets for regular practice
     const wc = shuffle(allParsed.filter(q => q.type === "word-choice")).slice(0, QUIZ_SIZES.WORD_CHOICE);
