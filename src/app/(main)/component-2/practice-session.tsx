@@ -97,8 +97,12 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
   const [, setFeedbackText] = useState("");
   const [showPinyin, setShowPinyin] = useState(false);
   const [playingWordIndex, setPlayingWordIndex] = useState<number | null>(null);
+  const [recordedAudioUrl, setRecordedAudioUrl] = useState<string | null>(null);
+  const [isPlayingRecording, setIsPlayingRecording] = useState(false);
   const playingRef = useRef(false);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
+  const recordedAudioRef = useRef<HTMLAudioElement | null>(null);
+  const recordedAudioUrlRef = useRef<string | null>(null);
   const wordAudioCache = useRef<Map<string, string>>(new Map());
 
   // Initialize word groups (shuffle questions into groups of 5)
@@ -113,6 +117,18 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
 
   const currentWords = useMemo(() => wordGroups[currentGroupIndex] || [], [wordGroups, currentGroupIndex]);
   const progressPercent = wordGroups.length > 0 ? Math.round((currentGroupIndex / wordGroups.length) * 100) : 0;
+
+  const discardRecordedAudio = useCallback(() => {
+    recordedAudioRef.current?.pause();
+    recordedAudioRef.current = null;
+    setIsPlayingRecording(false);
+
+    if (recordedAudioUrlRef.current) {
+      URL.revokeObjectURL(recordedAudioUrlRef.current);
+      recordedAudioUrlRef.current = null;
+    }
+    setRecordedAudioUrl(null);
+  }, []);
 
   // Detect tricky elements for all current words
   const allTrickyElements = useMemo(() => {
@@ -209,6 +225,10 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
         currentAudioRef.current.pause();
         currentAudioRef.current = null;
       }
+      recordedAudioRef.current?.pause();
+      if (recordedAudioUrlRef.current) {
+        URL.revokeObjectURL(recordedAudioUrlRef.current);
+      }
       window.speechSynthesis.cancel();
       cache.forEach(url => URL.revokeObjectURL(url));
     };
@@ -246,7 +266,38 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
     }
   }, [character.voiceId, speakWithBrowserTTS, applyTtsVolume]);
 
+  const playRecordedAudio = useCallback(async () => {
+    const audioUrl = recordedAudioUrlRef.current;
+    if (!audioUrl || recordedAudioRef.current) return;
+
+    const audio = new Audio(audioUrl);
+    applyTtsVolume(audio);
+    recordedAudioRef.current = audio;
+    setIsPlayingRecording(true);
+
+    const finishPlayback = () => {
+      if (recordedAudioRef.current === audio) {
+        recordedAudioRef.current = null;
+        setIsPlayingRecording(false);
+      }
+    };
+
+    audio.onended = finishPlayback;
+    audio.onerror = finishPlayback;
+
+    try {
+      await audio.play();
+    } catch {
+      finishPlayback();
+    }
+  }, [applyTtsVolume]);
+
   const handleRecordingComplete = useCallback(async (audioBlob: Blob) => {
+    discardRecordedAudio();
+    const audioUrl = URL.createObjectURL(audioBlob);
+    recordedAudioUrlRef.current = audioUrl;
+    setRecordedAudioUrl(audioUrl);
+
     setPhase("assessing");
     setExpression("thinking");
     setDialogue(getDialogue(character.name, "assessing"));
@@ -452,9 +503,11 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
         },
       ]);
     }
-  }, [currentWords, characterId, streak, character.name]);
+  }, [currentWords, characterId, streak, character.name, discardRecordedAudio]);
 
   const handleSkip = useCallback(() => {
+    discardRecordedAudio();
+
     // Revoke cached audio URLs for this group to free memory
     wordAudioCache.current.forEach(url => URL.revokeObjectURL(url));
     wordAudioCache.current.clear();
@@ -482,9 +535,11 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
       setExpression("neutral");
       setDialogue(getDialogue(character.name, "skipped"));
     }
-  }, [currentWords, currentGroupIndex, wordGroups.length, character.name]);
+  }, [currentWords, currentGroupIndex, wordGroups.length, character.name, discardRecordedAudio]);
 
   const handleNext = useCallback(() => {
+    discardRecordedAudio();
+
     // Revoke cached audio URLs for this group to free memory
     wordAudioCache.current.forEach(url => URL.revokeObjectURL(url));
     wordAudioCache.current.clear();
@@ -502,7 +557,7 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
       setExpression("neutral");
       setDialogue(getDialogue(character.name, "next_group_words"));
     }
-  }, [currentGroupIndex, wordGroups.length, character.name]);
+  }, [currentGroupIndex, wordGroups.length, character.name, discardRecordedAudio]);
 
   // Completion screen
   if (phase === "complete") {
@@ -818,8 +873,27 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
 
               {/* Action buttons */}
               <div className="flex flex-col items-center gap-3">
+                {recordedAudioUrl && (phase === "assessing" || phase === "feedback") && (
+                  <Button
+                    onClick={playRecordedAudio}
+                    disabled={isPlayingRecording}
+                    variant="outline"
+                    size="lg"
+                  >
+                    {isPlayingRecording ? "Playing My Recording..." : "🔊 Listen to My Recording"}
+                  </Button>
+                )}
+
                 {phase === "ready" && (
                   <>
+                    <Button
+                      onClick={() => playWordAudio(currentWords.join("。"), -1)}
+                      disabled={playingWordIndex !== null}
+                      variant="outline"
+                      size="lg"
+                    >
+                      {playingWordIndex === -1 ? "Playing All Words..." : "🔊 Listen to All Words"}
+                    </Button>
                     <div className="flex items-center gap-3">
                       <Button
                         onClick={handleSkip}
@@ -832,6 +906,7 @@ export function PracticeSession({ questions, pinyinByWord, character, characterI
                     </div>
                     <AudioRecorder
                       onRecordingComplete={handleRecordingComplete}
+                      disabled={playingWordIndex !== null}
                     />
                   </>
                 )}
